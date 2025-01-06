@@ -1,4 +1,5 @@
-const { ResponseError } = require('./responseError.js');
+// utils/validation.js
+const { ValidationError } = require('./responseError');
 
 function validate(schema, request) {
     const result = schema.validate(request, {
@@ -8,14 +9,12 @@ function validate(schema, request) {
     });
 
     if (result.error) {
-        console.log('Validation Error Details:', result.error.details);
-        
         const errors = result.error.details.reduce((acc, error) => {
             acc[error.context.key] = error.message;
             return acc;
         }, {});
 
-        throw new ResponseError(400, "Validation failed", errors);
+        throw new ValidationError('Validation failed', errors);
     }
     return result.value;
 }

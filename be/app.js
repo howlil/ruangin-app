@@ -25,10 +25,10 @@ app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
-app.use(errorMiddleware)
 app.use(router)
 app.use(apiRoute)
 app.use(logMiddleware)
+app.use(errorMiddleware)
 
 app.use((req, res, next) => {
     res.status(404).json({
@@ -36,6 +36,7 @@ app.use((req, res, next) => {
       message: "Resource not found",
     });
   });
+
   
 
 module.exports = app;

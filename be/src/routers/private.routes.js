@@ -25,14 +25,14 @@ apiRoute.patch('/api/v2/users', authorize('SUPERADMIN'), authController.updateUs
 apiRoute.post('/api/v1/divisi', authorize('SUPERADMIN'), divisiJabatanController.createDivisi);
 apiRoute.get('/api/v1/divisi', divisiJabatanController.getAllDivisi);
 apiRoute.get('/api/v1/divisi/:id', divisiJabatanController.getDivisiById);
-apiRoute.put('/api/v1/divisi/:id', authorize('SUPERADMIN'), divisiJabatanController.updateDivisi);
+apiRoute.patch('/api/v1/divisi/:id', authorize('SUPERADMIN'), divisiJabatanController.updateDivisi);
 apiRoute.delete('/api/v1/divisi/:id', authorize('SUPERADMIN'), divisiJabatanController.deleteDivisi);
 
 // Jabatan Routes
 apiRoute.post('/api/v1/jabatan', authorize('SUPERADMIN'), divisiJabatanController.createJabatan);
 apiRoute.get('/api/v1/jabatan', divisiJabatanController.getAllJabatan);
 apiRoute.get('/api/v1/jabatan/:id', divisiJabatanController.getJabatanById);
-apiRoute.put('/api/v1/jabatan/:id', authorize('SUPERADMIN'), divisiJabatanController.updateJabatan);
+apiRoute.patch('/api/v1/jabatan/:id', authorize('SUPERADMIN'), divisiJabatanController.updateJabatan);
 apiRoute.delete('/api/v1/jabatan/:id', authorize('SUPERADMIN'), divisiJabatanController.deleteJabatan);
 
 
@@ -44,10 +44,10 @@ apiRoute.patch('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), uploadImage, 
 apiRoute.delete('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), ruangRapatController.deleteRuangRapat);
 
 // Booking Routes
-router.post('/api/v1/peminjaman', authorize('PEMINJAM'), peminjamanController.createPeminjaman);
-router.patch('/api/v1/peminjaman/:peminjamanId/status', authorize('ADMIN'), peminjamanController.updateStatus);
-router.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
-router.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);
+apiRoute.post('/api/v1/peminjaman', authorize('PEMINJAM'), peminjamanController.createPeminjaman);
+apiRoute.patch('/api/v1/peminjaman/:peminjamanId/status', authorize('ADMIN'), peminjamanController.updateStatus);
+apiRoute.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
+apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);
 
 
 

@@ -1,6 +1,8 @@
+// errorMiddleware.js
 const { logger } = require("../apps/logging.js");
-const { ResponseError,NotFoundError,ValidationError,UnauthorizedError } = require("../utils/responseError.js");
-const multer = require('multer')
+const { ResponseError, NotFoundError, ValidationError, UnauthorizedError } = require("../utils/responseError.js");
+const { PrismaClientValidationError, PrismaClientKnownRequestError } = require('@prisma/client');
+const multer = require('multer');
 
 const formatErrorResponse = (error = true, message, errors = null) => {
     const response = { error, message };
@@ -30,6 +32,21 @@ const errorMiddleware = (err, req, res, next) => {
     logError(err, req);
 
     switch (true) {
+        case err instanceof PrismaClientValidationError:
+            return res.status(400).json(
+                formatErrorResponse(true, 'Database validation error', {
+                    details: err.message
+                })
+            );
+        
+        case err instanceof PrismaClientKnownRequestError:
+            return res.status(400).json(
+                formatErrorResponse(true, 'Database error', {
+                    code: err.code,
+                    details: err.message
+                })
+            );
+
         case err instanceof multer.MulterError:
             return res.status(400).json(
                 formatErrorResponse(true, `File upload error: ${err.message}`)
@@ -55,16 +72,6 @@ const errorMiddleware = (err, req, res, next) => {
                 formatErrorResponse(true, err.message, err.errors)
             );
 
-        // Handle Mongoose/MongoDB errors
-        case err.name === 'MongoError' || err.name === 'MongoServerError':
-            if (err.code === 11000) {
-                return res.status(409).json(
-                    formatErrorResponse(true, 'Duplicate entry found')
-                );
-            }
-            break;
-
-        // Handle JWT errors
         case err.name === 'JsonWebTokenError':
             return res.status(401).json(
                 formatErrorResponse(true, 'Invalid token')
@@ -78,13 +85,14 @@ const errorMiddleware = (err, req, res, next) => {
 
     const isDevelopment = process.env.NODE_ENV === 'development';
     const message = isDevelopment ? err.message : 'Internal Server Error';
-    const errorDetails = isDevelopment ? err.stack : undefined;
+    const errorDetails = isDevelopment ? {
+        stack: err.stack,
+        details: err.errors || err.details
+    } : undefined;
 
-    // Handle unknown errors
     return res.status(500).json(
         formatErrorResponse(true, message, errorDetails)
     );
 };
-
 
 module.exports = { errorMiddleware };

@@ -1,0 +1,314 @@
+{
+  error: "Cannot read properties of undefined (reading 'findUnique')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'findUnique')\n" +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:64:36)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Authentication error',
+  timestamp: '06-01-2025 11:37:12'
+}
+{
+  error: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.token.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:79:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m76\x1B[39m   \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m77\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m78\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m79\x1B[39m \x1B[36mconst\x1B[39m sessionToken = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mtoken\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       where: {\n' +
+    '         token: "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMjQ0MWZmZGYtMWY5MS00MjUwLTk1NzAtMWU1YTU5MTk1YjIyIiwiaWF0IjoxNzM2MTM4MTAxLCJleHAiOjE3MzYyMjQ1MDF9.KPmNu13eZzFCcs1Eb9SI3Tnqjq7sC2p0pOea7Zx32Xycyotw1cxS21bQiHmFcUJjcnpB-TVQhYyQO2Jy1HW7Ew",\n' +
+    '         \x1B[31muser_id\x1B[39m: "2441ffdf-1f91-4250-9570-1e5a59195b22",\n' +
+    '         \x1B[31m~~~~~~~\x1B[39m\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mAND\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput | TokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mOR\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mNOT\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput | TokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mid\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mStringFilter | String\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mpengguna_id\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mStringFilter | String\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mcreatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTimeFilter | DateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mupdatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTimeFilter | DateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mPengguna\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mPenggunaNullableScalarRelationFilter | PenggunaWhereInput | Null\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown argument `\x1B[31muser_id\x1B[39m`. Available options are listed in \x1B[32mgreen\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.token.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:79:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m76\x1B[39m   \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m77\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m78\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m79\x1B[39m \x1B[36mconst\x1B[39m sessionToken = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mtoken\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       where: {\n' +
+    '         token: "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMjQ0MWZmZGYtMWY5MS00MjUwLTk1NzAtMWU1YTU5MTk1YjIyIiwiaWF0IjoxNzM2MTM4MTAxLCJleHAiOjE3MzYyMjQ1MDF9.KPmNu13eZzFCcs1Eb9SI3Tnqjq7sC2p0pOea7Zx32Xycyotw1cxS21bQiHmFcUJjcnpB-TVQhYyQO2Jy1HW7Ew",\n' +
+    '         \x1B[31muser_id\x1B[39m: "2441ffdf-1f91-4250-9570-1e5a59195b22",\n' +
+    '         \x1B[31m~~~~~~~\x1B[39m\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mAND\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput | TokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mOR\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mNOT\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mTokenWhereInput | TokenWhereInput[]\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mid\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mStringFilter | String\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mpengguna_id\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mStringFilter | String\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mcreatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTimeFilter | DateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mupdatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTimeFilter | DateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mPengguna\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mPenggunaNullableScalarRelationFilter | PenggunaWhereInput | Null\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown argument `\x1B[31muser_id\x1B[39m`. Available options are listed in \x1B[32mgreen\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:79:26)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Authentication error',
+  timestamp: '06-01-2025 11:38:39'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:20:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '06-01-2025 11:58:50',
+  requestBody: {
+    email: 'Devon30@hotmail.com',
+    nama_lengkap: 'id',
+    role: 'in aliqua tempor dolore',
+    kontak: 'aliquip dolore',
+    jabatan_id: 'dolore consequat Ut',
+    divisi_id: 'consectetur'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'schema.validate is not a function',
+  stack: 'TypeError: schema.validate is not a function\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:4:27)\n' +
+    '    at createDivisi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:9:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/divisi',
+  method: 'POST',
+  timestamp: '06-01-2025 13:40:52',
+  requestBody: { nama_divisi: 'Pengelolaan Pelayanan Terpadu Satu Atap' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'schema.validate is not a function',
+  stack: 'TypeError: schema.validate is not a function\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:5:27)\n' +
+    '    at createDivisi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:9:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/divisi',
+  method: 'POST',
+  timestamp: '06-01-2025 13:44:11',
+  requestBody: { nama_divisi: 'Pengelolaan Pelayanan Terpadu Satu Atap' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'schema.validate is not a function',
+  stack: 'TypeError: schema.validate is not a function\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:5:27)\n' +
+    '    at createDivisi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:10:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/divisi',
+  method: 'POST',
+  timestamp: '06-01-2025 13:44:46',
+  requestBody: { nama_divisi: 'Pengelolaan Pelayanan Terpadu Satu Atap' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Divisi already exists',
+  stack: 'ResponseError: Divisi already exists\n' +
+    '    at Object.createDivisi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:11:19)\n' +
+    '    at async createDivisi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:11:28)',
+  path: '/api/v1/divisi',
+  method: 'POST',
+  timestamp: '06-01-2025 13:45:54',
+  requestBody: { nama_divisi: 'Pengelolaan Pelayanan Terpadu Satu Atap' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'schema.validate is not a function',
+  stack: 'TypeError: schema.validate is not a function\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:5:27)\n' +
+    '    at createJabatan (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:78:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/jabatan',
+  method: 'POST',
+  timestamp: '06-01-2025 13:51:22',
+  requestBody: { nama_jabatan: 'eselon 1' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Jabatan already exists',
+  stack: 'ResponseError: Jabatan already exists\n' +
+    '    at Object.createJabatan (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:131:19)\n' +
+    '    at async createJabatan (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:79:28)',
+  path: '/api/v1/jabatan',
+  method: 'POST',
+  timestamp: '06-01-2025 13:52:35',
+  requestBody: { nama_jabatan: 'eselon 1' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "asasasas",\n' +
+    '         deskripsi: "asasasas",\n' +
+    '         lokasi_ruangan: "sasasas",\n' +
+    '         \x1B[31mkapasitas\x1B[39m: 11,\n' +
+    '         \x1B[31m~~~~~~~~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736147420555.jpg",\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mid\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mcreatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mupdatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mpeminjaman\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mPeminjamanCreateNestedManyWithoutRuangRapatInput\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown argument `\x1B[31mkapasitas\x1B[39m`. Available options are listed in \x1B[32mgreen\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "asasasas",\n' +
+    '         deskripsi: "asasasas",\n' +
+    '         lokasi_ruangan: "sasasas",\n' +
+    '         \x1B[31mkapasitas\x1B[39m: 11,\n' +
+    '         \x1B[31m~~~~~~~~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736147420555.jpg",\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mid\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mcreatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mupdatedAt\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mDateTime\x1B[39m,\n' +
+    '     \x1B[32m?\x1B[39m   \x1B[32mpeminjaman\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mPeminjamanCreateNestedManyWithoutRuangRapatInput\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown argument `\x1B[31mkapasitas\x1B[39m`. Available options are listed in \x1B[32mgreen\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:24)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '06-01-2025 14:10:20',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asasasas',
+    deskripsi: 'asasasas',
+    lokasi_ruangan: 'sasasas',
+    kapasitas: '11'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'User not found',
+  stack: 'ResponseError: User not found\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:22:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 14:13:05',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}

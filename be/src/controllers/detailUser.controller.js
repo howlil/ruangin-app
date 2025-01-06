@@ -6,7 +6,7 @@ const divisiJabatanValidation = require('../validations/detailUser.validation');
 const detailUserController = {
     async createDivisi(req, res, next) {
         try {
-            const data = validate(divisiJabatanValidation.create_division, req.body);
+            const data = req.body
             const result = await divisiJabatanService.createDivisi(data);
             
             res.status(201).json({
@@ -49,7 +49,7 @@ const detailUserController = {
 
     async updateDivisi(req, res, next) {
         try {
-            const data = validate(divisiJabatanValidation.create_division, req.body);
+            const data = req.body
             const result = await divisiJabatanService.updateDivisi(req.params.id, data);
             
             res.status(200).json({
@@ -75,7 +75,7 @@ const detailUserController = {
     // Jabatan Controllers
     async createJabatan(req, res, next) {
         try {
-            const data = validate(divisiJabatanValidation.create_jabatan, req.body);
+            const data =req.body;
             const result = await divisiJabatanService.createJabatan(data);
             
             res.status(201).json({
@@ -118,7 +118,7 @@ const detailUserController = {
 
     async updateJabatan(req, res, next) {
         try {
-            const data = validate(divisiJabatanValidation.create_jabatan, req.body);
+            const data =req.body;
             const result = await divisiJabatanService.updateJabatan(req.params.id, data);
             
             res.status(200).json({
