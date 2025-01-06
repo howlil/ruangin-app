@@ -1,0 +1,18 @@
+{
+  message: 'Starting pengguna seeder...',
+  level: 'info',
+  timestamp: '06-01-2025 10:13:37'
+}
+{
+  id: '2441ffdf-1f91-4250-9570-1e5a59195b22',
+  email: 'superadmin.pusdatin@adminkkp.id',
+  role: 'SUPERADMIN',
+  level: 'info',
+  message: 'SUPERADMIN created:',
+  timestamp: '06-01-2025 10:13:38'
+}
+{
+  message: 'Pengguna seeding completed!',
+  level: 'info',
+  timestamp: '06-01-2025 10:13:38'
+}

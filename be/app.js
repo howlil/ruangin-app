@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 const router = require('./src/routers/public.routes')
-const { logger } = require("./src/apps/logging.js");
+const apiRoute = require('./src/routers/private.routes.js')
 const { errorMiddleware } = require("./src/middlewares/error.middleware.js");
 const { logMiddleware } = require("./src/middlewares/logging.middleware.js");
-
+const helmet = require('helmet')
+const cors = require('cors')
 
 const app = express();
 
@@ -17,7 +17,6 @@ const corsOptions = {
   };
 
   
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -26,8 +25,9 @@ app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
-app.use(router)
 app.use(errorMiddleware)
+app.use(router)
+app.use(apiRoute)
 app.use(logMiddleware)
 
 app.use((req, res, next) => {
