@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Pengguna {
+  id             String          @id @default(uuid())
+  nama_lengkap   String
+  email          String
+  kata_sandi     String
+  role           Role
+  token          Token[]
+  DetailPengguna DetailPengguna? @relation()
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  Peminjaman     Peminjaman[]
+}
+
+model Peminjaman {
+  id                  String      @id @default(uuid())
+  pengguna_id         String
+  ruang_rapat_id      String
+  nama_kegiatan       String
+  tanggal             String
+  jam_mulai           String
+  jam_selesai         String
+  no_surat_peminjaman String
+  status              Status
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+  Pengguna            Pengguna?   @relation(fields: [pengguna_id], references: [id])
+  RuangRapat          RuangRapat? @relation(fields: [ruang_rapat_id], references: [id])
+}
+
+enum Status {
+  DIPROSES
+  DISETUJUI
+  DITOLAK
+  SELESAI
+}
+
+model RuangRapat {
+  id             String       @id @default(uuid())
+  nama_ruangan   String
+  deskripsi      String
+  lokasi_ruangan String
+  foto_ruangan   String
+  peminjaman     Peminjaman[]
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+model DetailPengguna {
+  id          String   @id @default(uuid())
+  pengguna_id String   @unique
+  kontak      String
+  jabatan_id  String
+  divisi_id   String
+  Pengguna    Pengguna @relation(fields: [pengguna_id], references: [id])
+  Divisi      Divisi?  @relation(fields: [divisi_id], references: [id])
+  Jabatan     Jabatan? @relation(fields: [jabatan_id], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Divisi {
+  id              String           @id @default(uuid())
+  nama_divisi     String
+  detail_pengguna DetailPengguna[]
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+}
+
+model Jabatan {
+  id              String           @id @default(uuid())
+  nama_jabatan    String
+  detail_pengguna DetailPengguna[]
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+}
+
+model Token {
+  id          String    @id @default(uuid())
+  token       String    @db.Text
+  pengguna_id String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  Pengguna    Pengguna? @relation(fields: [pengguna_id], references: [id])
+}
+
+enum Role {
+  SUPERADMIN
+  ADMIN
+  PEMINJAM
+}
