@@ -2,13 +2,19 @@ const Joi = require('joi');
 
 module.exports = {
     login: Joi.object({
-        email: Joi.string().email().required(),
+        email: Joi.string().email().required().messages({
+            'string.email': 'Please provide a valid email address',
+            'any.required': 'Email is required'
+        }),
         kata_sandi: Joi.string()
-            .pattern(new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$'))
+            .min(8)
+            .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])/)
             .required()
             .messages({
-                'string.pattern.base': 'Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one unique character.',
-            }),
+                'string.min': 'Password must be at least 8 characters long',
+                'string.pattern.base': 'Password must contain at least one uppercase letter, one lowercase letter, and one special character',
+                'any.required': 'Password is required'
+            })
     }),
     create_akun: Joi.object({
         nama_lengkap: Joi.string().required(),

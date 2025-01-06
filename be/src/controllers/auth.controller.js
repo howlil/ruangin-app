@@ -7,8 +7,9 @@ const { ResponseError } = require('../utils/responseError');
 const authController = {
     async login(req, res, next) {
         try {
-            const { email, kata_sandi } = validate(authValidation.login, req.body);
-            const result = await authService.login(email, kata_sandi);
+            const validated = validate(authValidation.login, req.body);
+            console.log(validated)
+            const result = await authService.login(validated.email, validated.kata_sandi);
 
             res.status(200).json({
                 status: true,

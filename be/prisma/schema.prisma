@@ -49,6 +49,7 @@ model RuangRapat {
   deskripsi      String
   lokasi_ruangan String
   foto_ruangan   String
+  kapasitas      Int
   peminjaman     Peminjaman[]
   createdAt      DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
