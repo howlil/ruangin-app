@@ -21,7 +21,7 @@ model Pengguna {
 }
 
 model Peminjaman {
-  id                  String      @id @default(uuid())
+  id                  String     @id @default(uuid())
   pengguna_id         String
   ruang_rapat_id      String
   nama_kegiatan       String
@@ -29,11 +29,12 @@ model Peminjaman {
   jam_mulai           String
   jam_selesai         String
   no_surat_peminjaman String
+  alasan_penolakan    String?
   status              Status
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @updatedAt
-  Pengguna            Pengguna?   @relation(fields: [pengguna_id], references: [id])
-  RuangRapat          RuangRapat? @relation(fields: [ruang_rapat_id], references: [id])
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+  Pengguna            Pengguna   @relation(fields: [pengguna_id], references: [id])
+  RuangRapat          RuangRapat @relation(fields: [ruang_rapat_id], references: [id])
 }
 
 enum Status {
@@ -49,39 +50,30 @@ model RuangRapat {
   deskripsi      String
   lokasi_ruangan String
   foto_ruangan   String
-  kapasitas      Int
+  kapasitas      String
   peminjaman     Peminjaman[]
   createdAt      DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
 }
 
 model DetailPengguna {
-  id          String   @id @default(uuid())
-  pengguna_id String   @unique
-  kontak      String
-  jabatan_id  String
-  divisi_id   String
-  Pengguna    Pengguna @relation(fields: [pengguna_id], references: [id])
-  Divisi      Divisi?  @relation(fields: [divisi_id], references: [id])
-  Jabatan     Jabatan? @relation(fields: [jabatan_id], references: [id])
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String    @id @default(uuid())
+  pengguna_id  String    @unique
+  kontak       String
+  tim_kerja_id String    @unique
+  Pengguna     Pengguna  @relation(fields: [pengguna_id], references: [id])
+  tim_kerja    TimKerja? @relation(fields: [tim_kerja_id], references: [id])
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 }
 
-model Divisi {
-  id              String           @id @default(uuid())
-  nama_divisi     String
-  detail_pengguna DetailPengguna[]
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
-}
-
-model Jabatan {
-  id              String           @id @default(uuid())
-  nama_jabatan    String
-  detail_pengguna DetailPengguna[]
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
+model TimKerja {
+  id              String          @id @default(uuid())
+  nama_tim_kerja  String
+  code            String          @unique
+  detail_pengguna DetailPengguna? @relation()
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 }
 
 model Token {

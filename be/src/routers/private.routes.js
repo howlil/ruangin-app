@@ -2,7 +2,7 @@ const express = require('express');
 const apiRoute = express.Router();
 const authController = require('../controllers/auth.controller');
 const { authenticate, authorize } = require('../middlewares/auth.middleware');
-const divisiJabatanController = require('../controllers/detailUser.controller');
+const detailUserController = require('../controllers/detailUser.controller');
 const { uploadImage } = require('../middlewares/image.middleware');
 const ruangRapatController = require('../controllers/ruangRapat.controller');
 const peminjamanController = require('../controllers/peminjaman.controller');
@@ -20,21 +20,12 @@ apiRoute.get('/api/v1/me', authController.getCurrentUser);
 apiRoute.patch('/api/v2/users', authorize('SUPERADMIN'), authController.updateUser);
 
 
-
-// Divisi Routes
-apiRoute.post('/api/v1/divisi', authorize('SUPERADMIN'), divisiJabatanController.createDivisi);
-apiRoute.get('/api/v1/divisi', divisiJabatanController.getAllDivisi);
-apiRoute.get('/api/v1/divisi/:id', divisiJabatanController.getDivisiById);
-apiRoute.patch('/api/v1/divisi/:id', authorize('SUPERADMIN'), divisiJabatanController.updateDivisi);
-apiRoute.delete('/api/v1/divisi/:id', authorize('SUPERADMIN'), divisiJabatanController.deleteDivisi);
-
-// Jabatan Routes
-apiRoute.post('/api/v1/jabatan', authorize('SUPERADMIN'), divisiJabatanController.createJabatan);
-apiRoute.get('/api/v1/jabatan', divisiJabatanController.getAllJabatan);
-apiRoute.get('/api/v1/jabatan/:id', divisiJabatanController.getJabatanById);
-apiRoute.patch('/api/v1/jabatan/:id', authorize('SUPERADMIN'), divisiJabatanController.updateJabatan);
-apiRoute.delete('/api/v1/jabatan/:id', authorize('SUPERADMIN'), divisiJabatanController.deleteJabatan);
-
+// TimKerja Routes
+apiRoute.post('/api/v1/tim-kerja', authorize('SUPERADMIN'), detailUserController.createTimKerja);
+apiRoute.get('/api/v1/tim-kerja', detailUserController.getAllTimKerja);
+apiRoute.get('/api/v1/tim-kerja/:id', detailUserController.getTimKerjaById);
+apiRoute.patch('/api/v1/tim-kerja/:id', authorize('SUPERADMIN'), detailUserController.updateTimKerja);
+apiRoute.delete('/api/v1/tim-kerja/:id', authorize('SUPERADMIN'), detailUserController.deleteTimKerja);
 
 // Room Management Routes
 apiRoute.post('/api/v1/ruang-rapat', authorize('SUPERADMIN'), uploadImage, ruangRapatController.createRuangRapat);
@@ -44,7 +35,7 @@ apiRoute.patch('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), uploadImage, 
 apiRoute.delete('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), ruangRapatController.deleteRuangRapat);
 
 // Booking Routes
-apiRoute.post('/api/v1/peminjaman', authorize('PEMINJAM'), peminjamanController.createPeminjaman);
+apiRoute.post('/api/v1/peminjaman', authorize('PEMINJAM',"ADMIN"), peminjamanController.createPeminjaman);
 apiRoute.patch('/api/v1/peminjaman/:peminjamanId/status', authorize('ADMIN'), peminjamanController.updateStatus);
 apiRoute.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
 apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);

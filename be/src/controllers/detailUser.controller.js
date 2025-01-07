@@ -1,17 +1,15 @@
-const { validate } = require('../utils/validation');
-const divisiJabatanService = require('../services/detailUser.service');
-const divisiJabatanValidation = require('../validations/detailUser.validation');
+const detailUserService = require('../services/detailUser.service');
 
 
 const detailUserController = {
-    async createDivisi(req, res, next) {
+    async createTimKerja(req, res, next) {
         try {
             const data = req.body
-            const result = await divisiJabatanService.createDivisi(data);
+            const result = await detailUserService.createTimKerja(data);
             
             res.status(201).json({
                 status: true,
-                message: "Divisi created successfully",
+                message: "TimKerja created successfully",
                 data: result
             });
         } catch (error) {
@@ -19,9 +17,9 @@ const detailUserController = {
         }
     },
 
-    async getAllDivisi(req, res, next) {
+    async getAllTimKerja(req, res, next) {
         try {
-            const result = await divisiJabatanService.getAllDivisi();
+            const result = await detailUserService.getAllTimKerja();
             
             res.status(200).json({
                 status: true,
@@ -33,9 +31,9 @@ const detailUserController = {
         }
     },
 
-    async getDivisiById(req, res, next) {
+    async getTimKerjaById(req, res, next) {
         try {
-            const result = await divisiJabatanService.getDivisiById(req.params.id);
+            const result = await detailUserService.getTimKerjaById(req.params.id);
             
             res.status(200).json({
                 status: true,
@@ -47,14 +45,14 @@ const detailUserController = {
         }
     },
 
-    async updateDivisi(req, res, next) {
+    async updateTimKerja(req, res, next) {
         try {
             const data = req.body
-            const result = await divisiJabatanService.updateDivisi(req.params.id, data);
+            const result = await detailUserService.updateTimKerja(req.params.id, data);
             
             res.status(200).json({
                 status: true,
-                message: "Divisi updated successfully",
+                message: "TimKerja updated successfully",
                 data: result
             });
         } catch (error) {
@@ -62,9 +60,9 @@ const detailUserController = {
         }
     },
 
-    async deleteDivisi(req, res, next) {
+    async deleteTimKerja(req, res, next) {
         try {
-            const result = await divisiJabatanService.deleteDivisi(req.params.id);
+            const result = await detailUserService.deleteTimKerja(req.params.id);
             
             res.status(200).json(result);
         } catch (error) {
@@ -72,74 +70,7 @@ const detailUserController = {
         }
     },
 
-    // Jabatan Controllers
-    async createJabatan(req, res, next) {
-        try {
-            const data =req.body;
-            const result = await divisiJabatanService.createJabatan(data);
-            
-            res.status(201).json({
-                status: true,
-                message: "Jabatan created successfully",
-                data: result
-            });
-        } catch (error) {
-            next(error);
-        }
-    },
-
-    async getAllJabatan(req, res, next) {
-        try {
-            const result = await divisiJabatanService.getAllJabatan();
-            
-            res.status(200).json({
-                status: true,
-                message: "Get all jabatan successful",
-                data: result
-            });
-        } catch (error) {
-            next(error);
-        }
-    },
-
-    async getJabatanById(req, res, next) {
-        try {
-            const result = await divisiJabatanService.getJabatanById(req.params.id);
-            
-            res.status(200).json({
-                status: true,
-                message: "Get jabatan successful",
-                data: result
-            });
-        } catch (error) {
-            next(error);
-        }
-    },
-
-    async updateJabatan(req, res, next) {
-        try {
-            const data =req.body;
-            const result = await divisiJabatanService.updateJabatan(req.params.id, data);
-            
-            res.status(200).json({
-                status: true,
-                message: "Jabatan updated successfully",
-                data: result
-            });
-        } catch (error) {
-            next(error);
-        }
-    },
-
-    async deleteJabatan(req, res, next) {
-        try {
-            const result = await divisiJabatanService.deleteJabatan(req.params.id);
-            
-            res.status(200).json(result);
-        } catch (error) {
-            next(error);
-        }
-    }
+   
 };
 
 module.exports = detailUserController;

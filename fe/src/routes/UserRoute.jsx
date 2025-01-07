@@ -1,12 +1,30 @@
+import { UserRoute } from "@/components/ui/auth/ProtectRoute";
+import Beranda from "@/pages/user/beranda";
+import RiwayatUser from "@/pages/user/RiwayatPengguna";
+import Peminjaman from "@/pages/user/Peminjaman";
+import Jadwal from "@/pages/user/Jadwal";
 
-export const userRoutes = [
+export const UserRoutes = [
   {
-    path: '/',
-    children: [
-      {
-        path: 'home',
-        element: <Home />
-      },
-    ]
-  }
+    path: "/",
+    element: <Beranda />,
+  },
+  {
+    path: "/jadwal",
+    element: <Jadwal />,
+  },
+  {
+    path: "/u/riwayat",
+    element: (
+      <UserRoute>
+        <RiwayatUser />
+      </UserRoute>
+    ),
+  },
+  {
+    path: "/peminjaman",
+    element: (
+      <Peminjaman />
+    ),
+  },
 ];

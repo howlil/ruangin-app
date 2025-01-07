@@ -21,7 +21,7 @@ const ruangRapatService = {
                 nama_ruangan: data.nama_ruangan,
                 deskripsi: data.deskripsi,
                 lokasi_ruangan: data.lokasi_ruangan,
-                kapasitas: parseInt(data.kapasitas),
+                kapasitas: data.kapasitas,
                 foto_ruangan: file ? `/images/${file.filename}` : null
             }
         });

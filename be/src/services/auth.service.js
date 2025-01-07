@@ -11,8 +11,7 @@ const authService = {
             include: {
                 DetailPengguna: {
                     include: {
-                        Jabatan: true,
-                        Divisi: true
+                        tim_kerja: true
                     }
                 }
             }
@@ -50,26 +49,45 @@ const authService = {
         const existingUser = await prisma.pengguna.findFirst({
             where: { email: userData.email }
         });
-
-
+    
         if (existingUser) {
             throw new ResponseError(400, "Email already registered");
         }
-
+    
+        // Cek role admin/superadmin
         if (userData.role === 'ADMIN' || userData.role === 'SUPERADMIN') {
             const existingRole = await prisma.pengguna.findFirst({
                 where: { role: userData.role }
             });
-
+    
             if (existingRole) {
                 throw new ResponseError(400, `User with role ${userData.role} already exists`);
             }
         }
-
-
+    
+        // Cek jika role PEMINJAM dan memastikan tim kerja belum memiliki akun
+        if (userData.role === 'PEMINJAM' && userData.tim_kerja_id) {
+            const existingTeamAccount = await prisma.detailPengguna.findFirst({
+                where: { 
+                    tim_kerja_id: userData.tim_kerja_id 
+                },
+                include: {
+                    Pengguna: {
+                        select: {
+                            email: true
+                        }
+                    }
+                }
+            });
+    
+            if (existingTeamAccount?.Pengguna) {
+                throw new ResponseError(400, `Tim kerja ini sudah memiliki akun terdaftar dengan email: ${existingTeamAccount.Pengguna.email}`);
+            }
+        }
+    
         const defaultPassword = "@Test123!";
         const hashedPassword = await encryptPassword(defaultPassword);
-
+    
         const result = await prisma.$transaction(async (prisma) => {
             const user = await prisma.pengguna.create({
                 data: {
@@ -79,22 +97,20 @@ const authService = {
                     role: userData.role,
                 }
             });
-
+    
             if (userData.role === 'PEMINJAM') {
                 await prisma.detailPengguna.create({
                     data: {
                         pengguna_id: user.id,
                         kontak: userData.kontak,
-                        jabatan_id: userData.jabatan_id,
-                        divisi_id: userData.divisi_id,
+                        tim_kerja_id: userData.tim_kerja_id,
                     }
                 });
             }
-
-
+    
             return user;
         });
-
+    
         return {
             id: result.id,
             nama_lengkap: result.nama_lengkap,
@@ -138,13 +154,12 @@ const authService = {
 
             if (updatedUser.role === 'PEMINJAM') {
                 if (user.DetailPengguna) {
-                    if (userData.kontak || userData.jabatan_id || userData.divisi_id) {
+                    if (userData.kontak || userData.tim_kerja_id) {
                         await prisma.detailPengguna.update({
                             where: { pengguna_id: userId },
                             data: {
                                 kontak: userData.kontak || user.DetailPengguna.kontak,
-                                jabatan_id: userData.jabatan_id || user.DetailPengguna.jabatan_id,
-                                divisi_id: userData.divisi_id || user.DetailPengguna.divisi_id,
+                                tim_kerja_id: userData.tim_kerja_id || user.DetailPengguna.tim_kerja_id,
                             }
                         });
                     }
@@ -153,8 +168,7 @@ const authService = {
                         data: {
                             pengguna_id: userId,
                             kontak: userData.kontak,
-                            jabatan_id: userData.jabatan_id,
-                            divisi_id: userData.divisi_id,
+                            tim_kerja_id: userData.tim_kerja_id,
                         }
                     });
                 }

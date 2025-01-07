@@ -312,3 +312,1110 @@
   userId: undefined,
   level: 'error'
 }
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:26:38',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', password: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:26:51',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:26:58',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:29:41',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:29:56',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:30:48',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:31:02',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:31:38',
+  requestBody: { email: 'asas', password: 'asas' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:33:36',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', password: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:34:17',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', password: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:34:25',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', password: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:34:51',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:35:42',
+  requestBody: {
+    email: 'superadmin.pusdatin@adminkkp.id',
+    kata_sandi: '  @Test123!'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:36:29',
+  requestBody: { email: '  @Test123', kata_sandi: '  @Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:36:38',
+  requestBody: {
+    email: 'superadmin.pusdatin@adminkkp.id',
+    kata_sandi: '  @Test123'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:36:52',
+  requestBody: {
+    email: 'superadmin.pusdatin@adminkkp.id',
+    kata_sandi: '  @Test123!'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:37:20',
+  requestBody: {
+    email: 'superadmin.pusdatin@adminkkp.id',
+    kata_sandi: '  @Test123!'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:46:48',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '06-01-2025 15:46:50',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:13:18',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:13:25',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:13:47',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:13:54',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:14:48',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:34:37',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 07:34:48',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:27:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 09:58:35',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 11:13:02',
+  requestBody: {
+    email: 'Devon30@hotmail.com',
+    nama_lengkap: 'id',
+    role: 'in aliqua tempor dolore',
+    kontak: 'aliquip dolore',
+    jabatan_id: 'dolore consequat Ut',
+    divisi_id: 'consectetur'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:13:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at done (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:45:7)\n' +
+    '    at indicateDone (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:49:68)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:155:11\n' +
+    '    at WriteStream.<anonymous> (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\storage\\disk.js:43:9)\n' +
+    '    at WriteStream.emit (node:events:531:35)\n' +
+    '    at finish (node:internal/streams/writable:946:10)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '07-01-2025 11:19:21',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 1',
+    deskripsi: 'ini adalah ruangan biasa untuk kerja',
+    lokasi_ruangan: 'sayap kiri',
+    kapasitas: '10-12'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "Ruang Kaca 2",\n' +
+    '         deskripsi: "ini adalah ruangan biasa untuk kerja",\n' +
+    '         lokasi_ruangan: "sayap kiri",\n' +
+    '         kapasitas: \x1B[31m10\x1B[39m,\n' +
+    '                    \x1B[31m~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736223605791.png"\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "Ruang Kaca 2",\n' +
+    '         deskripsi: "ini adalah ruangan biasa untuk kerja",\n' +
+    '         lokasi_ruangan: "sayap kiri",\n' +
+    '         kapasitas: \x1B[31m10\x1B[39m,\n' +
+    '                    \x1B[31m~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736223605791.png"\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:24)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '07-01-2025 11:20:07',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    deskripsi: 'ini adalah ruangan biasa untuk kerja',
+    lokasi_ruangan: 'sayap kiri',
+    kapasitas: '10-12'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "Ruang Kaca 2",\n' +
+    '         deskripsi: "ini adalah ruangan biasa untuk kerja",\n' +
+    '         lokasi_ruangan: "sayap kiri",\n' +
+    '         kapasitas: \x1B[31m10\x1B[39m,\n' +
+    '                    \x1B[31m~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736223652944.png"\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m16\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"Room name already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m17\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m18\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m19\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '         nama_ruangan: "Ruang Kaca 2",\n' +
+    '         deskripsi: "ini adalah ruangan biasa untuk kerja",\n' +
+    '         lokasi_ruangan: "sayap kiri",\n' +
+    '         kapasitas: \x1B[31m10\x1B[39m,\n' +
+    '                    \x1B[31m~~\x1B[39m\n' +
+    '         foto_ruangan: "/images/1736223652944.png"\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:19:24)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '07-01-2025 11:20:54',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    deskripsi: 'ini adalah ruangan biasa untuk kerja',
+    lokasi_ruangan: 'sayap kiri',
+    kapasitas: '10-12'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.timKerja.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:14:46\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m11\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"TimKerja already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m12\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m13\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m14\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mtimKerja\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '     \x1B[32m+\x1B[39m   \x1B[32mnama_tim_kerja\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[32mnama_tim_kerja\x1B[39m` is missing.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.timKerja.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:14:46\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m11\x1B[39m     \x1B[36mthrow\x1B[39m \x1B[36mnew\x1B[39m ResponseError\x1B[34m(\x1B[39m\x1B[36m400\x1B[39m\x1B[34m,\x1B[39m \x1B[1m\x1B[32m"TimKerja already exists"\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m12\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m13\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m14\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mtimKerja\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '       data: {\n' +
+    '     \x1B[32m+\x1B[39m   \x1B[32mnama_tim_kerja\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m\n' +
+    '       }\n' +
+    '     }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[32mnama_tim_kerja\x1B[39m` is missing.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:14:24)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '07-01-2025 11:28:33',
+  requestBody: { nama_divisi: 'Pengelolaan Pelayanan Terpadu Satu Atap' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of null (reading 'length')",
+  stack: "TypeError: Cannot read properties of null (reading 'length')\n" +
+    '    at Object.deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:111:38)\n' +
+    '    at async deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:65:28)',
+  path: '/api/v1/tim-kerja/075a6346-47a7-46de-9e5a-320b87db19bd',
+  method: 'DELETE',
+  timestamp: '07-01-2025 11:29:20',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'TimKerja already exists',
+  stack: 'ResponseError: TimKerja already exists\n' +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:11:19)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '07-01-2025 11:37:14',
+  requestBody: { nama_tim_kerja: 'Pengelolaan Data dan Statistik', code: 'DATIS' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Data Sudah Ada',
+  stack: 'ResponseError: Data Sudah Ada\n' +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:11:19)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '07-01-2025 11:37:36',
+  requestBody: { nama_tim_kerja: 'Pengelolaan Data dan Statistik', code: 'DATIS' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 11:43:51',
+  requestBody: {
+    email: 'roberto@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '08',
+    divisi_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 11:44:23',
+  requestBody: {
+    email: 'roberto@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '=6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m80\x1B[39m \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m81\x1B[39m \x1B[22m\n' +
+    "  \x1B[2m\x1B[90m82\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m83\x1B[39m     \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '           data: {\n' +
+    '             pengguna_id: "1bcedc57-f4a1-48bc-9950-4903206cf05d",\n' +
+    '             kontak: "+6285264687390",\n' +
+    '             tim_kerja_id: "7abc27ce-db64-4606-bdda-5269ca3a68af",\n' +
+    '         \x1B[32m+\x1B[39m   \x1B[32mjabatan_id\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m\n' +
+    '           }\n' +
+    '         }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[32mjabatan_id\x1B[39m` is missing.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m80\x1B[39m \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m81\x1B[39m \x1B[22m\n' +
+    "  \x1B[2m\x1B[90m82\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m83\x1B[39m     \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '           data: {\n' +
+    '             pengguna_id: "1bcedc57-f4a1-48bc-9950-4903206cf05d",\n' +
+    '             kontak: "+6285264687390",\n' +
+    '             tim_kerja_id: "7abc27ce-db64-4606-bdda-5269ca3a68af",\n' +
+    '         \x1B[32m+\x1B[39m   \x1B[32mjabatan_id\x1B[39m\x1B[32m: \x1B[39m\x1B[32mString\x1B[39m\n' +
+    '           }\n' +
+    '         }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[32mjabatan_id\x1B[39m` is missing.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:17\n' +
+    '    at async Proxy._transactionWithCallback (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:7983)\n' +
+    '    at async Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:72:24)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 11:44:43',
+  requestBody: {
+    email: 'roberto@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Email already registered',
+  stack: 'ResponseError: Email already registered\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:55:19)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 13:52:58',
+  requestBody: {
+    email: 'roberto@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientKnownRequestError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m80\x1B[39m \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m81\x1B[39m \x1B[22m\n' +
+    "  \x1B[2m\x1B[90m82\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m83\x1B[39m     \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m\n' +
+    'Unique constraint failed on the constraint: `DetailPengguna_tim_kerja_id_key`',
+  stack: 'PrismaClientKnownRequestError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.create()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:45\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m80\x1B[39m \x1B[34m}\x1B[39m\x1B[34m)\x1B[39m\x1B[34m;\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m81\x1B[39m \x1B[22m\n' +
+    "  \x1B[2m\x1B[90m82\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m83\x1B[39m     \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mcreate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m\n' +
+    'Unique constraint failed on the constraint: `DetailPengguna_tim_kerja_id_key`\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:7315)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:83:17\n' +
+    '    at async Proxy._transactionWithCallback (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:7983)\n' +
+    '    at async Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:72:24)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 13:53:04',
+  requestBody: {
+    email: 'robertso@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:70:69\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m67\x1B[39m     \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m68\x1B[39m \x1B[90m// Cek jika role PEMINJAM dan memastikan tim kerja belum memiliki akun\x1B[39m\x1B[22m\n' +
+    "  \x1B[2m\x1B[90m69\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m && userData\x1B[34m.\x1B[39mtim_kerja_id\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m70\x1B[39m     \x1B[36mconst\x1B[39m existingTeamAccount = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '           where: {\n' +
+    '             tim_kerja_id: "7abc27ce-db64-4606-bdda-5269ca3a68af"\n' +
+    '           },\n' +
+    '           include: {\n' +
+    '             \x1B[31mpengguna\x1B[39m: true,\n' +
+    '             \x1B[31m~~~~~~~~\x1B[39m\n' +
+    '         \x1B[32m?\x1B[39m   \x1B[32mPengguna\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m,\n' +
+    '         \x1B[32m?\x1B[39m   \x1B[32mtim_kerja\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m\n' +
+    '           }\n' +
+    '         }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown field \x1B[31m`pengguna`\x1B[39m for \x1B[1minclude\x1B[22m statement on model \x1B[1m`DetailPengguna`\x1B[22m. Available options are listed in \x1B[32mgreen\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.detailPengguna.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:70:69\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m67\x1B[39m     \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m68\x1B[39m \x1B[90m// Cek jika role PEMINJAM dan memastikan tim kerja belum memiliki akun\x1B[39m\x1B[22m\n' +
+    "  \x1B[2m\x1B[90m69\x1B[39m \x1B[36mif\x1B[39m \x1B[34m(\x1B[39muserData\x1B[34m.\x1B[39mrole === \x1B[1m\x1B[32m'PEMINJAM'\x1B[39m\x1B[22m\x1B[2m && userData\x1B[34m.\x1B[39mtim_kerja_id\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n" +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m70\x1B[39m     \x1B[36mconst\x1B[39m existingTeamAccount = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mdetailPengguna\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '           where: {\n' +
+    '             tim_kerja_id: "7abc27ce-db64-4606-bdda-5269ca3a68af"\n' +
+    '           },\n' +
+    '           include: {\n' +
+    '             \x1B[31mpengguna\x1B[39m: true,\n' +
+    '             \x1B[31m~~~~~~~~\x1B[39m\n' +
+    '         \x1B[32m?\x1B[39m   \x1B[32mPengguna\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m,\n' +
+    '         \x1B[32m?\x1B[39m   \x1B[32mtim_kerja\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m\n' +
+    '           }\n' +
+    '         }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown field \x1B[31m`pengguna`\x1B[39m for \x1B[1minclude\x1B[22m statement on model \x1B[1m`DetailPengguna`\x1B[22m. Available options are listed in \x1B[32mgreen\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:70:41)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 13:56:55',
+  requestBody: {
+    email: 'robertso@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'email')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'email')\n" +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:80:136)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 13:57:32',
+  requestBody: {
+    email: 'robertso@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
