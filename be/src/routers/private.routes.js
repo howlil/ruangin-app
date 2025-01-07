@@ -15,9 +15,10 @@ apiRoute.patch('/api/v1/users/:userId', authorize('SUPERADMIN'), authController.
 apiRoute.delete('/api/v1/users/:userId', authorize('SUPERADMIN'), authController.deleteUser);
 apiRoute.post('/api/v1/logout', authController.logout);
 apiRoute.get('/api/v1/me', authController.getCurrentUser);
+apiRoute.get('/api/v1/pengguna', authController.getAllUser);
 
 // Auth & User Management Routes - v2
-apiRoute.patch('/api/v2/users', authorize('SUPERADMIN'), authController.updateUser);
+apiRoute.patch('/api/v2/users', authorize('PEMINJAM'), authController.updateUser);
 
 
 // TimKerja Routes
@@ -35,7 +36,7 @@ apiRoute.patch('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), uploadImage, 
 apiRoute.delete('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), ruangRapatController.deleteRuangRapat);
 
 // Booking Routes
-apiRoute.post('/api/v1/peminjaman', authorize('PEMINJAM',"ADMIN"), peminjamanController.createPeminjaman);
+apiRoute.post('/api/v1/peminjaman', authorize(['PEMINJAM',"ADMIN"]), peminjamanController.createPeminjaman);
 apiRoute.patch('/api/v1/peminjaman/:peminjamanId/status', authorize('ADMIN'), peminjamanController.updateStatus);
 apiRoute.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
 apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);

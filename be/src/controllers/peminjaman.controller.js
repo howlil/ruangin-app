@@ -7,7 +7,7 @@ const peminjamanController = {
         try {
             const data = validate(peminjamanValidation.createPeminjaman, req.body);
             const result = await peminjamanService.createPeminjaman(req.user.id, data);
-            
+
             res.status(201).json({
                 status: true,
                 message: "Booking created successfully",
@@ -20,30 +20,32 @@ const peminjamanController = {
 
     async updateStatus(req, res, next) {
         try {
-            const { status } = validate(peminjamanValidation.updateStatus, req.body);
+            const validatedData = validate(peminjamanValidation.updateStatus, req.body);
+
             const result = await peminjamanService.updateStatus(
                 req.user.id,
                 req.params.peminjamanId,
-                status
+                validatedData
             );
-            
+
+            const statusMessage = result.status.toLowerCase();
+
             res.status(200).json({
                 status: true,
-                message: `Booking ${status.toLowerCase()} successfully`,
+                message: `Booking ${statusMessage} successfully`,
                 data: result
             });
         } catch (error) {
             next(error);
         }
     },
-
     async getAllPeminjaman(req, res, next) {
         try {
             const result = await peminjamanService.getAllPeminjaman(
                 req.user.id,
                 req.user.role
             );
-            
+
             res.status(200).json({
                 status: true,
                 message: "Get all bookings successful",
@@ -61,7 +63,7 @@ const peminjamanController = {
                 req.params.peminjamanId,
                 req.user.role
             );
-            
+
             res.status(200).json({
                 status: true,
                 message: "Get booking successful",

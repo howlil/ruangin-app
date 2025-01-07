@@ -108,7 +108,28 @@ const authController = {
         } catch (error) {
             next(error);
         }
+    },
+    async getAllUser(req, res, next) {
+        try {
+            const result = await authService.getAllUser();
+            
+            if (result.status === 404) {
+                return res.status(404).json({
+                    status: false,
+                    message: result.message
+                });
+            }
+    
+            res.status(200).json({
+                status: true,
+                message: "Users data retrieved successfully",
+                data: result.data
+            });
+        } catch (error) {
+            next(error);
+        }
     }
+
 };
 
 module.exports = authController;

@@ -49,27 +49,27 @@ const authService = {
         const existingUser = await prisma.pengguna.findFirst({
             where: { email: userData.email }
         });
-    
+
         if (existingUser) {
             throw new ResponseError(400, "Email already registered");
         }
-    
+
         // Cek role admin/superadmin
         if (userData.role === 'ADMIN' || userData.role === 'SUPERADMIN') {
             const existingRole = await prisma.pengguna.findFirst({
                 where: { role: userData.role }
             });
-    
+
             if (existingRole) {
                 throw new ResponseError(400, `User with role ${userData.role} already exists`);
             }
         }
-    
+
         // Cek jika role PEMINJAM dan memastikan tim kerja belum memiliki akun
-        if (userData.role === 'PEMINJAM' && userData.tim_kerja_id) {
+        if ((userData.role === 'PEMINJAM'|| userData.role === 'ADMIN') && userData.tim_kerja_id) {
             const existingTeamAccount = await prisma.detailPengguna.findFirst({
-                where: { 
-                    tim_kerja_id: userData.tim_kerja_id 
+                where: {
+                    tim_kerja_id: userData.tim_kerja_id
                 },
                 include: {
                     Pengguna: {
@@ -79,15 +79,15 @@ const authService = {
                     }
                 }
             });
-    
+
             if (existingTeamAccount?.Pengguna) {
                 throw new ResponseError(400, `Tim kerja ini sudah memiliki akun terdaftar dengan email: ${existingTeamAccount.Pengguna.email}`);
             }
         }
-    
+
         const defaultPassword = "@Test123!";
         const hashedPassword = await encryptPassword(defaultPassword);
-    
+
         const result = await prisma.$transaction(async (prisma) => {
             const user = await prisma.pengguna.create({
                 data: {
@@ -97,8 +97,8 @@ const authService = {
                     role: userData.role,
                 }
             });
-    
-            if (userData.role === 'PEMINJAM') {
+
+            if (userData.role === 'PEMINJAM' || userData.role === 'ADMIN') {
                 await prisma.detailPengguna.create({
                     data: {
                         pengguna_id: user.id,
@@ -107,10 +107,10 @@ const authService = {
                     }
                 });
             }
-    
+
             return user;
         });
-    
+
         return {
             id: result.id,
             nama_lengkap: result.nama_lengkap,
@@ -129,16 +129,38 @@ const authService = {
             throw new ResponseError(404, "User not found");
         }
 
+        // Cek role admin/superadmin yang sudah ada
         if (userData.role && (userData.role === 'ADMIN' || userData.role === 'SUPERADMIN')) {
             const existingRole = await prisma.pengguna.findFirst({
                 where: {
                     role: userData.role,
-                    NOT: { id: userId } // Exclude current user
+                    NOT: { id: userId }
                 }
             });
 
             if (existingRole) {
                 throw new ResponseError(400, `Another user with role ${userData.role} already exists`);
+            }
+        }
+
+        // Cek tim kerja jika ada perubahan tim_kerja_id
+        if (userData.tim_kerja_id && userData.tim_kerja_id !== user.DetailPengguna?.tim_kerja_id) {
+            const existingTeamAccount = await prisma.detailPengguna.findFirst({
+                where: {
+                    tim_kerja_id: userData.tim_kerja_id,
+                    NOT: { pengguna_id: userId }
+                },
+                include: {
+                    Pengguna: {
+                        select: {
+                            email: true
+                        }
+                    }
+                }
+            });
+
+            if (existingTeamAccount?.Pengguna) {
+                throw new ResponseError(400, `Tim kerja ini sudah memiliki akun terdaftar dengan email: ${existingTeamAccount.Pengguna.email}`);
             }
         }
 
@@ -152,7 +174,7 @@ const authService = {
                 }
             });
 
-            if (updatedUser.role === 'PEMINJAM') {
+            if (updatedUser.role === 'PEMINJAM' || userData.role === 'ADMIN') {
                 if (user.DetailPengguna) {
                     if (userData.kontak || userData.tim_kerja_id) {
                         await prisma.detailPengguna.update({
@@ -164,6 +186,25 @@ const authService = {
                         });
                     }
                 } else {
+                    if (userData.tim_kerja_id) {
+                        const existingTeamAccount = await prisma.detailPengguna.findFirst({
+                            where: {
+                                tim_kerja_id: userData.tim_kerja_id
+                            },
+                            include: {
+                                Pengguna: {
+                                    select: {
+                                        email: true
+                                    }
+                                }
+                            }
+                        });
+
+                        if (existingTeamAccount?.Pengguna) {
+                            throw new ResponseError(400, `Tim kerja ini sudah memiliki akun terdaftar dengan email: ${existingTeamAccount.Pengguna.email}`);
+                        }
+                    }
+
                     await prisma.detailPengguna.create({
                         data: {
                             pengguna_id: userId,
@@ -195,39 +236,42 @@ const authService = {
             include: {
                 DetailPengguna: true,
                 Peminjaman: true,
-                Token: true
+                token: true 
             }
         });
-
+    
         if (!user) {
             throw new ResponseError(404, "User not found");
         }
-
-        if (user.role === 'SUPERADMIN' || user.role === 'ADMIN') {
-            throw new ResponseError(400, "Cannot delete SUPERADMIN or ADMIN account");
+    
+        if (user.role === 'SUPERADMIN') {
+            throw new ResponseError(400, "Cannot delete SUPERADMIN account");
         }
-
+    
         const activePeminjaman = user.Peminjaman.some(
             peminjaman => ['DIPROSES', 'DISETUJUI'].includes(peminjaman.status)
         );
-
+    
         if (activePeminjaman) {
             throw new ResponseError(400, "Cannot delete user with active loans");
         }
-
+    
         await prisma.$transaction(async (prisma) => {
+            // Delete DetailPengguna jika ada
             if (user.DetailPengguna) {
                 await prisma.detailPengguna.delete({
                     where: { pengguna_id: userId }
                 });
             }
-
-            if (user.Token.length > 0) {
+    
+            // Delete token jika ada (menggunakan huruf kecil)
+            if (user.token.length > 0) {
                 await prisma.token.deleteMany({
                     where: { pengguna_id: userId }
                 });
             }
-
+    
+            // Delete peminjaman yang sudah selesai/ditolak
             if (user.Peminjaman.length > 0) {
                 await prisma.peminjaman.deleteMany({
                     where: {
@@ -238,12 +282,13 @@ const authService = {
                     }
                 });
             }
-
+    
+            // Delete user
             await prisma.pengguna.delete({
                 where: { id: userId }
             });
         });
-
+    
         return {
             status: true,
             message: "User successfully deleted"
@@ -254,6 +299,51 @@ const authService = {
         await prisma.token.deleteMany({
             where: { token }
         });
+    },
+
+    async getAllUser() {
+        try {
+            const users = await prisma.pengguna.findMany({
+                where: {
+                    role: {
+                        in: ['ADMIN', 'PEMINJAM']
+                    }
+                },
+                include: {
+                    DetailPengguna: {
+                        include: {
+                            tim_kerja: true 
+                        }
+                    }
+                }
+                
+            });
+    
+            if (!users || users.length === 0) {
+                throw new ResponseError(404, 'No users found');
+            }
+    
+            const formattedUsers = users.map(user => ({
+                id: user.id,
+                nama_lengkap: user.nama_lengkap,
+                email: user.email,
+                role: user.role,
+                detail: user.DetailPengguna ? {
+                    kontak: user.DetailPengguna.kontak,
+                    tim_kerja: user.DetailPengguna.tim_kerja.nama_tim_kerja
+                } : null
+            }));
+    
+            return {
+                status: 200,
+                data: formattedUsers
+            };
+        } catch (error) {
+            if (error instanceof ResponseError) {
+                throw error;
+            }
+            throw new ResponseError(500, 'An error occurred while fetching users');
+        }
     }
 };
 

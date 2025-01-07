@@ -28,14 +28,23 @@ module.exports = {
           'any.required': 'Kontak is required'
         }),
         
-        tim_kerja_id: Joi.string().uuid({ version: 'uuidv4' }).required().messages({
+        tim_kerja_id: Joi.string().uuid({ version: 'uuidv4' }).optional().messages({
             'string.guid': ' ID must be a valid UUID v4',
-            'any.required': ' ID is required'
         }),
     }),
+
     edit_akun: Joi.object({
         nama_lengkap: Joi.string().optional(),
         email: Joi.string().email().optional(),
+        kata_sandi: Joi.string()
+        .min(8)
+        .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])/)
+        .optional()
+        .messages({
+            'string.min': 'Password must be at least 8 characters long',
+            'string.pattern.base': 'Password must contain at least one uppercase letter, one lowercase letter, and one special character',
+            'any.required': 'Password is required'
+        }),
         role: Joi.string().valid('SUPERADMIN', 'ADMIN', 'PEMINJAM').optional(),
         kontak: Joi.string().optional(),
         tim_kerja_id: Joi.string().optional(),

@@ -1419,3 +1419,719 @@
   userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
   level: 'error'
 }
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: roberto@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: roberto@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 13:59:16',
+  requestBody: {
+    email: 'robertso@pusdatin.id',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'An error occurred while fetching users',
+  stack: 'ResponseError: An error occurred while fetching users\n' +
+    '    at Object.getAllUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:334:19)\n' +
+    '    at async getAllUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:114:28)',
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  timestamp: '07-01-2025 14:19:38',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at updateUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:50:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/users/ab770729-2a7f-4407-a128-5e772d0f2095',
+  method: 'PATCH',
+  timestamp: '07-01-2025 14:24:12',
+  requestBody: {
+    email: 'robertso@pusdatin.id',
+    nama_lengkap: 'robertod',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.pengguna.findUnique()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:235:44\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m232\x1B[39m \x1B[34m}\x1B[39m\x1B[34m,\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m233\x1B[39m \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m234\x1B[39m \x1B[36masync\x1B[39m \x1B[36mdeleteUser\x1B[39m\x1B[34m(\x1B[39muserId\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m235\x1B[39m     \x1B[36mconst\x1B[39m user = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mpengguna\x1B[34m.\x1B[39m\x1B[36mfindUnique\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '            where: {\n' +
+    '              id: "ab770729-2a7f-4407-a128-5e772d0f2095"\n' +
+    '            },\n' +
+    '            include: {\n' +
+    '              DetailPengguna: true,\n' +
+    '              Peminjaman: true,\n' +
+    '              \x1B[31mToken\x1B[39m: true,\n' +
+    '              \x1B[31m~~~~~\x1B[39m\n' +
+    '          \x1B[32m?\x1B[39m   \x1B[32mtoken\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m\n' +
+    '            }\n' +
+    '          }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown field \x1B[31m`Token`\x1B[39m for \x1B[1minclude\x1B[22m statement on model \x1B[1m`Pengguna`\x1B[22m. Available options are listed in \x1B[32mgreen\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.pengguna.findUnique()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:235:44\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m232\x1B[39m \x1B[34m}\x1B[39m\x1B[34m,\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m233\x1B[39m \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m234\x1B[39m \x1B[36masync\x1B[39m \x1B[36mdeleteUser\x1B[39m\x1B[34m(\x1B[39muserId\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m235\x1B[39m     \x1B[36mconst\x1B[39m user = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mpengguna\x1B[34m.\x1B[39m\x1B[36mfindUnique\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '            where: {\n' +
+    '              id: "ab770729-2a7f-4407-a128-5e772d0f2095"\n' +
+    '            },\n' +
+    '            include: {\n' +
+    '              DetailPengguna: true,\n' +
+    '              Peminjaman: true,\n' +
+    '              \x1B[31mToken\x1B[39m: true,\n' +
+    '              \x1B[31m~~~~~\x1B[39m\n' +
+    '          \x1B[32m?\x1B[39m   \x1B[32mtoken\x1B[39m\x1B[32m?\x1B[39m\x1B[32m: \x1B[39m\x1B[32mtrue\x1B[39m\n' +
+    '            }\n' +
+    '          }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Unknown field \x1B[31m`Token`\x1B[39m for \x1B[1minclude\x1B[22m statement on model \x1B[1m`Pengguna`\x1B[22m. Available options are listed in \x1B[32mgreen\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.deleteUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:235:22)\n' +
+    '    at async deleteUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:66:28)',
+  path: '/api/v1/users/ab770729-2a7f-4407-a128-5e772d0f2095',
+  method: 'DELETE',
+  timestamp: '07-01-2025 14:27:23',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'No users found',
+  stack: 'ResponseError: No users found\n' +
+    '    at Object.getAllUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:324:23)\n' +
+    '    at async getAllUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:114:28)',
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  timestamp: '07-01-2025 14:29:37',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Email already registered',
+  stack: 'ResponseError: Email already registered\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:54:19)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:37:03',
+  requestBody: {
+    email: 'antonio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'User with role ADMIN already exists',
+  stack: 'ResponseError: User with role ADMIN already exists\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:64:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:37:08',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:37:18',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'Peminjam',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:37:26',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot delete SUPERADMIN or ADMIN account',
+  stack: 'ResponseError: Cannot delete SUPERADMIN or ADMIN account\n' +
+    '    at Object.deleteUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:249:19)\n' +
+    '    at async deleteUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:66:28)',
+  path: '/api/v1/users/e41dd733-896f-4e98-9111-778417d3b6d9',
+  method: 'DELETE',
+  timestamp: '07-01-2025 14:38:53',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:39:29',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'SyntaxError',
+  message: 'Expected double-quoted property name in JSON at position 124',
+  stack: 'SyntaxError: Expected double-quoted property name in JSON at position 124\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\body-parser\\lib\\read.js:121:18\n' +
+    '    at invokeCallback (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:224:16)\n' +
+    '    at done (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:213:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:273:7)\n' +
+    '    at IncomingMessage.emit (node:events:519:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:39:38',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:26:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:39:43',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:40:08',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'SyntaxError',
+  message: 'Expected double-quoted property name in JSON at position 124',
+  stack: 'SyntaxError: Expected double-quoted property name in JSON at position 124\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\body-parser\\lib\\read.js:121:18\n' +
+    '    at invokeCallback (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:224:16)\n' +
+    '    at done (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:213:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\raw-body\\index.js:273:7)\n' +
+    '    at IncomingMessage.emit (node:events:519:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:40:16',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Email already registered',
+  stack: 'ResponseError: Email already registered\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:54:19)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:42:48',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '07-01-2025 14:43:31',
+  requestBody: {
+    email: 'antosnio@pusdatin.id',
+    nama_lengkap: 'Antosnio',
+    role: 'ADMIN',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:65:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 14:52:51',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-12-01',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: 'd2b7b4d6-cc91-47e9-8cbc-f8202bff1e7a',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot book for past dates',
+  stack: 'ResponseError: Cannot book for past dates\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:32:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 14:53:02',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2024-12-01',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: 'd2b7b4d6-cc91-47e9-8cbc-f8202bff1e7a',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 14:53:14',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2024-12-01',
+    jam_mulai: '06:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: 'd2b7b4d6-cc91-47e9-8cbc-f8202bff1e7a',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 14:53:23',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2026-12-01',
+    jam_mulai: '06:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: 'd2b7b4d6-cc91-47e9-8cbc-f8202bff1e7a',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:65:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 14:53:44',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2026-12-01',
+    jam_mulai: '07:00',
+    jam_selesai: '17:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: 'd2b7b4d6-cc91-47e9-8cbc-f8202bff1e7a',
+  level: 'error'
+}
+{
+  name: 'PrismaClientInitializationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.pengguna.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:9:44\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m6\x1B[39m \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m7\x1B[39m \x1B[36mconst\x1B[39m authService = \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m8\x1B[39m     \x1B[36masync\x1B[39m \x1B[36mlogin\x1B[39m\x1B[34m(\x1B[39memail,[object Object], password\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m9\x1B[39m         \x1B[36mconst\x1B[39m user = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mpengguna\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m\n' +
+    "Can't reach database server at `localhost:3306`\n" +
+    '\n' +
+    'Please make sure your database server is running at `localhost:3306`.',
+  stack: 'PrismaClientInitializationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.pengguna.findFirst()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:9:44\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m6\x1B[39m \x1B[22m\n' +
+    '  \x1B[2m\x1B[90m7\x1B[39m \x1B[36mconst\x1B[39m authService = \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m8\x1B[39m     \x1B[36masync\x1B[39m \x1B[36mlogin\x1B[39m\x1B[34m(\x1B[39memail,[object Object], password\x1B[34m)\x1B[39m \x1B[34m{\x1B[39m\x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m9\x1B[39m         \x1B[36mconst\x1B[39m user = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mpengguna\x1B[34m.\x1B[39m\x1B[36mfindFirst\x1B[39m\x1B[34m(\x1B[39m\x1B[22m\n' +
+    "Can't reach database server at `localhost:3306`\n" +
+    '\n' +
+    'Please make sure your database server is running at `localhost:3306`.\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:7615)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:9:22)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '07-01-2025 15:17:38',
+  requestBody: { email: 'antosnio@pusdatin.id', kata_sandi: '@Test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Only PEMINJAM and ADMIN can create booking',
+  stack: 'ResponseError: Only PEMINJAM and ADMIN can create booking\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:13:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 15:20:23',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-12-01',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Only PEMINJAM and ADMIN can create booking',
+  stack: 'ResponseError: Only PEMINJAM and ADMIN can create booking\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:13:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 15:21:01',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-12-01',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:72:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '07-01-2025 15:23:30',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-12-01',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:24:32)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:147:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman/396d47a8-c9c0-4f72-9b27-2d0119411510/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:35:11',
+  requestBody: { status: 'DITOLAK' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Can only update bookings with DIPROSES status',
+  stack: 'ResponseError: Can only update bookings with DIPROSES status\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:123:19)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/396d47a8-c9c0-4f72-9b27-2d0119411510/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:36:49',
+  requestBody: { status: 'DISETUJUI' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Can only update bookings with DIPROSES status',
+  stack: 'ResponseError: Can only update bookings with DIPROSES status\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:123:19)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:38:16',
+  requestBody: { nama_kegiatan: 'apa ya' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Can only update bookings with diproses dan disetujui ',
+  stack: 'ResponseError: Can only update bookings with diproses dan disetujui \n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:122:19)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:39:17',
+  requestBody: { nama_kegiatan: 'apa ya' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'toLowerCase')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n" +
+    '    at updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:33:44)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:40:26',
+  requestBody: { nama_kegiatan: 'apa ya' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
