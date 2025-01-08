@@ -2255,3 +2255,18 @@
   userId: '02107391-481d-4ff7-9d00-5351f81207b2',
   level: 'error'
 }
+{
+  name: 'ResponseError',
+  message: 'Failed to get ruangan statistics',
+  stack: 'ResponseError: Failed to get ruangan statistics\n' +
+    '    at Object.getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:384:19)\n' +
+    '    at async getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:117:28)',
+  path: '/api/v1/statistik',
+  method: 'GET',
+  timestamp: '08-01-2025 14:55:22',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}

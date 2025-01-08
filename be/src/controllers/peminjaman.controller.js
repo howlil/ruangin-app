@@ -41,13 +41,13 @@ const peminjamanController = {
     },
     async getAllPeminjaman(req, res, next) {
         try {
-            const { page, size, status } = req.query; 
+            const { page, size, status } = req.query;
             const { id: userId } = req.user;
             const result = await peminjamanService.getAllPeminjaman({
                 page,
                 size,
                 userId,
-                status 
+                status
             });
 
             res.status(200).json({
@@ -103,6 +103,25 @@ const peminjamanController = {
             res.status(200).json({
                 status: true,
                 message: "Get booking successful",
+                data: result
+            });
+        } catch (error) {
+            next(error);
+        }
+    },
+
+    async getRuanganStatistics(req, res, next) {
+        try {
+            const { tanggalMulai, tanggalAkhir } = req.query;
+
+            const result = await peminjamanService.getRuanganStatistics({
+                tanggalMulai,
+                tanggalAkhir
+            });
+
+            res.status(200).json({
+                status: true,
+                message: "Statistics data retrieved successfully",
                 data: result
             });
         } catch (error) {

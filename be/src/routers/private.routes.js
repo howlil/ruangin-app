@@ -42,6 +42,8 @@ apiRoute.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
 apiRoute.get('/api/v2/peminjaman', peminjamanController.getPeminjaman);
 apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);
 
+apiRoute.get('/api/v1/statistik', peminjamanController.getRuanganStatistics);
+
 
 
 module.exports = apiRoute;

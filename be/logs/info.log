@@ -6142,3 +6142,161 @@
   message: 'Authentication successful',
   timestamp: '08-01-2025 11:09:43'
 }
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 11:32:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 11:32:47'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 11:33:16'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 11:33:16'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 11:33:35'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 11:33:35'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 13:34:57'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '08-01-2025 13:34:57'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 13:35:08'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 13:35:08'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 14:55:22'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 14:55:22'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get ruangan statistics',
+  stack: 'ResponseError: Failed to get ruangan statistics\n' +
+    '    at Object.getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:384:19)\n' +
+    '    at async getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:117:28)',
+  path: '/api/v1/statistik',
+  method: 'GET',
+  timestamp: '08-01-2025 14:55:22',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 14:56:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 14:56:33'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 14:57:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 14:57:43'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '08-01-2025 14:58:12'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '08-01-2025 14:58:12'
+}

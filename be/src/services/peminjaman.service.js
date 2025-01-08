@@ -342,7 +342,52 @@ const peminjamanService = {
         }
 
         return peminjaman;
+    },
+
+    async getRuanganStatistics({ tanggalMulai, tanggalAkhir }) {
+        try {
+
+            let where = {
+                status: "SELESAI"  
+            };    
+            
+            if (tanggalMulai) {
+                if (tanggalAkhir) {
+                    where.tanggal = {
+                        gte: tanggalMulai,
+                        lte: tanggalAkhir
+                    };
+                } else {
+                    where.tanggal = tanggalMulai;
+                }
+            }
+    
+            const ruangStats = await prisma.ruangRapat.findMany({
+                select: {
+                    id: true,
+                    nama_ruangan: true,
+                    _count: {
+                        select: {
+                            peminjaman: {
+                                where: where 
+                            }
+                        }
+                    }
+                }
+            });
+    
+            const formattedData = ruangStats.map(ruang => ({
+                ruangan: ruang.nama_ruangan,
+                jumlah_peminjaman: ruang._count.peminjaman
+            }));
+    
+            return formattedData
+            
+        } catch (error) {
+            throw new ResponseError(500, 'Failed to get ruangan statistics');
+        }
     }
+    
 };
 
 module.exports = peminjamanService;
