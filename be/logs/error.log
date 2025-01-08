@@ -2135,3 +2135,123 @@
   userId: '02107391-481d-4ff7-9d00-5351f81207b2',
   level: 'error'
 }
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:161:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '07-01-2025 15:43:29',
+  requestBody: { tanggal: '2025-12-01', jam_mulai: '08:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '08-01-2025 09:53:42',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'userService is not defined',
+  stack: 'ReferenceError: userService is not defined\n' +
+    '    at getAllUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:115:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/pengguna?page=1&size=5',
+  method: 'GET',
+  timestamp: '08-01-2025 10:51:14',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '5' },
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'timKerjaService is not defined',
+  stack: 'ReferenceError: timKerjaService is not defined\n' +
+    '    at getAllTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:24:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  timestamp: '08-01-2025 11:04:50',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'page')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'page')\n" +
+    '    at Object.getAllPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:197:30)\n' +
+    '    at getAllPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:46:52)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  timestamp: '08-01-2025 11:07:04',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'page')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'page')\n" +
+    '    at Object.getAllPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:197:30)\n' +
+    '    at getAllPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:46:52)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  timestamp: '08-01-2025 11:07:53',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}

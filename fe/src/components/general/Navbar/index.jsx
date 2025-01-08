@@ -4,61 +4,61 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import UserMenu from './UserMenu';
 import MobileMenuButton from './MobileMenuButton';
+import { useUser } from '@/contexts/UserContext';
+import { useIsMobile } from '@/hooks/useResponsive';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useIsMobile();
+  const { user } = useUser();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      if (!isMobile) {
+        setIsScrolled(window.scrollY > 0);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isMobile]); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
   };
 
   const navItems = [
     { name: 'Beranda', path: '/' },
     { name: 'Jadwal', path: '/jadwal' },
     { name: 'Peminjaman', path: '/peminjaman' },
-    ...(isLoggedIn ? [{ name: 'Riwayat', path: '/riwayat' }] : []),
+    ...(user ? [{ name: 'Riwayat', path: '/u/riwayat' }] : []),
   ];
 
+  const navBackground = () => {
+    if (isMobile) {
+      return 'bg-white shadow-sm';
+    }
+    return isScrolled ? 'bg-white shadow-sm' : 'bg-transparent';
+  };
+
   return (
-    <nav className={`fixed w-full z-50 top-0 tc ${
-      isScrolled ? 'bg-white shadow-sm' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${navBackground()}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
         <div className="flex items-center justify-between h-16">
-          <Logo isScrolled={isScrolled} />
-          <DesktopNav navItems={navItems} isScrolled={isScrolled} />
+          <Logo isScrolled={!isMobile && isScrolled} />
+          <DesktopNav 
+            navItems={navItems} 
+            isScrolled={!isMobile && isScrolled} 
+          />
           <div className="flex items-center">
-            <UserMenu 
-              isLoggedIn={isLoggedIn} 
-              onLogin={toggleLogin} 
-              isScrolled={isScrolled} 
+            <UserMenu
+              isScrolled={!isMobile && isScrolled}
             />
-            <MobileMenuButton 
-              isOpen={isOpen} 
-              onClick={toggleMenu} 
-              isScrolled={isScrolled}
+            <MobileMenuButton
+              isOpen={isOpen}
+              onClick={toggleMenu}
+              isScrolled={!isMobile && isScrolled}
             />
           </div>
         </div>
@@ -66,9 +66,7 @@ const Navbar = () => {
       <MobileNav
         isOpen={isOpen}
         navItems={navItems}
-        isLoggedIn={isLoggedIn}
-        onLogin={toggleLogin}
-        isScrolled={isScrolled}
+        isScrolled={!isMobile && isScrolled}
       />
     </nav>
   );

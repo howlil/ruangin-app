@@ -1,13 +1,15 @@
-
 const Button = ({ 
   variant = 'primary',
   color = 'blue',
   children,
   onClick,
   className = '',
+  icon: Icon, 
   ...props 
 }) => {
-  const baseStyles = 'px-6 py-2 rounded-full font-medium tc ';
+  const baseStyles = 'px-6 py-2 rounded-full font-medium tc '; 
+  
+  const containerStyles = Icon ? 'inline-flex items-center gap-2' : '';
   
   const getVariantStyles = () => {
     const colorMap = {
@@ -31,12 +33,13 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`${baseStyles} ${getVariantStyles()} ${className}`}
+      className={`${baseStyles} ${containerStyles} ${getVariantStyles()} ${className}`}
       {...props}
     >
+      {Icon && <Icon className="w-4 h-4" />}
       {children}
     </button>
   );
 };
 
-export default Button
+export default Button;

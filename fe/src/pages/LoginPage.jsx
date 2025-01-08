@@ -9,16 +9,15 @@ import { Lock, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { HandleResponse } from '@/components/ui/HandleResponse';
 import { storeUserDataInCookie } from '@/utils/cookie';
-import { getUser } from '@/utils/auth';
-import { getUserDataFromCookie } from '@/utils/cookie';
+import { useUser } from '@/contexts/UserContext';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
-  const user = getUser()
-  console.log(user)
+  const {  updateUser } = useUser();
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,6 +32,7 @@ export default function LoginPage() {
       const { token, ...userData } = response.data.data;
       if (token) {
         storeUserDataInCookie(userData, token)
+        updateUser(userData)
         HandleResponse({
           response,
           successMessage: response.message

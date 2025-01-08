@@ -264,14 +264,12 @@ const authService = {
                 });
             }
     
-            // Delete token jika ada (menggunakan huruf kecil)
             if (user.token.length > 0) {
                 await prisma.token.deleteMany({
                     where: { pengguna_id: userId }
                 });
             }
     
-            // Delete peminjaman yang sudah selesai/ditolak
             if (user.Peminjaman.length > 0) {
                 await prisma.peminjaman.deleteMany({
                     where: {
@@ -300,10 +298,23 @@ const authService = {
             where: { token }
         });
     },
-
-    async getAllUser() {
+    async getAllUser({ page = 1, size = 10 }) {
         try {
+            const pageNum = Math.max(1, Number(page));
+            const sizeNum = Math.max(1, Number(size));
+            const skip = (pageNum - 1) * sizeNum;
+
+            const totalRows = await prisma.pengguna.count({
+                where: {
+                    role: {
+                        in: ['ADMIN', 'PEMINJAM']
+                    }
+                }
+            });
+
             const users = await prisma.pengguna.findMany({
+                skip: skip,
+                take: sizeNum,
                 where: {
                     role: {
                         in: ['ADMIN', 'PEMINJAM']
@@ -316,13 +327,8 @@ const authService = {
                         }
                     }
                 }
-                
             });
-    
-            if (!users || users.length === 0) {
-                throw new ResponseError(404, 'No users found');
-            }
-    
+
             const formattedUsers = users.map(user => ({
                 id: user.id,
                 nama_lengkap: user.nama_lengkap,
@@ -333,16 +339,21 @@ const authService = {
                     tim_kerja: user.DetailPengguna.tim_kerja.nama_tim_kerja
                 } : null
             }));
-    
+
             return {
-                status: 200,
-                data: formattedUsers
+                data: formattedUsers,
+                pagination: {
+                    page: pageNum,
+                    size: sizeNum,
+                    total_rows: totalRows,
+                    total_pages: Math.ceil(totalRows / sizeNum)
+                }
             };
+
         } catch (error) {
             if (error instanceof ResponseError) {
                 throw error;
             }
-            throw new ResponseError(500, 'An error occurred while fetching users');
         }
     }
 };

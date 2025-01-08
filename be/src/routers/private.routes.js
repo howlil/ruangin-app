@@ -39,6 +39,7 @@ apiRoute.delete('/api/v1/ruang-rapat/:id', authorize('SUPERADMIN'), ruangRapatCo
 apiRoute.post('/api/v1/peminjaman', authorize(['PEMINJAM',"ADMIN"]), peminjamanController.createPeminjaman);
 apiRoute.patch('/api/v1/peminjaman/:peminjamanId/status', authorize('ADMIN'), peminjamanController.updateStatus);
 apiRoute.get('/api/v1/peminjaman', peminjamanController.getAllPeminjaman);
+apiRoute.get('/api/v2/peminjaman', peminjamanController.getPeminjaman);
 apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);
 
 

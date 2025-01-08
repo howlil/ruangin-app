@@ -19,12 +19,18 @@ const detailUserController = {
 
     async getAllTimKerja(req, res, next) {
         try {
-            const result = await detailUserService.getAllTimKerja();
-            
+            const { page, size } = req.query;
+
+            const result = await detailUserService.getAllTimKerja({
+                page,
+                size
+            });
+                        
             res.status(200).json({
                 status: true,
                 message: "Get all divisi successful",
-                data: result
+                data: result.data,
+                pagination: result.pagination
             });
         } catch (error) {
             next(error);

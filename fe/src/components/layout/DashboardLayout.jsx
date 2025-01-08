@@ -3,9 +3,12 @@ import { Header } from '../general/dashboard/Header';
 import { Sidebar } from '../general/dashboard/Sidebar';
 import { Menu } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { useUser } from '@/contexts/UserContext';
 
 export default function DashboardLayout({ children }) {
   const location = useLocation();
+  const { user, loading } = useUser();
+
   const [activeItem, setActiveItem] = useState(() => {
     const path = location.pathname;
     if (path === '/') return 'Dashboard';
@@ -18,6 +21,13 @@ export default function DashboardLayout({ children }) {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+    </div>;
+  }
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -38,7 +48,7 @@ export default function DashboardLayout({ children }) {
         />
         
         <div className={`flex-1 transition-all duration-300 ${isSidebarOpen ? 'lg:ml-64' : 'ml-0'}`}>
-          <Header />
+          <Header  user={user} />
           <main className="p-4 md:p-8">
             <h1 className="text-2xl font-bold mb-6">{activeItem}</h1>
             {children}

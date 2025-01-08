@@ -111,8 +111,11 @@ const authController = {
     },
     async getAllUser(req, res, next) {
         try {
-            const result = await authService.getAllUser();
-            
+            const { page, size } = req.query;
+            const result = await authService.getAllUser({
+                page,
+                size
+            });            
             if (result.status === 404) {
                 return res.status(404).json({
                     status: false,
@@ -123,7 +126,8 @@ const authController = {
             res.status(200).json({
                 status: true,
                 message: "Users data retrieved successfully",
-                data: result.data
+                data: result.data,
+                pagination: result.pagination  
             });
         } catch (error) {
             next(error);

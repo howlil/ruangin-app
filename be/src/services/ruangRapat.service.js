@@ -29,8 +29,17 @@ const ruangRapatService = {
         return result;
     },
 
-    async getAllRuangRapat() {
-        const result = await prisma.ruangRapat.findMany({
+    async getAllRuangRapat({ page = 1, size = 10 }) {
+        const pageNum = Number(page);
+        const sizeNum = Number(size);
+        
+        const skip = (pageNum - 1) * sizeNum;
+    
+        const totalRows = await prisma.ruangRapat.count();
+        
+        const data = await prisma.ruangRapat.findMany({
+            skip: skip,
+            take: sizeNum,
             include: {
                 peminjaman: {
                     select: {
@@ -53,8 +62,18 @@ const ruangRapatService = {
                 createdAt: 'desc'
             }
         });
-
-        return result;
+    
+        const totalPages = Math.ceil(totalRows / sizeNum);
+    
+        return {
+            data,
+            pagination: {
+                page: pageNum,
+                size: sizeNum,
+                total_rows: totalRows,
+                total_pages: totalPages
+            }
+        };
     },
 
     async getRuangRapatById(id) {

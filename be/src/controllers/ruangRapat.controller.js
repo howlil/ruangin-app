@@ -25,12 +25,17 @@ const ruangRapatController = {
 
     async getAllRuangRapat(req, res, next) {
         try {
-            const result = await ruangRapatService.getAllRuangRapat();
-            
+            const { page, size } = req.query;
+
+            const result = await ruangRapatService.getAllRuangRapat({
+                page,
+                size
+            });            
             res.status(200).json({
                 status: true,
                 message: "Get all rooms successful",
-                data: result
+                data: result.data,
+                pagination: result.pagination
             });
         } catch (error) {
             next(error);

@@ -20,8 +20,16 @@ const detailUserService = {
         return result;
     },
 
-    async getAllTimKerja() {
-        const result = await prisma.timKerja.findMany({
+    async getAllTimKerja({ page = 1, size = 10 }) {
+        const pageNum = Number(page);
+        const sizeNum = Number(size);
+        const skip = (pageNum - 1) * sizeNum;
+    
+        const totalRows = await prisma.timKerja.count();
+    
+        const data = await prisma.timKerja.findMany({
+            skip: skip,
+            take: sizeNum,
             include: {
                 detail_pengguna: {
                     include: {
@@ -36,8 +44,18 @@ const detailUserService = {
                 }
             }
         });
-
-        return result;
+    
+        const totalPages = Math.ceil(totalRows / sizeNum);
+    
+        return {
+            data,
+            pagination: {
+                page: pageNum,
+                size: sizeNum,
+                total_rows: totalRows,
+                total_pages: totalPages
+            }
+        };
     },
 
     async getTimKerjaById(id) {

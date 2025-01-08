@@ -41,16 +41,52 @@ const peminjamanController = {
     },
     async getAllPeminjaman(req, res, next) {
         try {
-            const result = await peminjamanService.getAllPeminjaman(
-                req.user.id,
-                req.user.role
-            );
+            const { page, size, status } = req.query; 
+            const { id: userId } = req.user;
+            const result = await peminjamanService.getAllPeminjaman({
+                page,
+                size,
+                userId,
+                status 
+            });
 
             res.status(200).json({
                 status: true,
                 message: "Get all bookings successful",
-                data: result
+                data: result.data,
+                pagination: result.pagination
             });
+        } catch (error) {
+            next(error);
+        }
+    },
+    async getPeminjaman(req, res, next) {
+        try {
+            const {
+                page,
+                size,
+                ruangRapatId,
+                tanggalMulai,
+                tanggalAkhir,
+                status
+            } = req.query;
+
+            const result = await peminjamanService.getPeminjaman({
+                page,
+                size,
+                ruangRapatId,
+                tanggalMulai,
+                tanggalAkhir,
+                status
+            });
+
+            res.status(200).json({
+                status: true,
+                message: "Get peminjaman diproses successful",
+                data: result.data,
+                pagination: result.pagination
+            });
+
         } catch (error) {
             next(error);
         }

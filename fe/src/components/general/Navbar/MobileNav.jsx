@@ -1,8 +1,22 @@
 import React from 'react';
-import NavLink from './NavLink';
+import { useNavigate } from 'react-router-dom';
+import { useUser } from '@/contexts/UserContext';
+import Button from '@/components/ui/Button';
 
-const MobileNav = ({ isOpen, navItems, isLoggedIn, onLogin }) => {
+const MobileNav = ({ isOpen, navItems, isScrolled }) => {
+  const navigate = useNavigate();
+  const { user, logout } = useUser();
+
   if (!isOpen) return null;
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/login');
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
+  };
 
   return (
     <div className="md:hidden">
@@ -11,18 +25,40 @@ const MobileNav = ({ isOpen, navItems, isLoggedIn, onLogin }) => {
           <a
             key={item.name}
             href={item.path}
-            className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+            className={`block px-3 py-2 text-base font-medium rounded-md ${
+              isScrolled
+                ? 'text-gray-700 '
+                : 'text-black tc hover:bg-gray-100'
+            }`}
           >
             {item.name}
           </a>
         ))}
-        {!isLoggedIn && (
-          <button
-            onClick={onLogin}
-            className="w-full text-left bg-blue-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700"
+        
+        {user ? (
+          <>
+            {(user.role === 'ADMIN' || user.role === 'SUPERADMIN') && (
+              <button
+                onClick={() => navigate('/dashboard')}
+                className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md"
+              >
+                Dashboard
+              </button>
+            )}
+            <button
+              onClick={handleLogout}
+              className="w-full text-left px-3 py-2 text-base font-medium text-red-600 hover:bg-red-50 rounded-md"
+            >
+              Logout
+            </button>
+          </>
+        ) : (
+          <Button
+            className="w-full"
+            onClick={() => navigate("/login")}
           >
             Login
-          </button>
+          </Button>
         )}
       </div>
     </div>
