@@ -5,6 +5,7 @@ import { useUser } from '@/contexts/UserContext';
 import { Header } from '../general/dashboard/Header';
 import { Sidebar } from '../general/dashboard/Sidebar';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
+import { MENU_ITEMS } from '../general/dashboard/constants';
 
 export default function DashboardLayout({ children }) {
   const location = useLocation();
@@ -23,13 +24,11 @@ export default function DashboardLayout({ children }) {
   }, []);
 
   useEffect(() => {
-    const path = location.pathname;
-    const formattedPath = path === '/' 
-      ? 'Dashboard' 
-      : path.substring(1).split('-').map(word => 
-          word.charAt(0).toUpperCase() + word.slice(1)
-        ).join(' ');
-    setActiveItem(formattedPath);
+    const currentPath = location.pathname;
+    const currentMenuItem = MENU_ITEMS.find(item => item.path === currentPath);
+    if (currentMenuItem) {
+      setActiveItem(currentMenuItem.text);
+    }
   }, [location]);
 
   if (loading) {
@@ -41,7 +40,7 @@ export default function DashboardLayout({ children }) {
   return (
     <div className="min-h-screen bg-gray-50">
       {isSidebarOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 lg:hidden z-10"
           onClick={toggleSidebar}
         />

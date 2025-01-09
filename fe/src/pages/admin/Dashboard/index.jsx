@@ -2,8 +2,8 @@ import DashboardLayout from '@/components/layout/DashboardLayout';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Loader2 } from 'lucide-react';
 import api from '@/utils/api';
-import DateRangePicker from './DateRangePicker';
 import StatisticsChart from './StatisticsChart';
+import DateRangePicker from '@/components/ui/Calenders/DateRangePicker';
 import useCustomToast from '@/components/ui/Toast/useCustomToast';
 
 const Dashboard = () => {

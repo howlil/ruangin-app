@@ -245,7 +245,7 @@ const peminjamanService = {
 
 
     // admin
-    async getPeminjaman({
+    async getPeminjamanRiwayat({
         page = 1,
         size = 10,
         ruangRapatId,
@@ -259,7 +259,86 @@ const peminjamanService = {
             const skip = (pageNum - 1) * sizeNum;
 
             let where = {
-                status: status
+                NOT: {
+                    status: 'DIPROSES'
+                }
+            };
+
+            // If status is provided, add it to the where clause
+            if (status) {
+                where.status = status;
+            }
+
+            if (ruangRapatId) {
+                where.ruang_rapat_id = ruangRapatId;
+            }
+
+            if (tanggalMulai) {
+                if (tanggalAkhir) {
+                    where.tanggal = {
+                        gte: tanggalMulai,
+                        lte: tanggalAkhir
+                    };
+                } else {
+                    where.tanggal = tanggalMulai;
+                }
+            }
+
+            const totalRows = await prisma.peminjaman.count({ where });
+
+            const data = await prisma.peminjaman.findMany({
+                skip,
+                take: sizeNum,
+                where,
+                include: {
+                    Pengguna: {
+                        select: {
+                            id: true,
+                            nama_lengkap: true,
+                            email: true,
+                            DetailPengguna: {
+                                include: {
+                                    tim_kerja: true
+                                }
+                            }
+                        }
+                    },
+                    RuangRapat: true
+                },
+                orderBy: {
+                    createdAt: 'desc'
+                }
+            });
+
+            return {
+                data,
+                pagination: {
+                    page: pageNum,
+                    size: sizeNum,
+                    total_rows: totalRows,
+                    total_pages: Math.ceil(totalRows / sizeNum)
+                }
+            };
+        } catch (error) {
+            throw new ResponseError(500, 'Failed to get peminjaman');
+        }
+    },
+
+    async getAjuanPeminjaman({
+        page = 1,
+        size = 10,
+        ruangRapatId,
+        tanggalMulai,
+        tanggalAkhir,
+
+    }) {
+        try {
+            const pageNum = Math.max(1, Number(page));
+            const sizeNum = Math.max(1, Number(size));
+            const skip = (pageNum - 1) * sizeNum;
+
+            let where = {
+                status: 'DIPROSES'
             };
 
             if (ruangRapatId) {
@@ -304,7 +383,6 @@ const peminjamanService = {
             });
 
             return {
-
                 data,
                 pagination: {
                     page: pageNum,
@@ -318,7 +396,6 @@ const peminjamanService = {
         }
     },
 
-
     async getPeminjamanById(userId, peminjamanId, role) {
         const peminjaman = await prisma.peminjaman.findUnique({
             where: { id: peminjamanId },
@@ -326,7 +403,12 @@ const peminjamanService = {
                 Pengguna: {
                     select: {
                         nama_lengkap: true,
-                        email: true
+                        email: true,
+                        DetailPengguna : {
+                            select : {
+                                tim_kerja :true
+                            }
+                        }
                     }
                 },
                 RuangRapat: true
@@ -348,9 +430,9 @@ const peminjamanService = {
         try {
 
             let where = {
-                status: "SELESAI"  
-            };    
-            
+                status: "SELESAI"
+            };
+
             if (tanggalMulai) {
                 if (tanggalAkhir) {
                     where.tanggal = {
@@ -361,7 +443,7 @@ const peminjamanService = {
                     where.tanggal = tanggalMulai;
                 }
             }
-    
+
             const ruangStats = await prisma.ruangRapat.findMany({
                 select: {
                     id: true,
@@ -369,25 +451,25 @@ const peminjamanService = {
                     _count: {
                         select: {
                             peminjaman: {
-                                where: where 
+                                where: where
                             }
                         }
                     }
                 }
             });
-    
+
             const formattedData = ruangStats.map(ruang => ({
                 ruangan: ruang.nama_ruangan,
                 jumlah_peminjaman: ruang._count.peminjaman
             }));
-    
+
             return formattedData
-            
+
         } catch (error) {
             throw new ResponseError(500, 'Failed to get ruangan statistics');
         }
     }
-    
+
 };
 
 module.exports = peminjamanService;

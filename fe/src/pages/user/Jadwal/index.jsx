@@ -1,9 +1,9 @@
-import React from 'react'
+import MainLayout from "@/components/layout/MainLayout"
 
 export default function Jadwal() {
   return (
-    <div>
+    <MainLayout>
       
-    </div>
+    </MainLayout>
   )
 }

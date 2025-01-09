@@ -1,9 +1,8 @@
-import React from 'react'
-
+import MainLayout from "@/components/layout/MainLayout"
 export default function RiwayatUser() {
   return (
-    <div>
+    <MainLayout>
       
-    </div>
+    </MainLayout>
   )
 }

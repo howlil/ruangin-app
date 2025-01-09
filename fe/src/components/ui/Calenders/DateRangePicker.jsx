@@ -1,6 +1,6 @@
 import { Calendar, X } from 'lucide-react';
 import { useState } from 'react';
-import FilterByDate from '@/components/ui/Calenders/FilterByDate';
+import FilterByDate from "./FilterByDate"
 
 export default function DateRangePicker({ selectedDate, setSelectedDate, onReset }) {
   const [showDatePicker, setShowDatePicker] = useState(false);
@@ -9,13 +9,13 @@ export default function DateRangePicker({ selectedDate, setSelectedDate, onReset
     <>
       <button
         onClick={() => setShowDatePicker(true)}
-        className="flex items-center gap-2 px-4 py-2 border rounded-lg hover:bg-gray-50 relative group"
+        className="flex items-center gap-2 px-4 py-2 border rounded-full w-full hover:bg-gray-50 relative group"
       >
-        <Calendar className="w-5 h-5" />
-        <span>
+        <Calendar className="w-4 h-4" />
+        <span className='text-sm'>
           {selectedDate
             ? `${selectedDate.start_date}${selectedDate.end_date ? ` - ${selectedDate.end_date}` : ''}`
-            : 'Pilih Tanggal'}
+            : 'Pilih Berdasarkan Tanggal'}
         </span>
         {selectedDate && (
           <X

@@ -1,7 +1,8 @@
 const route = require('express')
 const router = route.Router()
 const authController = require('../controllers/auth.controller');
-const { authenticate, authorize } = require('../middlewares/auth.middleware');
+const ruangRapatController = require('../controllers/ruangRapat.controller');
+
 
 router.get("/",(req,res)=>{
      res.json({
@@ -10,6 +11,7 @@ router.get("/",(req,res)=>{
 })
 
 router.post('/api/v1/login', authController.login);
-
+router.get('/api/v1/ruang-rapat', ruangRapatController.getAllRuangRapat);
+router.get('/api/v1/ruang-rapat/:id', ruangRapatController.getRuangRapatById);
 
 module.exports = router

@@ -60,7 +60,9 @@ const peminjamanController = {
             next(error);
         }
     },
-    async getPeminjaman(req, res, next) {
+
+  
+    async getPeminjamanRiwayat(req, res, next) {
         try {
             const {
                 page,
@@ -71,13 +73,42 @@ const peminjamanController = {
                 status
             } = req.query;
 
-            const result = await peminjamanService.getPeminjaman({
+            const result = await peminjamanService.getPeminjamanRiwayat({
                 page,
                 size,
                 ruangRapatId,
                 tanggalMulai,
                 tanggalAkhir,
                 status
+            });
+
+            res.status(200).json({
+                status: true,
+                message: "Get peminjaman diproses successful",
+                data: result.data,
+                pagination: result.pagination
+            });
+
+        } catch (error) {
+            next(error);
+        }
+    },
+    async getAjuanPeminjaman(req, res, next) {
+        try {
+            const {
+                page,
+                size,
+                ruangRapatId,
+                tanggalMulai,
+                tanggalAkhir,
+            } = req.query;
+
+            const result = await peminjamanService.getAjuanPeminjaman({
+                page,
+                size,
+                ruangRapatId,
+                tanggalMulai,
+                tanggalAkhir,
             });
 
             res.status(200).json({

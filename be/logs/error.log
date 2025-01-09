@@ -2966,3 +2966,137 @@
   userId: undefined,
   level: 'error'
 }
+{
+  name: 'TypeError',
+  message: "Cannot read properties of null (reading 'length')",
+  stack: "TypeError: Cannot read properties of null (reading 'length')\n" +
+    '    at Object.deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:129:38)\n' +
+    '    at async deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:71:28)',
+  path: '/api/v1/tim-kerja/779069b3-0d80-4bc4-b431-17e5afda08b8',
+  method: 'DELETE',
+  timestamp: '09-01-2025 11:23:41',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of null (reading 'length')",
+  stack: "TypeError: Cannot read properties of null (reading 'length')\n" +
+    '    at Object.deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:129:38)\n' +
+    '    at async deleteTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:71:28)',
+  path: '/api/v1/tim-kerja/779069b3-0d80-4bc4-b431-17e5afda08b8',
+  method: 'DELETE',
+  timestamp: '09-01-2025 11:23:49',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '09-01-2025 11:42:38',
+  requestBody: {
+    email: 'Mhdulilabshar27@gmail.com',
+    nama_lengkap: 'Antonix',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:317:19)\n' +
+    '    at async getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:74:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&status=DISETUJUI,DITOLAK,SELESAI',
+  method: 'GET',
+  timestamp: '09-01-2025 14:33:33',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', status: 'DISETUJUI,DITOLAK,SELESAI' },
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:317:19)\n' +
+    '    at async getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:74:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&status=DISETUJUI,DITOLAK,SELESAI',
+  method: 'GET',
+  timestamp: '09-01-2025 14:33:33',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', status: 'DISETUJUI,DITOLAK,SELESAI' },
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:317:19)\n' +
+    '    at async getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:74:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&status=DISETUJUI,DITOLAK,SELESAI',
+  method: 'GET',
+  timestamp: '09-01-2025 14:33:40',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', status: 'DISETUJUI,DITOLAK,SELESAI' },
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:317:19)\n' +
+    '    at async getPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:74:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&status=DISETUJUI,DITOLAK,SELESAI',
+  method: 'GET',
+  timestamp: '09-01-2025 14:33:40',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', status: 'DISETUJUI,DITOLAK,SELESAI' },
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:19:13',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}

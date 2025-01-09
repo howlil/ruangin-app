@@ -5,6 +5,7 @@ import Riwayat from "@/pages/admin/Riwayat";
 import Staff from "@/pages/admin/Staff";
 import TimKerja from "@/pages/admin/TimKerja";
 import Ruangan from "@/pages/admin/Ruangan";
+import DetailPeminjaman from "@/pages/admin/Peminjaman/DetailPeminjaman";
 
 export const AdminRoutes = [
   // Admin & Super Admin Routes
@@ -24,6 +25,14 @@ export const AdminRoutes = [
       </AdminRoute>
     ),
   },
+  {
+    path: "/ajuan-peminjaman/:id",
+    element: (
+      <AdminRoute>
+        <DetailPeminjaman />
+      </AdminRoute>
+    ),
+  },
   // Super Admin Only Routes
   {
     path: "/tim-kerja",
@@ -36,9 +45,9 @@ export const AdminRoutes = [
   {
     path: "/riwayat",
     element: (
-      <SuperAdminRoute>
+      <AdminRoute>
         <Riwayat />
-      </SuperAdminRoute>
+      </AdminRoute>
     ),
   },
   {
