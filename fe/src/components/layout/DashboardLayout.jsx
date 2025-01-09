@@ -1,59 +1,79 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Menu } from 'lucide-react';
+import { useUser } from '@/contexts/UserContext';
 import { Header } from '../general/dashboard/Header';
 import { Sidebar } from '../general/dashboard/Sidebar';
-import { Menu } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
-import { useUser } from '@/contexts/UserContext';
+import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 
 export default function DashboardLayout({ children }) {
   const location = useLocation();
   const { user, loading } = useUser();
-
-  const [activeItem, setActiveItem] = useState(() => {
-    const path = location.pathname;
-    if (path === '/') return 'Dashboard';
-    return path.substring(1).split('-').map(word => 
-      word.charAt(0).toUpperCase() + word.slice(1)
-    ).join(' ');
-  });
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [activeItem, setActiveItem] = useState('');
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSidebarOpen(window.innerWidth >= 1024);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const path = location.pathname;
+    const formattedPath = path === '/' 
+      ? 'Dashboard' 
+      : path.substring(1).split('-').map(word => 
+          word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
+    setActiveItem(formattedPath);
+  }, [location]);
 
   if (loading) {
-    return <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
-    </div>;
+    return <LoadingSpinner />;
   }
 
+  const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="lg:hidden fixed top-4 left-4 z-30">
-        <button 
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 lg:hidden z-10"
           onClick={toggleSidebar}
-        >
-          <Menu className="w-6 h-6" />
-        </button>
-      </div>
-
-      <div className="flex">
-        <Sidebar 
-          activeItem={activeItem} 
-          setActiveItem={setActiveItem}
-          isOpen={isSidebarOpen}
-          toggleSidebar={toggleSidebar}
         />
-        
-        <div className={`flex-1 transition-all duration-300 ${isSidebarOpen ? 'lg:ml-64' : 'ml-0'}`}>
-          <Header  user={user} />
-          <main className="p-4 md:p-8">
-            <h1 className="text-2xl font-bold mb-6">{activeItem}</h1>
-            {children}
-          </main>
-        </div>
+      )}
+
+      <Sidebar
+        activeItem={activeItem}
+        setActiveItem={setActiveItem}
+        isOpen={isSidebarOpen}
+        toggleSidebar={toggleSidebar}
+      />
+
+      <div className={`
+        transition-all duration-300 ease-in-out
+        ${isSidebarOpen ? 'lg:ml-64' : 'ml-0'}
+      `}>
+        <nav className="sticky top-0 z-10 h-16 bg-white shadow-sm px-4 lg:px-8">
+          <div className="h-full flex items-center justify-between">
+            <button
+              onClick={toggleSidebar}
+              className="p-2 lg:hidden"
+              aria-label="Toggle Sidebar"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+            <Header user={user} />
+          </div>
+        </nav>
+
+        <main className="p-4 lg:p-8">
+          {children}
+        </main>
       </div>
     </div>
   );

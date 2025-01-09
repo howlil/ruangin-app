@@ -14,6 +14,8 @@ const app = express();
 const corsOptions = {
     credentials: true,
     origin: "*",
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   };
 
   
@@ -23,12 +25,19 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
+
 
 app.use(router)
 app.use(apiRoute)
 app.use(logMiddleware)
 app.use(errorMiddleware)
+
+app.use('/images', (req, res, next) => {
+  res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+}, express.static(path.join(__dirname, 'public/images')));
+
 
 app.use((req, res, next) => {
     res.status(404).json({

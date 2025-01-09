@@ -1,12 +1,13 @@
 import axios from 'axios';
+import { getUserDataFromCookie } from './cookie';
 
-const token = localStorage.getItem("token");
+const userData = getUserDataFromCookie()
 
 const api = axios.create({
   baseURL: `${import.meta.env.VITE_API_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
-    Authorization: token ? `Bearer ${token}` : '',
+    Authorization: userData?.token ? `Bearer ${userData.token}` : '',
   },
   withCredentials: false, 
 });

@@ -1,9 +1,9 @@
 import { AdminRoute, SuperAdminRoute } from "@/components/ui/auth/ProtectRoute";
 import Dashboard from "@/pages/admin/Dashboard";
 import AjuanPeminjaman from "@/pages/admin/Peminjaman";
-import Divisi from "@/pages/admin/Divisi";
 import Riwayat from "@/pages/admin/Riwayat";
 import Staff from "@/pages/admin/Staff";
+import TimKerja from "@/pages/admin/TimKerja";
 import Ruangan from "@/pages/admin/Ruangan";
 
 export const AdminRoutes = [
@@ -29,7 +29,7 @@ export const AdminRoutes = [
     path: "/tim-kerja",
     element: (
       <SuperAdminRoute>
-        <Divisi />
+        <TimKerja/>
       </SuperAdminRoute>
     ),
   },

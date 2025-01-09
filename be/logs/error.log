@@ -2270,3 +2270,699 @@
   userId: '02107391-481d-4ff7-9d00-5351f81207b2',
   level: 'error'
 }
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:29:41'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:30:04'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:30:29'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:30:54'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:31:21'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:31:24'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:32:14'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '08-01-2025 15:35:34'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 07:25:31',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 07:28:22',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/ruang-rapat',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 08:26:44'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/ruang-rapat',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 08:26:57'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/ruang-rapat',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 08:27:32'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 08:28:15'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/me',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 08:28:26'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:39',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:39',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:39',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:43',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:44',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room name already exists',
+  stack: 'ResponseError: Room name already exists\n' +
+    '    at Object.createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:16:19)\n' +
+    '    at async createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:14:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '09-01-2025 10:17:45',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'asa',
+    lokasi_ruangan: 'asas',
+    kapasitas: '11',
+    deskripsi: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395367999.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395367999.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:24)\n' +
+    '    at async updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:62:28)',
+  path: '/api/v1/ruang-rapat/eb104991-32b2-49f6-ad1a-f1dae7c90c75',
+  method: 'PATCH',
+  timestamp: '09-01-2025 11:02:48',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    lokasi_ruangan: 'Sayap Kiri',
+    kapasitas: '11',
+    deskripsi: 'buat kerja'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395369629.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395369629.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:24)\n' +
+    '    at async updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:62:28)',
+  path: '/api/v1/ruang-rapat/eb104991-32b2-49f6-ad1a-f1dae7c90c75',
+  method: 'PATCH',
+  timestamp: '09-01-2025 11:02:49',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    lokasi_ruangan: 'Sayap Kiri',
+    kapasitas: '11',
+    deskripsi: 'buat kerja'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395371620.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395371620.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:24)\n' +
+    '    at async updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:62:28)',
+  path: '/api/v1/ruang-rapat/eb104991-32b2-49f6-ad1a-f1dae7c90c75',
+  method: 'PATCH',
+  timestamp: '09-01-2025 11:02:51',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    lokasi_ruangan: 'Sayap Kiri',
+    kapasitas: '11',
+    deskripsi: 'buat kerja'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'PrismaClientValidationError',
+  message: '\n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395380976.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.',
+  stack: 'PrismaClientValidationError: \n' +
+    '\x1B[31mInvalid \x1B[1m`prisma.ruangRapat.update()`\x1B[22m invocation in\x1B[39m\n' +
+    '\x1B[4mC:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:48\x1B[24m\n' +
+    '\n' +
+    '  \x1B[2m\x1B[90m146\x1B[39m     \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m147\x1B[39m \x1B[34m}\x1B[39m\x1B[22m\n' +
+    '  \x1B[2m\x1B[90m148\x1B[39m \x1B[22m\n' +
+    '\x1B[1m\x1B[31m→\x1B[39m\x1B[22m \x1B[2m\x1B[90m149\x1B[39m \x1B[36mconst\x1B[39m result = \x1B[36mawait\x1B[39m prisma\x1B[34m.\x1B[39mruangRapat\x1B[34m.\x1B[39m\x1B[36mupdate\x1B[39m\x1B[34m(\x1B[39m\x1B[22m{\n' +
+    '        where: {\n' +
+    '          id: "eb104991-32b2-49f6-ad1a-f1dae7c90c75"\n' +
+    '        },\n' +
+    '        data: {\n' +
+    '          nama_ruangan: "Ruang Kaca 2",\n' +
+    '          deskripsi: "buat kerja",\n' +
+    '          lokasi_ruangan: "Sayap Kiri",\n' +
+    '          kapasitas: \x1B[31m11\x1B[39m,\n' +
+    '                     \x1B[31m~~\x1B[39m\n' +
+    '          foto_ruangan: "/images/1736395380976.jpg"\n' +
+    '        }\n' +
+    '      }\x1B[2m)\x1B[22m\n' +
+    '\n' +
+    'Argument `\x1B[1mkapasitas\x1B[22m`: Invalid value provided. Expected \x1B[32mString\x1B[39m or \x1B[32mStringFieldUpdateOperationsInput\x1B[39m, provided \x1B[31mInt\x1B[39m.\n' +
+    '    at wn (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n' +
+    '    at qn.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n' +
+    '    at qn.handleAndLogRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6640)\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:149:24)\n' +
+    '    at async updateRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:62:28)',
+  path: '/api/v1/ruang-rapat/eb104991-32b2-49f6-ad1a-f1dae7c90c75',
+  method: 'PATCH',
+  timestamp: '09-01-2025 11:03:00',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    lokasi_ruangan: 'Sayap Kiri',
+    kapasitas: '11',
+    deskripsi: 'buat kerja'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/tim-kerja',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '09-01-2025 11:05:45'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 11:14:54',
+  requestBody: {
+    email: 'superadmin.pusdatin@adminkkp.id',
+    kata_sandi: '@Test123!\\'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
