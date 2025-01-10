@@ -10,42 +10,43 @@ const cors = require('cors')
 
 const app = express();
 
-
 const corsOptions = {
     credentials: true,
     origin: "*",
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  };
+};
 
-  
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(helmet());
 app.use(cors(corsOptions));
-app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/images', (req, res, next) => {
+    res.header('Cross-Origin-Resource-Policy', 'cross-origin');
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Cache-Control', 'public, max-age=86400');
+    next();
+}, express.static(path.join(__dirname, 'public/images'), {
+    maxAge: '24h',
+    etag: true,
+    lastModified: true
+}));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(router)
 app.use(apiRoute)
+
 app.use(logMiddleware)
 app.use(errorMiddleware)
 
-app.use('/images', (req, res, next) => {
-  res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  next();
-}, express.static(path.join(__dirname, 'public/images')));
-
-
 app.use((req, res, next) => {
     res.status(404).json({
-      error: true,
-      message: "Resource not found",
+        error: true,
+        message: "Resource not found",
     });
-  });
-
-  
+});
 
 module.exports = app;

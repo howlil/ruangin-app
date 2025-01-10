@@ -3100,3 +3100,550 @@
   userId: undefined,
   level: 'error'
 }
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:08',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:10',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 07:26:15',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Yeys123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 07:26:29',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:161:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '10-01-2025 07:36:34',
+  requestBody: {
+    nama_kegiatan: 'apa ya',
+    tanggal: '2025-12-01',
+    jam_mulai: '07:00',
+    jam_selesai: '17:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 09:40:52',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Tets123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:51',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:53',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:54',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:54',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:59',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:42:03',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: Mhdulilabshar27@gmail.com',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: Mhdulilabshar27@gmail.com\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:42:05',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '779069b3-0d80-4bc4-b431-17e5afda08b8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:23',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:23',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 14:35:20',
+  requestBody: { email: 'example@pusdatin.id', kata_sandi: '@Tets123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}

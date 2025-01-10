@@ -70637,3 +70637,7346 @@
   message: 'Authentication successful',
   timestamp: '09-01-2025 15:43:15'
 }
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:42'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:42'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:42'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:42'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:43'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:46'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:46'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:47'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:49'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:49'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '09-01-2025 15:45:51'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '09-01-2025 15:45:51'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '09-01-2025 15:45:51'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '09-01-2025 15:45:51'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:08',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:09',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '09-01-2025 15:46:10',
+  requestBody: { email: '', kata_sandi: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:14:27'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:14:27'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:17:53'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:17:53'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:17:53'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:17:53'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:03'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:03'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:16'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:16'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:16'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:16'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:22'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:22'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:18:22'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:18:22'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:39'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:39'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:40'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:40'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:40'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:40'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:46'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:46'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:46'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:46'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:56'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:56'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:22:56'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:22:56'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:23:10'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:23:10'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:23:43'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:23:43'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:29'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:29'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:29'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:29'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:30'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:30'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:30'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:30'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:31'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:31'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:24:31'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:24:31'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:21'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:21'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:21'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:21'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:24'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:24'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:24'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:24'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:36'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:36'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:36'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:38'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:39'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:25:39'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:25:41'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:25:41'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 07:25:41'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 07:25:41'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 07:26:15',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Yeys123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 07:26:29',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:26:39'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:26:39'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:26:39'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 07:26:39'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:26:53'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:26:53'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:26:53'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:26:53'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:03'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:03'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:10'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:10'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:10'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:10'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:12'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:35'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:35'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 07:27:35'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 07:27:35'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:43'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:44'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:44'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:44'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:55'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:55'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:27:55'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:27:55'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:00'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:00'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:00'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:01'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:01'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:01'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:01'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:05'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:05'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:05'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:05'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:12'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:28:12'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:13'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:13'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:28:13'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:28:14'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:28:20'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:28:20'
+}
+{
+  userRole: 'SUPERADMIN',
+  requiredRoles: [ 'ADMIN' ],
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 07:28:20'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:40'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:40'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:40'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:40'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:46'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:46'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:31:46'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:47'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:47'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:58'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:58'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:59'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:31:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:31:59'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:00'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:02'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:02'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:12'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:13'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:13'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:13'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:13'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:20'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:20'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:20'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:20'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:52'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:52'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:32:52'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:32:52'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:11'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:11'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:11'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:11'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:13'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:13'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:13'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:13'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:43'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:43'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:43'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:45'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:48'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:48'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:48'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:48'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:50'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:50'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:50'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:50'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:52'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:52'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:52'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:52'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:54'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:54'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:33:54'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:33:54'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:01'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:01'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:06'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:06'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:06'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:06'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:07'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:07'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:07'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:07'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:09'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:09'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:09'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:09'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:11'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:11'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:11'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:11'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:21'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:21'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:34:21'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:21'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:21'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:32'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:32'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:34:32'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:32'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:32'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:47'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:34:47'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:34:47'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:34:47'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:35:20'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:35:20'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:35:20'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:35:20'
+}
+{
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:35:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:35:33'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:35:33'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:35:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:35:34'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:36:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:36:00'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:36:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:36:00'
+}
+{
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:36:34'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:36:34'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 07:36:34'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:161:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  timestamp: '10-01-2025 07:36:34',
+  requestBody: {
+    nama_kegiatan: 'apa ya',
+    tanggal: '2025-12-01',
+    jam_mulai: '07:00',
+    jam_selesai: '17:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 07:37:15'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:55'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:55'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:55'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:55'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:56'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:57'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:57'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:57'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:58'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:58'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:59'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:08:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:08:59'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:01'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:01'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:02'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:02'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:08'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:08'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 08:09:08'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 08:09:08'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:23'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:23'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:23'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:23'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:25'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:25'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:25'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:25'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:26'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:26'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:27'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:28'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:29'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:29'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:29'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:29'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:30'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:31'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:33'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:33'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:40'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:40'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 08:09:40'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 08:09:40'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:55'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:55'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:55'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:55'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:57'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:57'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 08:09:57'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 08:09:57'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:26'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:26'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:26'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:26'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:27'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:27'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:27'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:28'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:28'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:28'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:30'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:33'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:40:36'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:40:36'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 09:40:36'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 09:40:36'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 09:40:52',
+  requestBody: { email: 'superadmin.pusdatin@adminkkp.id', kata_sandi: '@Tets123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:09'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 09:41:09'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:09'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 09:41:09'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:21'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:21'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:21'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:21'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:23'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:23'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:26'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:51'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:51'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:41:51'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:51',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:53'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:53'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:41:53'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:53',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:54',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:41:54'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:54',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:41:59'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:41:59'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:41:59'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: antosnio@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:41:59',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'e867aad2-57f9-4bd1-9d98-9342efaaa6b2'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:03'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:42:03'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: robertso@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:42:03',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '7abc27ce-db64-4606-bdda-5269ca3a68af'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/register',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:05'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:05'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/register',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:42:05'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: Mhdulilabshar27@gmail.com',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: Mhdulilabshar27@gmail.com\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '10-01-2025 09:42:05',
+  requestBody: {
+    email: 'staff@example.id',
+    nama_lengkap: 'example',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '779069b3-0d80-4bc4-b431-17e5afda08b8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  level: 'error'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:12'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:12'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:32'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:32'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:42:32'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:32'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:32'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:46'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:46'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:42:46'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:46'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:46'
+}
+{
+  path: '/api/v1/tim-kerja/93cb1081-8162-45f9-8e33-23bf16e159de',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:53'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja/93cb1081-8162-45f9-8e33-23bf16e159de',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:53'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/tim-kerja/93cb1081-8162-45f9-8e33-23bf16e159de',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:42:53'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:42:53'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:42:53'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:03'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:43:03'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:03'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:03'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:12'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:43:12'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:12'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:12'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:15'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:15'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:15'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:15'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:16'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:16'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:16'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:16'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:17'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:17'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:17'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:17'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:18'
+}
+{
+  path: '/api/v1/users/2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:51'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/users/2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:51'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/users/2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 09:43:51'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:51'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:51'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:43:59'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:43:59'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 09:43:59'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 09:43:59'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:52:54'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 09:52:54'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:56:53'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:56:53'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 09:56:53'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 09:56:53'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:32'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:32'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:32'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:32'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:33'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:33'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:33'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:33'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:36'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:36'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:57:36'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:57:36'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:59:54'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:59:54'
+}
+{
+  userRole: 'PEMINJAM',
+  requiredRoles: [ 'SUPERADMIN' ],
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  path: '/api/v1/ruang-rapat',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 09:59:54'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:59:55'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:59:55'
+}
+{
+  userRole: 'PEMINJAM',
+  requiredRoles: [ 'SUPERADMIN' ],
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  path: '/api/v1/ruang-rapat',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 09:59:55'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 09:59:58'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 09:59:58'
+}
+{
+  userRole: 'PEMINJAM',
+  requiredRoles: [ 'SUPERADMIN' ],
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  path: '/api/v1/ruang-rapat',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 09:59:58'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:00:06'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:00:06'
+}
+{
+  userRole: 'PEMINJAM',
+  requiredRoles: [ 'SUPERADMIN' ],
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  path: '/api/v1/ruang-rapat',
+  level: 'warn',
+  message: 'Authorization failed',
+  timestamp: '10-01-2025 10:00:06'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:00:35'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:00:35'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 10:00:35'
+}
+{
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:00:52'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:00:52'
+}
+{
+  userRole: 'SUPERADMIN',
+  userId: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  path: '/api/v1/ruang-rapat',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 10:00:52'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:22'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:22'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:22'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:22'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:23'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:25'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:25'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:25'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:25'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:27'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:27'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:27'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:27'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:29'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:29'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:29'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:29'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:30'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:30'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:30'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:30'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:31'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:31'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:31'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:31'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:34'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:34'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:34'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:34'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:36'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 10:01:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 10:01:39'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 10:01:39'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 10:01:39'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:04'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:04'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 14:33:04'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 14:33:04'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:19'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:19'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:19'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:19'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:20'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:20'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:20'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:20'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:23',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:23',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:23'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:25'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:26'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Access denied',
+  stack: 'ResponseError: Access denied\n' +
+    '    at Object.getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:423:19)\n' +
+    '    at async getPeminjamanById (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:128:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  timestamp: '10-01-2025 14:33:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:34'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:41'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:42'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:42'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:43'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:43'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:43'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:43'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:44'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:46'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:46'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:33:46'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:33:46'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:26'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:26'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:27'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:28'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:28'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:28'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:28'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:45'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:45'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:45'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:45'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:59'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:59'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:34:59'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:34:59'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:01'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:06'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:06'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:06'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:06'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:35:07'
+}
+{
+  uuid: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  role: 'PEMINJAM',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:35:07'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 14:35:07'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 14:35:07'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '10-01-2025 14:35:20',
+  requestBody: { email: 'example@pusdatin.id', kata_sandi: '@Tets123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  path: '/favicon.ico',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:45:25'
+}
+{
+  token: 'Missing',
+  path: '/favicon.ico',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 14:45:25'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:27'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 14:55:27'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:27'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 14:55:27'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:35'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:35'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:35'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:35'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:37'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:37'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:37'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:37'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/v1/pengguna',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/v1/tim-kerja',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/pengguna',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/v1/tim-kerja',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:39'
+}
+{
+  path: '/api/api/v1/logout',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:46'
+}
+{
+  uuid: '46d78042-02e0-48dc-ab02-c568528ee3f8',
+  role: 'SUPERADMIN',
+  path: '/api/api/v1/logout',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:46'
+}
+{
+  message: 'Request received',
+  method: 'POST',
+  url: '/api/api/v1/logout',
+  params: {},
+  query: {},
+  body: {},
+  level: 'info',
+  timestamp: '10-01-2025 14:55:46'
+}
+{
+  message: 'Response has no data or errors',
+  request: { method: 'POST', url: '/api/api/v1/logout' },
+  status: 404,
+  level: 'info',
+  timestamp: '10-01-2025 14:55:46'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:52'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 14:55:52'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:52'
+}
+{
+  token: 'Missing',
+  path: '/api/v1/statistik',
+  level: 'warn',
+  message: 'Missing or invalid token format',
+  timestamp: '10-01-2025 14:55:52'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:58'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:58'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:58'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:59'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:55:59'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:55:59'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:01'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:01'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:01'
+}
+{
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:22'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:22'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/7f5fba13-bead-4b50-a1a4-6b7a29f1d816/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 14:56:22'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:22'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:22'
+}
+{
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:37'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:37'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/05c7c24b-f9c7-4c7e-b535-71dd33e3bb6c/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 14:56:37'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:37'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:37'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:40'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:40'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:40'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:40'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:41'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:41'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:56:41'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:56:41'
+}
+{
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  userRole: 'ADMIN',
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:57:00'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:57:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:57:02'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '10-01-2025 14:57:02'
+}
+{
+  uuid: '02107391-481d-4ff7-9d00-5351f81207b2',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '10-01-2025 14:57:02'
+}

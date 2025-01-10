@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import logo from "@/assets/ilustration/logo.png";
-import bg from "@/assets/ilustration/pusdatin.png";
 import api from "@/utils/api";
 import { Toaster } from 'react-hot-toast';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
-import { Lock, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { HandleResponse } from '@/components/ui/HandleResponse';
 import { storeUserDataInCookie } from '@/utils/cookie';
@@ -15,14 +13,12 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate()
-  const {  updateUser } = useUser();
-
+  const navigate = useNavigate();
+  const { updateUser } = useUser();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
 
     try {
       const response = await api.post('/v1/login', {
@@ -54,67 +50,79 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative">
+    <div className="min-h-screen grid lg:grid-cols-2">
       <Toaster />
 
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${bg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-black/70" />
-      </div>
+      {/* Left Side - Login Form */}
+      <div className="w-full px-4 lg:px-20 flex flex-col justify-center">
+        <div className="max-w-md w-full mx-auto space-y-8">
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-900">Masuk</h2>
+            <p className="mt-2 text-sm text-gray-600">
+              Masukkan email dan kata sandi Anda untuk masuk!
+            </p>
+          </div>
 
-      {/* Login Card */}
-      <div className="bg-white rounded-lg p-8 shadow-xl w-full max-w-md z-10">
-        <div className="flex flex-col items-center mb-8">
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-16  mb-4"
-          />
-          <h1 className="text-2xl font-bold text-gray-800">Login</h1>
-        </div>
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email*
+              </label>
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="example@pusdatin.id"
+                className="w-full px-3 py-2 border border-gray-300 shadow-sm"
+                required
+              />
+            </div>
 
-        <form>
-          <div className="space-y-4">
-            <Input
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Masukkan email"
-              startIcon={<Mail className="w-4 h-4" />}
-              required
-              fullWidth
-            />
-
-            <Input
-              label="Password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Masukkan password"
-              startIcon={<Lock className="w-4 h-4" />}
-              required
-              fullWidth
-            />
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <label className="block text-sm font-medium text-gray-700">
+                  Password*
+                </label>
+                {/* <a href="#" className="text-sm text-primary hover:text-primary-dark">
+                  Lupa password?
+                </a> */}
+              </div>
+              <Input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Min. 8 characters"
+                className="w-full px-3 py-2 border border-gray-300  shadow-sm"
+                required
+              />
+            </div>
 
             <Button
-              onClick={handleSubmit}
               type="submit"
-              color="blue"
-              variant="primary"
-              className="w-full"
-              disabled={loading}
+              className="w-full py-2.5"
+              loading={loading}
             >
-              {loading ? 'Loading...' : 'Login'}
+              Masuk
             </Button>
-          </div>
-        </form>
+          </form>
+        </div>
+      </div>
+
+      {/* Right Side - Brand/Logo */}
+      <div className="hidden lg:flex flex-col items-center justify-center bg-gradient-to-br from-[#89ffef] via-[#00A2E9]  to-[#2F318B] p-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10"></div>
+        <div className="relative z-10 text-center">
+          <img
+            src={logo}
+            alt="Logo RuangIn"
+            className="w-48  mx-auto mb-6  "
+          />
+          <h1 className="text-3xl font-bold text-white mb-2">RuangIn</h1>
+          <p className="text-white/90 text-sm max-w-md">
+            Sistem Peminjaman Ruangan Rapat
+            Pusat Data dan Informasi Kementerian Kelautan dan Perikanan
+          </p>
+        </div>
       </div>
     </div>
   );

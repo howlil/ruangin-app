@@ -10,7 +10,7 @@ const Button = ({
   ...props 
 }) => {
   const baseStyles = 'px-6 py-2 rounded-full font-medium focus:outline-none transition-colors duration-200'; 
-  const containerStyles = 'inline-flex items-center gap-2';
+  const containerStyles = 'inline-flex items-center justify-center gap-2';  // Added justify-center
   const isDisabled = loading || disabled;
   
   const getVariantStyles = () => {

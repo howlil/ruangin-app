@@ -22,7 +22,7 @@ export const UserRoutes = [
     ),
   },
   {
-    path: "/peminjaman",
+    path: "/peminjaman/:id",
     element: (
       <Peminjaman />
     ),
