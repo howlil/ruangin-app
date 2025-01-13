@@ -61,7 +61,7 @@ const peminjamanController = {
         }
     },
 
-  
+
     async getPeminjamanRiwayat(req, res, next) {
         try {
             const {
@@ -157,6 +157,22 @@ const peminjamanController = {
             });
         } catch (error) {
             next(error);
+        }
+    },
+
+    async checkAvailability(req, res, next) {
+        try {
+            const validated = validate(peminjamanValidation.checkAvailability, req.body)
+
+            const result = await peminjamanService.checkAvailability(validated)
+
+            res.status(200).json({
+                status: true,
+                message: 'Berhasil mengecek ketersediaan ruangan',
+                data: result,
+            });
+        } catch (error) {
+            next(error)
         }
     }
 };

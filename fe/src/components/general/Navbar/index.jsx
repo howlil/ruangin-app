@@ -63,7 +63,7 @@ const Navbar = () => {
       onClick: handlePeminjamanClick,
       isDropdownTrigger: true
     },
-    ...(user ? [{ name: 'Riwayat', path: '/u/riwayat' }] : []),
+    ...(user ? [{ name: 'Riwayat', path: '/u/riwayat?status=DIPROSES' }] : []),
   ];
 
   const isActivePath = (path) => {

@@ -29,19 +29,42 @@ const ruangRapatService = {
         return result;
     },
 
-    async getAllRuangRapat({ page = 1, size = 10 }) {
+    async getAllRuangRapat({ page = 1, size = 10, status, month }) {
         const pageNum = Number(page);
         const sizeNum = Number(size);
-        
         const skip = (pageNum - 1) * sizeNum;
     
-        const totalRows = await prisma.ruangRapat.count();
-        
+        let peminjamanFilter = {};
+    
+        if (status) {
+            peminjamanFilter.status = status;
+        }
+    
+        if (month) {
+            peminjamanFilter.tanggal = {
+                startsWith: month
+            };
+        }
+    
+        const where = {
+            ...(Object.keys(peminjamanFilter).length > 0 && {
+                peminjaman: {
+                    some: peminjamanFilter
+                }
+            })
+        };
+    
+        const totalRows = await prisma.ruangRapat.count({
+            where
+        });
+    
         const data = await prisma.ruangRapat.findMany({
+            where,
             skip: skip,
             take: sizeNum,
             include: {
                 peminjaman: {
+                    where: peminjamanFilter,
                     select: {
                         id: true,
                         nama_kegiatan: true,
@@ -55,6 +78,9 @@ const ruangRapatService = {
                                 email: true
                             }
                         }
+                    },
+                    orderBy: {
+                        tanggal: 'asc'
                     }
                 }
             },

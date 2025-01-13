@@ -404,9 +404,9 @@ const peminjamanService = {
                     select: {
                         nama_lengkap: true,
                         email: true,
-                        DetailPengguna : {
-                            select : {
-                                tim_kerja :true
+                        DetailPengguna: {
+                            select: {
+                                tim_kerja: true
                             }
                         }
                     }
@@ -467,6 +467,55 @@ const peminjamanService = {
 
         } catch (error) {
             throw new ResponseError(500, 'Failed to get ruangan statistics');
+        }
+    },
+
+    async checkAvailability(data) {
+        try {
+
+            const room = await prisma.ruangRapat.findUnique({
+                where: { id: data.ruang_rapat_id },
+            });
+
+            if (!room) {
+                throw new Error('Ruang rapat tidak ditemukan');
+            }
+
+            const bookings = await prisma.peminjaman.findMany({
+                where: {
+                    ruang_rapat_id: data.ruang_rapat_id,
+                    tanggal: data.tanggal,
+                    status: {
+                        in: ['DIPROSES', 'DISETUJUI'],
+                    },
+                },
+                select: {
+                    jam_mulai: true,
+                    jam_selesai: true,
+                },
+            });
+
+            const isTimeConflict = bookings.some((booking) => {
+                const requestedTime = new Date(`2000-01-01T${data.jam}`);
+                const startTime = new Date(`2000-01-01T${booking.jam_mulai}`);
+                const endTime = new Date(`2000-01-01T${booking.jam_selesai}`);
+
+                return requestedTime >= startTime && requestedTime <= endTime;
+            });
+
+            return {
+                available: !isTimeConflict,
+                room_name: room.nama_ruangan,
+                existing_bookings: bookings.map(booking => ({
+                    start: booking.jam_mulai,
+                    end: booking.jam_selesai
+                }))
+            };
+
+        } catch (error) {
+            throw error;
+
+
         }
     }
 

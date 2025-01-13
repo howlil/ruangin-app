@@ -126,7 +126,6 @@ const authorize = (roles = []) => {
       requiredRoles: roles,
       path: req.path
     });
-
     if (!roles.includes(req.user.role)) {
       logger.warn('Authorization failed', {
         userRole: req.user.role,

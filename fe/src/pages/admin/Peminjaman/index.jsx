@@ -197,7 +197,7 @@ export default function AjuanPeminjaman() {
             </div>
           </div>
 
-          <div className='overflow-x-auto'>
+          <div className='overflow-x-auto no-scrollbar'>
             <Table
               headers={headers}
               data={bookings}

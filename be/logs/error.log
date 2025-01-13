@@ -3647,3 +3647,343 @@
   userId: undefined,
   level: 'error'
 }
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '12-01-2025 22:00:47'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '12-01-2025 22:00:47'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '12-01-2025 22:01:07'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/statistik',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '12-01-2025 22:01:07'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '13-01-2025 11:34:05',
+  requestBody: {
+    tanggal: '2025-01-1`',
+    jam: '08:00',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '13-01-2025 11:34:13',
+  requestBody: {
+    tanggal: '2025-01-1',
+    jam: '08:00',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:72:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '13-01-2025 14:27:27',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'rapat',
+    tanggal: '2025-01-14',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:17',
+  requestBody: {
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/b1cc8fbe-8792-4b64-a0d9-a3f596dcf2c1/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:18',
+  requestBody: {
+    nama_kegiatan: 'gatau',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: 'cc814771-6ff6-475b-bd24-c91b2a8282c8'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/fa7e12d0-864e-4026-a60c-54b7f25017e4/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:33',
+  requestBody: {
+    nama_kegiatan: 'rapat',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/fa7e12d0-864e-4026-a60c-54b7f25017e4/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:33',
+  requestBody: {
+    nama_kegiatan: 'rapat',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/fa7e12d0-864e-4026-a60c-54b7f25017e4/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:33',
+  requestBody: {
+    nama_kegiatan: 'rapat',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Cannot update to past time',
+  stack: 'ResponseError: Cannot update to past time\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:134:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/fa7e12d0-864e-4026-a60c-54b7f25017e4/status',
+  method: 'PATCH',
+  timestamp: '13-01-2025 14:42:41',
+  requestBody: {
+    nama_kegiatan: 'rapat',
+    tanggal: '2025-01-13',
+    jam_mulai: '08:00',
+    jam_selesai: '12:00',
+    no_surat_peminjaman: '1234567890',
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '02107391-481d-4ff7-9d00-5351f81207b2',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '13-01-2025 15:05:29',
+  requestBody: {
+    ruang_rapat_id: '1a5bc42f-675f-4b39-b639-6d64d90da78c',
+    nama_kegiatan: 'aaaaaaa',
+    tanggal: '2025-01-14',
+    jam_mulai: '15:10',
+    jam_selesai: '19:05',
+    no_surat_peminjaman: 'asas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:17:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '13-01-2025 15:06:44',
+  requestBody: {
+    ruang_rapat_id: '66d55d2a-8bac-4841-abeb-102cd170c753',
+    nama_kegiatan: 'aaaaaaa',
+    tanggal: '2025-01-15',
+    jam_mulai: '15:12',
+    jam_selesai: '15:12',
+    no_surat_peminjaman: 'a'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '2bd19d94-af42-49af-a540-f09d6f4f4dba',
+  level: 'error'
+}

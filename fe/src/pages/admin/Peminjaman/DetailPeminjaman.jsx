@@ -52,7 +52,7 @@ export default function DetailPeminjaman() {
             alasan_penolakan: ''
           });
         }
-        
+
         if (roomsRes.data?.data) {
           setRooms(roomsRes.data.data);
         }
@@ -102,7 +102,7 @@ export default function DetailPeminjaman() {
   const handleUpdateStatus = async () => {
     try {
       if (!validateForm()) return;
-      
+
       setSaving(true);
 
       const payload = {
@@ -141,7 +141,6 @@ export default function DetailPeminjaman() {
     <DashboardLayout>
       <div className="space-y-4">
         <Card className="p-4">
-          {/* Header with Back Button */}
           <div className="flex items-center gap-4 mb-6">
             <button
               onClick={() => navigate('/ajuan-peminjaman')}
@@ -213,32 +212,35 @@ export default function DetailPeminjaman() {
             <div className="lg:col-span-2 space-y-4">
               <h2 className="font-medium">Detail Peminjaman</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">
-                    Nama Kegiatan <span className="text-red-500">*</span>
-                  </label>
-                  <Input
-                    value={formData.nama_kegiatan}
-                    onChange={(e) => setFormData(prev => ({
-                      ...prev,
-                      nama_kegiatan: e.target.value
-                    }))}
-                    placeholder="Masukkan nama kegiatan"
-                    className="mt-1"
-                  />
-                </div>
+
+                <Input
+                  label="Nama Kegiatan"
+                  fullWidth
+                  value={formData.nama_kegiatan}
+                  onChange={(e) => setFormData(prev => ({
+                    ...prev,
+                    nama_kegiatan: e.target.value
+                  }))}
+                  placeholder="Masukkan nama kegiatan"
+                  className="mt-1"
+                />
+
+                <Input
+                  type="text"
+                  label="Nomor Surat"
+                  fullWidth
+                  value={booking.no_surat_peminjaman}
+                  className="mt-1"
+                  disabled
+                />
+
 
                 <div>
-                  <label className="text-sm text-gray-500">Nomor Surat</label>
-                  <p className="mt-2">{booking.no_surat_peminjaman || '-'}</p>
-                </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">
-                    Tanggal <span className="text-red-500">*</span>
-                  </label>
                   <Input
                     type="date"
+                    label="Tanggal"
+                    fullWidth
                     value={formData.tanggal}
                     onChange={(e) => setFormData(prev => ({
                       ...prev,
@@ -250,37 +252,33 @@ export default function DetailPeminjaman() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      Jam Mulai <span className="text-red-500">*</span>
-                    </label>
-                    <Input
-                      type="time"
-                      value={formData.jam_mulai}
-                      onChange={(e) => setFormData(prev => ({
-                        ...prev,
-                        jam_mulai: e.target.value
-                      }))}
-                      className="mt-1"
-                    />
-                    <p className="mt-1 text-xs text-gray-500">Format: HH:mm</p>
-                  </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      Jam Selesai <span className="text-red-500">*</span>
-                    </label>
-                    <Input
-                      type="time"
-                      value={formData.jam_selesai}
-                      onChange={(e) => setFormData(prev => ({
-                        ...prev,
-                        jam_selesai: e.target.value
-                      }))}
-                      className="mt-1"
-                    />
-                    <p className="mt-1 text-xs text-gray-500">Format: HH:mm</p>
-                  </div>
+                  <Input
+                    type="time"
+                    fullWidth
+                    label=" Jam Mulai "
+                    helperText="Format: HH:mm"
+                    value={formData.jam_mulai}
+                    onChange={(e) => setFormData(prev => ({
+                      ...prev,
+                      jam_mulai: e.target.value
+                    }))}
+                    className="mt-1"
+                  />
+
+                  <Input
+                    type="time"
+                    fullWidth
+                    label=" Jam Selesai "
+                    helperText="Format: HH:mm"
+                    value={formData.jam_selesai}
+                    onChange={(e) => setFormData(prev => ({
+                      ...prev,
+                      jam_selesai: e.target.value
+                    }))}
+                    className="mt-1"
+                  />
+
                 </div>
               </div>
             </div>
@@ -295,10 +293,10 @@ export default function DetailPeminjaman() {
                   </label>
                   <Select
                     value={formData.status}
-                    onChange={(e) => setFormData(prev => ({ 
-                      ...prev, 
+                    onChange={(e) => setFormData(prev => ({
+                      ...prev,
                       status: e.target.value,
-                      alasan_penolakan: e.target.value !== 'DITOLAK' ? '' : prev.alasan_penolakan 
+                      alasan_penolakan: e.target.value !== 'DITOLAK' ? '' : prev.alasan_penolakan
                     }))}
                     required
                     className="mt-1"
@@ -316,12 +314,13 @@ export default function DetailPeminjaman() {
                     </label>
                     <Input
                       value={formData.alasan_penolakan}
-                      onChange={(e) => setFormData(prev => ({ 
-                        ...prev, 
-                        alasan_penolakan: e.target.value 
+                      onChange={(e) => setFormData(prev => ({
+                        ...prev,
+                        alasan_penolakan: e.target.value
                       }))}
                       placeholder="Masukkan alasan penolakan"
                       required
+                      fullWidth
                       className="mt-1"
                     />
                   </div>

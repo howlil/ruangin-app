@@ -1,4 +1,4 @@
-
+// src/pages/Peminjaman.jsx
 import React, { useState, useEffect } from 'react';
 import MainLayout from "@/components/layout/MainLayout";
 import { useParams } from "react-router-dom";
@@ -6,14 +6,16 @@ import api from "@/utils/api";
 import dayjs from 'dayjs';
 import Button from '@/components/ui/Button';
 import BookingCalendar from './BookingCalendar';
-import {BookingDialog} from './BookingDialog';
+import { BookingDialog } from './BookingDialog';
+import BookingRoomDialog from './BookingRoomDialog';
 
 export default function Peminjaman() {
   const { id } = useParams();
   const [room, setRoom] = useState(null);
   const [loading, setLoading] = useState(true);
   const [selectedDate, setSelectedDate] = useState(dayjs());
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isCalendarDialogOpen, setIsCalendarDialogOpen] = useState(false);
+  const [isBookingDialogOpen, setIsBookingDialogOpen] = useState(false);
 
   useEffect(() => {
     const fetchRoomData = async () => {
@@ -32,7 +34,7 @@ export default function Peminjaman() {
 
   const handleDateSelect = (date) => {
     setSelectedDate(date);
-    setIsDialogOpen(true);
+    setIsCalendarDialogOpen(true);
   };
 
   if (loading) {
@@ -82,26 +84,35 @@ export default function Peminjaman() {
           <div className="space-y-6">
             <BookingCalendar
               selectedDate={selectedDate}
-              onDateSelect={(newDate) => {
-                setSelectedDate(newDate);
-                setIsDialogOpen(true);
-              }}
+              onDateSelect={handleDateSelect}
               bookings={room?.peminjaman}
             />
 
-            <Button className="w-full">
+            <Button 
+              className="w-full"
+              onClick={() => setIsBookingDialogOpen(true)}
+            >
               Ajukan Peminjaman
             </Button>
           </div>
         </div>
 
+        {/* Calendar Dialog */}
         <BookingDialog
-          isOpen={isDialogOpen}
-          onClose={() => setIsDialogOpen(false)}
+          isOpen={isCalendarDialogOpen}
+          onClose={() => setIsCalendarDialogOpen(false)}
           bookings={room.peminjaman?.filter(booking =>
             dayjs(booking.tanggal).format('YYYY-MM-DD') === selectedDate.format('YYYY-MM-DD')
           )}
           date={selectedDate}
+        />
+
+        {/* Booking Dialog */}
+        <BookingRoomDialog 
+          isOpen={isBookingDialogOpen}
+          onClose={() => setIsBookingDialogOpen(false)}
+          roomId={room.id}
+          roomName={room.nama_ruangan}
         />
       </div>
     </MainLayout>

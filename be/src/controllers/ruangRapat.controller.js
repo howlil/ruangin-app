@@ -25,11 +25,13 @@ const ruangRapatController = {
 
     async getAllRuangRapat(req, res, next) {
         try {
-            const { page, size } = req.query;
+            const { page, size,status,month } = req.query;
 
             const result = await ruangRapatService.getAllRuangRapat({
                 page,
-                size
+                size,
+                status,
+                month
             });            
             res.status(200).json({
                 status: true,

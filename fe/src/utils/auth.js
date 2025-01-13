@@ -3,7 +3,7 @@ import { getUserDataFromCookie } from './cookie';
 export const ROLES = {
     SUPERADMIN: 'SUPERADMIN',
     ADMIN: 'ADMIN',
-    USER: 'USER'
+    PEMINJAM: 'PEMINJAM'
 };
 
 export const getUser = () => {
@@ -38,6 +38,6 @@ export const ROUTE_PERMISSIONS = {
     '/ruangan': [ROLES.SUPERADMIN],
 
     // User Routes
-    '/u/riwayat': [ROLES.USER],
+    '/u/riwayat': [ROLES.PEMINJAM],
 
 };

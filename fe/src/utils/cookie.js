@@ -73,4 +73,5 @@ export const getUserDataFromCookie = () => {
 export const clearAuthCookies = () => {
   Cookies.remove('userData');
   Cookies.remove('token');
+  localStorage.removeItem("token")
 };

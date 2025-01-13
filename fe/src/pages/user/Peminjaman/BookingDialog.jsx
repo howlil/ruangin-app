@@ -1,56 +1,94 @@
+// src/components/dialog/BookingDialog.jsx
 import React from 'react';
 import { Dialog } from '@headlessui/react';
-import { X } from 'lucide-react';
-import dayjs from 'dayjs';
+import { X, Clock, User, FileText } from 'lucide-react';
+import { id } from 'date-fns/locale';
+import { format } from 'date-fns';
 
-export const BookingDialog = ({ isOpen, onClose, bookings, date }) => {
-  if (!isOpen) return null;
+export function BookingDialog({ isOpen, onClose, bookings = [], date }) {
+  const formattedDate = format(date.toDate(), 'EEEE, d MMMM yyyy', { locale: id });
+  
+  // Filter out rejected bookings
+  const filteredBookings = bookings.filter(booking => booking.status !== 'DITOLAK');
 
   return (
-    <Dialog open={isOpen} onClose={onClose} className="relative z-50">
+    <Dialog 
+      open={isOpen} 
+      onClose={onClose}
+      className="relative z-50"
+    >
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
       
-      <div className="fixed inset-0 flex items-center justify-center p-2">
-        <Dialog.Panel className="mx-auto w-96  rounded-lg bg-white p-4  shadow-xl">
-          <div className="flex justify-between items-center mb-4">
-            <Dialog.Title className="text-lg font-semibold">
-              Peminjaman 
-            </Dialog.Title>
-            <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded-full">
-              <X className="w-5 h-5" />
+      <div className="fixed inset-0 flex items-center justify-center p-4">
+        <Dialog.Panel className="w-full max-w-md rounded-lg bg-white p-6 shadow-xl">
+          <div className="flex justify-between items-start mb-6">
+            <div>
+              <Dialog.Title className="text-xl font-semibold">
+                Jadwal Peminjaman
+              </Dialog.Title>
+              <p className="text-sm text-gray-500 mt-1">
+                {formattedDate}
+              </p>
+            </div>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-500"
+            >
+              <X size={20} />
             </button>
           </div>
 
-          <div className="space-y-4 ">
-            {bookings.map((booking) => (
-              <div key={booking.id} className="p-3 bg-gray-50 rounded-lg">
-                <div className="flex justify-between items-start mb-2">
-                  <div>
+          {filteredBookings.length === 0 ? (
+            <div className="text-center py-8">
+              <p className="text-gray-500">Tidak ada peminjaman pada tanggal ini</p>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {filteredBookings.map((booking) => (
+                <div 
+                  key={booking.id}
+                  className="p-4 bg-gray-50 rounded-lg space-y-3"
+                >
+                  <div className="flex justify-between items-start">
                     <h3 className="font-medium">{booking.nama_kegiatan}</h3>
-                    <p className="text-sm text-gray-500">
-                      {booking.jam_mulai} - {booking.jam_selesai}
-                    </p>
+                    <span className={`
+                      inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                      ${(() => {
+                        switch (booking.status) {
+                          case 'DIPROSES': return 'bg-yellow-100 text-yellow-800';
+                          case 'DISETUJUI': return 'bg-green-100 text-green-800';
+                          case 'SELESAI': return 'bg-gray-100 text-gray-800';
+                          default: return 'bg-gray-100 text-gray-800';
+                        }
+                      })()}
+                    `}>
+                      {booking.status}
+                    </span>
                   </div>
-                  <span className={`
-                    text-xs px-2 py-1 rounded-full
-                    ${booking.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}
-                  `}>
-                    {booking.status}
-                  </span>
+
+                  <div className="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4" />
+                      <span>{booking.jam_mulai} - {booking.jam_selesai}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <User className="w-4 h-4" />
+                      <span>{booking.Pengguna?.nama_lengkap}</span>
+                    </div>
+                  </div>
+
+                  {booking.no_surat_peminjaman && (
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <FileText className="w-4 h-4" />
+                      <span>No. Surat: {booking.no_surat_peminjaman}</span>
+                    </div>
+                  )}
                 </div>
-                <p className="text-sm text-gray-500">
-                  Peminjam: {booking.Pengguna.nama_lengkap}
-                </p>
-              </div>
-            ))}
-            {bookings.length === 0 && (
-              <p className="text-center text-gray-500">
-                Tidak ada peminjaman pada tanggal ini
-              </p>
-            )}
-          </div>
+              ))}
+            </div>
+          )}
         </Dialog.Panel>
       </div>
     </Dialog>
   );
-};
+}

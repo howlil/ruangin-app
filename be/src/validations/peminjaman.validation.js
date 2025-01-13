@@ -61,7 +61,7 @@ module.exports = {
         no_surat_peminjaman: Joi.string().required()
     }),
 
-    updateStatus : Joi.object({
+    updateStatus: Joi.object({
         ruang_rapat_id: Joi.string().optional(),
         nama_kegiatan: Joi.string().optional(),
         tanggal: Joi.string().optional(),
@@ -85,5 +85,32 @@ module.exports = {
             }),
             otherwise: Joi.string().optional()
         })
+    }),
+    checkAvailability: Joi.object({
+        tanggal: Joi.string()
+            .required()
+            .pattern(/^\d{4}-\d{2}-\d{2}$/)
+            .messages({
+                'string.pattern.base': 'Format tanggal harus YYYY-MM-DD',
+                'any.required': 'Tanggal harus diisi',
+                'string.empty': 'Tanggal tidak boleh kosong',
+            }),
+        jam: Joi.string()
+            .required()
+            .pattern(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/)
+            .messages({
+                'string.pattern.base': 'Format jam harus HH:mm (contoh: 09:00)',
+                'any.required': 'Jam harus diisi',
+                'string.empty': 'Jam tidak boleh kosong',
+            }),
+        ruang_rapat_id: Joi.string()
+            .required()
+            .guid({ version: 'uuidv4' })
+            .messages({
+                'string.guid': 'Format ID ruang rapat tidak valid',
+                'any.required': 'ID ruang rapat harus diisi',
+                'string.empty': 'ID ruang rapat tidak boleh kosong',
+            })
     })
+
 };

@@ -10,7 +10,7 @@ export const ProtectedRoute = ({ children, allowedRoles, redirectPath = '/login'
   }
 
   if (!hasPermission(allowedRoles)) {
-    if (user.role === ROLES.USER) {
+    if (user.role === ROLES.PEMINJAM) {
       return <Navigate to="/" replace />;
     }
     return <Navigate to={redirectPath} replace />;
@@ -21,7 +21,7 @@ export const ProtectedRoute = ({ children, allowedRoles, redirectPath = '/login'
 
 export const UserRoute = ({ children }) => {
   return (
-    <ProtectedRoute allowedRoles={[ROLES.USER,ROLES.ADMIN]} redirectPath="/">
+    <ProtectedRoute allowedRoles={[ROLES.PEMINJAM,ROLES.ADMIN]} redirectPath="/">
       {children}
     </ProtectedRoute>
   );

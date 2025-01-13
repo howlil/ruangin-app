@@ -5,14 +5,16 @@ import GridBackground from "@/components/ui/GridBackground"
 import api from "@/utils/api"
 import React from "react"
 import RoomCard from "@/components/ui/RoomCard"
+import CheckRoomModal from "./CheckRoomModal"
 
 export default function Beranda() {
   const [rooms, setRooms] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [isCheckModalOpen, setIsCheckModalOpen] = React.useState(false);
 
   const scrollToRuangan = () => {
     window.scrollTo({
-      top: document.getElementById('ruangan').offsetTop - 64, 
+      top: document.getElementById('ruangan').offsetTop - 64,
       behavior: 'smooth'
     });
   };
@@ -56,7 +58,7 @@ export default function Beranda() {
                 <Button
                   color="blue"
                   variant="secondary"
-                  onClick={scrollToRuangan}
+                  onClick={() => setIsCheckModalOpen(true)}
                 >
                   Cek Ketersediaan
                 </Button>
@@ -102,6 +104,11 @@ export default function Beranda() {
             </div>
           )}
         </section>
+        <CheckRoomModal
+          isOpen={isCheckModalOpen}
+          onClose={() => setIsCheckModalOpen(false)}
+          rooms={rooms}
+        />
       </div>
     </MainLayout>
   )

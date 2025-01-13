@@ -14,7 +14,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const { updateUser } = useUser();
+  const { updateUser, initializeUser } = useUser();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,18 +25,30 @@ export default function LoginPage() {
         email,
         kata_sandi: password
       });
+      
       const { token, ...userData } = response.data.data;
+      
       if (token) {
-        storeUserDataInCookie(userData, token)
-        updateUser(userData)
+        // First store token and cookie data
+        localStorage.setItem("token", token);
+        storeUserDataInCookie(userData, token);
+        
+        // Then reinitialize user context
+        await initializeUser();
+        
+        // Then update user state
+        updateUser(userData);
+        
         HandleResponse({
           response,
           successMessage: response.message
         });
+
+        // Finally navigate
         if (userData.role === 'SUPERADMIN' || userData.role === 'ADMIN') {
-          navigate("/dashboard")
+          navigate("/dashboard");
         } else {
-          navigate("/")
+          navigate("/");
         }
       }
     } catch (err) {
