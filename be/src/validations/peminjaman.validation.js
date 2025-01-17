@@ -1,45 +1,6 @@
 const Joi = require('joi');
-const dayjs = require('dayjs');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
-dayjs.extend(customParseFormat);
+const { checkTimeRange, validateDate } = require("../utils/dayjs")
 
-const checkTimeRange = (value, helpers) => {
-    const time = value.split(':');
-    const hours = parseInt(time[0]);
-    const minutes = parseInt(time[1]);
-
-    const totalMinutes = hours * 60 + minutes;
-    const startMinutes = 7 * 60;  // 07:00
-    const endMinutes = 17 * 60;   // 17:00
-
-    if (totalMinutes < startMinutes || totalMinutes > endMinutes) {
-        return helpers.message('jam harus diantara 07:00 dan 17:00');
-    }
-
-    return value;
-};
-
-const validateDate = (value, helpers) => {
-    // Cek format dan validitas tanggal
-    if (!dayjs(value, 'YYYY-MM-DD', true).isValid()) {
-        return helpers.error('date.invalid');
-    }
-
-    const date = dayjs(value);
-    const dayOfWeek = date.day();
-
-    // Cek apakah hari kerja (Senin-Jumat)
-    if (dayOfWeek === 0 || dayOfWeek === 6) {
-        return helpers.error('date.workingDay');
-    }
-
-    // Cek apakah tanggal di masa lalu
-    if (date.isBefore(dayjs(), 'day')) {
-        return helpers.error('date.past');
-    }
-
-    return value;
-};
 
 module.exports = {
     createPeminjaman: Joi.object({
@@ -116,11 +77,12 @@ module.exports = {
     checkAvailability: Joi.object({
         tanggal: Joi.string()
             .required()
-            .pattern(/^\d{4}-\d{2}-\d{2}$/)
+            .custom(validateDate)
             .messages({
-                'string.pattern.base': 'Format tanggal harus YYYY-MM-DD',
-                'any.required': 'Tanggal harus diisi',
-                'string.empty': 'Tanggal tidak boleh kosong',
+                'string.empty': 'tanggal harus diisi',
+                'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
+                'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)',
+                'date.past': 'Tanggal Peminjaman tidak boleh hari kemarin'
             }),
         jam: Joi.string()
             .required()
@@ -129,15 +91,8 @@ module.exports = {
                 'string.pattern.base': 'Format jam harus HH:mm (contoh: 09:00)',
                 'any.required': 'Jam harus diisi',
                 'string.empty': 'Jam tidak boleh kosong',
-            }),
-        ruang_rapat_id: Joi.string()
-            .required()
-            .guid({ version: 'uuidv4' })
-            .messages({
-                'string.guid': 'Format ID ruang rapat tidak valid',
-                'any.required': 'ID ruang rapat harus diisi',
-                'string.empty': 'ID ruang rapat tidak boleh kosong',
             })
     })
+
 
 };

@@ -8,6 +8,7 @@ import Button from '@/components/ui/Button';
 import BookingCalendar from './BookingCalendar';
 import { BookingDialog } from './BookingDialog';
 import BookingRoomDialog from './BookingRoomDialog';
+import { HandleResponse } from '@/components/ui/HandleResponse';
 
 export default function Peminjaman() {
   const { id } = useParams();
@@ -23,7 +24,9 @@ export default function Peminjaman() {
         const response = await api.get(`/v1/ruang-rapat/${id}`);
         setRoom(response.data.data);
       } catch (error) {
-        console.error('Error fetching room data:', error);
+          HandleResponse({
+                error,
+              });
       } finally {
         setLoading(false);
       }

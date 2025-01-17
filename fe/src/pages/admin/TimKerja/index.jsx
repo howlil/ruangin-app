@@ -8,6 +8,8 @@ import api from "@/utils/api";
 import DeleteConfirmationModal from '@/components/ui/modals/DeleteConfirmationModal';
 import AddEditTeamModal from './AddEditTeamModal';
 import { Toaster } from 'react-hot-toast';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+
 
 export default function TeamKerja() {
   const [teams, setTeams] = useState([]);
@@ -31,7 +33,7 @@ export default function TeamKerja() {
           size: pagination.size,
         }
       });
-      console.log(response)
+
       if (response.data?.data) {
         setTeams(response.data.data);
         setPagination(response.data.pagination);
@@ -39,6 +41,9 @@ export default function TeamKerja() {
         setTeams([]);
       }
     } catch (error) {
+      HandleResponse({
+        error,
+      });
       setTeams([]);
     } finally {
       setLoading(false);
@@ -51,9 +56,13 @@ export default function TeamKerja() {
 
   const handleDeleteTeam = async (id) => {
     try {
-      await api.delete(`/v1/tim-kerja/${id}`);
+      const response = await api.delete(`/v1/tim-kerja/${id}`);
+      HandleResponse({response})
       fetchTeams();
     } catch (error) {
+      HandleResponse({
+        error,
+      });
     }
   };
 
@@ -84,11 +93,10 @@ export default function TeamKerja() {
   return (
     <DashboardLayout>
       <div className="space-y-4">
-      <Toaster/>
 
-   
+
         <Card className="p-4">
-        <div className="flex mb-4 flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="flex mb-4 flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
               <h1 className="text-xl font-semibold text-gray-900">Tim Kerja</h1>
               <p className="mt-1 text-sm text-gray-500">

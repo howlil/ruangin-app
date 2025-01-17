@@ -3,6 +3,7 @@ import { LogOut, Home, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '@/contexts/UserContext';
 import api from '@/utils/api';
+import { HandleResponse } from '@/components/ui/HandleResponse';
 
 export function Header({ user }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -23,11 +24,15 @@ export function Header({ user }) {
 
   const handleLogout = async () => {
     try {
-      await api.post('/api/v1/logout');
+      const response =await api.post('/api/v1/logout');
+      HandleResponse({response})
       logout();
       navigate('/login');
     } catch (error) {
-      console.error('Logout failed:', error);
+      HandleResponse({
+        error,
+        errorMessage: 'Gagal menghapus ruangan'
+      });
       logout();
       navigate('/login');
     }
@@ -57,8 +62,8 @@ export function Header({ user }) {
           absolute right-0 mt-2 w-48 rounded-md shadow-lg 
           bg-white ring-1 ring-black ring-opacity-5
           transform transition-all duration-200 ease-in-out
-          ${isDropdownOpen 
-            ? 'opacity-100 scale-100 translate-y-0' 
+          ${isDropdownOpen
+            ? 'opacity-100 scale-100 translate-y-0'
             : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'}
         `}
       >

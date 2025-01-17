@@ -7,7 +7,6 @@ import { Plus } from 'lucide-react';
 import api from "@/utils/api";
 import DeleteConfirmationModal from '@/components/ui/modals/DeleteConfirmationModal';
 import AddEditStaffModal from './AddEditStaffModal';
-import { Toaster } from 'react-hot-toast';
 import { HandleResponse } from '@/components/ui/HandleResponse';
 
 export default function Staff() {
@@ -132,7 +131,6 @@ export default function Staff() {
 
   return (
     <DashboardLayout>
-      <Toaster />
       <div className="space-y-4">
         <Card className="p-4">
           <div className="flex mb-4 flex-col sm:flex-row justify-between items-start sm:items-center gap-4">

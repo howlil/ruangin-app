@@ -1,4 +1,3 @@
-// utils/validation.js
 const { ValidationError } = require('./responseError');
 
 function validate(schema, request) {

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import logo from "@/assets/ilustration/logo.png";
 import api from "@/utils/api";
-import { Toaster } from 'react-hot-toast';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
 import { useNavigate } from 'react-router-dom';
@@ -25,7 +24,7 @@ export default function LoginPage() {
         email,
         kata_sandi: password
       });
-      
+      HandleResponse({response})
       const { token, ...userData } = response.data.data;
       
       if (token) {
@@ -59,7 +58,6 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
-      <Toaster />
 
       <div className="w-full px-4 lg:px-20 flex flex-col justify-center">
         <div className="max-w-md w-full mx-auto space-y-8">

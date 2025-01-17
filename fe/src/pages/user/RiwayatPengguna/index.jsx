@@ -3,6 +3,8 @@ import { useSearchParams } from 'react-router-dom';
 import MainLayout from "@/components/layout/MainLayout";
 import api from "@/utils/api";
 import { Calendar, Clock, MapPin, Users, FileText, Mail, User } from 'lucide-react';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+
 
 const statusOptions = [
   { label: 'Diproses', value: 'DIPROSES' },
@@ -35,8 +37,10 @@ export default function RiwayatUser() {
         setBookings(response.data.data);
         setTotalPages(Math.ceil(response.data.total / PAGE_SIZE));
       } catch (error) {
-        console.error('Error fetching bookings:', error);
-      } finally {
+        HandleResponse({
+          error,
+        });
+            } finally {
         setLoading(false);
       }
     };

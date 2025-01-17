@@ -1,14 +1,16 @@
 import { Dialog } from "@/components/ui/Dialog";
-import Input  from "@/components/ui/Input";
+import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
+import { HandleResponse } from "@/components/ui/HandleResponse";
 
-export default function AddEditTeamModal({ 
-  isOpen, 
-  onClose, 
-  team = null, 
-  onSuccess 
+
+export default function AddEditTeamModal({
+  isOpen,
+  onClose,
+  team = null,
+  onSuccess
 }) {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -29,16 +31,22 @@ export default function AddEditTeamModal({
       if (!formData.nama_tim_kerja || !formData.code) {
         return;
       }
-
+      let response;
       if (team) {
-        await api.patch(`/v1/tim-kerja/${team.id}`, formData);
+        response = await api.patch(`/v1/tim-kerja/${team.id}`, formData);
+        HandleResponse({ response })
+
       } else {
-        await api.post('/v1/tim-kerja', formData);
+        response = await api.post('/v1/tim-kerja', formData);
+        HandleResponse({ response })
+
       }
 
       onSuccess();
     } catch (error) {
-
+      HandleResponse({
+        error,
+      });
     } finally {
       setLoading(false);
     }

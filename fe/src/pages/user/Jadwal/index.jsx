@@ -20,6 +20,8 @@ import { ChevronLeft, ChevronRight, Clock, MapPin, User, Calendar, Users, X } fr
 import MainLayout from "@/components/layout/MainLayout";
 import api from "@/utils/api";
 import { Dialog } from '@headlessui/react';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+
 
 const colorMap = {
   'Ruang Kaca 1': 'bg-purple-100 border-purple-200 text-purple-800',
@@ -48,7 +50,9 @@ export default function Jadwal() {
         });
         setRooms(response.data.data);
       } catch (error) {
-        console.error('Error fetching rooms:', error);
+          HandleResponse({
+                error,
+              });
       } finally {
         setLoading(false);
       }

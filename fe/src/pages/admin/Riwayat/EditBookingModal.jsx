@@ -7,6 +7,9 @@ import Select from "@/components/ui/Select";
 import Button from "@/components/ui/Button";
 import api from "@/utils/api";
 import { format } from 'date-fns';
+import { HandleResponse } from "@/components/ui/HandleResponse";
+import { showToast } from "@/components/ui/Toast";
+
 
 function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -40,17 +43,20 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Validate time format
     if (!validateTime(formData.jam_mulai) || !validateTime(formData.jam_selesai)) {
+
+      showToast("Jam harus diisi","error")
       return;
     }
 
     // Validate time range
     const start = new Date(`2000-01-01 ${formData.jam_mulai}`);
     const end = new Date(`2000-01-01 ${formData.jam_selesai}`);
-    
+
     if (end <= start) {
+      showToast("jam mulai harus lebih besar","error")
       return;
     }
 
@@ -59,14 +65,20 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
     today.setHours(0, 0, 0, 0);
     const selectedDate = new Date(formData.tanggal);
     if (selectedDate < today) {
+      showToast("hari yang dipilih harus lebih besar dari hari ini","error")
       return;
     }
 
     try {
       setIsLoading(true);
-      await api.patch(`/v1/peminjaman/${booking.id}/status`, formData);
+      const response = await api.patch(`/v1/peminjaman/${booking.id}/status`, formData);
+      HandleResponse({ response })
+
       onSuccess();
     } catch (error) {
+      HandleResponse({
+        error,
+      });
 
     } finally {
       setIsLoading(false);
@@ -102,9 +114,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
               </label>
               <Select
                 value={formData.ruang_rapat_id}
-                onChange={(e) => setFormData(prev => ({ 
-                  ...prev, 
-                  ruang_rapat_id: e.target.value 
+                onChange={(e) => setFormData(prev => ({
+                  ...prev,
+                  ruang_rapat_id: e.target.value
                 }))}
                 required
                 className="w-full"
@@ -124,9 +136,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
               </label>
               <Input
                 value={formData.nama_kegiatan}
-                onChange={(e) => setFormData(prev => ({ 
-                  ...prev, 
-                  nama_kegiatan: e.target.value 
+                onChange={(e) => setFormData(prev => ({
+                  ...prev,
+                  nama_kegiatan: e.target.value
                 }))}
                 required
                 placeholder="Masukkan nama kegiatan"
@@ -140,9 +152,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
               <Input
                 type="date"
                 value={formData.tanggal}
-                onChange={(e) => setFormData(prev => ({ 
-                  ...prev, 
-                  tanggal: e.target.value 
+                onChange={(e) => setFormData(prev => ({
+                  ...prev,
+                  tanggal: e.target.value
                 }))}
                 required
                 min={format(new Date(), 'yyyy-MM-dd')}
@@ -157,9 +169,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
                 <Input
                   type="time"
                   value={formData.jam_mulai}
-                  onChange={(e) => setFormData(prev => ({ 
-                    ...prev, 
-                    jam_mulai: e.target.value 
+                  onChange={(e) => setFormData(prev => ({
+                    ...prev,
+                    jam_mulai: e.target.value
                   }))}
                   required
                 />
@@ -173,9 +185,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
                 <Input
                   type="time"
                   value={formData.jam_selesai}
-                  onChange={(e) => setFormData(prev => ({ 
-                    ...prev, 
-                    jam_selesai: e.target.value 
+                  onChange={(e) => setFormData(prev => ({
+                    ...prev,
+                    jam_selesai: e.target.value
                   }))}
                   required
                 />
@@ -189,9 +201,9 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
               </label>
               <Input
                 value={formData.no_surat_peminjaman}
-                onChange={(e) => setFormData(prev => ({ 
-                  ...prev, 
-                  no_surat_peminjaman: e.target.value 
+                onChange={(e) => setFormData(prev => ({
+                  ...prev,
+                  no_surat_peminjaman: e.target.value
                 }))}
                 placeholder="Masukkan nomor surat"
               />

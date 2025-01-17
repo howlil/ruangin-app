@@ -57,6 +57,10 @@ const Dashboard = () => {
       
     } catch (error) {
       const errorMessage = error.response?.data?.message || 'Gagal mengambil data statistik';
+      HandleResponse({
+        error,
+        errorMessage: 'Gagal menghapus ruangan'
+      });
       setError(errorMessage);
     } finally {
       setLoading(false);

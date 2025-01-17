@@ -9,6 +9,7 @@ import { useUser } from '@/contexts/UserContext';
 import { useIsMobile } from '@/hooks/useResponsive';
 import { useLocation } from 'react-router-dom';
 import api from '@/utils/api';
+import { HandleResponse } from '@/components/ui/HandleResponse';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +45,13 @@ const Navbar = () => {
     if (!rooms.length && !loading) {
       setLoading(true);
       try {
-        const response = await api.get('/v1/ruang-rapat');
+        const response = await api.get('/v1/ruang-rapat');        
         setRooms(response.data.data);
       } catch (error) {
-        console.error('Error fetching rooms:', error);
+        HandleResponse({
+          error,
+          errorMessage: 'Gagal menghapus ruangan'
+        });
       } finally {
         setLoading(false);
       }

@@ -8,7 +8,8 @@ import Select from '@/components/ui/Select';
 import DateRangePicker from "@/components/ui/Calenders/DateRangePicker";
 import { Eye } from 'lucide-react';
 import api from "@/utils/api";
-import { Toaster } from 'react-hot-toast';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+
 
 export default function AjuanPeminjaman() {
   const [bookings, setBookings] = useState([]);
@@ -37,6 +38,9 @@ export default function AjuanPeminjaman() {
         setRooms(response.data.data);
       }
     } catch (error) {
+      HandleResponse({
+        error,
+      });
     }
   };
 
@@ -65,6 +69,9 @@ export default function AjuanPeminjaman() {
         setPagination(response.data.pagination);
       }
     } catch (error) {
+      HandleResponse({
+        error,
+      });
     } finally {
       setLoading(false);
     }
@@ -154,7 +161,6 @@ export default function AjuanPeminjaman() {
 
   return (
     <DashboardLayout>
-      <Toaster/>
       <div className="space-y-4">
         <Card className="p-4">
           <div className='mb-8'>

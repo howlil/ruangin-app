@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 
 const StatisticBox = ({ title, value, icon: Icon, color, bgColor }) => (
-    <Card className={`${bgColor} border-none  hover:shadow-xl transition-shadow duration-200`}>
+    <Card className={`${bgColor} border  hover:shadow-xl transition-shadow duration-200`}>
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
                 <div className="flex flex-col gap-1">

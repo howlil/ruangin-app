@@ -9,7 +9,8 @@ import Select from '@/components/ui/Select';
 import { ArrowLeft } from 'lucide-react';
 import api from "@/utils/api";
 import { format } from "date-fns";
-import { Toaster } from 'react-hot-toast';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+import { showToast } from '@/components/ui/Toast';
 
 export default function DetailPeminjaman() {
   const { id } = useParams();
@@ -56,6 +57,10 @@ export default function DetailPeminjaman() {
         }
       } catch (error) {
         navigate('/ajuan-peminjaman');
+        HandleResponse({
+          error,
+          errorMessage: 'error'
+        });
       } finally {
         setLoading(false);
       }
@@ -72,6 +77,7 @@ export default function DetailPeminjaman() {
   const validateForm = () => {
     // Validate time format
     if (!validateTime(formData.jam_mulai) || !validateTime(formData.jam_selesai)) {
+      showToast("jam harus diisi","error")
       return false;
     }
 
@@ -82,11 +88,12 @@ export default function DetailPeminjaman() {
     const endTotal = endHour * 60 + endMinute;
 
     if (endTotal <= startTotal) {
+      showToast("Jam mulai tidak boleh lewat dari jam selesai","error")
       return false;
     }
 
-    // Validate required fields if status is DITOLAK
     if (formData.status === 'DITOLAK' && !formData.alasan_penolakan) {
+      showToast("Alasan Penolakan Wajib diisi","error")
       return false;
     }
 
@@ -109,9 +116,14 @@ export default function DetailPeminjaman() {
         alasan_penolakan: formData.status === 'DITOLAK' ? formData.alasan_penolakan : undefined
       };
 
-      await api.patch(`/v1/peminjaman/${id}/status`, payload);
+      const response=await api.patch(`/v1/peminjaman/${id}/status`, payload);
+      HandleResponse({response})
+
       navigate('/ajuan-peminjaman');
     } catch (error) {
+      HandleResponse({
+        error,
+      });
     } finally {
       setSaving(false);
     }
@@ -131,7 +143,6 @@ export default function DetailPeminjaman() {
 
   return (
     <DashboardLayout>
-      <Toaster/>
       <div className="space-y-4">
         <Card className="p-4">
           <div className="flex items-center gap-4 mb-6">

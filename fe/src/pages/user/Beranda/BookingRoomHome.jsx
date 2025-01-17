@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// BookingRoomDialog.jsx
+import React, { useState, useEffect } from 'react';
 import { Dialog } from '@headlessui/react';
 import { X } from 'lucide-react';
 import Input from '@/components/ui/Input';
@@ -7,7 +8,14 @@ import api from '@/utils/api';
 import dayjs from 'dayjs';
 import { HandleResponse } from '@/components/ui/HandleResponse';
 
-export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName }) {
+export default function BookingRoomHome({ 
+  isOpen, 
+  onClose, 
+  roomId, 
+  roomName,
+  selectedDate,
+  selectedTime 
+}) {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     nama_kegiatan: '',
@@ -18,6 +26,19 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
   });
   const [timeError, setTimeError] = useState('');
 
+  useEffect(() => {
+    if (selectedDate && selectedTime) {
+      // Automatically set the selected date and start time
+      setFormData(prev => ({
+        ...prev,
+        tanggal: selectedDate,
+        jam_mulai: selectedTime,
+        // Set default end time to 1 hour after start time
+        jam_selesai: dayjs(`2000-01-01 ${selectedTime}`).add(1, 'hour').format('HH:mm')
+      }));
+    }
+  }, [selectedDate, selectedTime]);
+
   const validateTimeRange = (start, end) => {
     if (!start || !end) return true;
 
@@ -26,7 +47,6 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
     const startMinute = parseInt(start.split(':')[1]);
     const endMinute = parseInt(end.split(':')[1]);
 
-    // Convert to minutes for easier comparison
     const startTotalMinutes = startHour * 60 + startMinute;
     const endTotalMinutes = endHour * 60 + endMinute;
 
@@ -46,7 +66,7 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     if (!validateTimeRange(formData.jam_mulai, formData.jam_selesai)) {
       return;
     }
@@ -54,13 +74,12 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
     setLoading(true);
 
     try {
-      const response = await api.post('/v1/peminjaman', {
+      const response =await api.post('/v1/peminjaman', {
         ruang_rapat_id: roomId,
         ...formData
       });
 
-      HandleResponse({ response })
-
+      HandleResponse({response})
 
       onClose();
     } catch (error) {
@@ -80,17 +99,14 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
         ...prev,
         [name]: value
       };
-
+      
       if (name === 'jam_mulai' || name === 'jam_selesai') {
         validateTimeRange(newData.jam_mulai, newData.jam_selesai);
       }
-
+      
       return newData;
     });
   };
-
-  const minDate = dayjs().format('YYYY-MM-DD');
-  const maxDate = dayjs().add(1, 'year').format('YYYY-MM-DD');
 
   return (
     <Dialog
@@ -137,10 +153,9 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               name="tanggal"
               value={formData.tanggal}
               onChange={handleInputChange}
-              min={minDate}
-              max={maxDate}
               required
               fullWidth
+              disabled
             />
 
             <div className="space-y-2">
@@ -151,19 +166,18 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
                   name="jam_mulai"
                   value={formData.jam_mulai}
                   onChange={handleInputChange}
-
                   required
                   fullWidth
-                  helperText="Format 24 jam (07:00 - 17:00)"
+                  disabled
+                  helperText="Format 24 jam"
                 />
 
                 <Input
                   label="Jam Selesai"
                   type="time"
-                  name="jam_selesai" a
+                  name="jam_selesai"
                   value={formData.jam_selesai}
                   onChange={handleInputChange}
-
                   required
                   fullWidth
                   helperText="Format 24 jam (07:00 - 17:00)"

@@ -6,6 +6,9 @@ import api from "@/utils/api"
 import React from "react"
 import RoomCard from "@/components/ui/RoomCard"
 import CheckRoomModal from "./CheckRoomModal"
+import { HandleResponse } from "@/components/ui/HandleResponse"
+import { Toaster } from "react-hot-toast"
+
 
 export default function Beranda() {
   const [rooms, setRooms] = React.useState([]);
@@ -25,7 +28,9 @@ export default function Beranda() {
         const response = await api.get('/v1/ruang-rapat');
         setRooms(response.data.data);
       } catch (error) {
-        console.error('Error fetching rooms:', error);
+        HandleResponse({
+          error,
+        });
       } finally {
         setLoading(false);
       }
@@ -35,7 +40,7 @@ export default function Beranda() {
   }, []);
 
   return (
-    <MainLayout>
+    <MainLayout>      
       <div className="relative overflow-hidden">
         <GridBackground />
         <div className="absolute -top-20 -left-10 w-72 h-72 bg-primary bg-opacity-35 rounded-full filter blur-[10rem]"></div>

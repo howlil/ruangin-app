@@ -6,6 +6,8 @@ import Button from '@/components/ui/Button';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '@/contexts/UserContext';
 import api from '@/utils/api';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+
 
 const UserMenu = ({ isScrolled }) => {
   const navigate = useNavigate();
@@ -26,12 +28,16 @@ const UserMenu = ({ isScrolled }) => {
 
   const handleLogout = async () => {
     try {
-      await api.post('/api/v1/logout', {}, {      });
+      const response = await api.post('/api/v1/logout', {}, {      });
+      HandleResponse({response})
       logout();
       navigate('/');
     } catch (error) {
-      console.error('Logout failed:', error);
-      logout();
+      HandleResponse({
+        error,
+        errorMessage: 'Gagal menghapus ruangan'
+      });
+            logout();
       navigate('/');
     }
   };

@@ -5,7 +5,6 @@ import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
 import { HandleResponse } from "@/components/ui/HandleResponse";
-import { Toaster } from "react-hot-toast";
 
 export default function AddEditStaffModal({
   isOpen,
@@ -32,11 +31,15 @@ export default function AddEditStaffModal({
     e.preventDefault();
     try {
       setLoading(true);
-
+      let response;
       if (staff) {
-        await api.patch(`/v1/users/${staff.id}`, formData);
+        response = await api.patch(`/v1/users/${staff.id}`, formData);
+        HandleResponse({ response })
+
       } else {
-        await api.post('/v1/register', formData);
+        response = await api.post('/v1/register', formData);
+        HandleResponse({ response })
+
       }
 
       onSuccess();

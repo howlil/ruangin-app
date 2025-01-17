@@ -49,6 +49,9 @@ export default function Ruangan() {
         setRooms([]);
       }
     } catch (error) {
+      HandleResponse({
+        error,
+      });
       setRooms([]);
     } finally {
       setLoading(false);

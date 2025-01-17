@@ -4,6 +4,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useUser } from '@/contexts/UserContext';
 import Button from '@/components/ui/Button';
 import { LogOut, LayoutDashboard, ChevronDown, ChevronUp } from 'lucide-react';
+import { HandleResponse } from '@/components/ui/HandleResponse';
 
 const MobileNav = ({ isOpen, navItems, rooms }) => {
   const navigate = useNavigate();
@@ -18,7 +19,10 @@ const MobileNav = ({ isOpen, navItems, rooms }) => {
       await logout();
       navigate('/login');
     } catch (error) {
-      console.error('Logout failed:', error);
+      HandleResponse({
+        error,
+        errorMessage: 'Gagal menghapus ruangan'
+      });
     }
   };
 
@@ -59,7 +63,7 @@ const MobileNav = ({ isOpen, navItems, rooms }) => {
                       <ChevronDown className="w-5 h-5" />
                     )}
                   </button>
-                  
+
                   {isRoomDropdownOpen && rooms && (
                     <div className="mt-1 pl-4 space-y-1 border-l-2 border-gray-100 ml-3">
                       {rooms.map((room) => (

@@ -13,7 +13,6 @@ const peminjamanService = {
             date.tanggal === data.tanggal
         )
 
-        console.log(is_tanggal_cuti)
 
         if (is_tanggal_cuti) {
             const keterangan = is_tanggal_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
@@ -487,50 +486,72 @@ const peminjamanService = {
 
     async checkAvailability(data) {
         try {
+            const tanggal_cuti = await axios.get(process.env.API_DAY_OFF)
 
-            const room = await prisma.ruangRapat.findUnique({
-                where: { id: data.ruang_rapat_id },
-            });
-
-            if (!room) {
-                throw new Error('Ruang rapat tidak ditemukan');
+            const is_tanggal_cuti = tanggal_cuti.data.find((date) =>
+                date.tanggal === data.tanggal
+            )
+    
+    
+            if (is_tanggal_cuti) {
+                const keterangan = is_tanggal_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
+                throw new ResponseError(400, `Tidak bisa melakukan peminjaman pada ${keterangan}: ${is_tanggal_cuti.keterangan}`);
             }
-
+            // 1. Ambil semua ruangan
+            const allRooms = await prisma.ruangRapat.findMany();
+    
+            // 2. Ambil semua booking di tanggal tersebut
             const bookings = await prisma.peminjaman.findMany({
                 where: {
-                    ruang_rapat_id: data.ruang_rapat_id,
                     tanggal: data.tanggal,
                     status: {
                         in: ['DIPROSES', 'DISETUJUI'],
                     },
                 },
                 select: {
+                    ruang_rapat_id: true,
                     jam_mulai: true,
                     jam_selesai: true,
                 },
             });
-
-            const isTimeConflict = bookings.some((booking) => {
-                const requestedTime = new Date(`2000-01-01T${data.jam}`);
-                const startTime = new Date(`2000-01-01T${booking.jam_mulai}`);
-                const endTime = new Date(`2000-01-01T${booking.jam_selesai}`);
-
-                return requestedTime >= startTime && requestedTime <= endTime;
+    
+            // 3. Cek ketersediaan untuk setiap ruangan
+            const availableRooms = allRooms.filter(room => {
+                const roomBookings = bookings.filter(
+                    booking => booking.ruang_rapat_id === room.id
+                );
+    
+                // Cek konflik waktu untuk ruangan ini
+                const hasConflict = roomBookings.some(booking => {
+                    const requestedTime = new Date(`2000-01-01T${data.jam}`);
+                    const startTime = new Date(`2000-01-01T${booking.jam_mulai}`);
+                    const endTime = new Date(`2000-01-01T${booking.jam_selesai}`);
+    
+                    return requestedTime >= startTime && requestedTime <= endTime;
+                });
+    
+                return !hasConflict;
             });
-
+    
+            // 4. Format response dengan informasi ruangan yang tersedia
+            const formattedResponse = availableRooms.map(room => ({
+                id: room.id,
+                nama_ruangan: room.nama_ruangan,
+                kapasitas: room.kapasitas,
+                lokasi: room.lokasi_ruangan,
+                deskripsi: room.deskripsi,
+                foto_ruangan: room.foto_ruangan
+            }));
+    
             return {
-                available: !isTimeConflict,
-                room_name: room.nama_ruangan,
-                existing_bookings: bookings.map(booking => ({
-                    start: booking.jam_mulai,
-                    end: booking.jam_selesai
-                }))
+                tanggal: data.tanggal,
+                jam: data.jam,
+                jumlah_ruangan_tersedia: formattedResponse.length,
+                ruangan_tersedia: formattedResponse
             };
-
+    
         } catch (error) {
             throw error;
-
-
         }
     },
 
