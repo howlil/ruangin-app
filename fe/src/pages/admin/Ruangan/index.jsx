@@ -6,10 +6,11 @@ import { Card } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { Plus } from 'lucide-react';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import RoomDetailsModal from './RoomDetailsModal';
 import AddEditRoomModal from './AddEditRoomModal';
 import DeleteConfirmationModal from '@/components/ui/modals/DeleteConfirmationModal';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+import { Toaster } from 'react-hot-toast';
 
 export default function Ruangan() {
   const [rooms, setRooms] = useState([]);
@@ -24,7 +25,6 @@ export default function Ruangan() {
   const [roomToEdit, setRoomToEdit] = useState(null);
   const [roomToDelete, setRoomToDelete] = useState(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const { showToast } = useCustomToast();
 
   const fetchRooms = async () => {
     try {
@@ -46,11 +46,9 @@ export default function Ruangan() {
         setRooms(formattedRooms);
         setPagination(response.data.pagination);
       } else {
-        showToast("Tidak ada data yang ditemukan", "info");
         setRooms([]);
       }
     } catch (error) {
-      showToast(error?.response?.data?.message || "Gagal mengambil data ruangan", "error");
       setRooms([]);
     } finally {
       setLoading(false);
@@ -63,11 +61,17 @@ export default function Ruangan() {
 
   const handleDeleteRoom = async (id) => {
     try {
-      await api.delete(`/v1/ruang-rapat/${id}`);
-      showToast('Ruangan berhasil dihapus', 'success');
+      const response = await api.delete(`/v1/ruang-rapat/${id}`);
+      HandleResponse({
+        response,
+        successMessage: 'Ruangan berhasil dihapus'
+      });
       fetchRooms();
     } catch (error) {
-      showToast(error?.response?.data?.message || 'Gagal menghapus ruangan', 'error');
+      HandleResponse({
+        error,
+        errorMessage: 'Gagal menghapus ruangan'
+      });
     }
   };
 
@@ -109,6 +113,7 @@ export default function Ruangan() {
   return (
     <DashboardLayout>
       <div className="space-y-4">
+        <Toaster/>
 
         <Card className="p-4">
           <div className="flex flex-col mb-6 sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -152,10 +157,7 @@ export default function Ruangan() {
           room={roomToEdit}
           onSuccess={() => {
             fetchRooms();
-            showToast(
-              roomToEdit ? 'Ruangan berhasil diperbarui' : 'Ruangan berhasil ditambahkan',
-              'success'
-            );
+  
             setIsAddModalOpen(false);
             setRoomToEdit(null);
           }}

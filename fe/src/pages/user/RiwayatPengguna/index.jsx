@@ -141,7 +141,7 @@ export default function RiwayatUser() {
                           </div>
                           <div className="flex items-center">
                             <FileText className="w-4 h-4 mr-2" />
-                            <span>No. Surat: {booking.no_surat_peminjaman}</span>
+                            <span>No. Surat Undangan: {booking.no_surat_peminjaman}</span>
                           </div>
                           <div className="flex items-center">
                             <User className="w-4 h-4 mr-2" />

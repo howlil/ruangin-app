@@ -1,12 +1,12 @@
 // src/pages/Ruangan/components/AddEditRoomModal.jsx
 import { Dialog } from "@/components/ui/Dialog";
-import Input  from "@/components/ui/Input";
+import Input from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import { Upload } from "lucide-react";
+import { HandleResponse } from "@/components/ui/HandleResponse";
 
 export default function AddEditRoomModal({
     isOpen,
@@ -19,11 +19,10 @@ export default function AddEditRoomModal({
     const [formData, setFormData] = useState({
         nama_ruangan: room?.nama_ruangan || '',
         lokasi_ruangan: room?.lokasi_ruangan || '',
-        kapasitas: room?.kapasitas?.toString().replace(/[^0-9]/g, '') || '',
+        kapasitas: room?.kapasitas || '',
         deskripsi: room?.deskripsi || '',
         foto_ruangan: null
     });
-    const {showToast} = useCustomToast();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -33,13 +32,11 @@ export default function AddEditRoomModal({
     const handleImageChange = (e) => {
         const file = e.target.files[0];
         if (file) {
-            if (file.size > 10 * 1024 * 1024) { 
-                showToast('Ukuran file terlalu besar. Maksimal 10MB','error');
+            if (file.size > 10 * 1024 * 1024) {
                 return;
             }
 
             if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-                showToast('Format file tidak didukung. Gunakan JPG, PNG, atau GIF','error');
                 return;
             }
 
@@ -57,16 +54,7 @@ export default function AddEditRoomModal({
         try {
             setLoading(true);
 
-            // Validate required fields
-            const requiredFields = ['nama_ruangan', 'lokasi_ruangan', 'kapasitas'];
-            const missingFields = requiredFields.filter(field => !formData[field]);
 
-            if (missingFields.length > 0) {
-                showToast('Mohon lengkapi semua field yang diperlukan','error');
-                return;
-            }
-
-            // Create FormData object
             const submitData = new FormData();
             Object.entries(formData).forEach(([key, value]) => {
                 if (value !== null) {
@@ -74,31 +62,36 @@ export default function AddEditRoomModal({
                 }
             });
 
-            // Send request
             if (room) {
                 // PATCH request for edit
-                await api.patch(`/v1/ruang-rapat/${room.id}`, submitData, {
+                const res = await api.patch(`/v1/ruang-rapat/${room.id}`, submitData, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                     }
                 });
-                showToast('Ruangan berhasil diperbarui','success');
+                HandleResponse({
+                    response: res,
+                    successMessage: 'Action completed successfully'
+                });
             } else {
-                // POST request for create
-                await api.post('/v1/ruang-rapat', submitData, {
+                const res = await api.post('/v1/ruang-rapat', submitData, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                     }
                 });
-                showToast('Ruangan berhasil ditambahkan','success');
+                HandleResponse({
+                    response: res,
+                    successMessage: 'Action completed successfully'
+                });
             }
+
 
             onSuccess();
         } catch (error) {
-            console.error('Error:', error);
-            showToast(
-                room ? 'Gagal memperbarui ruangan' : 'Gagal menambahkan ruangan'
-            ,'error');
+            HandleResponse({
+                error: error,
+                errorMessage: 'Gagal melakukan login'
+            });
         } finally {
             setLoading(false);
         }
@@ -112,7 +105,6 @@ export default function AddEditRoomModal({
             size="lg"
         >
             <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Image Upload */}
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                         Foto Ruangan
@@ -121,7 +113,7 @@ export default function AddEditRoomModal({
                         {imagePreview ? (
                             <div className="w-full">
                                 <img
-                                    src={imagePreview}
+                                    src={`${import.meta.env.VITE_API_URL}${imagePreview}`}
                                     alt="Preview"
                                     className="max-h-48 mx-auto object-cover rounded-lg"
                                 />
@@ -196,7 +188,7 @@ export default function AddEditRoomModal({
                             Kapasitas (Orang) <span className="text-red-500">*</span>
                         </label>
                         <Input
-                            type="number"
+                            type="text"
                             name="kapasitas"
                             value={formData.kapasitas}
                             onChange={handleChange}

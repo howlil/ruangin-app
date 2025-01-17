@@ -8,7 +8,6 @@ import Ruangan from "@/pages/admin/Ruangan";
 import DetailPeminjaman from "@/pages/admin/Peminjaman/DetailPeminjaman";
 
 export const AdminRoutes = [
-  // Admin & Super Admin Routes
   {
     path: "/dashboard",
     element: (

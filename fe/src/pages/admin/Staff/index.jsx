@@ -5,9 +5,10 @@ import { Card } from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { Plus } from 'lucide-react';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import DeleteConfirmationModal from '@/components/ui/modals/DeleteConfirmationModal';
 import AddEditStaffModal from './AddEditStaffModal';
+import { Toaster } from 'react-hot-toast';
+import { HandleResponse } from '@/components/ui/HandleResponse';
 
 export default function Staff() {
   const [staff, setStaff] = useState([]);
@@ -22,7 +23,6 @@ export default function Staff() {
   const [staffToEdit, setStaffToEdit] = useState(null);
   const [staffToDelete, setStaffToDelete] = useState(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const { showToast } = useCustomToast();
 
   // Fetch teams data for dropdown
   const fetchTeams = async () => {
@@ -32,7 +32,10 @@ export default function Staff() {
         setTeams(response.data.data);
       }
     } catch (error) {
-      showToast('Gagal mengambil data tim', 'error');
+      HandleResponse({
+        error: error,
+        errorMessage: 'Gagal melakukan login'
+      });
     }
   };
 
@@ -51,12 +54,15 @@ export default function Staff() {
         setStaff(response.data.data);
         setPagination(response.data.pagination);
       } else {
-        showToast("Tidak ada data yang ditemukan", "info");
-        setStaff([]);
+        HandleResponse({
+          errorMessage: 'Gagal mengambil data'
+        }); setStaff([]);
       }
     } catch (error) {
-      showToast(error?.response?.data?.message || "Gagal mengambil data staff", "error");
-      setStaff([]);
+      HandleResponse({
+        error: error,
+        errorMessage: 'Gagal mengambil data'
+      }); setStaff([]);
     } finally {
       setLoading(false);
     }
@@ -70,11 +76,16 @@ export default function Staff() {
   // Delete staff handler
   const handleDeleteStaff = async (id) => {
     try {
-      await api.delete(`/v1/users/${id}`);
-      showToast('Staff berhasil dihapus', 'success');
-      fetchStaff();
+      const res = await api.delete(`/v1/users/${id}`);
+      HandleResponse({
+        response: res,
+        successMessage: 'data dihapus'
+      }); fetchStaff();
     } catch (error) {
-      showToast(error?.response?.data?.message || 'Gagal menghapus staff', 'error');
+      HandleResponse({
+        error: error,
+        errorMessage: 'Gagal hapus data'
+      });
     }
   };
 
@@ -121,6 +132,7 @@ export default function Staff() {
 
   return (
     <DashboardLayout>
+      <Toaster />
       <div className="space-y-4">
         <Card className="p-4">
           <div className="flex mb-4 flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -160,10 +172,6 @@ export default function Staff() {
           teams={teams}
           onSuccess={() => {
             fetchStaff();
-            showToast(
-              staffToEdit ? 'Staff berhasil diperbarui' : 'Staff berhasil ditambahkan',
-              'success'
-            );
             setIsAddModalOpen(false);
             setStaffToEdit(null);
           }}

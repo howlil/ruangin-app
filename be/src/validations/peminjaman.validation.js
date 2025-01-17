@@ -1,5 +1,7 @@
 const Joi = require('joi');
-
+const dayjs = require('dayjs');
+const customParseFormat = require('dayjs/plugin/customParseFormat');
+dayjs.extend(customParseFormat);
 
 const checkTimeRange = (value, helpers) => {
     const time = value.split(':');
@@ -11,7 +13,29 @@ const checkTimeRange = (value, helpers) => {
     const endMinutes = 17 * 60;   // 17:00
 
     if (totalMinutes < startMinutes || totalMinutes > endMinutes) {
-        return helpers.message('Time must be between 07:00 and 17:00');
+        return helpers.message('jam harus diantara 07:00 dan 17:00');
+    }
+
+    return value;
+};
+
+const validateDate = (value, helpers) => {
+    // Cek format dan validitas tanggal
+    if (!dayjs(value, 'YYYY-MM-DD', true).isValid()) {
+        return helpers.error('date.invalid');
+    }
+
+    const date = dayjs(value);
+    const dayOfWeek = date.day();
+
+    // Cek apakah hari kerja (Senin-Jumat)
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+        return helpers.error('date.workingDay');
+    }
+
+    // Cek apakah tanggal di masa lalu
+    if (date.isBefore(dayjs(), 'day')) {
+        return helpers.error('date.past');
     }
 
     return value;
@@ -22,18 +46,21 @@ module.exports = {
         ruang_rapat_id: Joi.string().required(),
         nama_kegiatan: Joi.string().required(),
         tanggal: Joi.string()
-            .pattern(/^\d{4}-\d{2}-\d{2}$/)
             .required()
+            .custom(validateDate)
             .messages({
-                'string.pattern.base': 'Date format must be YYYY-MM-DD'
+                'string.empty': 'tanggal harus diisi',
+                'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
+                'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)',
+                'date.past': 'Tanggal Peminjaman tidak boleh hari kemarin'
             }),
         jam_mulai: Joi.string()
             .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
             .custom(checkTimeRange)
             .required()
             .messages({
-                'string.pattern.base': 'Time format must be HH:mm',
-                'string.empty': 'Start time is required'
+                'string.pattern.base': 'Format waktu harus seperti "08:00"',
+                'string.empty': 'jam mulai harus diisi'
             }),
         jam_selesai: Joi.string()
             .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
@@ -48,15 +75,15 @@ module.exports = {
                 const startMinutes = parseInt(startTime[0]) * 60 + parseInt(startTime[1]);
 
                 if (endMinutes <= startMinutes) {
-                    return helpers.message('End time must be after start time');
+                    return helpers.message('jam selesai harus setelah jam mulai');
                 }
 
                 return value;
             })
             .required()
             .messages({
-                'string.pattern.base': 'Time format must be HH:mm',
-                'string.empty': 'End time is required'
+                'string.pattern.base': 'Format waktu harus seperti "08:00"',
+                'string.empty': 'jam selesai harus diisi'
             }),
         no_surat_peminjaman: Joi.string().required()
     }),

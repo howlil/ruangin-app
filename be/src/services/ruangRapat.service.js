@@ -139,14 +139,14 @@ const ruangRapatService = {
         const ruangRapat = await prisma.ruangRapat.findUnique({
             where: { id }
         });
-
+    
         if (!ruangRapat) {
             if (file) {
                 await fs.unlink(file.path);
             }
             throw new ResponseError(404, "Room not found");
         }
-
+    
         if (data.nama_ruangan) {
             const existingRoom = await prisma.ruangRapat.findFirst({
                 where: {
@@ -154,7 +154,7 @@ const ruangRapatService = {
                     NOT: { id }
                 }
             });
-
+    
             if (existingRoom) {
                 if (file) {
                     await fs.unlink(file.path);
@@ -162,7 +162,7 @@ const ruangRapatService = {
                 throw new ResponseError(400, "Room name already exists");
             }
         }
-
+    
         if (file && ruangRapat.foto_ruangan) {
             const oldImagePath = path.join(__dirname, '../../public', ruangRapat.foto_ruangan);
             try {
@@ -171,18 +171,19 @@ const ruangRapatService = {
                 console.error('Error deleting old image:', error);
             }
         }
-
+    
+        // Update data - pastikan kapasitas tetap string
         const result = await prisma.ruangRapat.update({
             where: { id },
             data: {
                 nama_ruangan: data.nama_ruangan || ruangRapat.nama_ruangan,
                 deskripsi: data.deskripsi || ruangRapat.deskripsi,
                 lokasi_ruangan: data.lokasi_ruangan || ruangRapat.lokasi_ruangan,
-                kapasitas: data.kapasitas ? parseInt(data.kapasitas) : ruangRapat.kapasitas,
+                kapasitas: data.kapasitas ? String(data.kapasitas) : ruangRapat.kapasitas, // Konversi ke string
                 foto_ruangan: file ? `/images/${file.filename}` : ruangRapat.foto_ruangan
             }
         });
-
+    
         return result;
     },
 

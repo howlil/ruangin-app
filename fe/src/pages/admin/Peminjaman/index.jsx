@@ -8,7 +8,7 @@ import Select from '@/components/ui/Select';
 import DateRangePicker from "@/components/ui/Calenders/DateRangePicker";
 import { Eye } from 'lucide-react';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
+import { Toaster } from 'react-hot-toast';
 
 export default function AjuanPeminjaman() {
   const [bookings, setBookings] = useState([]);
@@ -29,7 +29,6 @@ export default function AjuanPeminjaman() {
   });
 
   const navigate = useNavigate();
-  const { showToast } = useCustomToast();
 
   const fetchRooms = async () => {
     try {
@@ -38,7 +37,6 @@ export default function AjuanPeminjaman() {
         setRooms(response.data.data);
       }
     } catch (error) {
-      showToast('Gagal mengambil data ruangan', 'error');
     }
   };
 
@@ -67,7 +65,6 @@ export default function AjuanPeminjaman() {
         setPagination(response.data.pagination);
       }
     } catch (error) {
-      showToast('Gagal mengambil data peminjaman', 'error');
     } finally {
       setLoading(false);
     }
@@ -157,6 +154,7 @@ export default function AjuanPeminjaman() {
 
   return (
     <DashboardLayout>
+      <Toaster/>
       <div className="space-y-4">
         <Card className="p-4">
           <div className='mb-8'>

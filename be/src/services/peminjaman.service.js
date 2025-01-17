@@ -1,9 +1,24 @@
 const { ResponseError } = require('../utils/responseError');
 const prisma = require('../configs/db.js');
 const moment = require('moment');
+const axios = require('axios')
+require('dotenv').config();
 
 const peminjamanService = {
     async createPeminjaman(userId, data) {
+
+        const tanggal_cuti = await axios.get(process.env.API_DAY_OFF)
+
+        const is_tanggal_cuti = tanggal_cuti.data.find((date) =>
+            date.tanggal === data.tanggal
+        )
+
+        console.log(is_tanggal_cuti)
+
+        if (is_tanggal_cuti) {
+            const keterangan = is_tanggal_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
+            throw new ResponseError(400, `Tidak bisa melakukan peminjaman pada ${keterangan}: ${is_tanggal_cuti.keterangan}`);
+        }
         // Validate user role
         const user = await prisma.pengguna.findUnique({
             where: { id: userId },
@@ -517,7 +532,46 @@ const peminjamanService = {
 
 
         }
+    },
+
+    async countStatus() {
+        try {
+            const diproses = await prisma.peminjaman.count({
+                where: {
+                    status: 'DIPROSES'
+                }
+            });
+
+            const disetujui = await prisma.peminjaman.count({
+                where: {
+                    status: 'DISETUJUI'
+                }
+            });
+
+            const ditolak = await prisma.peminjaman.count({
+                where: {
+                    status: 'DITOLAK'
+                }
+            });
+
+            const selesai = await prisma.peminjaman.count({
+                where: {
+                    status: 'SELESAI'
+                }
+            });
+
+            return {
+                DIPROSES: diproses,
+                DISETUJUI: disetujui,
+                DITOLAK: ditolak,
+                SELESAI: selesai
+            };
+
+        } catch (error) {
+            throw new Error(`Error counting status: ${error.message}`);
+        }
     }
+
 
 };
 

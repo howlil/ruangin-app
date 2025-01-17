@@ -29,14 +29,11 @@ export default function LoginPage() {
       const { token, ...userData } = response.data.data;
       
       if (token) {
-        // First store token and cookie data
         localStorage.setItem("token", token);
         storeUserDataInCookie(userData, token);
         
-        // Then reinitialize user context
         await initializeUser();
         
-        // Then update user state
         updateUser(userData);
         
         HandleResponse({
@@ -44,7 +41,6 @@ export default function LoginPage() {
           successMessage: response.message
         });
 
-        // Finally navigate
         if (userData.role === 'SUPERADMIN' || userData.role === 'ADMIN') {
           navigate("/dashboard");
         } else {
@@ -65,7 +61,6 @@ export default function LoginPage() {
     <div className="min-h-screen grid lg:grid-cols-2">
       <Toaster />
 
-      {/* Left Side - Login Form */}
       <div className="w-full px-4 lg:px-20 flex flex-col justify-center">
         <div className="max-w-md w-full mx-auto space-y-8">
           <div>

@@ -1,4 +1,3 @@
-// src/components/dialog/BookingDialog.jsx
 import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { X } from 'lucide-react';
@@ -6,10 +5,11 @@ import Input from '@/components/ui/Input';
 import Button from '@/components/ui/Button';
 import api from '@/utils/api';
 import dayjs from 'dayjs';
+import { HandleResponse } from '@/components/ui/HandleResponse';
+import { Toaster } from 'react-hot-toast';
 
 export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName }) {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     nama_kegiatan: '',
     tanggal: '',
@@ -17,22 +17,55 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
     jam_selesai: '',
     no_surat_peminjaman: ''
   });
+  const [timeError, setTimeError] = useState('');
+
+  const validateTimeRange = (start, end) => {
+    if (!start || !end) return true;
+
+    const startHour = parseInt(start.split(':')[0]);
+    const endHour = parseInt(end.split(':')[0]);
+    const startMinute = parseInt(start.split(':')[1]);
+    const endMinute = parseInt(end.split(':')[1]);
+
+    // Convert to minutes for easier comparison
+    const startTotalMinutes = startHour * 60 + startMinute;
+    const endTotalMinutes = endHour * 60 + endMinute;
+
+    if (startHour < 7 || endHour > 17 || (endHour === 17 && endMinute > 0)) {
+      setTimeError('Waktu peminjaman harus antara jam 07:00 - 17:00');
+      return false;
+    }
+
+    if (endTotalMinutes <= startTotalMinutes) {
+      setTimeError('Jam selesai harus lebih besar dari jam mulai');
+      return false;
+    }
+
+    setTimeError('');
+    return true;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!validateTimeRange(formData.jam_mulai, formData.jam_selesai)) {
+      return;
+    }
+
     setLoading(true);
-    setError('');
 
     try {
       await api.post('/v1/peminjaman', {
         ruang_rapat_id: roomId,
         ...formData
       });
-      
+
       onClose();
-      // Optional: Add success notification or callback
     } catch (error) {
-      setError(error.response?.data?.message || 'Terjadi kesalahan saat mengajukan peminjaman');
+      HandleResponse({
+        error: error,
+        errorMessage: 'Terjadi kesalahan saat mengajukan peminjaman'
+      });
     } finally {
       setLoading(false);
     }
@@ -40,24 +73,32 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData(prev => {
+      const newData = {
+        ...prev,
+        [name]: value
+      };
+      
+      if (name === 'jam_mulai' || name === 'jam_selesai') {
+        validateTimeRange(newData.jam_mulai, newData.jam_selesai);
+      }
+      
+      return newData;
+    });
   };
 
-  // Get min date (today) and max date (1 year from now)
   const minDate = dayjs().format('YYYY-MM-DD');
   const maxDate = dayjs().add(1, 'year').format('YYYY-MM-DD');
 
   return (
-    <Dialog 
-      open={isOpen} 
+    <Dialog
+      open={isOpen}
       onClose={() => !loading && onClose()}
       className="relative z-50"
     >
+      <Toaster />
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
-      
+
       <div className="fixed inset-0 flex items-center justify-center p-4">
         <Dialog.Panel className="w-full max-w-md rounded-lg bg-white p-6 shadow-xl">
           <div className="flex justify-between items-start mb-4">
@@ -101,30 +142,39 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               fullWidth
             />
 
-            <div className="grid grid-cols-2 gap-4">
-              <Input
-                label="Jam Mulai"
-                type="time"
-                name="jam_mulai"
-                value={formData.jam_mulai}
-                onChange={handleInputChange}
-                required
-                fullWidth
-              />
+            <div className="space-y-2">
+              <div className="grid grid-cols-2 gap-4">
+                <Input
+                  label="Jam Mulai"
+                  type="time"
+                  name="jam_mulai"
+                  value={formData.jam_mulai}
+                  onChange={handleInputChange}
+               
+                  required
+                  fullWidth
+                  helperText="Format 24 jam (07:00 - 17:00)"
+                />
 
-              <Input
-                label="Jam Selesai"
-                type="time"
-                name="jam_selesai"
-                value={formData.jam_selesai}
-                onChange={handleInputChange}
-                required
-                fullWidth
-              />
+                <Input
+                  label="Jam Selesai"
+                  type="time"
+                  name="jam_selesai"a
+                  value={formData.jam_selesai}
+                  onChange={handleInputChange}
+               
+                  required
+                  fullWidth
+                  helperText="Format 24 jam (07:00 - 17:00)"
+                />
+              </div>
+              {timeError && (
+                <p className="text-sm text-red-500 mt-1">{timeError}</p>
+              )}
             </div>
 
             <Input
-              label="Nomor Surat Peminjaman"
+              label="Nomor Surat Undangan"
               name="no_surat_peminjaman"
               value={formData.no_surat_peminjaman}
               onChange={handleInputChange}
@@ -132,12 +182,6 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               fullWidth
               placeholder="Masukkan nomor surat"
             />
-
-            {error && (
-              <div className="rounded-md bg-red-50 p-4">
-                <p className="text-sm text-red-700">{error}</p>
-              </div>
-            )}
 
             <div className="flex justify-end gap-3 mt-6">
               <Button
@@ -150,6 +194,7 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               <Button
                 type="submit"
                 loading={loading}
+                disabled={loading || !!timeError}
               >
                 Ajukan Peminjaman
               </Button>

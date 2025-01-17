@@ -5,9 +5,9 @@ import { Card } from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { Plus } from 'lucide-react';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import DeleteConfirmationModal from '@/components/ui/modals/DeleteConfirmationModal';
 import AddEditTeamModal from './AddEditTeamModal';
+import { Toaster } from 'react-hot-toast';
 
 export default function TeamKerja() {
   const [teams, setTeams] = useState([]);
@@ -21,7 +21,6 @@ export default function TeamKerja() {
   const [teamToEdit, setTeamToEdit] = useState(null);
   const [teamToDelete, setTeamToDelete] = useState(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const { showToast } = useCustomToast();
 
   const fetchTeams = async () => {
     try {
@@ -37,11 +36,9 @@ export default function TeamKerja() {
         setTeams(response.data.data);
         setPagination(response.data.pagination);
       } else {
-        showToast("Tidak ada data yang ditemukan", "info");
         setTeams([]);
       }
     } catch (error) {
-      showToast(error?.response?.data?.message || "Gagal mengambil data tim", "error");
       setTeams([]);
     } finally {
       setLoading(false);
@@ -55,10 +52,8 @@ export default function TeamKerja() {
   const handleDeleteTeam = async (id) => {
     try {
       await api.delete(`/v1/tim-kerja/${id}`);
-      showToast('Tim kerja berhasil dihapus', 'success');
       fetchTeams();
     } catch (error) {
-      showToast(error?.response?.data?.message || 'Gagal menghapus tim kerja', 'error');
     }
   };
 
@@ -89,7 +84,7 @@ export default function TeamKerja() {
   return (
     <DashboardLayout>
       <div className="space-y-4">
-   
+      <Toaster/>
 
    
         <Card className="p-4">
@@ -128,10 +123,6 @@ export default function TeamKerja() {
           team={teamToEdit}
           onSuccess={() => {
             fetchTeams();
-            showToast(
-              teamToEdit ? 'Tim berhasil diperbarui' : 'Tim berhasil ditambahkan',
-              'success'
-            );
             setIsAddModalOpen(false);
             setTeamToEdit(null);
           }}

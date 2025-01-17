@@ -7,6 +7,7 @@ const { errorMiddleware } = require("./src/middlewares/error.middleware.js");
 const { logMiddleware } = require("./src/middlewares/logging.middleware.js");
 const helmet = require('helmet')
 const cors = require('cors')
+const {initUpdateStatusCron} = require("./index.js")
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(helmet());
 app.use(cors(corsOptions));
+
 
 app.use('/images', (req, res, next) => {
     res.header('Cross-Origin-Resource-Policy', 'cross-origin');
@@ -35,6 +37,9 @@ app.use('/images', (req, res, next) => {
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+initUpdateStatusCron();
 
 app.use(router)
 app.use(apiRoute)

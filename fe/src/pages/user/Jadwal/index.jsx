@@ -1,7 +1,20 @@
-//src/pages/Jadwal.jsx
 import React, { useState, useEffect } from 'react';
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, 
-         parseISO, isSameDay, addMonths, subMonths, startOfWeek, endOfWeek } from 'date-fns';
+import { 
+  format, 
+  startOfMonth, 
+  endOfMonth, 
+  eachDayOfInterval, 
+  isSameMonth,
+  parseISO, 
+  isSameDay,
+  addMonths, 
+  subMonths, 
+  startOfWeek, 
+  endOfWeek,
+  isToday,
+  isBefore,
+  startOfDay
+} from 'date-fns';
 import { id } from 'date-fns/locale';
 import { ChevronLeft, ChevronRight, Clock, MapPin, User, Calendar, Users, X } from 'lucide-react';
 import MainLayout from "@/components/layout/MainLayout";
@@ -49,6 +62,7 @@ export default function Jadwal() {
   const calendarStart = startOfWeek(monthStart);
   const calendarEnd = endOfWeek(monthEnd);
   const calendarDays = eachDayOfInterval({ start: calendarStart, end: calendarEnd });
+  const today = startOfDay(new Date());
 
   // Group bookings by date
   const bookingsByDate = rooms.reduce((acc, room) => {
@@ -72,6 +86,29 @@ export default function Jadwal() {
     return acc;
   }, {});
 
+  const getDateClasses = (day) => {
+    const baseClasses = "relative min-h-[120px] p-2";
+    const isCurrentMonth = isSameMonth(day, currentDate);
+    const isPastDate = isBefore(day, today);
+    const isCurrentDate = isToday(day);
+    
+    let classes = [baseClasses];
+
+    if (!isCurrentMonth) {
+      classes.push('bg-gray-50 opacity-50');
+    }
+
+    if (isPastDate) {
+      classes.push('bg-gray-100 cursor-not-allowed');
+    }
+
+    if (isCurrentDate) {
+      classes.push('bg-blue-50 ring-2 ring-blue-500 ring-inset');
+    }
+
+    return classes.join(' ');
+  };
+
   const toggleDateExpansion = (date) => {
     setExpandedDates(prev => ({
       ...prev,
@@ -91,7 +128,7 @@ export default function Jadwal() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setCurrentDate(subMonths(currentDate, 1))}
-              className="p-2 hover:bg-gray-100 rounded-full"
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -100,7 +137,7 @@ export default function Jadwal() {
             </span>
             <button
               onClick={() => setCurrentDate(addMonths(currentDate, 1))}
-              className="p-2 hover:bg-gray-100 rounded-full"
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -124,22 +161,24 @@ export default function Jadwal() {
               {calendarDays.map(day => {
                 const dateStr = format(day, 'yyyy-MM-dd');
                 const bookings = bookingsByDate[dateStr] || [];
-                const isCurrentMonth = isSameMonth(day, currentDate);
                 const isExpanded = expandedDates[dateStr];
                 const displayCount = isExpanded ? bookings.length : Math.min(3, bookings.length);
+                const isPastDate = isBefore(day, today);
 
                 return (
                   <div
                     key={dateStr}
-                    className={`min-h-[120px] p-2 ${
-                      isCurrentMonth ? 'bg-white' : 'bg-gray-50'
-                    }`}
+                    className={getDateClasses(day)}
                   >
-                    <div className="text-sm text-gray-500 mb-2">
+                    <div className={`text-sm mb-2 ${
+                      isToday(day) 
+                        ? 'text-blue-600 font-semibold' 
+                        : 'text-gray-500'
+                    }`}>
                       {format(day, 'd')}
                     </div>
                     <div className="space-y-1">
-                      {bookings.slice(0, displayCount).map((booking) => (
+                      {!isPastDate && bookings.slice(0, displayCount).map((booking) => (
                         <div
                           key={booking.id}
                           onClick={() => handleBookingClick(booking)}
@@ -151,7 +190,7 @@ export default function Jadwal() {
                           <div>{booking.jam_mulai} - {booking.jam_selesai}</div>
                         </div>
                       ))}
-                      {bookings.length > 3 && (
+                      {!isPastDate && bookings.length > 3 && (
                         <button
                           onClick={() => toggleDateExpansion(dateStr)}
                           className="text-xs text-blue-600 hover:text-blue-700"
@@ -159,6 +198,7 @@ export default function Jadwal() {
                           {isExpanded ? 'Tampilkan lebih sedikit' : `Tampilkan ${bookings.length - 3} lainnya`}
                         </button>
                       )}
+                    
                     </div>
                   </div>
                 );
@@ -192,21 +232,18 @@ export default function Jadwal() {
                   </div>
 
                   <div className="space-y-6">
-                    {/* Room Image */}
                     <img
                       src={`${import.meta.env.VITE_API_URL}${selectedBooking.room.foto_ruangan}`}
                       alt={selectedBooking.room.nama_ruangan}
                       className="w-full h-48 object-cover rounded-lg"
                     />
 
-                    {/* Room Details */}
                     <div>
                       <h3 className="text-lg font-medium">{selectedBooking.room.nama_ruangan}</h3>
                       <p className="text-gray-600 mt-1">{selectedBooking.room.deskripsi}</p>
                       <p className="text-blue-600 mt-2 font-medium">{selectedBooking.nama_kegiatan}</p>
                     </div>
 
-                    {/* Booking Details */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-3">
                         <div className="flex items-center gap-2 text-gray-600">

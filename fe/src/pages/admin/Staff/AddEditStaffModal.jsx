@@ -1,17 +1,18 @@
 import { Dialog } from "@/components/ui/Dialog";
-import Input  from "@/components/ui/Input";
-import  Select  from "@/components/ui/Select";
+import Input from "@/components/ui/Input";
+import Select from "@/components/ui/Select";
 import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
+import { HandleResponse } from "@/components/ui/HandleResponse";
+import { Toaster } from "react-hot-toast";
 
-export default function AddEditStaffModal({ 
-  isOpen, 
-  onClose, 
-  staff = null, 
+export default function AddEditStaffModal({
+  isOpen,
+  onClose,
+  staff = null,
   teams = [],
-  onSuccess 
+  onSuccess
 }) {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -21,7 +22,6 @@ export default function AddEditStaffModal({
     kontak: staff?.kontak || '',
     tim_kerja_id: staff?.tim_kerja_id || ''
   });
-  const { showToast } = useCustomToast();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,11 +41,10 @@ export default function AddEditStaffModal({
 
       onSuccess();
     } catch (error) {
-      showToast(
-        error?.response?.data?.message || 
-        (staff ? 'Gagal memperbarui staff' : 'Gagal menambahkan staff'),
-        'error'
-      );
+      HandleResponse({
+        error: error,
+        errorMessage: 'Gagal melakukan login'
+      });
     } finally {
       setLoading(false);
     }

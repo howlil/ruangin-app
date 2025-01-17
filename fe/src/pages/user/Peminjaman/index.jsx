@@ -71,7 +71,7 @@ export default function Peminjaman() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Lantai</p>
-                <p className="font-medium">Lantai 3</p>
+                <p className="font-medium">Lantai 16 </p>
               </div>
               <div>
                 <p className="text-sm text-gray-500">Kapasitas</p>

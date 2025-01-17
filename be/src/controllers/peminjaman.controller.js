@@ -174,6 +174,22 @@ const peminjamanController = {
         } catch (error) {
             next(error)
         }
+    },
+
+    async countStatus(req,res,next){
+        try {
+
+            const result = await peminjamanService.countStatus()
+
+            res.status(200).json({
+                status: true,
+                message: 'Berhasil Mengambil data dashboard',
+                data: result,
+            });
+        } catch (error) {
+            next(error)
+        }
+
     }
 };
 

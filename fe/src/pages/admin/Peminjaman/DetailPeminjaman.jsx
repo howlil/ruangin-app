@@ -8,14 +8,12 @@ import Input from '@/components/ui/Input';
 import Select from '@/components/ui/Select';
 import { ArrowLeft } from 'lucide-react';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import { format } from "date-fns";
-import { id } from 'date-fns/locale';
+import { Toaster } from 'react-hot-toast';
 
 export default function DetailPeminjaman() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { showToast } = useCustomToast();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [rooms, setRooms] = useState([]);
@@ -57,7 +55,6 @@ export default function DetailPeminjaman() {
           setRooms(roomsRes.data.data);
         }
       } catch (error) {
-        showToast('Gagal mengambil data', 'error');
         navigate('/ajuan-peminjaman');
       } finally {
         setLoading(false);
@@ -75,7 +72,6 @@ export default function DetailPeminjaman() {
   const validateForm = () => {
     // Validate time format
     if (!validateTime(formData.jam_mulai) || !validateTime(formData.jam_selesai)) {
-      showToast('Format waktu harus HH:mm', 'error');
       return false;
     }
 
@@ -86,13 +82,11 @@ export default function DetailPeminjaman() {
     const endTotal = endHour * 60 + endMinute;
 
     if (endTotal <= startTotal) {
-      showToast('Jam selesai harus lebih besar dari jam mulai', 'error');
       return false;
     }
 
     // Validate required fields if status is DITOLAK
     if (formData.status === 'DITOLAK' && !formData.alasan_penolakan) {
-      showToast('Alasan penolakan harus diisi', 'error');
       return false;
     }
 
@@ -116,10 +110,8 @@ export default function DetailPeminjaman() {
       };
 
       await api.patch(`/v1/peminjaman/${id}/status`, payload);
-      showToast('Peminjaman berhasil diperbarui', 'success');
       navigate('/ajuan-peminjaman');
     } catch (error) {
-      showToast(error?.response?.data?.message || 'Gagal memperbarui peminjaman', 'error');
     } finally {
       setSaving(false);
     }
@@ -139,6 +131,7 @@ export default function DetailPeminjaman() {
 
   return (
     <DashboardLayout>
+      <Toaster/>
       <div className="space-y-4">
         <Card className="p-4">
           <div className="flex items-center gap-4 mb-6">

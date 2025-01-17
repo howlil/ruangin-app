@@ -42,6 +42,7 @@ apiRoute.get('/api/v2/peminjaman/diproses', peminjamanController.getAjuanPeminja
 apiRoute.get('/api/v1/peminjaman/:peminjamanId', peminjamanController.getPeminjamanById);
 
 apiRoute.get('/api/v1/statistik', peminjamanController.getRuanganStatistics);
+apiRoute.get('/api/v2/statistik', peminjamanController.countStatus);
 
 
 

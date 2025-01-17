@@ -6,7 +6,6 @@ import DateRangePicker from "@/components/ui/Calenders/DateRangePicker";
 import { Card } from "@/components/ui/Card";
 import Select from '@/components/ui/Select';
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 import { format } from "date-fns";
 import { id } from 'date-fns/locale';
 import EditBookingModal from './EditBookingModal';
@@ -31,7 +30,6 @@ export default function Riwayat() {
    tanggalAkhir: undefined
  });
 
- const { showToast } = useCustomToast();
 
  const fetchRooms = async () => {
    try {
@@ -40,7 +38,6 @@ export default function Riwayat() {
        setRooms(response.data.data);
      }
    } catch (error) {
-     showToast('Gagal mengambil data ruangan', 'error');
    }
  };
 
@@ -69,7 +66,6 @@ export default function Riwayat() {
        setPagination(response.data.pagination);
      }
    } catch (error) {
-     showToast('Gagal mengambil data peminjaman', 'error');
    } finally {
      setLoading(false);
    }
@@ -147,7 +143,7 @@ export default function Riwayat() {
      render: (row) => (
        <div>
          <div className="font-medium">{row.nama_kegiatan}</div>
-         <div className="text-xs text-gray-500">No. Surat: {row.no_surat_peminjaman || '-'}</div>
+         <div className="text-xs text-gray-500">No. Surat Undangan: {row.no_surat_peminjaman || '-'}</div>
        </div>
      )
    },
@@ -283,7 +279,6 @@ export default function Riwayat() {
          onSuccess={() => {
            fetchBookings();
            setBookingToEdit(null);
-           showToast('Peminjaman berhasil diperbarui', 'success');
          }}
        />
      )}

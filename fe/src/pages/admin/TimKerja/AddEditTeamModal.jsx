@@ -3,7 +3,6 @@ import Input  from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 
 export default function AddEditTeamModal({ 
   isOpen, 
@@ -16,7 +15,6 @@ export default function AddEditTeamModal({
     nama_tim_kerja: team?.nama_tim_kerja || '',
     code: team?.code || ''
   });
-  const { showToast } = useCustomToast();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,7 +27,6 @@ export default function AddEditTeamModal({
       setLoading(true);
 
       if (!formData.nama_tim_kerja || !formData.code) {
-        showToast('Mohon lengkapi semua field', 'error');
         return;
       }
 
@@ -41,11 +38,7 @@ export default function AddEditTeamModal({
 
       onSuccess();
     } catch (error) {
-      showToast(
-        error?.response?.data?.message || 
-        (team ? 'Gagal memperbarui tim' : 'Gagal menambahkan tim'),
-        'error'
-      );
+
     } finally {
       setLoading(false);
     }

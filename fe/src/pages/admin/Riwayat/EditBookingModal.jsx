@@ -7,11 +7,9 @@ import Select from "@/components/ui/Select";
 import Button from "@/components/ui/Button";
 import api from "@/utils/api";
 import { format } from 'date-fns';
-import useCustomToast from "@/components/ui/Toast/useCustomToast";
 
 function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
   const [isLoading, setIsLoading] = useState(false);
-  const { showToast } = useCustomToast();
 
   const [formData, setFormData] = useState({
     nama_kegiatan: '',
@@ -45,7 +43,6 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
     
     // Validate time format
     if (!validateTime(formData.jam_mulai) || !validateTime(formData.jam_selesai)) {
-      showToast('Format waktu harus HH:mm', 'error');
       return;
     }
 
@@ -54,7 +51,6 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
     const end = new Date(`2000-01-01 ${formData.jam_selesai}`);
     
     if (end <= start) {
-      showToast('Jam selesai harus lebih besar dari jam mulai', 'error');
       return;
     }
 
@@ -63,20 +59,15 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
     today.setHours(0, 0, 0, 0);
     const selectedDate = new Date(formData.tanggal);
     if (selectedDate < today) {
-      showToast('Tanggal tidak boleh kurang dari hari ini', 'error');
       return;
     }
 
     try {
       setIsLoading(true);
       await api.patch(`/v1/peminjaman/${booking.id}/status`, formData);
-      showToast('Peminjaman berhasil diperbarui', 'success');
       onSuccess();
     } catch (error) {
-      showToast(
-        error?.response?.data?.message || 'Gagal memperbarui peminjaman',
-        'error'
-      );
+
     } finally {
       setIsLoading(false);
     }
@@ -194,7 +185,7 @@ function EditBookingModal({ isOpen, booking, rooms = [], onClose, onSuccess }) {
 
             <div>
               <label className="block text-sm font-medium text-gray-700">
-                No. Surat
+                No. Surat Undangan
               </label>
               <Input
                 value={formData.no_surat_peminjaman}

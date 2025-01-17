@@ -12,6 +12,6 @@ module.exports = {
         nama_ruangan: Joi.string().optional(),
         deskripsi: Joi.string().optional(),
         lokasi_ruangan: Joi.string().optional(),
-        kapasitas: Joi.number().integer().min(1).optional(),
+        kapasitas: Joi.string().optional()  
     })
 };
