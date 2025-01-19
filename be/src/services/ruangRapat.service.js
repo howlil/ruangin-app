@@ -41,7 +41,7 @@ const ruangRapatService = {
         }
     
         if (month) {
-            peminjamanFilter.tanggal = {
+            peminjamanFilter.tanggal_mulai = {
                 startsWith: month
             };
         }
@@ -68,7 +68,8 @@ const ruangRapatService = {
                     select: {
                         id: true,
                         nama_kegiatan: true,
-                        tanggal: true,
+                        tanggal_mulai: true,
+                        tanggal_selesai: true,
                         jam_mulai: true,
                         jam_selesai: true,
                         status: true,
@@ -80,7 +81,7 @@ const ruangRapatService = {
                         }
                     },
                     orderBy: {
-                        tanggal: 'asc'
+                        tanggal_mulai: 'asc'
                     }
                 }
             },
@@ -110,7 +111,8 @@ const ruangRapatService = {
                     select: {
                         id: true,
                         nama_kegiatan: true,
-                        tanggal: true,
+                        tanggal_mulai: true,
+                        tanggal_selesai: true,
                         jam_mulai: true,
                         jam_selesai: true,
                         status: true,

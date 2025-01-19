@@ -1,92 +1,116 @@
-  generator client {
-    provider = "prisma-client-js"
-  }
+generator client {
+  provider = "prisma-client-js"
+}
 
-  datasource db {
-    provider = "mysql"
-    url      = env("DATABASE_URL")
-  }
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
 
-  model Pengguna {
-    id             String          @id @default(uuid())
-    nama_lengkap   String
-    email          String
-    kata_sandi     String
-    role           Role
-    token          Token[]
-    DetailPengguna DetailPengguna? @relation()
-    createdAt      DateTime        @default(now())
-    updatedAt      DateTime        @updatedAt
-    Peminjaman     Peminjaman[]
-  }
+model Pengguna {
+  id             String          @id @default(uuid())
+  nama_lengkap   String
+  email          String
+  kata_sandi     String
+  role           Role
+  token          Token[]
+  DetailPengguna DetailPengguna? @relation()
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  Peminjaman     Peminjaman[]
+}
 
-  model Peminjaman {
-    id                  String     @id @default(uuid())
-    pengguna_id         String
-    ruang_rapat_id      String
-    nama_kegiatan       String
-    tanggal             String
-    jam_mulai           String
-    jam_selesai         String
-    no_surat_peminjaman String
-    alasan_penolakan    String?
-    status              Status
-    createdAt           DateTime   @default(now())
-    updatedAt           DateTime   @updatedAt
-    Pengguna            Pengguna   @relation(fields: [pengguna_id], references: [id])
-    RuangRapat          RuangRapat @relation(fields: [ruang_rapat_id], references: [id])
-  }
+model Peminjaman {
+  id                  String     @id @default(uuid())
+  pengguna_id         String
+  ruang_rapat_id      String
+  nama_kegiatan       String
+  tanggal_mulai       String
+  tanggal_selesai     String?
+  jam_mulai           String
+  jam_selesai         String
+  no_surat_peminjaman String
+  alasan_penolakan    String?
+  status              Status
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+  Absensi             Absensi?   @relation()
+  Pengguna            Pengguna   @relation(fields: [pengguna_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  RuangRapat          RuangRapat @relation(fields: [ruang_rapat_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
 
-  enum Status {
-    DIPROSES
-    DISETUJUI
-    DITOLAK
-    SELESAI
-  }
+model Absensi {
+  id            String        @id @default(uuid())
+  link_absensi  String
+  peminjaman_id String        @unique
+  Peminjaman    Peminjaman    @relation(fields: [peminjaman_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  ListAbsensi   ListAbsensi[]
+}
 
-  model RuangRapat {
-    id             String       @id @default(uuid())
-    nama_ruangan   String
-    deskripsi      String
-    lokasi_ruangan String
-    foto_ruangan   String
-    kapasitas      String
-    peminjaman     Peminjaman[]
-    createdAt      DateTime     @default(now())
-    updatedAt      DateTime     @updatedAt
-  }
+model ListAbsensi {
+  id            String  @id @default(uuid())
+  absensi_id    String
+  nama          String
+  unit_kerja    String
+  golongan      String
+  jabatan       String
+  tanda_tangan  String
+  jenis_kelamin String
+  Absensi       Absensi @relation(fields: [absensi_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
 
-  model DetailPengguna {
-    id           String    @id @default(uuid())
-    pengguna_id  String    @unique
-    kontak       String
-    tim_kerja_id String    @unique
-    Pengguna     Pengguna  @relation(fields: [pengguna_id], references: [id])
-    tim_kerja    TimKerja? @relation(fields: [tim_kerja_id], references: [id])
-    createdAt    DateTime  @default(now())
-    updatedAt    DateTime  @updatedAt
-  }
+enum Status {
+  DIPROSES
+  DISETUJUI
+  DITOLAK
+  SELESAI
+}
 
-  model TimKerja {
-    id              String          @id @default(uuid())
-    nama_tim_kerja  String
-    code            String          @unique
-    detail_pengguna DetailPengguna? @relation()
-    createdAt       DateTime        @default(now())
-    updatedAt       DateTime        @updatedAt
-  }
+model RuangRapat {
+  id             String       @id @default(uuid())
+  nama_ruangan   String
+  deskripsi      String
+  lokasi_ruangan String
+  foto_ruangan   String
+  kapasitas      String
+  peminjaman     Peminjaman[]
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
 
-  model Token {
-    id          String    @id @default(uuid())
-    token       String    @db.Text
-    pengguna_id String
-    createdAt   DateTime  @default(now())
-    updatedAt   DateTime  @updatedAt
-    Pengguna    Pengguna? @relation(fields: [pengguna_id], references: [id])
-  }
+model DetailPengguna {
+  id           String    @id @default(uuid())
+  pengguna_id  String    @unique
+  kontak       String
+  tim_kerja_id String    @unique
+  Pengguna     Pengguna  @relation(fields: [pengguna_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tim_kerja    TimKerja? @relation(fields: [tim_kerja_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
 
-  enum Role {
-    SUPERADMIN
-    ADMIN
-    PEMINJAM
-  }
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model TimKerja {
+  id              String          @id @default(uuid())
+  nama_tim_kerja  String
+  code            String          @unique
+  is_aktif        Boolean         
+  detail_pengguna DetailPengguna? @relation()
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+model Token {
+  id          String    @id @default(uuid())
+  token       String    @db.Text
+  pengguna_id String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  Pengguna    Pengguna? @relation(fields: [pengguna_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+enum Role {
+  SUPERADMIN
+  ADMIN
+  PEMINJAM
+}

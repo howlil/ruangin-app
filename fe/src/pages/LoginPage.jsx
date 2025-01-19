@@ -24,7 +24,6 @@ export default function LoginPage() {
         email,
         kata_sandi: password
       });
-      HandleResponse({response})
       const { token, ...userData } = response.data.data;
       
       if (token) {

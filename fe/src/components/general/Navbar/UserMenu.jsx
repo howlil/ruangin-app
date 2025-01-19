@@ -1,7 +1,7 @@
 
 // src/components/Navbar/UserMenu.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import { User, LogOut, ChevronDown } from 'lucide-react';
+import { LogOut, ChevronDown } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '@/contexts/UserContext';
@@ -28,7 +28,7 @@ const UserMenu = ({ isScrolled }) => {
 
   const handleLogout = async () => {
     try {
-      const response = await api.post('/api/v1/logout', {}, {      });
+      const response = await api.post('/v1/logout', {}, {      });
       HandleResponse({response})
       logout();
       navigate('/');

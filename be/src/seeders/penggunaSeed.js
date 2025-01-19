@@ -17,7 +17,7 @@ async function penggunaSeeder(prisma) {
             const superAdmin = await prisma.pengguna.create({
                 data: {
                     nama_lengkap: 'Super Admin',
-                    email: 'superadmin.pusdatin@adminkkp.id',
+                    email: 'superadmin@pusdatin.id',
                     kata_sandi: hashedPassword,
                     role: 'SUPERADMIN',
                 }

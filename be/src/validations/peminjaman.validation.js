@@ -1,19 +1,39 @@
 const Joi = require('joi');
 const { checkTimeRange, validateDate } = require("../utils/dayjs")
+const moment = require('moment')
 
 
 module.exports = {
     createPeminjaman: Joi.object({
         ruang_rapat_id: Joi.string().required(),
         nama_kegiatan: Joi.string().required(),
-        tanggal: Joi.string()
+        tanggal_mulai: Joi.string()
             .required()
             .custom(validateDate)
             .messages({
-                'string.empty': 'tanggal harus diisi',
+                'string.empty': 'tanggal mulai harus diisi',
                 'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
                 'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)',
                 'date.past': 'Tanggal Peminjaman tidak boleh hari kemarin'
+            }),
+        tanggal_selesai: Joi.string()
+            .custom(validateDate)
+            .allow(null)
+            .custom((value, helpers) => {
+                if (!value) return value;
+
+                const startDate = moment(helpers.state.ancestors[0].tanggal_mulai);
+                const endDate = moment(value);
+
+                if (endDate.isBefore(startDate)) {
+                    return helpers.message('tanggal selesai harus setelah tanggal mulai');
+                }
+
+                return value;
+            })
+            .messages({
+                'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
+                'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)'
             }),
         jam_mulai: Joi.string()
             .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)

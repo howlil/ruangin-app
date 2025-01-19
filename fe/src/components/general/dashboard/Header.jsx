@@ -24,7 +24,7 @@ export function Header({ user }) {
 
   const handleLogout = async () => {
     try {
-      const response =await api.post('/api/v1/logout');
+      const response =await api.post('/v1/logout');
       HandleResponse({response})
       logout();
       navigate('/login');

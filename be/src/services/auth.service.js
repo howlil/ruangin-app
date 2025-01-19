@@ -298,6 +298,7 @@ const authService = {
             where: { token }
         });
     },
+    
     async getAllUser({ page = 1, size = 10 }) {
         try {
             const pageNum = Math.max(1, Number(page));
