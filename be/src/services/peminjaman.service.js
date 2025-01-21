@@ -7,6 +7,29 @@ const crypto = require('crypto')
 
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
+function convertTimeToMinutes(time) {
+    try {
+        // Memisahkan jam dan menit
+        const [hours, minutes] = time.split(':').map(Number);
+
+        // Validasi format waktu
+        if (isNaN(hours) || isNaN(minutes)) {
+            throw new Error('Format waktu tidak valid');
+        }
+
+        // Validasi rentang waktu
+        if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59) {
+            throw new Error('Waktu diluar rentang yang valid');
+        }
+
+        // Konversi ke total menit
+        return (hours * 60) + minutes;
+
+    } catch (error) {
+        throw new Error(`Gagal mengkonversi waktu: ${error.message}`);
+    }
+}
+
 const peminjamanService = {
     async createPeminjaman(userId, data) {
         const tanggal_cuti = await axios.get(process.env.API_DAY_OFF);
@@ -41,7 +64,15 @@ const peminjamanService = {
         const user = await prisma.pengguna.findUnique({
             where: { id: userId },
             include: {
-                DetailPengguna: true
+                DetailPengguna: {
+                    include: {
+                        tim_kerja: {
+                            select: {
+                                is_aktif: true
+                            }
+                        }
+                    }
+                }
             }
         });
 
@@ -51,6 +82,14 @@ const peminjamanService = {
 
         if (user.role === 'PEMINJAM' && !user.DetailPengguna) {
             throw new ResponseError(400, "detail pengguna tidak ditemukan");
+        }
+    
+        if (!user.DetailPengguna.tim_kerja) {
+            throw new ResponseError(400, "Tim kerja tidak ditemukan");
+        }
+
+        if (!user.DetailPengguna.tim_kerja.is_aktif) {
+            throw new ResponseError(400, "Tim Kerja ini tidak bisa melakukan peminjaman karena tidak aktif");
         }
 
         // Validate room existence
@@ -71,7 +110,6 @@ const peminjamanService = {
             throw new ResponseError(400, "Tidak bisa meminjam dihari yang sudah lewat");
         }
 
-        // Check for booking conflicts
         const existingBookings = await prisma.peminjaman.findMany({
             where: {
                 ruang_rapat_id: data.ruang_rapat_id,
@@ -139,6 +177,35 @@ const peminjamanService = {
     },
 
     async updateStatus(userId, peminjamanId, updateData) {
+
+        const tanggal_cuti = await axios.get(process.env.API_DAY_OFF);
+
+        const is_tanggal_mulai_cuti = tanggal_cuti.data.find((date) =>
+            date.tanggal === updateData.tanggal_mulai
+        );
+
+        if (is_tanggal_mulai_cuti) {
+            const keterangan = is_tanggal_mulai_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
+            throw new ResponseError(400, `Tidak bisa melakukan peminjaman pada ${keterangan}: ${is_tanggal_mulai_cuti.keterangan}`);
+        }
+
+        // Jika ada tanggal selesai, cek juga tanggal libur untuk rentang waktu
+        if (updateData.tanggal_selesai) {
+            const startDate = moment(updateData.tanggal_mulai);
+            const endDate = moment(updateData.tanggal_selesai);
+
+            // Cek setiap tanggal dalam rentang
+            for (let date = startDate.clone(); date.isSameOrBefore(endDate); date.add(1, 'days')) {
+                const currentDate = date.format('YYYY-MM-DD');
+                const is_tanggal_cuti = tanggal_cuti.data.find((d) => d.tanggal === currentDate);
+
+                if (is_tanggal_cuti) {
+                    const keterangan = is_tanggal_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
+                    throw new ResponseError(400, `Terdapat ${keterangan} dalam rentang peminjaman: ${is_tanggal_cuti.keterangan} (${currentDate})`);
+                }
+            }
+        }
+
         const user = await prisma.pengguna.findUnique({
             where: { id: userId }
         });
@@ -159,17 +226,15 @@ const peminjamanService = {
             throw new ResponseError(404, "Booking not found");
         }
 
-        // Perbaikan validasi status
         if (!['DIPROSES', 'DISETUJUI'].includes(booking.status)) {
             throw new ResponseError(400, `Cannot update booking with status ${booking.status}. Only DIPROSES and DISETUJUI status can be updated`);
         }
 
         // Jika ada perubahan ruangan atau waktu, cek konflik jadwal
-        if (updateData.ruang_rapat_id || updateData.tanggal || updateData.jam_mulai || updateData.jam_selesai) {
-            const bookingStart = moment(`${updateData.tanggal || booking.tanggal} ${updateData.jam_mulai || booking.jam_mulai}`);
-            const bookingEnd = moment(`${updateData.tanggal || booking.tanggal} ${updateData.jam_selesai || booking.jam_selesai}`);
+        if (updateData.ruang_rapat_id || updateData.tanggal_mulai || updateData.jam_mulai || updateData.jam_selesai) {
+            const bookingStart = moment(`${updateData.tanggal_mulai || booking.tanggal_mulai} ${updateData.jam_mulai || booking.jam_mulai}`);
+            const bookingEnd = moment(`${updateData.tanggal_selesai || booking.tanggal_selesai || updateData.tanggal_mulai || booking.tanggal_mulai} ${updateData.jam_selesai || booking.jam_selesai}`);
 
-            // Validasi waktu sekarang jika mengubah jadwal
             const now = moment();
             if (bookingStart.isBefore(now)) {
                 throw new ResponseError(400, "Cannot update to past time");
@@ -178,7 +243,10 @@ const peminjamanService = {
             const existingBookings = await prisma.peminjaman.findMany({
                 where: {
                     ruang_rapat_id: updateData.ruang_rapat_id || booking.ruang_rapat_id,
-                    tanggal: updateData.tanggal || booking.tanggal,
+                    OR: [
+                        { tanggal_mulai: updateData.tanggal_mulai || booking.tanggal_mulai },
+                        { tanggal_selesai: updateData.tanggal_selesai || booking.tanggal_selesai || updateData.tanggal_mulai || booking.tanggal_mulai }
+                    ],
                     status: {
                         in: ['DIPROSES', 'DISETUJUI']
                     },
@@ -189,8 +257,8 @@ const peminjamanService = {
             });
 
             const hasConflict = existingBookings.some(existing => {
-                const existingStart = moment(`${existing.tanggal} ${existing.jam_mulai}`);
-                const existingEnd = moment(`${existing.tanggal} ${existing.jam_selesai}`);
+                const existingStart = moment(`${existing.tanggal_mulai} ${existing.jam_mulai}`);
+                const existingEnd = moment(`${existing.tanggal_selesai || existing.tanggal_mulai} ${existing.jam_selesai}`);
 
                 return (bookingStart.isBetween(existingStart, existingEnd, undefined, '[]') ||
                     bookingEnd.isBetween(existingStart, existingEnd, undefined, '[]') ||
@@ -208,10 +276,10 @@ const peminjamanService = {
             throw new ResponseError(400, "Alasan penolakan harus diisi ketika menolak peminjaman");
         }
 
+        // Handle absensi jika status disetujui
         let absensiData = null;
         if (updateData.status === 'DISETUJUI' && !booking.Absensi) {
             const uniqueCode = crypto.randomBytes(6).toString('hex');
-            // Generate frontend URL
             const linkAbsensi = `${FRONTEND_URL}/absensi?u=${uniqueCode}`;
 
             absensiData = await prisma.absensi.create({
@@ -222,16 +290,29 @@ const peminjamanService = {
             });
         }
 
+        // Prepare update data
+        const updateFields = {
+            ruang_rapat_id: updateData.ruang_rapat_id,
+            tanggal_mulai: updateData.tanggal_mulai,
+            tanggal_selesai: updateData.tanggal_selesai,
+            jam_mulai: updateData.jam_mulai,
+            jam_selesai: updateData.jam_selesai,
+            status: updateData.status,
+            alasan_penolakan: updateData.status === 'DITOLAK' ? updateData.alasan_penolakan : null,
+            nama_kegiatan: updateData.nama_kegiatan,
+            no_surat_peminjaman: updateData.no_surat_peminjaman
+        };
+
+        // Remove undefined fields
+        Object.keys(updateFields).forEach(key =>
+            updateFields[key] === undefined && delete updateFields[key]
+        );
 
         // Update peminjaman
         const updatedBooking = await prisma.$transaction(async (prisma) => {
-            // Update peminjaman
             const updated = await prisma.peminjaman.update({
                 where: { id: peminjamanId },
-                data: {
-                    ...updateData,
-                    alasan_penolakan: updateData.status === 'DITOLAK' ? updateData.alasan_penolakan : null
-                },
+                data: updateFields,
                 include: {
                     Pengguna: {
                         select: {
@@ -252,12 +333,10 @@ const peminjamanService = {
             return updated;
         });
 
-        const response = {
+        return {
             ...updatedBooking,
             absensi_link: absensiData ? absensiData.link_absensi : (updatedBooking.Absensi?.link_absensi || null)
         };
-
-        return response;
     },
 
     // user
@@ -290,9 +369,9 @@ const peminjamanService = {
                     }
                 },
                 RuangRapat: true,
-                Absensi : {
+                Absensi: {
                     select: {
-                        link_absensi : true
+                        link_absensi: true
                     }
                 }
             },
@@ -329,15 +408,14 @@ const peminjamanService = {
             const sizeNum = Math.max(1, Number(size));
             const skip = (pageNum - 1) * sizeNum;
 
-            let where = {
-                NOT: {
-                    status: 'DIPROSES'
-                }
-            };
+            let where = {};
 
-            // If status is provided, add it to the where clause
             if (status) {
                 where.status = status;
+            } else {
+                where.NOT = {
+                    status: 'DIPROSES'
+                };
             }
 
             if (ruangRapatId) {
@@ -346,12 +424,14 @@ const peminjamanService = {
 
             if (tanggalMulai) {
                 if (tanggalAkhir) {
-                    where.tanggal = {
+                    where.tanggal_mulai = {
                         gte: tanggalMulai,
                         lte: tanggalAkhir
                     };
                 } else {
-                    where.tanggal = tanggalMulai;
+                    where.tanggal_mulai = {
+                        equals: tanggalMulai
+                    };
                 }
             }
 
@@ -418,12 +498,14 @@ const peminjamanService = {
 
             if (tanggalMulai) {
                 if (tanggalAkhir) {
-                    where.tanggal = {
+                    where.tanggal_mulai = {
                         gte: tanggalMulai,
                         lte: tanggalAkhir
                     };
                 } else {
-                    where.tanggal = tanggalMulai;
+                    where.tanggal_mulai = {
+                        equals: tanggalMulai
+                    };
                 }
             }
 
@@ -506,12 +588,14 @@ const peminjamanService = {
 
             if (tanggalMulai) {
                 if (tanggalAkhir) {
-                    where.tanggal = {
+                    where.tanggal_mulai = {
                         gte: tanggalMulai,
                         lte: tanggalAkhir
                     };
                 } else {
-                    where.tanggal = tanggalMulai;
+                    where.tanggal_mulai = {
+                        equals: tanggalMulai
+                    };
                 }
             }
 
@@ -543,54 +627,73 @@ const peminjamanService = {
 
     async checkAvailability(data) {
         try {
-            const tanggal_cuti = await axios.get(process.env.API_DAY_OFF)
+            // 1. Cek hari libur
+            const tanggal_cuti = await axios.get(process.env.API_DAY_OFF);
 
+            // Validasi untuk tanggal yang dipilih
             const is_tanggal_cuti = tanggal_cuti.data.find((date) =>
                 date.tanggal === data.tanggal
-            )
-
+            );
 
             if (is_tanggal_cuti) {
                 const keterangan = is_tanggal_cuti.is_cuti ? 'cuti bersama' : 'hari libur';
                 throw new ResponseError(400, `Tidak bisa melakukan peminjaman pada ${keterangan}: ${is_tanggal_cuti.keterangan}`);
             }
-            // 1. Ambil semua ruangan
+
+            // 2. Ambil semua ruangan
             const allRooms = await prisma.ruangRapat.findMany();
 
-            // 2. Ambil semua booking di tanggal tersebut
+            // 3. Ambil semua booking pada tanggal tersebut
             const bookings = await prisma.peminjaman.findMany({
                 where: {
-                    tanggal: data.tanggal,
+                    OR: [
+                        { tanggal_mulai: data.tanggal },  // Peminjaman yang dimulai pada tanggal tersebut
+                        { tanggal_selesai: data.tanggal }, // Peminjaman yang berakhir pada tanggal tersebut
+                        {
+                            AND: [
+                                { tanggal_mulai: { lte: data.tanggal } },
+                                {
+                                    OR: [
+                                        { tanggal_selesai: { gte: data.tanggal } },
+                                        { tanggal_selesai: null }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
                     status: {
-                        in: ['DIPROSES', 'DISETUJUI'],
-                    },
+                        in: ['DIPROSES', 'DISETUJUI']
+                    }
                 },
                 select: {
                     ruang_rapat_id: true,
                     jam_mulai: true,
-                    jam_selesai: true,
-                },
+                    jam_selesai: true
+                }
             });
 
-            // 3. Cek ketersediaan untuk setiap ruangan
+            // 4. Cek ketersediaan untuk setiap ruangan
             const availableRooms = allRooms.filter(room => {
                 const roomBookings = bookings.filter(
                     booking => booking.ruang_rapat_id === room.id
                 );
 
-                // Cek konflik waktu untuk ruangan ini
-                const hasConflict = roomBookings.some(booking => {
-                    const requestedTime = new Date(`2000-01-01T${data.jam}`);
-                    const startTime = new Date(`2000-01-01T${booking.jam_mulai}`);
-                    const endTime = new Date(`2000-01-01T${booking.jam_selesai}`);
+                // Konversi jam input ke menit
+                const requestTime = convertTimeToMinutes(data.jam);
 
-                    return requestedTime >= startTime && requestedTime <= endTime;
+                // Cek apakah ada booking yang mencakup jam yang diminta
+                const hasConflict = roomBookings.some(booking => {
+                    const bookingStart = convertTimeToMinutes(booking.jam_mulai);
+                    const bookingEnd = convertTimeToMinutes(booking.jam_selesai);
+
+                    // Cek apakah jam yang diminta berada dalam rentang peminjaman
+                    return requestTime >= bookingStart && requestTime < bookingEnd;
                 });
 
                 return !hasConflict;
             });
 
-            // 4. Format response dengan informasi ruangan yang tersedia
+            // 5. Format response
             const formattedResponse = availableRooms.map(room => ({
                 id: room.id,
                 nama_ruangan: room.nama_ruangan,

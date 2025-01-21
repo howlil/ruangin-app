@@ -41,9 +41,38 @@ const ruangRapatService = {
         }
     
         if (month) {
-            peminjamanFilter.tanggal_mulai = {
-                startsWith: month
-            };
+            // Asumsi format month adalah "YYYY-MM"
+            const [year, monthNum] = month.split('-');
+            const nextMonth = monthNum === '12' 
+                ? `${Number(year) + 1}-01`
+                : `${year}-${String(Number(monthNum) + 1).padStart(2, '0')}`;
+    
+            peminjamanFilter.OR = [
+                // Kasus 1: tanggal_mulai dalam bulan yang dipilih
+                {
+                    AND: [
+                        { tanggal_mulai: { startsWith: month } },
+                    ]
+                },
+                // Kasus 2: tanggal_selesai dalam bulan yang dipilih
+                {
+                    AND: [
+                        { tanggal_selesai: { startsWith: month } },
+                    ]
+                },
+                // Kasus 3: rentang waktu mencakup seluruh bulan
+                {
+                    AND: [
+                        { tanggal_mulai: { lt: `${month}-01` } },
+                        { 
+                            OR: [
+                                { tanggal_selesai: { gte: nextMonth } },
+                                { tanggal_selesai: null }
+                            ]
+                        }
+                    ]
+                }
+            ];
         }
     
         const where = {
@@ -228,6 +257,50 @@ const ruangRapatService = {
             status: true,
             message: "Room deleted successfully"
         };
+    },
+
+    async getTodayPeminjaman() {
+        try {
+            const today = new Date().toISOString().split('T')[0];
+
+            const ruangRapat = await prisma.ruangRapat.findMany({
+                include: {
+                    peminjaman: {
+                        where: {
+                            tanggal_mulai: today,
+                            status: {
+                                in: ['DISETUJUI']
+                            }
+                        },
+                        select: {
+                            nama_kegiatan: true,
+                            jam_mulai: true,
+                            jam_selesai: true
+                        }
+                    }
+                },
+                orderBy: {
+                    nama_ruangan: 'asc'
+                }
+            });
+
+            // Filter hanya ruangan yang memiliki peminjaman
+            const formattedData = ruangRapat
+                .filter(room => room.peminjaman.length > 0)
+                .map(room => ({
+                    ruang_rapat: room.nama_ruangan,
+                    jadwal: room.peminjaman.map(booking => ({
+                        nama_kegiatan: booking.nama_kegiatan,
+                        jam_mulai: booking.jam_mulai,
+                        jam_selesai: booking.jam_selesai
+                    }))
+                }));
+
+            return formattedData;
+
+        } catch (error) {
+            throw new ResponseError(500, error.message);
+        }
     }
 };
 

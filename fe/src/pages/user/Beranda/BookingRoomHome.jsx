@@ -19,19 +19,21 @@ export default function BookingRoomHome({
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     nama_kegiatan: '',
-    tanggal: '',
+    tanggal_mulai: '',
+    tanggal_selesai: '',
     jam_mulai: '',
     jam_selesai: '',
     no_surat_peminjaman: ''
   });
   const [timeError, setTimeError] = useState('');
+  const [dateError, setDateError] = useState('');
 
   useEffect(() => {
     if (selectedDate && selectedTime) {
       // Automatically set the selected date and start time
       setFormData(prev => ({
         ...prev,
-        tanggal: selectedDate,
+        tanggal_mulai: selectedDate,
         jam_mulai: selectedTime,
         // Set default end time to 1 hour after start time
         jam_selesai: dayjs(`2000-01-01 ${selectedTime}`).add(1, 'hour').format('HH:mm')
@@ -64,6 +66,22 @@ export default function BookingRoomHome({
     return true;
   };
 
+  const validateDateRange = (startDate, endDate) => {
+    // If endDate is empty string, consider it valid as it's optional
+    if (!startDate || endDate === '') return true;
+
+    const start = dayjs(startDate);
+    const end = dayjs(endDate);
+
+    if (end.isBefore(start)) {
+      setDateError('Tanggal selesai tidak boleh lebih awal dari tanggal mulai');
+      return false;
+    }
+
+    setDateError('');
+    return true;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -71,12 +89,22 @@ export default function BookingRoomHome({
       return;
     }
 
+    if (!validateDateRange(formData.tanggal_mulai, formData.tanggal_selesai)) {
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const response =await api.post('/v1/peminjaman', {
+      // Clean up form data before submission
+      const submissionData = {
+        ...formData,
+        tanggal_selesai: formData.tanggal_selesai || null // Convert empty string to null
+      };
+
+      const response = await api.post('/v1/peminjaman', {
         ruang_rapat_id: roomId,
-        ...formData
+        ...submissionData
       });
 
       HandleResponse({response})
@@ -102,6 +130,10 @@ export default function BookingRoomHome({
       
       if (name === 'jam_mulai' || name === 'jam_selesai') {
         validateTimeRange(newData.jam_mulai, newData.jam_selesai);
+      }
+
+      if (name === 'tanggal_mulai' || name === 'tanggal_selesai') {
+        validateDateRange(newData.tanggal_mulai, newData.tanggal_selesai);
       }
       
       return newData;
@@ -147,16 +179,31 @@ export default function BookingRoomHome({
               placeholder="Masukkan nama kegiatan"
             />
 
-            <Input
-              label="Tanggal"
-              type="date"
-              name="tanggal"
-              value={formData.tanggal}
-              onChange={handleInputChange}
-              required
-              fullWidth
-              disabled
-            />
+            <div className="grid grid-cols-2 gap-4">
+              <Input
+                label="Tanggal Mulai"
+                type="date"
+                name="tanggal_mulai"
+                value={formData.tanggal_mulai}
+                onChange={handleInputChange}
+                required
+                fullWidth
+                disabled
+              />
+
+              <Input
+                label="Tanggal Selesai (Opsional)"
+                type="date"
+                name="tanggal_selesai"
+                value={formData.tanggal_selesai}
+                onChange={handleInputChange}
+                min={formData.tanggal_mulai}
+                fullWidth
+              />
+            </div>
+            {dateError && (
+              <p className="text-sm text-red-500 mt-1">{dateError}</p>
+            )}
 
             <div className="space-y-2">
               <div className="grid grid-cols-2 gap-4">
@@ -209,7 +256,7 @@ export default function BookingRoomHome({
               <Button
                 type="submit"
                 loading={loading}
-                disabled={loading || !!timeError}
+                disabled={loading || !!timeError || !!dateError}
               >
                 Ajukan Peminjaman
               </Button>

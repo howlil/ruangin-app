@@ -64,7 +64,6 @@ const CheckRoomModal = ({ isOpen, onClose }) => {
       jam: ''
     });
     setAvailableRooms([]);
-    setError('');
   };
 
   return (

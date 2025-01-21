@@ -23,6 +23,7 @@ export default function Peminjaman() {
       try {
         const response = await api.get(`/v1/ruang-rapat/${id}`);
         setRoom(response.data.data);
+        console.log(response.data)
       } catch (error) {
           HandleResponse({
                 error,
@@ -104,9 +105,7 @@ export default function Peminjaman() {
         <BookingDialog
           isOpen={isCalendarDialogOpen}
           onClose={() => setIsCalendarDialogOpen(false)}
-          bookings={room.peminjaman?.filter(booking =>
-            dayjs(booking.tanggal).format('YYYY-MM-DD') === selectedDate.format('YYYY-MM-DD')
-          )}
+          bookings={room.peminjaman}
           date={selectedDate}
         />
 

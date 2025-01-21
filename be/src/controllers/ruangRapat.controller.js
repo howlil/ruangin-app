@@ -81,6 +81,20 @@ const ruangRapatController = {
         } catch (error) {
             next(error);
         }
+    },
+
+    async getTodayPeminjaman(req, res, next) {
+        try {
+            const result = await ruangRapatService.getTodayPeminjaman();
+            
+            res.status(200).json({
+                status: true,
+                message: "Get today's bookings successful",
+                data: result
+            });
+        } catch (error) {
+            next(error);
+        }
     }
 };
 

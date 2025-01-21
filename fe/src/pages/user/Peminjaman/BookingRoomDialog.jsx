@@ -11,12 +11,14 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     nama_kegiatan: '',
-    tanggal: '',
+    tanggal_mulai: '',
+    tanggal_selesai: '',
     jam_mulai: '',
     jam_selesai: '',
     no_surat_peminjaman: ''
   });
   const [timeError, setTimeError] = useState('');
+  const [dateError, setDateError] = useState('');
 
   const validateTimeRange = (start, end) => {
     if (!start || !end) return true;
@@ -26,7 +28,6 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
     const startMinute = parseInt(start.split(':')[1]);
     const endMinute = parseInt(end.split(':')[1]);
 
-    // Convert to minutes for easier comparison
     const startTotalMinutes = startHour * 60 + startMinute;
     const endTotalMinutes = endHour * 60 + endMinute;
 
@@ -44,6 +45,22 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
     return true;
   };
 
+  const validateDateRange = (startDate, endDate) => {
+    // If endDate is empty string, consider it valid as it's optional
+    if (!startDate || endDate === '') return true;
+
+    const start = dayjs(startDate);
+    const end = dayjs(endDate);
+
+    if (end.isBefore(start)) {
+      setDateError('Tanggal selesai tidak boleh lebih awal dari tanggal mulai');
+      return false;
+    }
+
+    setDateError('');
+    return true;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -51,17 +68,26 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
       return;
     }
 
+    // Only validate date range if tanggal_selesai has a value
+    if (!validateDateRange(formData.tanggal_mulai, formData.tanggal_selesai)) {
+      return;
+    }
+
     setLoading(true);
 
     try {
+      // Clean up form data before submission
+      const submissionData = {
+        ...formData,
+        tanggal_selesai: formData.tanggal_selesai || null // Convert empty string to null
+      };
+
       const response = await api.post('/v1/peminjaman', {
         ruang_rapat_id: roomId,
-        ...formData
+        ...submissionData
       });
 
-      HandleResponse({ response })
-
-
+      HandleResponse({ response });
       onClose();
     } catch (error) {
       HandleResponse({
@@ -83,6 +109,10 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
 
       if (name === 'jam_mulai' || name === 'jam_selesai') {
         validateTimeRange(newData.jam_mulai, newData.jam_selesai);
+      }
+
+      if (name === 'tanggal_mulai' || name === 'tanggal_selesai') {
+        validateDateRange(newData.tanggal_mulai, newData.tanggal_selesai);
       }
 
       return newData;
@@ -131,17 +161,33 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               placeholder="Masukkan nama kegiatan"
             />
 
-            <Input
-              label="Tanggal"
-              type="date"
-              name="tanggal"
-              value={formData.tanggal}
-              onChange={handleInputChange}
-              min={minDate}
-              max={maxDate}
-              required
-              fullWidth
-            />
+            <div className="grid grid-cols-2 gap-4">
+              <Input
+                label="Tanggal Mulai"
+                type="date"
+                name="tanggal_mulai"
+                value={formData.tanggal_mulai}
+                onChange={handleInputChange}
+                min={minDate}
+                max={maxDate}
+                required
+                fullWidth
+              />
+
+              <Input
+                label="Tanggal Selesai (Opsional)"
+                type="date"
+                name="tanggal_selesai"
+                value={formData.tanggal_selesai}
+                onChange={handleInputChange}
+                min={formData.tanggal_mulai || minDate}
+                max={maxDate}
+                fullWidth
+              />
+            </div>
+            {dateError && (
+              <p className="text-sm text-red-500 mt-1">{dateError}</p>
+            )}
 
             <div className="space-y-2">
               <div className="grid grid-cols-2 gap-4">
@@ -151,7 +197,6 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
                   name="jam_mulai"
                   value={formData.jam_mulai}
                   onChange={handleInputChange}
-
                   required
                   fullWidth
                   helperText="Format 24 jam (07:00 - 17:00)"
@@ -160,10 +205,9 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
                 <Input
                   label="Jam Selesai"
                   type="time"
-                  name="jam_selesai" a
+                  name="jam_selesai"
                   value={formData.jam_selesai}
                   onChange={handleInputChange}
-
                   required
                   fullWidth
                   helperText="Format 24 jam (07:00 - 17:00)"
@@ -195,7 +239,7 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               <Button
                 type="submit"
                 loading={loading}
-                disabled={loading || !!timeError}
+                disabled={loading || !!timeError || !!dateError}
               >
                 Ajukan Peminjaman
               </Button>

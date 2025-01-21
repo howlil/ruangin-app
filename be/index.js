@@ -4,10 +4,10 @@ const {logger} = require("./src/apps/logging")
 
 
 function initUpdateStatusCron() {
-    // cron.schedule('*/1 * * * *', async () => {
-    //     logger.info('Running booking status update cron job...');
-    //     await updateStatusPeminjaman();
-    // });
+    cron.schedule('* * * * *', async () => {
+        logger.info('Running booking status update cron job...');
+        await updateStatusPeminjaman();
+    });
 }
 
 

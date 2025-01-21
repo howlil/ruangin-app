@@ -14,13 +14,16 @@ const CustomPickersDay = (props) => {
 
   const getBookingStatusForDate = (date) => {
     const formattedDate = date.format('YYYY-MM-DD');
-    const bookingsOnDate = bookings?.filter(
-      booking => dayjs(booking.tanggal).format('YYYY-MM-DD') === formattedDate
-    ) || [];
+    const bookingsOnDate = bookings?.filter(booking => {
+      const startDate = dayjs(booking.tanggal_mulai);
+      const endDate = booking.tanggal_selesai ? dayjs(booking.tanggal_selesai) : startDate;
+      return date.isBetween(startDate, endDate, 'day', '[]'); // Include start and end dates
+    }) || [];
     
     if (bookingsOnDate.length === 0) return 'available';
     if (bookingsOnDate.some(b => b.status === 'DISETUJUI')) return 'approved';
-    return 'pending';
+    if (bookingsOnDate.some(b => b.status === 'DIPROSES')) return 'pending';
+    return 'available';
   };
 
   const status = getBookingStatusForDate(day);
@@ -64,19 +67,12 @@ const CustomPickersDay = (props) => {
 };
 
 const BookingCalendar = ({ selectedDate, onDateSelect, bookings }) => {
-  const handleDateChange = (newDate) => {
-    if (onDateSelect) {
-      onDateSelect(newDate);
-    }
-  };
-
   return (
     <div className="bg-white rounded-lg shadow-sm">
       <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="id">
         <DateCalendar 
-          sx={{}}
           value={selectedDate}
-          onChange={handleDateChange}
+          onChange={onDateSelect}
           slots={{
             day: (props) => (
               <CustomPickersDay

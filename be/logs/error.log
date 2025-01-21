@@ -899,3 +899,1211 @@
   userId: undefined,
   level: 'error'
 }
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:30:50',
+  requestBody: { tanggal: '2025-01-19', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:30:54',
+  requestBody: { tanggal: '2025-01-20', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:31:02',
+  requestBody: { tanggal: '2025-01-21', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:31:05',
+  requestBody: { tanggal: '2025-01-20', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:31:43',
+  requestBody: { tanggal: '2025-01-20', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:31:57',
+  requestBody: { tanggal: '2025-01-20', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 18:38:18',
+  requestBody: { tanggal: '', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '19-01-2025 18:43:17',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'lskndlsknd',
+    tanggal_mulai: '2025-01-20',
+    tanggal_selesai: '',
+    jam_mulai: '13:00',
+    jam_selesai: '14:00',
+    no_surat_peminjaman: 'sjas'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '03097243-5e2c-42a5-b182-28bc1cf80141',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Ruangan sudah dipinjam pada waktu ini',
+  stack: 'ResponseError: Ruangan sudah dipinjam pada waktu ini\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:111:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '19-01-2025 18:45:14',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'aslmaps',
+    tanggal_mulai: '2025-01-20',
+    tanggal_selesai: '2025-01-21',
+    jam_mulai: '13:00',
+    jam_selesai: '15:00',
+    no_surat_peminjaman: 'as'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '03097243-5e2c-42a5-b182-28bc1cf80141',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Ruangan sudah dipinjam pada waktu ini',
+  stack: 'ResponseError: Ruangan sudah dipinjam pada waktu ini\n' +
+    '    at Object.createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:111:19)\n' +
+    '    at async createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:9:28)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '19-01-2025 18:48:52',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'saas',
+    tanggal_mulai: '2025-01-20',
+    tanggal_selesai: null,
+    jam_mulai: '13:00',
+    jam_selesai: '14:00',
+    no_surat_peminjaman: 'qwq'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '03097243-5e2c-42a5-b182-28bc1cf80141',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 21:00:31',
+  requestBody: { tanggal: '', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Data Sudah Ada',
+  stack: 'ResponseError: Data Sudah Ada\n' +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:13:19)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '19-01-2025 21:02:14',
+  requestBody: {
+    nama_tim_kerja: 'Pengelolaan Pelayanan Terpadu Satu Atap',
+    code: 'PTSA'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'toLowerCase')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n" +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:26:39)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '19-01-2025 21:02:32',
+  requestBody: { nama_tim_kerja: 'Pengelolaan Data dan Statistik', code: 'DATIS' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'toLowerCase')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n" +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:26:39)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '19-01-2025 21:02:34',
+  requestBody: { nama_tim_kerja: 'Pengelolaan Data dan Statistik', code: 'DATIS' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'toLowerCase')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n" +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:26:39)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '19-01-2025 21:02:36',
+  requestBody: { nama_tim_kerja: 'Pengelolaan Data dan Statistik', code: 'DATIS' },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 22:09:08',
+  requestBody: { tanggal: '2025-01-22', jam: '13:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 22:09:08',
+  requestBody: { tanggal: '2025-01-22', jam: '13:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:561:30)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 22:09:09',
+  requestBody: { tanggal: '2025-01-22', jam: '13:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'convertTimeToMinutes is not defined',
+  stack: 'ReferenceError: convertTimeToMinutes is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:620:42\n' +
+    '    at Array.some (<anonymous>)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:618:50\n' +
+    '    at Array.filter (<anonymous>)\n' +
+    '    at Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:610:45)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 22:14:43',
+  requestBody: { tanggal: '2025-01-22', jam: '13:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'split')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'split')\n" +
+    '    at convertTimeToMinutes (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:10:35)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:624:42\n' +
+    '    at Array.some (<anonymous>)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:622:50\n' +
+    '    at Array.filter (<anonymous>)\n' +
+    '    at Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:614:45)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '19-01-2025 22:15:01',
+  requestBody: { tanggal: '2025-01-22', jam: '13:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '20-01-2025 15:58:18',
+  requestBody: { email: 'example@pusdatin.id', kata_sandi: '@test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: "Meeting hasn't started yet",
+  stack: "ResponseError: Meeting hasn't started yet\n" +
+    '    at Object.submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:60:19)\n' +
+    '    at async submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:28:28)',
+  path: '/api/v1/absensi/f1a8151580aa',
+  method: 'POST',
+  timestamp: '20-01-2025 16:22:25',
+  requestBody: {
+    nama: 'asa',
+    unit_kerja: 'asa',
+    golongan: 'asas',
+    jabatan: 'asas',
+    tanda_tangan: 'data:image/png;base64,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BLYVEOC29fXuBFoWmAapX0fEuzs0O7/rJrztgK4EAQLHExDgjjdTOyJwj8Cej1GnP9Trkek9U/JaAgQIzAQEOEeCwLkF9ghw7rqd+4zZPQECGwgIcBugeksCHQls/Tk44a2jw6BVAgT6ERDg+pmVTglsIbDV5+DmX1TwyHSL6XlPAgROKyDAnXb0Nk7glcAjH6MuBTdfVHDYCBAg8GABAe7BoN6OQIcCjwhwS8FtoPhdRHy1QxMtEyBAoGkBAa7p8WiOwC4Czwlwl4Kbu267jE4RAgTOKiDAnXXy9k3gfwKZACe4OUEECBAoFBDgCvGVJtCIwD0BTnBrZGjaIEDg3AIC3Lnnb/cEBoFpgFsSuXad8KjUGSJAgECBgABXgK4kgcYE5n8hYU17gtsaJa8hQIDARgIC3Eaw3pZARwK3Atz47z/c6e+ldkSnVQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gL/BrNKR/ZtWMRaAAAAAElFTkSuQmCC',
+    jenis_kelamin: 'LAKI_LAKI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: "Meeting hasn't started yet",
+  stack: "ResponseError: Meeting hasn't started yet\n" +
+    '    at Object.submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:60:19)\n' +
+    '    at async submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:28:28)',
+  path: '/api/v1/absensi/f1a8151580aa',
+  method: 'POST',
+  timestamp: '20-01-2025 16:22:31',
+  requestBody: {
+    nama: 'asa',
+    unit_kerja: 'asa',
+    golongan: 'asas',
+    jabatan: 'asas',
+    tanda_tangan: 'data:image/png;base64,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BLYVEOC29fXuBFoWmAapX0fEuzs0O7/rJrztgK4EAQLHExDgjjdTOyJwj8Cej1GnP9Trkek9U/JaAgQIzAQEOEeCwLkF9ghw7rqd+4zZPQECGwgIcBugeksCHQls/Tk44a2jw6BVAgT6ERDg+pmVTglsIbDV5+DmX1TwyHSL6XlPAgROKyDAnXb0Nk7glcAjH6MuBTdfVHDYCBAg8GABAe7BoN6OQIcCjwhwS8FtoPhdRHy1QxMtEyBAoGkBAa7p8WiOwC4Czwlwl4Kbu267jE4RAgTOKiDAnXXy9k3gfwKZACe4OUEECBAoFBDgCvGVJtCIwD0BTnBrZGjaIEDg3AIC3Lnnb/cEBoFpgFsSuXad8KjUGSJAgECBgABXgK4kgcYE5n8hYU17gtsaJa8hQIDARgIC3Eaw3pZARwK3Atz47z/c6e+ldkSnVQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gICXJrOQgIECBAgQIBAjYAAV+OuKgECBAgQIEAgLSDApeksJECAAAECBAjUCAhwNe6qEiBAgAABAgTSAgJcms5CAgQIECBAgECNgABX464qAQIECBAgQCAtIMCl6SwkQIAAAQIECNQICHA17qoSIECAAAECBNICAlyazkICBAgQIECAQI2AAFfjrioBAgQIECBAIC0gwKXpLCRAgAABAgQI1AgIcDXuqhIgQIAAAQIE0gL/BrNKR/ZtWMRaAAAAAElFTkSuQmCC',
+    jenis_kelamin: 'LAKI_LAKI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'PDFDocument is not defined',
+  stack: 'ReferenceError: PDFDocument is not defined\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:142:21)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:28:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'Error',
+  message: 'Incomplete or corrupt PNG file',
+  stack: 'Error: Incomplete or corrupt PNG file\n' +
+    '    at new PNG (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\png-js\\png-node.js:155:15)\n' +
+    '    at new PNGImage (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3864:18)\n' +
+    '    at PDFImage.open (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:4034:14)\n' +
+    '    at PDFDocument.openImage (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:4235:24)\n' +
+    '    at PDFDocument.image (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:4064:22)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:198:21\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:180:29)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:29:46',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'slug is not defined',
+  stack: 'ReferenceError: slug is not defined\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:143:26)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:47:13',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'doc.pipe is not a function',
+  stack: 'TypeError: doc.pipe is not a function\n' +
+    '    at exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:64:17)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:51:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'slug is not defined',
+  stack: 'ReferenceError: slug is not defined\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:153:26)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:52:52',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'createSlug is not defined',
+  stack: 'ReferenceError: createSlug is not defined\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:323:26)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 21:54:38',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'doc.font(...).text(...).margin is not a function',
+  stack: 'TypeError: doc.font(...).text(...).margin is not a function\n' +
+    '    at addDetailLine (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:546:17)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:554:20)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 22:05:47',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'doc.font(...).text(...).margin is not a function',
+  stack: 'TypeError: doc.font(...).text(...).margin is not a function\n' +
+    '    at addDetailLine (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:546:17)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:554:20)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 22:05:57',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'Error',
+  message: 'unsupported number: NaN',
+  stack: 'Error: unsupported number: NaN\n' +
+    '    at number (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:193:11)\n' +
+    '    at PDFDocument._fragment (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3684:45)\n' +
+    '    at PDFDocument._line (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3538:10)\n' +
+    '    at LineWrapper.emit (node:events:531:35)\n' +
+    '    at emitLine (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3167:12)\n' +
+    '    at LineWrapper.wrap (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3253:7)\n' +
+    '    at PDFDocument._text (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3352:15)\n' +
+    '    at PDFDocument.text (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:3364:17)\n' +
+    '    at addDetailLine (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:545:17)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:553:20)',
+  path: '/api/v1/absensi/f1a8151580aa/export',
+  method: 'GET',
+  timestamp: '20-01-2025 22:12:00',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Absensi not found',
+  stack: 'ResponseError: Absensi not found\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:511:23)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/undefined/export',
+  method: 'GET',
+  timestamp: '20-01-2025 22:30:39',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:33)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '21-01-2025 07:28:00'
+}
+{
+  name: 'ReferenceError',
+  message: 'data is not defined',
+  stack: 'ReferenceError: data is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:148:30\n' +
+    '    at Array.find (<anonymous>)\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:147:57)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/5ac382f6-ee90-40b1-9b65-70c3658bdb82/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 07:28:13',
+  requestBody: {
+    nama_kegiatan: 'qwqw',
+    tanggal_mulai: '2025-01-21',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '13:00',
+    jam_selesai: '15:26',
+    no_surat_peminjaman: 'qwqw',
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'data is not defined',
+  stack: 'ReferenceError: data is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:148:30\n' +
+    '    at Array.find (<anonymous>)\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:147:57)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/5ac382f6-ee90-40b1-9b65-70c3658bdb82/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 07:28:30',
+  requestBody: {
+    nama_kegiatan: 'qwqw',
+    tanggal_mulai: '2025-01-21',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '13:00',
+    jam_selesai: '15:26',
+    no_surat_peminjaman: 'qwqw',
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'updateData is not defined',
+  stack: 'ReferenceError: updateData is not defined\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:198:9)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/5ac382f6-ee90-40b1-9b65-70c3658bdb82/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 07:28:52',
+  requestBody: {
+    nama_kegiatan: 'qwqw',
+    tanggal_mulai: '2025-01-21',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '13:00',
+    jam_selesai: '15:26',
+    no_surat_peminjaman: 'qwqw',
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:33)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '21-01-2025 07:29:00'
+}
+{
+  name: 'ReferenceError',
+  message: 'data is not defined',
+  stack: 'ReferenceError: data is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:148:30\n' +
+    '    at Array.find (<anonymous>)\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:147:57)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/5ac382f6-ee90-40b1-9b65-70c3658bdb82/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 07:29:42',
+  requestBody: {
+    nama_kegiatan: 'qwqw',
+    tanggal_mulai: '2025-01-21',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '13:00',
+    jam_selesai: '15:26',
+    no_surat_peminjaman: 'qwqw',
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'find')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'find')\n" +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:147:63)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/5ac382f6-ee90-40b1-9b65-70c3658bdb82/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 07:29:52',
+  requestBody: {
+    nama_kegiatan: 'qwqw',
+    tanggal_mulai: '2025-01-21',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '13:00',
+    jam_selesai: '15:26',
+    no_surat_peminjaman: 'qwqw',
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:33)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '21-01-2025 07:30:00'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:33)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '21-01-2025 07:31:00'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman',
+  stack: 'ResponseError: Failed to get peminjaman\n' +
+    '    at Object.getPeminjamanRiwayat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:437:19)\n' +
+    '    at async getPeminjamanRiwayat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:76:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&tanggalMulai=2025-01-21&tanggalAkhir=2025-01-24',
+  method: 'GET',
+  timestamp: '21-01-2025 07:35:39',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {
+    page: '1',
+    size: '10',
+    tanggalMulai: '2025-01-21',
+    tanggalAkhir: '2025-01-24'
+  },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '21-01-2025 07:40:30',
+  requestBody: { email: 'example@pusdatin.id', kata_sandi: '@test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'convertTimeToMinutes is not defined',
+  stack: 'ReferenceError: convertTimeToMinutes is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:641:37\n' +
+    '    at Array.filter (<anonymous>)\n' +
+    '    at Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:635:45)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '21-01-2025 07:41:26',
+  requestBody: { tanggal: '2025-01-21', jam: '14:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'convertTimeToMinutes is not defined',
+  stack: 'ReferenceError: convertTimeToMinutes is not defined\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:641:37\n' +
+    '    at Array.filter (<anonymous>)\n' +
+    '    at Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:635:45)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '21-01-2025 07:41:28',
+  requestBody: { tanggal: '2025-01-21', jam: '14:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '21-01-2025 07:47:38',
+  requestBody: { tanggal: '2025-01-22', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:255:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/933bc8ee-af32-43d2-83e7-d6606a8e6313/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:46:18',
+  requestBody: {
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530',
+    nama_kegiatan: 'asa',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-23',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: "Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)",
+  stack: "ResponseError: Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)\n" +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:189:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/933bc8ee-af32-43d2-83e7-d6606a8e6313/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:46:26',
+  requestBody: {
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530',
+    nama_kegiatan: 'asa',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-27',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:23:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman/933bc8ee-af32-43d2-83e7-d6606a8e6313/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:46:31',
+  requestBody: {
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530',
+    nama_kegiatan: 'asa',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-02-01',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:23:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman/933bc8ee-af32-43d2-83e7-d6606a8e6313/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:46:37',
+  requestBody: {
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530',
+    nama_kegiatan: 'asa',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-25',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Room is already booked for this time period',
+  stack: 'ResponseError: Room is already booked for this time period\n' +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:255:23)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/933bc8ee-af32-43d2-83e7-d6606a8e6313/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:46:41',
+  requestBody: {
+    ruang_rapat_id: '3fdb2922-55e8-4120-86a1-830a1eaa2530',
+    nama_kegiatan: 'asa',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-24',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:23:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22',
+  path: '/api/v1/peminjaman/230f73dc-78fc-44b2-ba0e-dc63312143ed/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:47:04',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'asas',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-25',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: "Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)",
+  stack: "ResponseError: Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)\n" +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:189:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/230f73dc-78fc-44b2-ba0e-dc63312143ed/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:47:08',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'asas',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-28',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: "Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)",
+  stack: "ResponseError: Terdapat hari libur dalam rentang peminjaman: Isra' Mi'raj Nabi Muhammad SAW (2025-01-27)\n" +
+    '    at Object.updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:189:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async updateStatus (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:25:28)',
+  path: '/api/v1/peminjaman/230f73dc-78fc-44b2-ba0e-dc63312143ed/status',
+  method: 'PATCH',
+  timestamp: '21-01-2025 08:47:15',
+  requestBody: {
+    ruang_rapat_id: '9f1b6d39-e3bf-4903-a878-2c7cc0f72372',
+    nama_kegiatan: 'asas',
+    tanggal_mulai: '2025-01-22',
+    tanggal_selesai: '2025-01-30',
+    jam_mulai: '08:00',
+    jam_selesai: '09:00',
+    status: 'DISETUJUI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:530:19)\n' +
+    '    at async getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:106:28)',
+  path: '/api/v2/peminjaman/diproses?page=1&size=10&tanggalMulai=2025-01-22',
+  method: 'GET',
+  timestamp: '21-01-2025 08:47:26',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', tanggalMulai: '2025-01-22' },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get ruangan statistics',
+  stack: 'ResponseError: Failed to get ruangan statistics\n' +
+    '    at Object.getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:604:19)\n' +
+    '    at async getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:148:28)',
+  path: '/api/v1/statistik?tanggalMulai=2025-01-22',
+  method: 'GET',
+  timestamp: '21-01-2025 08:47:33',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { tanggalMulai: '2025-01-22' },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get ruangan statistics',
+  stack: 'ResponseError: Failed to get ruangan statistics\n' +
+    '    at Object.getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:604:19)\n' +
+    '    at async getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:148:28)',
+  path: '/api/v1/statistik?tanggalMulai=2025-01-23',
+  method: 'GET',
+  timestamp: '21-01-2025 08:53:25',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { tanggalMulai: '2025-01-23' },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:530:19)\n' +
+    '    at async getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:106:28)',
+  path: '/api/v2/peminjaman/diproses?page=1&size=10&tanggalMulai=2025-01-22',
+  method: 'GET',
+  timestamp: '21-01-2025 08:53:54',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { page: '1', size: '10', tanggalMulai: '2025-01-22' },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman diproses',
+  stack: 'ResponseError: Failed to get peminjaman diproses\n' +
+    '    at Object.getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:530:19)\n' +
+    '    at async getAjuanPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:106:28)',
+  path: '/api/v2/peminjaman/diproses?page=1&size=10&tanggalMulai=2025-01-23&tanggalAkhir=2025-01-24',
+  method: 'GET',
+  timestamp: '21-01-2025 08:54:03',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {
+    page: '1',
+    size: '10',
+    tanggalMulai: '2025-01-23',
+    tanggalAkhir: '2025-01-24'
+  },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get peminjaman',
+  stack: 'ResponseError: Failed to get peminjaman\n' +
+    '    at Object.getPeminjamanRiwayat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:458:19)\n' +
+    '    at async getPeminjamanRiwayat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:76:28)',
+  path: '/api/v2/peminjaman?page=1&size=10&tanggalMulai=2025-01-21&tanggalAkhir=2025-01-24',
+  method: 'GET',
+  timestamp: '21-01-2025 08:56:03',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {
+    page: '1',
+    size: '10',
+    tanggalMulai: '2025-01-21',
+    tanggalAkhir: '2025-01-24'
+  },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Failed to get ruangan statistics',
+  stack: 'ResponseError: Failed to get ruangan statistics\n' +
+    '    at Object.getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:607:19)\n' +
+    '    at async getRuanganStatistics (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:148:28)',
+  path: '/api/v1/statistik?tanggalMulai=2025-01-21',
+  method: 'GET',
+  timestamp: '21-01-2025 08:58:04',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: { tanggalMulai: '2025-01-21' },
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  level: 'error'
+}

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import MainLayout from "@/components/layout/MainLayout";
 import api from "@/utils/api";
-import { Calendar, Clock, MapPin, Users, FileText, Mail, User } from 'lucide-react';
+import { Calendar, Clock, Download, MapPin, Users, FileText, Mail, User, Copy, CheckCheck, Upload } from 'lucide-react';
 import { HandleResponse } from '@/components/ui/HandleResponse';
-
+import Button from '@/components/ui/Button';
 
 const statusOptions = [
   { label: 'Diproses', value: 'DIPROSES' },
@@ -18,7 +18,9 @@ export default function RiwayatUser() {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [totalPages, setTotalPages] = useState(1);
-  
+  const [copiedId, setCopiedId] = useState(null);
+  const [exportLoading, setExportLoading] = useState(false);
+
   const currentStatus = searchParams.get('status') || 'DIPROSES';
   const currentPage = parseInt(searchParams.get('page') || '1');
   const PAGE_SIZE = 10;
@@ -37,16 +39,66 @@ export default function RiwayatUser() {
         setBookings(response.data.data);
         setTotalPages(Math.ceil(response.data.total / PAGE_SIZE));
       } catch (error) {
-        HandleResponse({
-          error,
-        });
-            } finally {
+        HandleResponse({ error });
+      } finally {
         setLoading(false);
       }
     };
 
     fetchBookings();
   }, [currentStatus, currentPage]);
+
+  const handleExportAbsensi = async (kode) => {
+    const url = new URL(kode);
+    const code = url.searchParams.get('u');
+    
+    
+    try {
+      setExportLoading(true);
+      const response = await api.get(`/v1/absensi/${code}/export`, {
+        responseType: 'blob'
+      });
+
+      // Create blob link to download
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `absensi-${code}.pdf`);
+
+      // Append to html link element page
+      document.body.appendChild(link);
+
+      // Start download
+      link.click();
+
+      // Clean up and remove the link
+      link.parentNode.removeChild(link);
+    } catch (error) {
+      HandleResponse({ error });
+    } finally {
+      setExportLoading(false);
+    }
+  };
+
+  const formatDateRange = (startDate, endDate) => {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const start = new Date(startDate).toLocaleDateString('id-ID', options);
+
+    if (!endDate) return start;
+
+    const end = new Date(endDate).toLocaleDateString('id-ID', options);
+    return `${start} - ${end}`;
+  };
+
+  const copyToClipboard = async (text, id) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedId(id);
+      setTimeout(() => setCopiedId(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
 
   const handleStatusChange = (status) => {
     setSearchParams({ status });
@@ -55,12 +107,13 @@ export default function RiwayatUser() {
   const handlePageChange = (page) => {
     setSearchParams({ status: currentStatus, page: page.toString() });
   };
+  
 
   return (
     <MainLayout>
-      <div className="max-w-7xl  px-4 sm:px-6 lg:px-20 py-20">
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-20 py-20">
         <h1 className="text-2xl font-bold mb-6">Riwayat</h1>
-        
+
         {/* Status Tabs */}
         <div className="border-b border-gray-200 mb-6">
           <nav className="flex -mb-px space-x-8">
@@ -102,7 +155,7 @@ export default function RiwayatUser() {
                     {/* Image */}
                     <div className="flex-shrink-0 mb-4 sm:mb-0">
                       <img
-                        src={`${import.meta.env.VITE_API_URL}${booking.RuangRapat.foto_ruangan }`}
+                        src={`${import.meta.env.VITE_API_URL}${booking.RuangRapat.foto_ruangan}`}
                         alt={booking.RuangRapat.nama_ruangan}
                         className="h-32 w-44 object-cover rounded-lg"
                       />
@@ -121,12 +174,7 @@ export default function RiwayatUser() {
                         <div className="space-y-2">
                           <div className="flex items-center">
                             <Calendar className="w-4 h-4 mr-2" />
-                            <span>{new Date(booking.tanggal).toLocaleDateString('id-ID', { 
-                              weekday: 'long', 
-                              year: 'numeric', 
-                              month: 'long', 
-                              day: 'numeric' 
-                            })}</span>
+                            <span>{formatDateRange(booking.tanggal_mulai, booking.tanggal_selesai)}</span>
                           </div>
                           <div className="flex items-center">
                             <Clock className="w-4 h-4 mr-2" />
@@ -153,17 +201,58 @@ export default function RiwayatUser() {
                           </div>
                         </div>
                       </div>
+
+                      {/* Attendance Link for DISETUJUI status */}
+                      {booking.status === 'DISETUJUI' && booking.Absensi?.link_absensi && (
+                        <div className=' flex gap-4'>
+                          <div className="mt-4 flex items-center gap-2">
+                            <span className="text-sm font-medium text-gray-700">
+                              Link Absensi Kegiatan
+                            </span>
+                            <button
+                              onClick={() => copyToClipboard(booking.Absensi.link_absensi, booking.id)}
+                              className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-sm transition-colors
+                              ${copiedId === booking.id
+                                  ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                                  : 'bg-blue-100 text-blue-700 hover:bg-blue-200'}
+                            `}
+                            >
+                              {copiedId === booking.id ? (
+                                <>
+                                  <CheckCheck className="w-4 h-4" />
+                                  <span>Tersalin!</span>
+                                </>
+                              ) : (
+                                <>
+                                  <Copy className="w-4 h-4" />
+                                  <span>Salin Link</span>
+                                </>
+                              )}
+                            </button>
+                          </div>
+                          <div className="mt-4 flex items-center gap-4">
+                            <Button
+                              onClick={() => handleExportAbsensi(booking.Absensi?.link_absensi)}
+                              icon={Upload}
+                              disabled={exportLoading || !booking.Absensi?.link_absensi}
+                            >
+                              {exportLoading ? 'Mengexport...' : 'Export'}
+                            </Button>
+                          </div>
+                        </div>
+
+                      )}
                     </div>
                   </div>
 
                   <div className="mt-4 sm:mt-0">
-                    
                     {booking.alasan_penolakan && (
                       <p className="mt-2 text-sm text-red-600">
                         Alasan: {booking.alasan_penolakan}
                       </p>
                     )}
                   </div>
+
                 </div>
               </div>
             ))}

@@ -11,7 +11,6 @@ import { id } from 'date-fns/locale';
 import EditBookingModal from './EditBookingModal';
 import { HandleResponse } from '@/components/ui/HandleResponse';
 
-
 export default function Riwayat() {
   const [bookings, setBookings] = useState([]);
   const [rooms, setRooms] = useState([]);
@@ -31,7 +30,6 @@ export default function Riwayat() {
     tanggalMulai: undefined,
     tanggalAkhir: undefined
   });
-
 
   const fetchRooms = async () => {
     try {
@@ -115,6 +113,16 @@ export default function Riwayat() {
     }));
   };
 
+  const formatDateRange = (startDate, endDate) => {
+    const formattedStart = format(new Date(startDate), 'EEEE, dd MMMM yyyy', { locale: id });
+    if (!endDate) return formattedStart;
+    
+    // If dates are the same, just return one date
+    if (startDate === endDate) return formattedStart;
+    
+    return `${formattedStart} - ${format(new Date(endDate), 'EEEE, dd MMMM yyyy', { locale: id })}`;
+  };
+
   const actions = [
     {
       key: 'edit',
@@ -160,7 +168,7 @@ export default function Riwayat() {
       label: 'TANGGAL & WAKTU',
       render: (row) => (
         <div>
-          <div>{format(new Date(row.tanggal), 'EEEE, dd MMMM yyyy', { locale: id })}</div>
+          <div>{formatDateRange(row.tanggal_mulai, row.tanggal_selesai)}</div>
           <div className="text-sm text-gray-500">
             {row.jam_mulai} - {row.jam_selesai}
           </div>
@@ -185,10 +193,11 @@ export default function Riwayat() {
       label: 'STATUS',
       render: (row) => (
         <div>
-          <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${row.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' :
-              row.status === 'DITOLAK' ? 'bg-red-100 text-red-800' :
-                'bg-blue-100 text-blue-800'
-            }`}>
+          <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${
+            row.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' :
+            row.status === 'DITOLAK' ? 'bg-red-100 text-red-800' :
+            'bg-blue-100 text-blue-800'
+          }`}>
             {row.status}
           </span>
           {row.alasan_penolakan && (

@@ -1,15 +1,37 @@
-// src/components/dialog/BookingDialog.jsx
 import React from 'react';
 import { Dialog } from '@headlessui/react';
-import { X, Clock, User, FileText } from 'lucide-react';
+import { X, Clock, User, FileText, Calendar } from 'lucide-react';
 import { id } from 'date-fns/locale';
 import { format } from 'date-fns';
+import dayjs from 'dayjs';
 
 export function BookingDialog({ isOpen, onClose, bookings = [], date }) {
   const formattedDate = format(date.toDate(), 'EEEE, d MMMM yyyy', { locale: id });
   
-  // Filter out rejected bookings
-  const filteredBookings = bookings.filter(booking => booking.status !== 'DITOLAK');
+  const getRelevantBookings = () => {
+    return bookings.filter(booking => {
+      const currentDate = date.format('YYYY-MM-DD');
+      const startDate = dayjs(booking.tanggal_mulai).format('YYYY-MM-DD');
+      const endDate = booking.tanggal_selesai 
+        ? dayjs(booking.tanggal_selesai).format('YYYY-MM-DD')
+        : startDate;
+      
+      return dayjs(currentDate).isBetween(startDate, endDate, 'day', '[]')
+        && booking.status !== 'DITOLAK';
+    });
+  };
+
+  const filteredBookings = getRelevantBookings();
+
+  const formatDateRange = (booking) => {
+    const startDate = dayjs(booking.tanggal_mulai);
+    const endDate = booking.tanggal_selesai ? dayjs(booking.tanggal_selesai) : null;
+
+    if (!endDate || startDate.isSame(endDate, 'day')) {
+      return format(startDate.toDate(), 'd MMMM yyyy', { locale: id });
+    }
+    return `${format(startDate.toDate(), 'd MMMM yyyy', { locale: id })} - ${format(endDate.toDate(), 'd MMMM yyyy', { locale: id })}`;
+  };
 
   return (
     <Dialog 
@@ -53,20 +75,23 @@ export function BookingDialog({ isOpen, onClose, bookings = [], date }) {
                     <h3 className="font-medium">{booking.nama_kegiatan}</h3>
                     <span className={`
                       inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                      ${(() => {
-                        switch (booking.status) {
-                          case 'DIPROSES': return 'bg-yellow-100 text-yellow-800';
-                          case 'DISETUJUI': return 'bg-green-100 text-green-800';
-                          case 'SELESAI': return 'bg-gray-100 text-gray-800';
-                          default: return 'bg-gray-100 text-gray-800';
-                        }
-                      })()}
+                      ${
+                        booking.status === 'DIPROSES' 
+                          ? 'bg-yellow-100 text-yellow-800'
+                          : booking.status === 'DISETUJUI'
+                          ? 'bg-green-100 text-green-800'
+                          : 'bg-gray-100 text-gray-800'
+                      }
                     `}>
                       {booking.status}
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>{formatDateRange(booking)}</span>
+                    </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4" />
                       <span>{booking.jam_mulai} - {booking.jam_selesai}</span>

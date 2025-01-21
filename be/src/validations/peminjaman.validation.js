@@ -72,13 +72,41 @@ module.exports = {
     updateStatus: Joi.object({
         ruang_rapat_id: Joi.string().optional(),
         nama_kegiatan: Joi.string().optional(),
-        tanggal: Joi.string().optional(),
-        jam_mulai: Joi.string()
-            .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
+        tanggal_mulai: Joi.string()
             .optional()
+
+            .custom(validateDate)
             .messages({
-                'string.pattern.base': 'Time format must be HH:mm'
+                'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
+                'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)',
+                'date.past': 'Tanggal Peminjaman tidak boleh hari kemarin'
             }),
+        tanggal_selesai: Joi.string()
+            .custom(validateDate)
+            .allow(null)
+            .optional()
+            .custom((value, helpers) => {
+                if (!value) return value;
+
+                const startDate = moment(helpers.state.ancestors[0].tanggal_mulai);
+                const endDate = moment(value);
+
+                if (endDate.isBefore(startDate)) {
+                    return helpers.message('tanggal selesai harus setelah tanggal mulai');
+                }
+
+                return value;
+            })
+            .messages({
+                'date.invalid': 'format tanggal salah. gunakan YYYY-MM-DD',
+                'date.workingDay': 'Tanggal Peminjaman harus dihari kerja (Senin - Jumat)'
+            }),
+             jam_mulai: Joi.string()
+                .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
+                .optional()
+                .messages({
+                    'string.pattern.base': 'Time format must be HH:mm'
+                }),
         jam_selesai: Joi.string()
             .pattern(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
             .optional()

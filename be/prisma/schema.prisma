@@ -54,7 +54,7 @@ model ListAbsensi {
   unit_kerja    String
   golongan      String
   jabatan       String
-  tanda_tangan  String
+  tanda_tangan  String @db.LongText
   jenis_kelamin String
   Absensi       Absensi @relation(fields: [absensi_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
 }

@@ -1,4 +1,3 @@
-// src/pages/admin/Peminjaman/[id].jsx
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import DashboardLayout from "@/components/layout/DashboardLayout";
@@ -8,7 +7,7 @@ import Input from '@/components/ui/Input';
 import Select from '@/components/ui/Select';
 import { ArrowLeft } from 'lucide-react';
 import api from "@/utils/api";
-import { format } from "date-fns";
+import { format, isAfter, parseISO } from "date-fns";
 import { HandleResponse } from '@/components/ui/HandleResponse';
 import { showToast } from '@/components/ui/Toast';
 
@@ -22,7 +21,8 @@ export default function DetailPeminjaman() {
   const [formData, setFormData] = useState({
     ruang_rapat_id: '',
     nama_kegiatan: '',
-    tanggal: '',
+    tanggal_mulai: '',
+    tanggal_selesai: '',
     jam_mulai: '',
     jam_selesai: '',
     status: '',
@@ -44,7 +44,8 @@ export default function DetailPeminjaman() {
           setFormData({
             ruang_rapat_id: data.ruang_rapat_id,
             nama_kegiatan: data.nama_kegiatan,
-            tanggal: data.tanggal,
+            tanggal_mulai: data.tanggal_mulai,
+            tanggal_selesai: data.tanggal_selesai || '',
             jam_mulai: data.jam_mulai,
             jam_selesai: data.jam_selesai,
             status: '',
@@ -77,7 +78,7 @@ export default function DetailPeminjaman() {
   const validateForm = () => {
     // Validate time format
     if (!validateTime(formData.jam_mulai) || !validateTime(formData.jam_selesai)) {
-      showToast("jam harus diisi","error")
+      showToast("jam harus diisi", "error");
       return false;
     }
 
@@ -88,12 +89,24 @@ export default function DetailPeminjaman() {
     const endTotal = endHour * 60 + endMinute;
 
     if (endTotal <= startTotal) {
-      showToast("Jam mulai tidak boleh lewat dari jam selesai","error")
+      showToast("Jam mulai tidak boleh lewat dari jam selesai", "error");
+      return false;
+    }
+
+    // Validate dates
+    if (!formData.tanggal_mulai) {
+      showToast("Tanggal mulai wajib diisi", "error");
+      return false;
+    }
+
+    // If end date is provided, validate it's after start date
+    if (formData.tanggal_selesai && isAfter(parseISO(formData.tanggal_mulai), parseISO(formData.tanggal_selesai))) {
+      showToast("Tanggal selesai harus setelah tanggal mulai", "error");
       return false;
     }
 
     if (formData.status === 'DITOLAK' && !formData.alasan_penolakan) {
-      showToast("Alasan Penolakan Wajib diisi","error")
+      showToast("Alasan Penolakan Wajib diisi", "error");
       return false;
     }
 
@@ -109,15 +122,16 @@ export default function DetailPeminjaman() {
       const payload = {
         ruang_rapat_id: formData.ruang_rapat_id,
         nama_kegiatan: formData.nama_kegiatan,
-        tanggal: formData.tanggal,
+        tanggal_mulai: formData.tanggal_mulai,
+        tanggal_selesai: formData.tanggal_selesai || null,
         jam_mulai: formData.jam_mulai,
         jam_selesai: formData.jam_selesai,
         status: formData.status,
         alasan_penolakan: formData.status === 'DITOLAK' ? formData.alasan_penolakan : undefined
       };
 
-      const response=await api.patch(`/v1/peminjaman/${id}/status`, payload);
-      HandleResponse({response})
+      const response = await api.patch(`/v1/peminjaman/${id}/status`, payload);
+      HandleResponse({ response })
 
       navigate('/ajuan-peminjaman');
     } catch (error) {
@@ -145,6 +159,7 @@ export default function DetailPeminjaman() {
     <DashboardLayout>
       <div className="space-y-4">
         <Card className="p-4">
+          {/* Header section remains the same */}
           <div className="flex items-center gap-4 mb-6">
             <button
               onClick={() => navigate('/ajuan-peminjaman')}
@@ -156,7 +171,7 @@ export default function DetailPeminjaman() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Informasi Peminjam - Read Only */}
+            {/* Informasi Peminjam section remains the same */}
             <div className="space-y-4">
               <h2 className="font-medium">Informasi Peminjam</h2>
               <div className="space-y-3 bg-gray-50 p-4 rounded-lg">
@@ -175,7 +190,7 @@ export default function DetailPeminjaman() {
               </div>
             </div>
 
-            {/* Informasi Ruangan - Editable */}
+            {/* Informasi Ruangan section remains the same */}
             <div className="space-y-4">
               <h2 className="font-medium">Informasi Ruangan</h2>
               <div className="space-y-4">
@@ -212,11 +227,10 @@ export default function DetailPeminjaman() {
               </div>
             </div>
 
-            {/* Detail Peminjaman - Editable */}
+            {/* Detail Peminjaman section with updated date fields */}
             <div className="lg:col-span-2 space-y-4">
               <h2 className="font-medium">Detail Peminjaman</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
                 <Input
                   label="Nama Kegiatan"
                   fullWidth
@@ -238,29 +252,40 @@ export default function DetailPeminjaman() {
                   disabled
                 />
 
-
-                <div>
+                <div className="grid grid-cols-2 gap-4">
+                  <Input
+                    type="date"
+                    label="Tanggal Mulai"
+                    required
+                    fullWidth
+                    value={formData.tanggal_mulai}
+                    onChange={(e) => setFormData(prev => ({
+                      ...prev,
+                      tanggal_mulai: e.target.value
+                    }))}
+                    min={format(new Date(), 'yyyy-MM-dd')}
+                    className="mt-1"
+                  />
 
                   <Input
                     type="date"
-                    label="Tanggal"
+                    label="Tanggal Selesai"
                     fullWidth
-                    value={formData.tanggal}
+                    value={formData.tanggal_selesai}
                     onChange={(e) => setFormData(prev => ({
                       ...prev,
-                      tanggal: e.target.value
+                      tanggal_selesai: e.target.value
                     }))}
-                    min={format(new Date(), 'yyyy-MM-dd')}
+                    min={formData.tanggal_mulai}
                     className="mt-1"
                   />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-
                   <Input
                     type="time"
                     fullWidth
-                    label=" Jam Mulai "
+                    label="Jam Mulai"
                     helperText="Format: HH:mm"
                     value={formData.jam_mulai}
                     onChange={(e) => setFormData(prev => ({
@@ -273,7 +298,7 @@ export default function DetailPeminjaman() {
                   <Input
                     type="time"
                     fullWidth
-                    label=" Jam Selesai "
+                    label="Jam Selesai"
                     helperText="Format: HH:mm"
                     value={formData.jam_selesai}
                     onChange={(e) => setFormData(prev => ({
@@ -282,12 +307,11 @@ export default function DetailPeminjaman() {
                     }))}
                     className="mt-1"
                   />
-
                 </div>
               </div>
             </div>
 
-            {/* Form Persetujuan */}
+            {/* Form Persetujuan section remains the same */}
             <div className="lg:col-span-2 space-y-4">
               <h2 className="font-medium">Persetujuan Peminjaman</h2>
               <div className="space-y-4">
@@ -332,7 +356,7 @@ export default function DetailPeminjaman() {
               </div>
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons section remains the same */}
             <div className="lg:col-span-2 flex justify-end gap-3">
               <Button
                 variant="secondary"

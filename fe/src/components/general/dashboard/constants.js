@@ -35,7 +35,7 @@ export const MENU_ITEMS = [
     },
     {
         icon: UserCircle,
-        text: 'Staff',
+        text: 'Pengguna',
         path: '/staff',
         allowedRoles: [ROLES.SUPERADMIN]
     },

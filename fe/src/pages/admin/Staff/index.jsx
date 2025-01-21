@@ -135,16 +135,16 @@ export default function Staff() {
         <Card className="p-4">
           <div className="flex mb-4 flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
-              <h1 className="text-xl font-semibold text-gray-900">Manajemen Staff</h1>
+              <h1 className="text-xl font-semibold text-gray-900">Manajemen Peminjam dan Admin</h1>
               <p className="mt-1 text-sm text-gray-500">
-                Kelola data staff dan pengguna sistem
+                Kelola data  pengguna sistem
               </p>
             </div>
             <Button onClick={() => setIsAddModalOpen(true)} icon={Plus}>
-              Tambah Staff
+              Tambah 
             </Button>
           </div>
-          <div className='overflow-x-scroll no-scrollbar'>
+          <div className='overflow-x-scroll  no-scrollbar'>
             <Table
               headers={headers}
               data={staff}

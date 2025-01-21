@@ -1,10 +1,10 @@
 import { Dialog } from "@/components/ui/Dialog";
 import Input from "@/components/ui/Input";
+import Select from "@/components/ui/Select";
 import Button from "@/components/ui/Button";
 import { useState } from "react";
 import api from "@/utils/api";
 import { HandleResponse } from "@/components/ui/HandleResponse";
-
 
 export default function AddEditTeamModal({
   isOpen,
@@ -15,7 +15,8 @@ export default function AddEditTeamModal({
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     nama_tim_kerja: team?.nama_tim_kerja || '',
-    code: team?.code || ''
+    code: team?.code || '',
+    is_aktif: team?.is_aktif === undefined ? 'true' : String(team.is_aktif)
   });
 
   const handleChange = (e) => {
@@ -31,15 +32,19 @@ export default function AddEditTeamModal({
       if (!formData.nama_tim_kerja || !formData.code) {
         return;
       }
+
+      const dataToSubmit = {
+        ...formData,
+        is_aktif: formData.is_aktif
+      };
+
       let response;
       if (team) {
-        response = await api.patch(`/v1/tim-kerja/${team.id}`, formData);
-        HandleResponse({ response })
-
+        response = await api.patch(`/v1/tim-kerja/${team.id}`, dataToSubmit);
+        HandleResponse({ response });
       } else {
-        response = await api.post('/v1/tim-kerja', formData);
-        HandleResponse({ response })
-
+        response = await api.post('/v1/tim-kerja', dataToSubmit);
+        HandleResponse({ response });
       }
 
       onSuccess();
@@ -60,32 +65,44 @@ export default function AddEditTeamModal({
       size="md"
     >
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Kode Tim <span className="text-red-500">*</span>
-          </label>
-          <Input
-            name="code"
-            value={formData.code}
-            onChange={handleChange}
-            required
-            placeholder="Masukkan kode tim"
-            className="mt-1 w-full"
-          />
-        </div>
+
+        <Input
+          name="code"
+          label="Kode Tim "
+          value={formData.code}
+          onChange={handleChange}
+          required
+          fullWidth
+          placeholder="Masukkan kode tim"
+          className="mt-1"
+        />
+
+        <Input
+          name="nama_tim_kerja"
+          value={formData.nama_tim_kerja}
+          onChange={handleChange}
+          fullWidth
+          label="Nama Tim "
+          required
+          placeholder="Masukkan nama tim"
+          className="mt-1"
+        />
 
         <div>
           <label className="block text-sm font-medium text-gray-700">
-            Nama Tim <span className="text-red-500">*</span>
+            Status <span className="text-red-500">*</span>
           </label>
-          <Input
-            name="nama_tim_kerja"
-            value={formData.nama_tim_kerja}
+          <Select
+            name="is_aktif"
+            value={formData.is_aktif}
             onChange={handleChange}
             required
-            placeholder="Masukkan nama tim"
-            className="mt-1 w-full"
-          />
+            className="mt-1"
+            disabled={loading}
+          >
+            <option value="true">Aktif</option>
+            <option value="false">Non Aktif</option>
+          </Select>
         </div>
 
         <div className="flex justify-end space-x-3 mt-6">

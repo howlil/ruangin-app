@@ -51,6 +51,23 @@ const absensiController ={
         } catch (error) {
             next(error);
         }
+    },
+
+    async exportAbsensiToPdf(req, res, next) {
+        try {
+            const { kode } = req.params;
+            const doc = await absensiService.exportAbsensiToPdf(kode);
+
+            const fileName = `daftar-hadir-${kode}.pdf`;
+
+            res.setHeader('Content-Type', 'application/pdf');
+            res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
+
+            doc.pipe(res);
+            doc.end();
+        } catch (error) {
+            next(error);
+        }
     }
 }
 
