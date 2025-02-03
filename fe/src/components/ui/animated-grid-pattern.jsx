@@ -119,7 +119,7 @@ export function AnimatedGridPattern({
             height={height - 1}
             x={x * width + 1}
             y={y * height + 1}
-            fill="blue"
+            fill="#187CFF"
             strokeWidth="0" />
         ))}
       </svg>

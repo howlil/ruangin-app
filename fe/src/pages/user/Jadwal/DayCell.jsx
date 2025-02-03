@@ -40,10 +40,11 @@
 import {  useRef } from 'react';
 import { BookingCard } from './BookingCard';
 
-export const DayCell = ({  bookings, isPastDate, onBookingClick }) => {
+export const DayCell = ({  bookings, onBookingClick }) => {
     const cellRef = useRef(null);
 
-    if (!bookings.length || isPastDate) return null;
+
+    if (!bookings.length) return null;
 
     return (
         <div 

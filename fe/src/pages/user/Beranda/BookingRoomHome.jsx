@@ -245,16 +245,18 @@ export default function BookingRoomHome({
               placeholder="Masukkan nomor surat"
             />
 
-            <div className="flex justify-end gap-3 mt-6">
+            <div className="flex justify-between gap-3 mt-6">
               <Button
                 variant="secondary"
                 onClick={onClose}
                 disabled={loading}
+                fullWidth
               >
                 Batal
               </Button>
               <Button
                 type="submit"
+                fullWidth
                 loading={loading}
                 disabled={loading || !!timeError || !!dateError}
               >

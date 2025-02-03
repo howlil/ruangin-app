@@ -228,17 +228,20 @@ export default function BookingRoomDialog({ isOpen, onClose, roomId, roomName })
               placeholder="Masukkan nomor surat"
             />
 
-            <div className="flex justify-end gap-3 mt-6">
+            <div className="flex flex-1 justify-between gap-3 mt-6">
               <Button
                 variant="secondary"
                 onClick={onClose}
                 disabled={loading}
+                fullWidth
               >
                 Batal
               </Button>
               <Button
                 type="submit"
                 loading={loading}
+                fullWidth
+
                 disabled={loading || !!timeError || !!dateError}
               >
                 Ajukan Peminjaman

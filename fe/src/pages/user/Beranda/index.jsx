@@ -1,3 +1,4 @@
+`use client`
 import MainLayout from "@/components/layout/MainLayout"
 import api from "@/utils/api"
 import React from "react"
@@ -35,7 +36,9 @@ export default function Beranda() {
   }, []);
 
   return (
+
     <MainLayout>
+
       <AnimatedGridPattern
         numSquares={60}
         maxOpacity={0.1}
@@ -43,7 +46,7 @@ export default function Beranda() {
         repeatDelay={1}
         className={cn(
           "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+          "inset-x-0 inset-y-[-30%] h-[200%]",
         )}
       />
       <div className="relative overflow-hidden min-h-screen">
@@ -57,7 +60,7 @@ export default function Beranda() {
         <section className="max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-20 py-16 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 relative z-10">
-              <h1 className="text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-500/80 bg-clip-text  text-5xl font-bold leading-none text-transparent dark:from-gray-500 dark:to-slate-900/10">
                 Kelola Rapat Anda dengan Mudah dan Efisien
               </h1>
               <CheckRoomModal />
@@ -106,5 +109,6 @@ export default function Beranda() {
         </section>
       </div>
     </MainLayout>
+
   );
 }

@@ -94713,3 +94713,2931 @@
   level: 'info',
   timestamp: '03-02-2025 15:41:00'
 }
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:42:00'
+}
+{
+  message: '[2025-02-03 15:42:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:42:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:42:46'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:42:46'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:42:46'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:42:46'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:42:47'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:42:47'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:43:00'
+}
+{
+  message: '[2025-02-03 15:43:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:43:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:44:00'
+}
+{
+  message: '[2025-02-03 15:44:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:44:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:44:32'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:44:32'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:00'
+}
+{
+  message: '[2025-02-03 15:45:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:41'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:41'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:45:43'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:45:43'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:45:43'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:45:43'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:44'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:44'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:50'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:45:50'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:46:00'
+}
+{
+  message: '[2025-02-03 15:46:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:46:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:47:00'
+}
+{
+  message: '[2025-02-03 15:47:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:47:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:48:00'
+}
+{
+  message: '[2025-02-03 15:48:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:48:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:49:00'
+}
+{
+  message: '[2025-02-03 15:49:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:49:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:50:00'
+}
+{
+  message: '[2025-02-03 15:50:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:50:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:51:00'
+}
+{
+  message: '[2025-02-03 15:51:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:51:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:52:00'
+}
+{
+  message: '[2025-02-03 15:52:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:52:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:53:00'
+}
+{
+  message: '[2025-02-03 15:53:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:53:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:54:00'
+}
+{
+  message: '[2025-02-03 15:54:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:54:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:55:00'
+}
+{
+  message: '[2025-02-03 15:55:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:55:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:56:00'
+}
+{
+  message: '[2025-02-03 15:56:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:56:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:57:00'
+}
+{
+  message: '[2025-02-03 15:57:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:57:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:58:00'
+}
+{
+  message: '[2025-02-03 15:58:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:58:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:00'
+}
+{
+  message: '[2025-02-03 15:59:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:42'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:42'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:59:56'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:59:56'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 15:59:56'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 15:59:56'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:59'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 15:59:59'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:00:00'
+}
+{
+  message: '[2025-02-03 16:00:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:00:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 16:00:14'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 16:00:14'
+}
+{
+  userRole: 'ADMIN',
+  userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authorization successful',
+  timestamp: '03-02-2025 16:00:14'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:01:00'
+}
+{
+  message: '[2025-02-03 16:01:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 3\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 3',
+  level: 'info',
+  timestamp: '03-02-2025 16:01:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 16:01:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 16:01:50'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 16:01:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 16:01:50'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:02:00'
+}
+{
+  message: '[2025-02-03 16:02:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:02:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:03:00'
+}
+{
+  message: '[2025-02-03 16:03:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:03:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 16:03:13'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 16:03:13'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 16:03:13'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 16:03:13'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:03:14'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:03:14'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:04:00'
+}
+{
+  message: '[2025-02-03 16:04:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:04:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:05:00'
+}
+{
+  message: '[2025-02-03 16:05:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:05:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:06:00'
+}
+{
+  message: '[2025-02-03 16:06:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:06:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:07:00'
+}
+{
+  message: '[2025-02-03 16:07:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:07:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:00'
+}
+{
+  message: '[2025-02-03 16:08:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:06'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:06'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:09'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:09'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:14'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:08:14'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:00'
+}
+{
+  message: '[2025-02-03 16:09:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:49'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:49'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:55'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 16:09:55'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:10:00'
+}
+{
+  message: '[2025-02-03 16:10:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:10:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 16:11:00'
+}
+{
+  message: '[2025-02-03 16:11:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 16:11:00'
+}
+{
+  message: 'server is runniing in 8080',
+  level: 'info',
+  timestamp: '03-02-2025 18:56:38'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:56:59'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:56:59'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:00'
+}
+{
+  message: '[2025-02-03 18:57:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 1\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 1',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:26'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:26'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:57'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:57'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:59'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 18:57:59'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 18:58:00'
+}
+{
+  message: '[2025-02-03 18:58:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 18:58:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 18:59:00'
+}
+{
+  message: '[2025-02-03 18:59:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 18:59:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:00:00'
+}
+{
+  message: '[2025-02-03 19:00:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:00:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:01:00'
+}
+{
+  message: '[2025-02-03 19:01:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:01:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:02:00'
+}
+{
+  message: '[2025-02-03 19:02:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:02:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:03:00'
+}
+{
+  message: '[2025-02-03 19:03:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:03:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:04:00'
+}
+{
+  message: '[2025-02-03 19:04:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:04:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:00'
+}
+{
+  message: '[2025-02-03 19:05:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:44'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:44'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:05:45'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:05:45'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:05:45'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:05:45'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:49'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:05:49'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:05:51'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:05:51'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:05:51'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:05:51'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:00'
+}
+{
+  message: '[2025-02-03 19:06:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:06'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:06'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:08'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:08'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:11'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:11'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:18'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:18'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:45'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:45'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:50'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:06:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:06:50'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:52'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:06:52'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:07:00'
+}
+{
+  message: '[2025-02-03 19:07:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:07:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:07:55'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:07:55'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:08:00'
+}
+{
+  message: '[2025-02-03 19:08:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:08:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:08:54'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:08:54'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:00'
+}
+{
+  message: '[2025-02-03 19:09:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:31'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:34'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:48'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:09:54'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:10:00'
+}
+{
+  message: '[2025-02-03 19:10:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:10:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:10:04'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:10:09'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:11:00'
+}
+{
+  message: '[2025-02-03 19:11:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:11:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:11:54'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:11:54'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '03-02-2025 19:11:56',
+  requestBody: { tanggal: '', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:12:00'
+}
+{
+  message: '[2025-02-03 19:12:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:12:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:13:00'
+}
+{
+  message: '[2025-02-03 19:13:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:13:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:14:00'
+}
+{
+  message: '[2025-02-03 19:14:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:14:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:15:00'
+}
+{
+  message: '[2025-02-03 19:15:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:15:01'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:16:00'
+}
+{
+  message: '[2025-02-03 19:16:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:16:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:17:00'
+}
+{
+  message: '[2025-02-03 19:17:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:17:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:18:00'
+}
+{
+  message: '[2025-02-03 19:18:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:18:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:19:00'
+}
+{
+  message: '[2025-02-03 19:19:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:19:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:20:00'
+}
+{
+  message: '[2025-02-03 19:20:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:20:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:21:00'
+}
+{
+  message: '[2025-02-03 19:21:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:21:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:22:00'
+}
+{
+  message: '[2025-02-03 19:22:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:22:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:23:00'
+}
+{
+  message: '[2025-02-03 19:23:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:23:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:24:00'
+}
+{
+  message: '[2025-02-03 19:24:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:24:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:25:00'
+}
+{
+  message: '[2025-02-03 19:25:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:25:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:26:00'
+}
+{
+  message: '[2025-02-03 19:26:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:26:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:27:00'
+}
+{
+  message: '[2025-02-03 19:27:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:27:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:28:00'
+}
+{
+  message: '[2025-02-03 19:28:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:28:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:29:00'
+}
+{
+  message: '[2025-02-03 19:29:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:29:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:30:00'
+}
+{
+  message: '[2025-02-03 19:30:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:30:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:31:00'
+}
+{
+  message: '[2025-02-03 19:31:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:31:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:32:00'
+}
+{
+  message: '[2025-02-03 19:32:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:32:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:33:00'
+}
+{
+  message: '[2025-02-03 19:33:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:33:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:33:33'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:33:34'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:33:34'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:33:34'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:33:35'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:33:35'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:34:00'
+}
+{
+  message: '[2025-02-03 19:34:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:34:00'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  path: '/api/v2/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  path: '/api/v2/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:16'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:22'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:22'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:22'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:22'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:22'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:23'
+}
+{
+  path: '/api/v1/peminjaman/1f3a8d25-0054-4c9b-b60f-c2754f648960',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:25'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/1f3a8d25-0054-4c9b-b60f-c2754f648960',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:25'
+}
+{
+  path: '/api/v1/peminjaman/1f3a8d25-0054-4c9b-b60f-c2754f648960',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:25'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman/1f3a8d25-0054-4c9b-b60f-c2754f648960',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:25'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  path: '/api/v2/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  path: '/api/v1/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  path: '/api/v2/statistik',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/statistik',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:27'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:28'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:28'
+}
+{
+  path: '/api/v2/peminjaman/diproses',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:28'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman/diproses',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:28'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:29'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:29'
+}
+{
+  path: '/api/v2/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:34:29'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v2/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:34:29'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:34:33'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:34:33'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:35:00'
+}
+{
+  message: '[2025-02-03 19:35:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:35:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:35:14'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:35:14'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:35:14'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:35:14'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:35:17'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:35:17'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:36:00'
+}
+{
+  message: '[2025-02-03 19:36:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:36:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:36:09'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:36:09'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:36:10'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:36:10'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:37:00'
+}
+{
+  message: '[2025-02-03 19:37:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:37:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:38:00'
+}
+{
+  message: '[2025-02-03 19:38:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:38:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:38:47'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:38:47'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:38:47'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:38:47'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:38:49'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:38:49'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:39:00'
+}
+{
+  message: '[2025-02-03 19:39:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:39:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:39:45'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:39:45'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:00'
+}
+{
+  message: '[2025-02-03 19:40:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:16'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:19'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:21'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:27'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:31'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:48'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:40:48'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:00'
+}
+{
+  message: '[2025-02-03 19:41:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:12'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:21'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:39'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:44'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:41:50'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:42:00'
+}
+{
+  message: '[2025-02-03 19:42:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:42:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:42:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:42:21'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:42:34'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:00'
+}
+{
+  message: '[2025-02-03 19:43:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:10'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:10'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:13'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:17'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:21'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:43:22'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:44:00'
+}
+{
+  message: '[2025-02-03 19:44:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:44:01'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:45:00'
+}
+{
+  message: '[2025-02-03 19:45:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:45:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:46:00'
+}
+{
+  message: '[2025-02-03 19:46:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:46:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:46:06'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:46:06'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:47:00'
+}
+{
+  message: '[2025-02-03 19:47:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:47:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:47:43'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:47:43'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:47:43'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:47:43'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:47:44'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:47:44'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:48:00'
+}
+{
+  message: '[2025-02-03 19:48:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:48:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:48:35'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:48:35'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:48:35'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:48:35'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:48:37'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:48:37'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:48:37'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:48:37'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:49:00'
+}
+{
+  message: '[2025-02-03 19:49:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:49:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:49:45'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:49:45'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:50:00'
+}
+{
+  message: '[2025-02-03 19:50:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:50:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:50:48'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:50:50'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:50:59'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:00'
+}
+{
+  message: '[2025-02-03 19:51:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:02'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:15'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:23'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:25'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:30'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:42'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:43'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:47'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:50'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:51:58'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:00'
+}
+{
+  message: '[2025-02-03 19:52:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:00'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:03'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:06'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:15'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:25'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:34'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:34'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:34'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:34'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:35'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:35'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:50'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:50'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:50'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:51'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:52:51'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:53'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:53'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:52:53'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:52:53'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:00'
+}
+{
+  message: '[2025-02-03 19:53:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:00'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:04'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:04'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:04'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:04'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:24'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:24'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:25'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:25'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:27'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:27'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:27'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:28'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:28'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:30'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:30'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:30'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:30'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:34'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:34'
+}
+{
+  path: '/api/v1/peminjaman',
+  method: 'GET',
+  ip: '::1',
+  level: 'info',
+  message: 'Authentication attempt',
+  timestamp: '03-02-2025 19:53:34'
+}
+{
+  uuid: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
+  role: 'ADMIN',
+  path: '/api/v1/peminjaman',
+  level: 'info',
+  message: 'Authentication successful',
+  timestamp: '03-02-2025 19:53:34'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:37'
+}
+{
+  message: '2025-02-03',
+  level: 'info',
+  timestamp: '03-02-2025 19:53:37'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:54:00'
+}
+{
+  message: '[2025-02-03 19:54:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:54:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:55:00'
+}
+{
+  message: '[2025-02-03 19:55:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:55:00'
+}
+{
+  message: 'Running booking status update cron job...',
+  level: 'info',
+  timestamp: '03-02-2025 19:56:00'
+}
+{
+  message: '[2025-02-03 19:56:00] Updated bookings to SELESAI status:\n' +
+    '            - Single date bookings: 0\n' +
+    '            - Range date bookings: 0\n' +
+    '            - Total updates: 0',
+  level: 'info',
+  timestamp: '03-02-2025 19:56:00'
+}

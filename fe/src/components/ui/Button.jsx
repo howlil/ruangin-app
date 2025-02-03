@@ -1,18 +1,19 @@
-const Button = ({ 
+const Button = ({
   variant = 'primary',
   color = 'blue',
   children,
   onClick,
   className = '',
   icon: Icon,
+  fullWidth,
   loading = false,
   disabled,
-  ...props 
+  ...props
 }) => {
-  const baseStyles = 'px-6 py-2 rounded-full font-medium focus:outline-none transition-colors duration-200'; 
+  const baseStyles = 'px-6 py-2 rounded-full font-medium focus:outline-none transition-colors duration-200';
   const containerStyles = 'inline-flex items-center justify-center gap-2';  // Added justify-center
   const isDisabled = loading || disabled;
-  
+
   const getVariantStyles = () => {
     const colorMap = {
       blue: {
@@ -41,16 +42,17 @@ const Button = ({
         ${getVariantStyles()} 
         ${isDisabled ? 'cursor-not-allowed' : 'cursor-pointer'}
         ${className}
+        ${fullWidth && " w-full"}
       `}
       disabled={isDisabled}
       {...props}
     >
       {loading ? (
         <>
-          <svg 
-            className="animate-spin -ml-1 mr-2 h-4 w-4" 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
+          <svg
+            className="animate-spin -ml-1 mr-2 h-4 w-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
             viewBox="0 0 24 24"
           >
             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />

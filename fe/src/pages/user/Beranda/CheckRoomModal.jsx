@@ -78,7 +78,7 @@ const CheckRoomModal = () => {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto bg-white/80 backdrop-blur-xl rounded-lg shadow-sm ">
+    <div className="w-full max-w-xl mx-auto  backdrop-blur-md border border-white shadow-xl shadow-gray-400/10 rounded-lg ">
       <div className="flex justify-between items-center p-4 border-b">
         <h2 className="text-lg font-semibold">
           Cek Ketersediaan Ruang Rapat

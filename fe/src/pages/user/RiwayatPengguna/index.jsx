@@ -84,7 +84,7 @@ export default function RiwayatUser() {
 
   return (
     <MainLayout>
-      <div className="max-w-7xl px-4 sm:px-6 lg:px-20 py-20">
+      <div className="max-w-7xl px-4 min-h-svh sm:px-6 lg:px-20 py-20">
         <h1 className="text-2xl font-bold mb-6">Riwayat</h1>
 
         {/* Status Tabs */}

@@ -21,7 +21,7 @@ const DesktopNav = ({ navItems, isScrolled, isActivePath, isDropdownOpen }) => {
           <button
             onClick={() => handleNavClick(item)}
             className={`
-              px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center gap-1
+               py-2 text-sm font-medium transition-colors duration-200 flex items-center gap-1
               ${item.path && isActivePath(item.path)
                 ? 'text-primary' 
                 : isScrolled 

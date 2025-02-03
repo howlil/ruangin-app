@@ -24,13 +24,16 @@ const TimePickerDropdown = ({
   return (
     <div
       className={cn(
-        "absolute left-0  right-0 z-50 bg-white rounded-lg shadow-lg border border-gray-200",
-        "grid grid-cols-2 overflow-y-scroll divide-x max-h-[280px]",
+        "absolute left-0  right-0 z-50 no-scrollbar bg-white rounded-lg shadow-lg border border-gray-200",
+        "grid grid-cols-2 overflow-hidden divide-x h-[280px]",
         position === 'top' ? 'bottom-full mb-1' : 'top-full mt-1'
       )}
     >
-      {/* Hours Column */}
-      <div className="overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 hover:scrollbar-thumb-gray-300">
+      <div className='absolute text-md font-semibold left-0 z-10  p-1 w-full bg-white'>
+        Jam
+      </div>
+      <div className="relative mt-6 h-full overflow-y-scroll no-scrollbar    scrollbar-thumb-gray-200  hover:scrollbar-thumb-gray-300">
+
         {hours.map(hour => (
           <button
             type="button" // Menambahkan type="button"
@@ -50,7 +53,13 @@ const TimePickerDropdown = ({
         ))}
       </div>
 
-      <div className="overflow-y-auto scrollbar-thumb-gray-200 hover:scrollbar-thumb-gray-300">
+
+      <div className='absolute text-md font-semibold left-1/2 z-10  p-1 w-full bg-white'>
+        Menit
+      </div>
+      <div className="relative mt-6 h-full overflow-y-scroll no-scrollbar    scrollbar-thumb-gray-200  hover:scrollbar-thumb-gray-300">
+
+
         {minutes.map(minute => (
           <button
             type="button" // Menambahkan type="button"
@@ -68,6 +77,7 @@ const TimePickerDropdown = ({
             {minute}
           </button>
         ))}
+
       </div>
     </div>
   );

@@ -5,8 +5,7 @@ import { DayCell } from './DayCell';
 import { BookingDetailModal } from './BookingDetailModal';
 import { useBookingCalendar } from "@/hooks/apis/useBookingCalendar";
 import api from "@/utils/api";
-import { startOfMonth, endOfMonth, eachDayOfInterval,addMonths,subMonths , startOfDay, format, isBefore, isSameMonth, isToday, startOfWeek, endOfWeek } from 'date-fns';
-import { Dialog } from "@/components/ui/Dialog";
+import { startOfMonth, endOfMonth, eachDayOfInterval, addMonths, subMonths, startOfDay, format, isBefore, isSameMonth, isToday, startOfWeek, endOfWeek } from 'date-fns';
 
 
 export default function RoomBookingCalendar() {
@@ -28,6 +27,8 @@ export default function RoomBookingCalendar() {
 
   return (
     <MainLayout>
+
+ 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-8 md:py-20">
         <CalendarHeader
           currentDate={currentDate}
@@ -85,9 +86,8 @@ export default function RoomBookingCalendar() {
                     /> */}
                     <DayCell
                       bookings={bookings}
-                      isPastDate={isPastDate}
                       onBookingClick={setSelectedBooking}
-                      
+
                     />
                   </div>
                 );
@@ -96,16 +96,12 @@ export default function RoomBookingCalendar() {
           </div>
         )}
 
-        <Dialog
+
+        <BookingDetailModal
           open={!!selectedBooking}
+          booking={selectedBooking}
           onClose={() => setSelectedBooking(null)}
-          className="relative z-50"
-        >
-          <BookingDetailModal
-            booking={selectedBooking}
-            onClose={() => setSelectedBooking(null)}
-          />
-        </Dialog>
+        />
       </div>
     </MainLayout>
   );
