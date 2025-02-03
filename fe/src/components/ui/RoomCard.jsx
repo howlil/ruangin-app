@@ -18,29 +18,38 @@ const RoomCard = ({ room }) => {
 
       <div className="p-5 flex flex-col flex-1">
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">{room.nama_ruangan}</h3>
-          <p className="text-sm text-gray-500 mt-1 line-clamp-2">{room.deskripsi}</p>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+              {room.nama_ruangan}
+            </h3>
+            <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+              {room.deskripsi}
+            </p>
+          </div>
 
-          <div className="space-y-2 mt-4">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <MapPin className="w-4 h-4 shrink-0" />
+          {/* Room Details */}
+          <div className="space-y-3 mb-6">
+            <div className="flex items-center gap-3 text-sm text-gray-600">
+              <div className="p-2 bg-gray-50 rounded-lg">
+                <MapPin className="w-4 h-4 text-gray-600" />
+              </div>
               <span className="line-clamp-1">{room.lokasi_ruangan}</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <Users className="w-4 h-4 shrink-0" />
+            <div className="flex items-center gap-3 text-sm text-gray-600">
+              <div className="p-2 bg-gray-50 rounded-lg">
+                <Users className="w-4 h-4 text-gray-600" />
+              </div>
               <span>Kapasitas {room.kapasitas} Orang</span>
             </div>
           </div>
         </div>
 
-        <div className="mt-4">
-          <Button 
-            className="w-full"
-            onClick={() => navigate(`/peminjaman/${room.id}`)}
-          >
-            Booking
-          </Button>
-        </div>
+        <Button
+          className="w-full"
+          onClick={() => navigate(`/peminjaman/${room.id}`)}
+        >
+          Lihat Detail
+        </Button>
       </div>
     </div>
   );

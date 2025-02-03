@@ -2,6 +2,7 @@ const { ResponseError } = require('../utils/responseError');
 const prisma = require('../configs/db.js');
 const fs = require('fs').promises;
 const path = require('path');
+const {logger} = require("../apps/logging.js")
 
 const ruangRapatService = {
     async createRuangRapat(data, file) {
@@ -262,6 +263,7 @@ const ruangRapatService = {
     async getTodayPeminjaman() {
         try {
             const today = new Date().toISOString().split('T')[0];
+            logger.info(today)
 
             const ruangRapat = await prisma.ruangRapat.findMany({
                 include: {

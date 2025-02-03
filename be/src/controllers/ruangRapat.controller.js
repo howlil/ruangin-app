@@ -83,7 +83,7 @@ const ruangRapatController = {
         }
     },
 
-    async getTodayPeminjaman(req, res, next) {
+    async  getTodayPeminjaman(req, res, next) {
         try {
             const result = await ruangRapatService.getTodayPeminjaman();
             

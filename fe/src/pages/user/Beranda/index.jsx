@@ -1,91 +1,86 @@
 import MainLayout from "@/components/layout/MainLayout"
-import Button from "@/components/ui/Button"
-import imghero from "@/assets/ilustration/heroimg.png"
-import GridBackground from "@/components/ui/GridBackground"
 import api from "@/utils/api"
 import React from "react"
 import RoomCard from "@/components/ui/RoomCard"
 import CheckRoomModal from "./CheckRoomModal"
 import { HandleResponse } from "@/components/ui/HandleResponse"
-import { Toaster } from "react-hot-toast"
-
+import RoomScheduleList from "./RoomScheduleList"
+import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
+import { cn } from "@/utils/utils"
 
 export default function Beranda() {
   const [rooms, setRooms] = React.useState([]);
+  const [todays, setToday] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
-  const [isCheckModalOpen, setIsCheckModalOpen] = React.useState(false);
-
-  const scrollToRuangan = () => {
-    window.scrollTo({
-      top: document.getElementById('ruangan').offsetTop - 64,
-      behavior: 'smooth'
-    });
-  };
 
   React.useEffect(() => {
-    const fetchRooms = async () => {
+    const fetchData = async () => {
+      setLoading(true);
       try {
-        const response = await api.get('/v1/ruang-rapat');
-        setRooms(response.data.data);
+        const [roomsResponse, todaysResponse] = await Promise.all([
+          api.get('/v1/ruang-rapat'),
+          api.get('/v1/display')
+        ]);
+
+        setRooms(roomsResponse.data.data);
+        setToday(todaysResponse.data.data);
       } catch (error) {
-        HandleResponse({
-          error,
-        });
+        HandleResponse({ error });
       } finally {
         setLoading(false);
       }
     };
 
-    fetchRooms();
+    fetchData();
   }, []);
 
   return (
-    <MainLayout>      
-      <div className="relative overflow-hidden">
-        <GridBackground />
-        <div className="absolute -top-20 -left-10 w-72 h-72 bg-primary bg-opacity-35 rounded-full filter blur-[10rem]"></div>
-        <div className="absolute -bottom-72 -right-[30rem] w-[800px] h-[800px] bg-primary bg-opacity-35 rounded-full filter blur-[10rem] -z-10"></div>
+    <MainLayout>
+      <AnimatedGridPattern
+        numSquares={60}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      />
+      <div className="relative overflow-hidden min-h-screen">
 
-        <section className="max-w-7xl px-4 sm:px-6 lg:px-20 py-16 relative">
-          {/* Rest of your hero section code remains the same */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+        {/* Gradient backgrounds */}
+        <div className="absolute -top-20 -left-10 w-72 h-72 bg-blue-100  rounded-full filter blur-[10rem]"></div>
+        <div className="absolute -bottom-72 -right-[30rem] w-[800px] h-[800px] bg-blue-300   bg-opacity-35 rounded-full filter blur-[10rem] -z-10"></div>
+
+        {/* Hero section with schedule */}
+        <section className="max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-20 py-16 relative">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 relative z-10">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
                 Kelola Rapat Anda dengan Mudah dan Efisien
               </h1>
-              <p className="text-lg text-gray-600 max-w-2xl">
-                Cek ketersediaan, ajukan peminjaman, dan kelola jadwal rapat dalam satu platform digital terintegrasi. Optimalkan fasilitas rapat untuk produktivitas lebih baik.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button onClick={scrollToRuangan}>
-                  Mulai Reservasi
-                </Button>
-                <Button
-                  color="blue"
-                  variant="secondary"
-                  onClick={() => setIsCheckModalOpen(true)}
-                >
-                  Cek Ketersediaan
-                </Button>
-              </div>
+              <CheckRoomModal />
             </div>
 
             <div className="relative lg:block z-10">
-              <div className="w-full max-w-2xl">
-                <img
-                  src={imghero}
-                  alt="Meeting Room Management Illustration"
-                  className="w-full h-auto"
-                />
-              </div>
+              {loading ? (
+                <div className="flex justify-center items-center min-h-[500px]">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                </div>
+              ) : (
+                <RoomScheduleList schedules={todays} />
+              )}
             </div>
           </div>
         </section>
 
-        {/* Rooms section */}
-        <section id="ruangan" className="max-w-7xl px-4 sm:px-6 lg:px-20 py-16 relative">
+        {/* Available rooms section */}
+        <section id="ruangan" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-16 relative">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900">Ruangan Tersedia</h2>
+            <h2 className="text-3xl font-semibold text-gray-900">
+              Ruangan Tersedia
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Pilih ruangan yang sesuai dengan kebutuhan Anda. Setiap ruangan dilengkapi dengan fasilitas modern untuk menunjang aktivitas rapat.
             </p>
@@ -109,12 +104,7 @@ export default function Beranda() {
             </div>
           )}
         </section>
-        <CheckRoomModal
-          isOpen={isCheckModalOpen}
-          onClose={() => setIsCheckModalOpen(false)}
-          rooms={rooms}
-        />
       </div>
     </MainLayout>
-  )
+  );
 }

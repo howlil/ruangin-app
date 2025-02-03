@@ -62,11 +62,11 @@ const Navbar = () => {
   const navItems = [
     { name: 'Beranda', path: '/' },
     { name: 'Jadwal', path: '/jadwal' },
-    {
-      name: 'Peminjaman',
-      onClick: handlePeminjamanClick,
-      isDropdownTrigger: true
-    },
+    // {
+    //   name: 'Peminjaman',
+    //   onClick: handlePeminjamanClick,
+    //   isDropdownTrigger: true
+    // },
     ...(user ? [{ name: 'Riwayat', path: '/u/riwayat?status=DIPROSES' }] : []),
   ];
 

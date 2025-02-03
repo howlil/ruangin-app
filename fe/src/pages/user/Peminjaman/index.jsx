@@ -1,7 +1,7 @@
 // src/pages/Peminjaman.jsx
 import React, { useState, useEffect } from 'react';
 import MainLayout from "@/components/layout/MainLayout";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import api from "@/utils/api";
 import dayjs from 'dayjs';
 import Button from '@/components/ui/Button';
@@ -9,6 +9,9 @@ import BookingCalendar from './BookingCalendar';
 import { BookingDialog } from './BookingDialog';
 import BookingRoomDialog from './BookingRoomDialog';
 import { HandleResponse } from '@/components/ui/HandleResponse';
+import { getUser } from '@/utils/auth';
+import { showToast } from '@/components/ui/Toast';
+
 
 export default function Peminjaman() {
   const { id } = useParams();
@@ -17,6 +20,8 @@ export default function Peminjaman() {
   const [selectedDate, setSelectedDate] = useState(dayjs());
   const [isCalendarDialogOpen, setIsCalendarDialogOpen] = useState(false);
   const [isBookingDialogOpen, setIsBookingDialogOpen] = useState(false);
+  const user = getUser()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchRoomData = async () => {
@@ -25,9 +30,9 @@ export default function Peminjaman() {
         setRoom(response.data.data);
         console.log(response.data)
       } catch (error) {
-          HandleResponse({
-                error,
-              });
+        HandleResponse({
+          error,
+        });
       } finally {
         setLoading(false);
       }
@@ -92,9 +97,19 @@ export default function Peminjaman() {
               bookings={room?.peminjaman}
             />
 
-            <Button 
+            <Button
               className="w-full"
-              onClick={() => setIsBookingDialogOpen(true)}
+              onClick={() => {
+                if (!user) {
+                  showToast("Tolong login terlebih dahulu sebelum melakukan peminjaman", "error");
+                  setTimeout(() => {
+                    navigate("/login");
+                  }, 1000);
+                } else {
+                  setIsBookingDialogOpen(true)
+                }
+
+              }}
             >
               Ajukan Peminjaman
             </Button>
@@ -110,7 +125,7 @@ export default function Peminjaman() {
         />
 
         {/* Booking Dialog */}
-        <BookingRoomDialog 
+        <BookingRoomDialog
           isOpen={isBookingDialogOpen}
           onClose={() => setIsBookingDialogOpen(false)}
           roomId={room.id}
