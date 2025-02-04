@@ -84,7 +84,7 @@ const SignatureCanvas = ({ onChange }) => {
   };
 
   return (
-    <div className="w-full" ref={containerRef}>
+    <div className="max-w-72" ref={containerRef}>
       <div className="relative border border-gray-300 rounded-lg bg-white">
         <div className="absolute bottom-1/4 left-0 right-0 border-b border-gray-200" />
         <canvas

@@ -5,8 +5,25 @@ import { DayCell } from './DayCell';
 import { BookingDetailModal } from './BookingDetailModal';
 import { useBookingCalendar } from "@/hooks/apis/useBookingCalendar";
 import api from "@/utils/api";
-import { startOfMonth, endOfMonth, eachDayOfInterval, addMonths, subMonths, startOfDay, format, isBefore, isSameMonth, isToday, startOfWeek, endOfWeek } from 'date-fns';
-
+import axios from "axios";
+import {
+  startOfMonth,
+  endOfMonth,
+  eachDayOfInterval,
+  addMonths,
+  subMonths,
+  startOfDay,
+  format,
+  isBefore,
+  isSameMonth,
+  isToday,
+  startOfWeek,
+  endOfWeek,
+  isWeekend
+} from 'date-fns';
+import React from "react";
+import { HandleResponse } from "@/components/ui/HandleResponse";
+import HolidayCard from "./HolidayCard";
 
 export default function RoomBookingCalendar() {
   const {
@@ -18,6 +35,20 @@ export default function RoomBookingCalendar() {
     bookingsByDate
   } = useBookingCalendar(api);
 
+  const [holidays, setHolidays] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchHolidays = async () => {
+      try {
+        const { data } = await axios.get(`${import.meta.env.VITE_API_DAY_OFF}`);
+        setHolidays(data);
+      } catch (error) {
+        HandleResponse({ error });
+      }
+    };
+    fetchHolidays();
+  }, []);
+
   const monthStart = startOfMonth(currentDate);
   const monthEnd = endOfMonth(currentDate);
   const calendarStart = startOfWeek(monthStart);
@@ -25,10 +56,18 @@ export default function RoomBookingCalendar() {
   const calendarDays = eachDayOfInterval({ start: calendarStart, end: calendarEnd });
   const today = startOfDay(new Date());
 
+  const isHoliday = (date) => {
+    const dateStr = format(date, 'yyyy-MM-dd');
+    return holidays.some(holiday => holiday.tanggal === dateStr);
+  };
+
+  const getHolidayInfo = (date) => {
+    const dateStr = format(date, 'yyyy-MM-dd');
+    return holidays.find(holiday => holiday.tanggal === dateStr);
+  };
+
   return (
     <MainLayout>
-
- 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-8 md:py-20">
         <CalendarHeader
           currentDate={currentDate}
@@ -57,6 +96,9 @@ export default function RoomBookingCalendar() {
                 const dateStr = format(day, 'yyyy-MM-dd');
                 const bookings = bookingsByDate[dateStr] || [];
                 const isPastDate = isBefore(day, today);
+                const isWeekendDay = isWeekend(day);
+                const holiday = getHolidayInfo(day);
+                const isDateHoliday = isHoliday(day);
 
                 return (
                   <div
@@ -64,30 +106,21 @@ export default function RoomBookingCalendar() {
                     className={`relative p-2 min-h-[8rem] transition-all duration-200 
                       ${!isSameMonth(day, currentDate) ? 'bg-gray-50 opacity-50' : ''} 
                       ${isPastDate ? 'bg-gray-100' : ''} 
-                      ${isToday(day) ? 'bg-blue-50 ring-2 ring-blue-500 ring-inset' : ''}`}
+                      ${isToday(day) ? 'bg-blue-50 ring-2 ring-blue-500 ring-inset' : ''}
+                      ${isDateHoliday ? 'bg-red-50' : ''}`}
                   >
-                    <div className={`text-sm mb-2 ${isToday(day) ? 'text-blue-600 font-semibold' : 'text-gray-500'
-                      }`}>
+                    <div
+                      className={`text-sm font-medium
+                        ${isToday(day) ? 'text-blue-600' : ''}
+                        ${isWeekendDay || isDateHoliday ? 'text-red-600' : 'text-gray-500'}`}
+                    >
                       {format(day, 'd')}
                     </div>
 
-                    {/* <DayCell
-                      dateStr={dateStr}
-                      bookings={bookings}
-                      isPastDate={isPastDate}
-                      onBookingClick={setSelectedBooking}
-                      isExpanded={expandedCells[dateStr]}
-                      onToggleExpand={(dateStr) =>
-                        setExpandedCells(prev => ({
-                          ...prev,
-                          [dateStr]: !prev[dateStr]
-                        }))
-                      }
-                    /> */}
+                    {holiday && <HolidayCard holiday={holiday} />}
                     <DayCell
                       bookings={bookings}
                       onBookingClick={setSelectedBooking}
-
                     />
                   </div>
                 );
@@ -95,7 +128,6 @@ export default function RoomBookingCalendar() {
             </div>
           </div>
         )}
-
 
         <BookingDetailModal
           open={!!selectedBooking}

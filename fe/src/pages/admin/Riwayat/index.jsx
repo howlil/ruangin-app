@@ -116,10 +116,10 @@ export default function Riwayat() {
   const formatDateRange = (startDate, endDate) => {
     const formattedStart = format(new Date(startDate), 'EEEE, dd MMMM yyyy', { locale: id });
     if (!endDate) return formattedStart;
-    
+
     // If dates are the same, just return one date
     if (startDate === endDate) return formattedStart;
-    
+
     return `${formattedStart} - ${format(new Date(endDate), 'EEEE, dd MMMM yyyy', { locale: id })}`;
   };
 
@@ -193,11 +193,10 @@ export default function Riwayat() {
       label: 'STATUS',
       render: (row) => (
         <div>
-          <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${
-            row.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' :
+          <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${row.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' :
             row.status === 'DITOLAK' ? 'bg-red-100 text-red-800' :
-            'bg-blue-100 text-blue-800'
-          }`}>
+              'bg-blue-100 text-blue-800'
+            }`}>
             {row.status}
           </span>
           {row.alasan_penolakan && (

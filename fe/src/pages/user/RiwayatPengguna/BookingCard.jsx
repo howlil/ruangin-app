@@ -27,24 +27,22 @@ const BookingCard = ({
     }
   };
 
-
   return (
     <div className="bg-white rounded-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:border-gray-200 hover:shadow-sm">
-      <div className="flex">
-        {/* Image Section - 1 part */}
-        <div className="w-1/4">
+      <div className="flex flex-col md:flex-row">
+        {/* Image Section */}
+        <div className="w-full md:w-1/4 h-48 md:h-auto">
           <div className="relative h-full">
             <img
               src={`${import.meta.env.VITE_API_URL}${booking.RuangRapat.foto_ruangan}`}
               alt={booking.RuangRapat.nama_ruangan}
               className="h-full w-full object-cover"
             />
-
           </div>
         </div>
 
-        {/* Info Section - 3 parts */}
-        <div className="w-2/4 p-4 border-r border-gray-100">
+        {/* Info Section */}
+        <div className="w-full md:w-2/4 p-4 border-b md:border-b-0 md:border-r border-gray-100">
           <div className="h-full flex flex-col">
             {/* Header */}
             <div className="mb-4">
@@ -57,30 +55,42 @@ const BookingCard = ({
             </div>
 
             {/* Info Grid */}
-            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
               <div className="flex items-center gap-2 text-gray-600">
                 <Calendar className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm truncate">{formatDateRange(booking.tanggal_mulai, booking.tanggal_selesai)}</span>
+                <span className="text-sm break-words">
+                  {formatDateRange(booking.tanggal_mulai, booking.tanggal_selesai)}
+                </span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm">{booking.jam_mulai} - {booking.jam_selesai} WIB</span>
+                <span className="text-sm">
+                  {booking.jam_mulai} - {booking.jam_selesai} WIB
+                </span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm">{booking.RuangRapat.lokasi_ruangan}</span>
+                <span className="text-sm">
+                  {booking.RuangRapat.lokasi_ruangan}
+                </span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Users className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm">Kapasitas: {booking.RuangRapat.kapasitas} orang</span>
+                <span className="text-sm">
+                  Kapasitas: {booking.RuangRapat.kapasitas} orang
+                </span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <FileText className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm">No. Surat: {booking.no_surat_peminjaman}</span>
+                <span className="text-sm">
+                  No. Surat: {booking.no_surat_peminjaman}
+                </span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <User className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <span className="text-sm">{booking.Pengguna.nama_lengkap}</span>
+                <span className="text-sm">
+                  {booking.Pengguna.nama_lengkap}
+                </span>
               </div>
             </div>
 
@@ -95,8 +105,8 @@ const BookingCard = ({
           </div>
         </div>
 
-        {/* Actions Section - remaining space */}
-        <div className="w-1/4 p-4 flex flex-col justify-center items-center bg-gray-50">
+        {/* Actions Section */}
+        <div className="w-full md:w-1/4 p-4 flex flex-col justify-center items-center bg-gray-50">
           {booking.status === 'DISETUJUI' && booking.Absensi?.link_absensi ? (
             <div className="w-full space-y-4">
               <div className="text-center">

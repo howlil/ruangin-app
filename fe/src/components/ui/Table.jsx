@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, MoreHorizontal, ChevronDown } from 'lucide-react';
-import { useIsMobile } from '@/hooks/useResponsive';
-
+import Pagination from './Pagination';
 const Table = ({
   headers,
   data,
@@ -15,38 +14,7 @@ const Table = ({
 }) => {
   const [showActionMenu, setShowActionMenu] = useState(null);
   const [expandedRow, setExpandedRow] = useState(null);
-  const isMobile = useIsMobile();
 
-  const getPaginationRange = () => {
-    const range = [];
-    const totalPages = pagination.total_pages;
-    const currentPage = pagination.page;
-    const showEllipsis = totalPages > 7;
-
-    if (showEllipsis) {
-      if (currentPage <= 3) {
-        for (let i = 1; i <= 3; i++) range.push(i);
-        range.push('...');
-        range.push(totalPages);
-      } else if (currentPage >= totalPages - 2) {
-        range.push(1);
-        range.push('...');
-        for (let i = totalPages - 2; i <= totalPages; i++) range.push(i);
-      } else {
-        range.push(1);
-        range.push('...');
-        range.push(currentPage - 1);
-        range.push(currentPage);
-        range.push(currentPage + 1);
-        range.push('...');
-        range.push(totalPages);
-      }
-    } else {
-      for (let i = 1; i <= totalPages; i++) range.push(i);
-    }
-
-    return range;
-  };
 
   const MobileCardView = ({ row, rowIndex }) => {
     const isExpanded = expandedRow === rowIndex;
@@ -120,6 +88,8 @@ const Table = ({
       </div>
     );
   };
+
+  console.log(data)
 
   if (loading) {
     return (
@@ -227,82 +197,12 @@ const Table = ({
         </div>
       </div>
 
-      {data.length > 10 && (
-        <div className="mt-4 bg-white rounded-lg border p-4">
-          <div className="flex justify-between items-center lg:hidden">
-            <button
-              onClick={() => onPageChange(pagination.page - 1)}
-              disabled={pagination.page === 1}
-              className="px-4 py-2 text-sm text-gray-700 bg-white border rounded-md disabled:opacity-50"
-            >
-              Previous
-            </button>
-            <span className="text-sm text-gray-700">
-              Page {pagination.page} of {pagination.total_pages}
-            </span>
-            <button
-              onClick={() => onPageChange(pagination.page + 1)}
-              disabled={pagination.page === pagination.total_pages}
-              className="px-4 py-2 text-sm text-gray-700 bg-white border rounded-md disabled:opacity-50"
-            >
-              Next
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:items-center lg:justify-between">
-            <div>
-              <p className="text-sm text-gray-700">
-                Showing {((pagination.page - 1) * pagination.size) + 1} to{' '}
-                {Math.min(pagination.page * pagination.size, pagination.total_rows)} of{' '}
-                {pagination.total_rows} results
-              </p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <select
-                value={pagination.size}
-                onChange={(e) => onPageSizeChange(Number(e.target.value))}
-                className="rounded-md border-gray-300 text-sm focus:ring-primary focus:border-primary"
-              >
-                <option value={10}>10 per page</option>
-                <option value={25}>25 per page</option>
-                <option value={50}>50 per page</option>
-                <option value={100}>100 per page</option>
-              </select>
-
-              <nav className="relative z-0 inline-flex rounded-full shadow-sm -space-x-px">
-                <button
-                  onClick={() => onPageChange(pagination.page - 1)}
-                  disabled={pagination.page === 1}
-                  className="relative inline-flex items-center px-2 py-2 rounded-l-full border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-
-                {getPaginationRange().map((page, index) => (
-                  <button
-                    key={index}
-                    onClick={() => page !== '...' && onPageChange(page)}
-                    disabled={page === '...'}
-                    className={`relative inline-flex items-center px-4 py-2 border text-sm font-medium ${page === pagination.page
-                      ? 'z-10 bg-primary/10 text-black'
-                      : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'
-                      } ${page === '...' ? 'cursor-default' : ''}`}
-                  >
-                    {page}
-                  </button>
-                ))}
-
-                <button
-                  onClick={() => onPageChange(pagination.page + 1)}
-                  disabled={pagination.page === pagination.total_pages}
-                  className="relative inline-flex items-center px-2 py-2 rounded-r-full border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </nav>
-            </div>
-          </div>
-        </div>
-      )}
+      <Pagination
+        data={data}
+        pagination={pagination}
+        onPageChange={onPageChange}
+        onPageSizeChange={onPageSizeChange}
+      />
     </div>
   );
 };

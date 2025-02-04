@@ -52,6 +52,7 @@ model ListAbsensi {
   absensi_id    String
   nama          String
   unit_kerja    String
+  no_hp         String?
   golongan      String
   jabatan       String
   tanda_tangan  String @db.LongText

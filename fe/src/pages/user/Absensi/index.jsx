@@ -16,6 +16,7 @@ export default function Absensi() {
   const [submitting, setSubmitting] = useState(false);
   const initialFormData = {
     nama: "",
+    no_hp: "",
     unit_kerja: "",
     golongan: "",
     jabatan: "",
@@ -132,12 +133,23 @@ export default function Absensi() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div className="col-span-2">
+                  <div>
                     <Input
                       label="Nama Lengkap"
                       name="nama"
                       required
                       value={formData.nama}
+                      onChange={handleChange}
+                      fullWidth
+                      className="bg-gray-50"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      label="No Hp"
+                      name="no_hp"
+                      value={formData.no_hp}
+                      helperText="optional"
                       onChange={handleChange}
                       fullWidth
                       className="bg-gray-50"

@@ -4,6 +4,7 @@ const moment = require('moment');
 const axios = require('axios')
 require('dotenv').config();
 const crypto = require('crypto')
+const {logger}= require("../apps/logging.js")
 
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
@@ -349,13 +350,15 @@ const peminjamanService = {
         let where = {};
         where.pengguna_id = userId;
 
-        const totalRows = await prisma.peminjaman.count({
-            where
-        });
+    
 
         if (status) {
             where.status = status;
         }
+
+        const totalRows = await prisma.peminjaman.count({
+            where
+        });
 
         const data = await prisma.peminjaman.findMany({
             skip: skip,
@@ -381,6 +384,7 @@ const peminjamanService = {
         });
 
         const totalPages = Math.ceil(totalRows / sizeNum);
+
 
         return {
             data,
@@ -460,6 +464,8 @@ const peminjamanService = {
                     createdAt: 'desc'
                 }
             });
+
+            console.log(sizeNum)
 
             return {
                 data,
@@ -628,8 +634,28 @@ const peminjamanService = {
     async checkAvailability(data) {
         try {
             // 1. Cek hari libur
+            const today = new Date();
             const tanggal_cuti = await axios.get(process.env.API_DAY_OFF);
+            const formattedToday = today.toISOString().split('T')[0];
 
+
+            if (data.tanggal === formattedToday) {
+                const currentHour = today.getHours();
+                const currentMinute = today.getMinutes();
+                const currentTimeInMinutes = (currentHour * 60) + currentMinute;
+                
+                const requestedTimeInMinutes = convertTimeToMinutes(data.jam);
+                
+                if (requestedTimeInMinutes <= currentTimeInMinutes) {
+                    return {
+                        tanggal: data.tanggal,
+                        jam: data.jam,
+                        jumlah_ruangan_tersedia: 0,
+                        ruangan_tersedia: [],
+                        message: "Tidak dapat melakukan peminjaman untuk waktu yang sudah lewat"
+                    };
+                }
+            }
             // Validasi untuk tanggal yang dipilih
             const is_tanggal_cuti = tanggal_cuti.data.find((date) =>
                 date.tanggal === data.tanggal
@@ -647,8 +673,8 @@ const peminjamanService = {
             const bookings = await prisma.peminjaman.findMany({
                 where: {
                     OR: [
-                        { tanggal_mulai: data.tanggal },  // Peminjaman yang dimulai pada tanggal tersebut
-                        { tanggal_selesai: data.tanggal }, // Peminjaman yang berakhir pada tanggal tersebut
+                        { tanggal_mulai: data.tanggal },
+                        { tanggal_selesai: data.tanggal },
                         {
                             AND: [
                                 { tanggal_mulai: { lte: data.tanggal } },
@@ -671,25 +697,31 @@ const peminjamanService = {
                     jam_selesai: true
                 }
             });
+    
 
             // 4. Cek ketersediaan untuk setiap ruangan
             const availableRooms = allRooms.filter(room => {
                 const roomBookings = bookings.filter(
                     booking => booking.ruang_rapat_id === room.id
                 );
-
-                // Konversi jam input ke menit
-                const requestTime = convertTimeToMinutes(data.jam);
-
-                // Cek apakah ada booking yang mencakup jam yang diminta
+    
+                // Konversi jam input ke menit untuk perbandingan yang lebih akurat
+                const requestedTime = convertTimeToMinutes(data.jam);
+    
+                // Cek apakah ada booking yang overlap dengan jam yang diminta
                 const hasConflict = roomBookings.some(booking => {
-                    const bookingStart = convertTimeToMinutes(booking.jam_mulai);
-                    const bookingEnd = convertTimeToMinutes(booking.jam_selesai);
-
-                    // Cek apakah jam yang diminta berada dalam rentang peminjaman
-                    return requestTime >= bookingStart && requestTime < bookingEnd;
+                    const startTime = convertTimeToMinutes(booking.jam_mulai);
+                    const endTime = convertTimeToMinutes(booking.jam_selesai);
+    
+                    // Jam yang diminta tidak boleh:
+                    // 1. Sama dengan jam mulai booking
+                    // 2. Sama dengan jam selesai booking
+                    // 3. Berada di antara jam mulai dan selesai booking
+                    return requestedTime === startTime || // Cek sama dengan jam mulai
+                           requestedTime === endTime ||   // Cek sama dengan jam selesai
+                           (requestedTime > startTime && requestedTime < endTime); // Cek di antara rentang
                 });
-
+    
                 return !hasConflict;
             });
 
