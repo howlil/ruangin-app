@@ -57,10 +57,10 @@ export default function Beranda() {
         <div className="absolute -bottom-72 -right-[30rem] w-[800px] h-[800px] bg-blue-300   bg-opacity-35 rounded-full filter blur-[10rem] -z-10"></div>
 
         {/* Hero section with schedule */}
-        <section className="max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-20 py-16 relative">
+        <section className="max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-20 py-24 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 relative z-10">
-              <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-500/80 bg-clip-text  text-5xl font-bold leading-none text-transparent dark:from-gray-500 dark:to-slate-900/10">
+              <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b text-center md:text-left from-black to-gray-500/80 bg-clip-text text-3xl  md:text-5xl font-bold leading-none text-transparent dark:from-gray-500 dark:to-slate-900/10">
                 Kelola Rapat Anda dengan Mudah dan Efisien
               </h1>
               <CheckRoomModal />

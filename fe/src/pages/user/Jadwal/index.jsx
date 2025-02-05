@@ -68,7 +68,7 @@ export default function RoomBookingCalendar() {
 
   return (
     <MainLayout>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-8 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-20 md:py-20">
         <CalendarHeader
           currentDate={currentDate}
           onPrevMonth={() => setCurrentDate(subMonths(currentDate, 1))}

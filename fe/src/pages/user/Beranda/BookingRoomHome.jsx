@@ -192,8 +192,9 @@ export default function BookingRoomHome({
               />
 
               <Input
-                label="Tanggal Selesai (Opsional)"
+                label="Tanggal Selesai"
                 type="date"
+                helperText="optional"
                 name="tanggal_selesai"
                 value={formData.tanggal_selesai}
                 onChange={handleInputChange}
@@ -227,7 +228,7 @@ export default function BookingRoomHome({
                   onChange={handleInputChange}
                   required
                   fullWidth
-                  helperText="Format 24 jam (07:00 - 17:00)"
+                  helperText="Format 24 jam"
                 />
               </div>
               {timeError && (
@@ -245,7 +246,7 @@ export default function BookingRoomHome({
               placeholder="Masukkan nomor surat"
             />
 
-            <div className="flex justify-between gap-3 mt-6">
+            <div className="flex justify-between items-center gap-3 mt-6">
               <Button
                 variant="secondary"
                 onClick={onClose}
@@ -260,7 +261,7 @@ export default function BookingRoomHome({
                 loading={loading}
                 disabled={loading || !!timeError || !!dateError}
               >
-                Ajukan Peminjaman
+                Ajukan
               </Button>
             </div>
           </form>

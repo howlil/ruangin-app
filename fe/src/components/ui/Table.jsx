@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, MoreHorizontal, ChevronDown } from 'lucide-react';
+import {MoreHorizontal, ChevronDown } from 'lucide-react';
 import Pagination from './Pagination';
 const Table = ({
   headers,

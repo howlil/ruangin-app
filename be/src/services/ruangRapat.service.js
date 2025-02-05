@@ -116,7 +116,7 @@ const ruangRapatService = {
                 }
             },
             orderBy: {
-                createdAt: 'desc'
+                createdAt: 'asc'
             }
         });
     

@@ -2,6 +2,7 @@ const prisma = require('../configs/db.js')
 const { ResponseError } = require('../utils/responseError');
 const moment = require('moment')
 const PDFDocument = require('pdfkit');
+const ExcelJS = require('ExcelJS')
 
 function formatDate(dateString) {
     const date = new Date(dateString);
@@ -321,6 +322,136 @@ const absensiService = {
         }
 
         return doc;
+    },
+    async exportAbsensiToXlsx(kode) {
+        try {
+            // 1. Validasi input
+            if (!kode) {
+                throw new ResponseError(400, "Kode absensi diperlukan");
+            }
+    
+            // 2. Ambil data absensi
+            const absensi = await prisma.absensi.findFirst({
+                where: {
+                    link_absensi: {
+                        contains: kode
+                    }
+                },
+                include: {
+                    ListAbsensi: true,
+                    Peminjaman: {
+                        include: {
+                            RuangRapat: true
+                        }
+                    }
+                }
+            });
+    
+            // 3. Validasi keberadaan data
+            if (!absensi) {
+                throw new ResponseError(404, "Absensi tidak ditemukan");
+            }
+    
+            // 4. Buat workbook dan worksheet
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Daftar Hadir Rapat');
+    
+            // 5. Set column widths
+            const columns = [
+                { header: 'No', key: 'no', width: 15 },
+                { header: 'Nama', key: 'nama', width: 30 },
+                { header: 'No HP', key: 'kontak', width: 15 },
+                { header: 'Unit Kerja', key: 'unit_kerja', width: 20 },
+                { header: 'Golongan', key: 'golongan', width: 15 },
+                { header: 'Jabatan', key: 'jabatan', width: 20 },
+                { header: 'L/P', key: 'jenis_kelamin', width: 8 }
+            ];
+            
+            worksheet.columns = columns;
+    
+            // 6. Add title
+            worksheet.mergeCells('A1:G1');
+            const titleCell = worksheet.getCell('A1');
+            titleCell.value = 'DAFTAR HADIR RAPAT';
+            titleCell.font = { bold: true, size: 16 };
+            titleCell.alignment = { horizontal: 'center' };
+    
+            // 7. Add meeting details dengan safe access
+            const details = [
+                ['Hari / Tanggal ',  formatDate(absensi.Peminjaman?.tanggal_mulai) || '-'],
+                ['Nama Acara ',  absensi.Peminjaman?.nama_kegiatan || '-'],
+                ['Tempat ',  absensi.Peminjaman?.RuangRapat?.nama_ruangan || '-'],
+                ['Waktu ', `${absensi.Peminjaman?.jam_mulai || '-'} - ${absensi.Peminjaman?.jam_selesai || '-'}`]
+            ];
+    
+            // 8. Add details to worksheet
+            let currentRow = 3;
+            details.forEach(detail => {
+                worksheet.getCell(`A${currentRow}`).value = detail[0];
+                worksheet.getCell(`B${currentRow}`).value = detail[1];
+                worksheet.mergeCells(`C${currentRow}:G${currentRow}`);
+                worksheet.getCell(`C${currentRow}`).value = detail[2];
+                currentRow++;
+            });
+    
+            // 9. Add and style header row
+            currentRow += 2;
+            
+            // Add headers manually
+            for (let i = 0; i < columns.length; i++) {
+                const cell = worksheet.getCell(currentRow, i + 1);
+                cell.value = columns[i].header;
+                cell.fill = {
+                    type: 'pattern',
+                    pattern: 'solid',
+                    fgColor: { argb: 'FFD3D3D3' }
+                };
+                cell.font = { bold: true };
+                cell.border = {
+                    top: { style: 'thin' },
+                    left: { style: 'thin' },
+                    bottom: { style: 'thin' },
+                    right: { style: 'thin' }
+                };
+                cell.alignment = { horizontal: 'center', vertical: 'middle' };
+            }
+    
+            // 10. Add data rows
+            currentRow++; // Move to next row for data
+            
+            if (absensi.ListAbsensi && Array.isArray(absensi.ListAbsensi)) {
+                absensi.ListAbsensi.forEach((peserta, index) => {
+                    const rowData = {
+                        no: index + 1,
+                        nama: peserta.nama || '-',
+                        kontak: peserta.kontak || '-',
+                        unit_kerja: peserta.unit_kerja || '-',
+                        golongan: peserta.golongan || '-',
+                        jabatan: peserta.jabatan || '-',
+                        jenis_kelamin: peserta.jenis_kelamin === 'LAKI_LAKI' ? 'L' : 'P'
+                    };
+    
+                    const row = worksheet.addRow(rowData);
+    
+                    // Style each cell in the row manually
+                    for (let i = 1; i <= columns.length; i++) {
+                        const cell = row.getCell(i);
+                        cell.border = {
+                            top: { style: 'thin' },
+                            left: { style: 'thin' },
+                            bottom: { style: 'thin' },
+                            right: { style: 'thin' }
+                        };
+                        cell.alignment = { vertical: 'middle' };
+                    }
+                });
+            }
+    
+            return workbook;
+        } catch (error) {
+            console.error('Error in exportAbsensiToXlsx:', error);
+            throw error;
+        }
     }
 }
 

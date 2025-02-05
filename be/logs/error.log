@@ -440,3 +440,278 @@
   userId: undefined,
   level: 'error'
 }
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:26:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)',
+  path: '/api/v1/absensi/a0c196e8f4aa',
+  method: 'POST',
+  timestamp: '04-02-2025 11:45:04',
+  requestBody: {
+    nama: '',
+    no_hp: '',
+    unit_kerja: '',
+    golongan: '',
+    jabatan: '',
+    tanda_tangan: 'data:image/png;base64,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',
+    jenis_kelamin: 'LAKI_LAKI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Data Sudah Ada',
+  stack: 'ResponseError: Data Sudah Ada\n' +
+    '    at Object.createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\detailUser.service.js:13:19)\n' +
+    '    at async createTimKerja (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\detailUser.controller.js:8:28)',
+  path: '/api/v1/tim-kerja',
+  method: 'POST',
+  timestamp: '04-02-2025 15:28:40',
+  requestBody: {
+    nama_tim_kerja: 'Pengelolaan Pelayanan Terpadu Satu Atap',
+    code: 'PTSA',
+    is_aktif: 'true'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at createRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:13:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at done (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:45:7)\n' +
+    '    at indicateDone (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:49:68)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\lib\\make-middleware.js:155:11\n' +
+    '    at WriteStream.<anonymous> (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\multer\\storage\\disk.js:43:9)\n' +
+    '    at WriteStream.emit (node:events:531:35)\n' +
+    '    at finish (node:internal/streams/writable:946:10)',
+  path: '/api/v1/ruang-rapat',
+  method: 'POST',
+  timestamp: '04-02-2025 15:42:38',
+  requestBody: [Object: null prototype] {
+    nama_ruangan: 'Ruang Kaca 2',
+    lokasi_ruangan: 'Sayap Kiri',
+    kapasitas: '11-13 Orang',
+    deskripsi: ''
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:26:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)',
+  path: '/api/v1/absensi/bd156a329e07',
+  method: 'POST',
+  timestamp: '05-02-2025 07:53:28',
+  requestBody: {
+    nama: 'Mhd Ulil Abshar',
+    no_hp: '',
+    unit_kerja: 'DATIS',
+    golongan: 'VII',
+    jabatan: 'Magang',
+    tanda_tangan: 'data:image/png;base64,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wa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKAfJJwa4oAgiQjwwggEAKgf8B4D6C9mjIXsYAAAAASUVORK5CYII=',
+    jenis_kelamin: ''
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:26:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)',
+  path: '/api/v1/absensi/bd156a329e07',
+  method: 'POST',
+  timestamp: '05-02-2025 10:09:30',
+  requestBody: {
+    nama: '',
+    no_hp: '',
+    unit_kerja: '',
+    golongan: '',
+    jabatan: '',
+    tanda_tangan: 'data:image/png;base64,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',
+    jenis_kelamin: 'LAKI_LAKI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'exportAbsensiToXlsx is not defined',
+  stack: 'ReferenceError: exportAbsensiToXlsx is not defined\n' +
+    '    at downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:55:28',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ReferenceError',
+  message: 'ExcelJS is not defined',
+  stack: 'ReferenceError: ExcelJS is not defined\n' +
+    '    at Object.exportAbsensiToXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:347:26)\n' +
+    '    at async downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:56:17',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'forEach')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'forEach')\n" +
+    '    at Object.exportAbsensiToXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:391:21)\n' +
+    '    at async downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:56:44',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'forEach')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'forEach')\n" +
+    '    at Object.exportAbsensiToXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:391:21)\n' +
+    '    at async downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:57:18',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'forEach')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'forEach')\n" +
+    '    at Object.exportAbsensiToXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:408:25)\n' +
+    '    at async downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:58:12',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: "Cannot read properties of undefined (reading 'forEach')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'forEach')\n" +
+    '    at Object.exportAbsensiToXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:408:25)\n' +
+    '    at async downloadAbsensiXlsx (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:75:30)',
+  path: '/api/v1/absensi/bd156a329e07/excel',
+  method: 'GET',
+  timestamp: '05-02-2025 14:58:24',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at submitAbsensi (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:26:35)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7',
+  path: '/api/v1/absensi/bd156a329e07',
+  method: 'POST',
+  timestamp: '05-02-2025 15:04:34',
+  requestBody: {
+    nama: 'Mhd Ulil Abshar',
+    no_hp: '',
+    unit_kerja: '',
+    golongan: '',
+    jabatan: '',
+    tanda_tangan: 'data:image/png;base64,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',
+    jenis_kelamin: 'LAKI_LAKI'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}

@@ -48,12 +48,12 @@ export default function RiwayatUser() {
     };
 
     fetchBookings();
-  }, [currentStatus,  pagination.page, pagination.size]);
+  }, [currentStatus, pagination.page, pagination.size]);
 
-  const handleExportAbsensi = async (kode) => {
+  const handleExportAbsensiPdf = async (kode) => {
     const url = new URL(kode);
     const code = url.searchParams.get('u');
-    
+
     try {
       setExportLoading(true);
       const response = await api.get(`/v1/absensi/${code}/export`, {
@@ -74,8 +74,52 @@ export default function RiwayatUser() {
     }
   };
 
+  const handleExportAbsensiExcel = async (kode) => {
+    const url = new URL(kode);
+    const code = url.searchParams.get('u');
+    try {
+      const response = await api.get(`/v1/absensi/${code}/excel`, {
+        responseType: 'arraybuffer'
+      });
+
+      const contentType = response.headers['content-type'];
+      if (contentType.includes('application/json')) {
+        const decoder = new TextDecoder('utf-8');
+        const jsonString = decoder.decode(response.data);
+        const errorData = JSON.parse(jsonString);
+        throw new Error(errorData.message || 'Unknown error occurred');
+      }
+
+      const blob = new Blob([response.data], {
+        type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+      });
+
+      const fileName = 'absensi.xlsx';
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download = fileName;
+      link.click();
+
+      window.URL.revokeObjectURL(link.href);
+    } catch (error) {
+      HandleResponse({ error });
+    }
+  };
+
+  const handleFetchAbsensi = async (kode) => {
+    const url = new URL(kode);
+    const code = url.searchParams.get('u');
+    try {
+      const { data } = await api.get(`/v1/absensi/${code}/list`);
+      return data.data.list_absensi;
+    } catch (error) {
+      HandleResponse({ error });
+      throw error;
+    }
+  };
+
   const handleStatusChange = (status) => {
-    setSearchParams({ status, page: '1' }); // Reset to page 1 when status changes
+    setSearchParams({ status, page: '1' });
   };
 
   const handlePageChange = (page) => {
@@ -131,7 +175,9 @@ export default function RiwayatUser() {
               <BookingCard
                 key={booking.id}
                 booking={booking}
-                onExportAbsensi={handleExportAbsensi}
+                onExportAbsensiPdf={handleExportAbsensiPdf}
+                onExportAbsensiExcel={handleExportAbsensiExcel}
+                onFetchAbsensi={handleFetchAbsensi}
                 exportLoading={exportLoading}
               />
             ))}

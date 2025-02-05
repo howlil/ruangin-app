@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import api from '@/utils/api';
 import Input from '@/components/ui/Input';
 import Button from '@/components/ui/Button';
@@ -14,6 +14,7 @@ export default function Absensi() {
   const [eventDetails, setEventDetails] = useState(null);
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+  const signatureRef = useRef()
   const initialFormData = {
     nama: "",
     no_hp: "",
@@ -49,8 +50,9 @@ export default function Absensi() {
       await api.post(`/v1/absensi/${kode}`, formData);
       toast.success("Absensi berhasil dicatat!");
       setFormData(initialFormData);
+      signatureRef.current?.reset();
+
     } catch (error) {
-      console.log(error)
       HandleResponse({ error })
     } finally {
       setSubmitting(false);
@@ -225,6 +227,7 @@ export default function Absensi() {
                 </div>
 
                 <SignatureCanvas
+                  ref={signatureRef}
                   onChange={(base64) =>
                     setFormData(prev => ({ ...prev, tanda_tangan: base64 }))
                   }

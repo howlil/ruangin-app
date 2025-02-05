@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useImperativeHandle, forwardRef } from 'react';
 
-const SignatureCanvas = ({ onChange }) => {
+const SignatureCanvas = forwardRef(({ onChange }, ref) => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
@@ -11,7 +11,6 @@ const SignatureCanvas = ({ onChange }) => {
     const container = containerRef.current;
     const rect = container.getBoundingClientRect();
     
-    // Set canvas size to match container size
     canvas.width = rect.width;
     canvas.height = rect.height;
     
@@ -22,11 +21,15 @@ const SignatureCanvas = ({ onChange }) => {
     contextRef.current = context;
   }, []);
 
+  // Expose reset method to parent component
+  useImperativeHandle(ref, () => ({
+    reset: clearCanvas
+  }));
+
   const getCoordinates = (event) => {
     const canvas = canvasRef.current;
     const rect = canvas.getBoundingClientRect();
     
-    // For mouse events
     if (event.clientX) {
       return {
         x: event.clientX - rect.left,
@@ -34,7 +37,6 @@ const SignatureCanvas = ({ onChange }) => {
       };
     }
     
-    // For touch events
     if (event.touches && event.touches[0]) {
       return {
         x: event.touches[0].clientX - rect.left,
@@ -114,6 +116,6 @@ const SignatureCanvas = ({ onChange }) => {
       </div>
     </div>
   );
-};
+});
 
 export default SignatureCanvas;

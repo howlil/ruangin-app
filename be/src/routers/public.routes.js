@@ -22,6 +22,7 @@ router.get('/api/v1/absensi/:kode', absensiController.getAbsensiDetail);
 router.post('/api/v1/absensi/:kode', absensiController.submitAbsensi);
 router.get('/api/v1/absensi/:kode/list', absensiController.getListAbsensi);
 router.get('/api/v1/absensi/:kode/export', absensiController.exportAbsensiToPdf);
+router.get('/api/v1/absensi/:kode/excel', absensiController.downloadAbsensiXlsx);
 
 
 module.exports = router

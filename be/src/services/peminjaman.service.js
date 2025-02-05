@@ -4,7 +4,7 @@ const moment = require('moment');
 const axios = require('axios')
 require('dotenv').config();
 const crypto = require('crypto')
-const {logger}= require("../apps/logging.js")
+const { logger } = require("../apps/logging.js")
 
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
@@ -84,7 +84,7 @@ const peminjamanService = {
         if (user.role === 'PEMINJAM' && !user.DetailPengguna) {
             throw new ResponseError(400, "detail pengguna tidak ditemukan");
         }
-    
+
         if (!user.DetailPengguna.tim_kerja) {
             throw new ResponseError(400, "Tim kerja tidak ditemukan");
         }
@@ -350,7 +350,7 @@ const peminjamanService = {
         let where = {};
         where.pengguna_id = userId;
 
-    
+
 
         if (status) {
             where.status = status;
@@ -368,8 +368,21 @@ const peminjamanService = {
                 Pengguna: {
                     select: {
                         nama_lengkap: true,
-                        email: true
+                        email: true,
+                        DetailPengguna: {
+                            select: {
+                                tim_kerja: {
+                                    select: {
+                                        code: true,
+                                        nama_tim_kerja: true
+                                    }
+                                }
+
+                            }
+                        }
+
                     }
+
                 },
                 RuangRapat: true,
                 Absensi: {
@@ -643,9 +656,9 @@ const peminjamanService = {
                 const currentHour = today.getHours();
                 const currentMinute = today.getMinutes();
                 const currentTimeInMinutes = (currentHour * 60) + currentMinute;
-                
+
                 const requestedTimeInMinutes = convertTimeToMinutes(data.jam);
-                
+
                 if (requestedTimeInMinutes <= currentTimeInMinutes) {
                     return {
                         tanggal: data.tanggal,
@@ -697,31 +710,31 @@ const peminjamanService = {
                     jam_selesai: true
                 }
             });
-    
+
 
             // 4. Cek ketersediaan untuk setiap ruangan
             const availableRooms = allRooms.filter(room => {
                 const roomBookings = bookings.filter(
                     booking => booking.ruang_rapat_id === room.id
                 );
-    
+
                 // Konversi jam input ke menit untuk perbandingan yang lebih akurat
                 const requestedTime = convertTimeToMinutes(data.jam);
-    
+
                 // Cek apakah ada booking yang overlap dengan jam yang diminta
                 const hasConflict = roomBookings.some(booking => {
                     const startTime = convertTimeToMinutes(booking.jam_mulai);
                     const endTime = convertTimeToMinutes(booking.jam_selesai);
-    
+
                     // Jam yang diminta tidak boleh:
                     // 1. Sama dengan jam mulai booking
                     // 2. Sama dengan jam selesai booking
                     // 3. Berada di antara jam mulai dan selesai booking
                     return requestedTime === startTime || // Cek sama dengan jam mulai
-                           requestedTime === endTime ||   // Cek sama dengan jam selesai
-                           (requestedTime > startTime && requestedTime < endTime); // Cek di antara rentang
+                        requestedTime === endTime ||   // Cek sama dengan jam selesai
+                        (requestedTime > startTime && requestedTime < endTime); // Cek di antara rentang
                 });
-    
+
                 return !hasConflict;
             });
 
