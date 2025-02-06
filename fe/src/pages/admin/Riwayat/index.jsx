@@ -140,16 +140,22 @@ export default function Riwayat() {
         break;
     }
   };
-
+  // Table header with responsive rendering
   const headers = [
     {
       key: 'ruang_rapat',
       label: 'RUANGAN',
       render: (row) => (
-        <div>
+        <div className="space-y-1">
           <div className="font-medium">{row.RuangRapat?.nama_ruangan}</div>
-          <div className="text-sm text-gray-500">{row.RuangRapat?.lokasi_ruangan}</div>
-          <div className="text-xs text-gray-500">Kapasitas: {row.RuangRapat?.kapasitas}</div>
+          <div className="text-sm text-gray-500 hidden sm:block">{row.RuangRapat?.lokasi_ruangan}</div>
+          <div className="text-xs text-gray-500 hidden sm:block">Kapasitas: {row.RuangRapat?.kapasitas}</div>
+        </div>
+      ),
+      // Mobile version render
+      renderMobile: (row) => (
+        <div className="block sm:hidden mb-2">
+          <div className="font-medium text-blue-600">{row.RuangRapat?.nama_ruangan}</div>
         </div>
       )
     },
@@ -159,7 +165,16 @@ export default function Riwayat() {
       render: (row) => (
         <div>
           <div className="font-medium">{row.nama_kegiatan}</div>
-          <div className="text-xs text-gray-500">No. Surat Undangan: {row.no_surat_peminjaman || '-'}</div>
+          <div className="text-xs text-gray-500">No. Surat: {row.no_surat_peminjaman || '-'}</div>
+        </div>
+      ),
+      // Mobile version with room info included
+      renderMobile: (row) => (
+        <div className="space-y-2">
+          <div>
+            <div className="font-medium">{row.nama_kegiatan}</div>
+            <div className="text-xs text-gray-500">No. Surat: {row.no_surat_peminjaman || '-'}</div>
+          </div>
         </div>
       )
     },
@@ -194,8 +209,8 @@ export default function Riwayat() {
       render: (row) => (
         <div>
           <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${row.status === 'DISETUJUI' ? 'bg-green-100 text-green-800' :
-            row.status === 'DITOLAK' ? 'bg-red-100 text-red-800' :
-              'bg-blue-100 text-blue-800'
+              row.status === 'DITOLAK' ? 'bg-red-100 text-red-800' :
+                'bg-blue-100 text-blue-800'
             }`}>
             {row.status}
           </span>
@@ -211,6 +226,34 @@ export default function Riwayat() {
       )
     }
   ];
+
+  // Modified Table Row Component
+  const TableRow = ({ row, headers, isMobile }) => (
+    <tr className="border-b last:border-b-0">
+      {headers.map(header => (
+        <td key={header.key} className="px-4 py-4">
+          {isMobile && header.renderMobile ?
+            header.renderMobile(row) :
+            header.render(row)
+          }
+        </td>
+      ))}
+    </tr>
+  );
+
+  // Usage in the main component
+  const MobileView = ({ data, headers }) => (
+    <div className="block sm:hidden">
+      {data.map((row, idx) => (
+        <div key={idx} className="border-b p-4 space-y-2">
+          {headers[0].renderMobile(row)} {/* Room info */}
+          {headers[1].render(row)} {/* Activity */}
+          {headers[2].render(row)} {/* Date & Time */}
+          {headers[4].render(row)} {/* Status */}
+        </div>
+      ))}
+    </div>
+  );  
 
   return (
     <DashboardLayout>

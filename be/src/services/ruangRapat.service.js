@@ -2,7 +2,7 @@ const { ResponseError } = require('../utils/responseError');
 const prisma = require('../configs/db.js');
 const fs = require('fs').promises;
 const path = require('path');
-const {logger} = require("../apps/logging.js")
+const { logger } = require("../apps/logging.js")
 
 const ruangRapatService = {
     async createRuangRapat(data, file) {
@@ -34,20 +34,20 @@ const ruangRapatService = {
         const pageNum = Number(page);
         const sizeNum = Number(size);
         const skip = (pageNum - 1) * sizeNum;
-    
+
         let peminjamanFilter = {};
-    
+
         if (status) {
             peminjamanFilter.status = status;
         }
-    
+
         if (month) {
             // Asumsi format month adalah "YYYY-MM"
             const [year, monthNum] = month.split('-');
-            const nextMonth = monthNum === '12' 
+            const nextMonth = monthNum === '12'
                 ? `${Number(year) + 1}-01`
                 : `${year}-${String(Number(monthNum) + 1).padStart(2, '0')}`;
-    
+
             peminjamanFilter.OR = [
                 // Kasus 1: tanggal_mulai dalam bulan yang dipilih
                 {
@@ -65,7 +65,7 @@ const ruangRapatService = {
                 {
                     AND: [
                         { tanggal_mulai: { lt: `${month}-01` } },
-                        { 
+                        {
                             OR: [
                                 { tanggal_selesai: { gte: nextMonth } },
                                 { tanggal_selesai: null }
@@ -75,7 +75,7 @@ const ruangRapatService = {
                 }
             ];
         }
-    
+
         const where = {
             ...(Object.keys(peminjamanFilter).length > 0 && {
                 peminjaman: {
@@ -83,11 +83,11 @@ const ruangRapatService = {
                 }
             })
         };
-    
+
         const totalRows = await prisma.ruangRapat.count({
             where
         });
-    
+
         const data = await prisma.ruangRapat.findMany({
             where,
             skip: skip,
@@ -98,6 +98,7 @@ const ruangRapatService = {
                     select: {
                         id: true,
                         nama_kegiatan: true,
+                        no_surat_peminjaman: true,
                         tanggal_mulai: true,
                         tanggal_selesai: true,
                         jam_mulai: true,
@@ -106,22 +107,35 @@ const ruangRapatService = {
                         Pengguna: {
                             select: {
                                 nama_lengkap: true,
-                                email: true
+                                email: true,
+                                DetailPengguna: {
+                                    select: {
+                                        tim_kerja: {
+                                            select: {
+                                                code: true,
+                                                nama_tim_kerja: true
+                                            }
+                                        }
+
+                                    }
+                                }
                             }
                         }
                     },
-                    orderBy: {
-                        tanggal_mulai: 'asc'
-                    }
+                    orderBy: [
+                        { tanggal_mulai: 'asc' },
+                        { jam_mulai: 'asc' }
+                    ]
                 }
             },
             orderBy: {
                 createdAt: 'asc'
             }
         });
-    
+
+
         const totalPages = Math.ceil(totalRows / sizeNum);
-    
+
         return {
             data,
             pagination: {
@@ -171,14 +185,14 @@ const ruangRapatService = {
         const ruangRapat = await prisma.ruangRapat.findUnique({
             where: { id }
         });
-    
+
         if (!ruangRapat) {
             if (file) {
                 await fs.unlink(file.path);
             }
             throw new ResponseError(404, "Room not found");
         }
-    
+
         if (data.nama_ruangan) {
             const existingRoom = await prisma.ruangRapat.findFirst({
                 where: {
@@ -186,7 +200,7 @@ const ruangRapatService = {
                     NOT: { id }
                 }
             });
-    
+
             if (existingRoom) {
                 if (file) {
                     await fs.unlink(file.path);
@@ -194,7 +208,7 @@ const ruangRapatService = {
                 throw new ResponseError(400, "Room name already exists");
             }
         }
-    
+
         if (file && ruangRapat.foto_ruangan) {
             const oldImagePath = path.join(__dirname, '../../public', ruangRapat.foto_ruangan);
             try {
@@ -203,7 +217,7 @@ const ruangRapatService = {
                 console.error('Error deleting old image:', error);
             }
         }
-    
+
         // Update data - pastikan kapasitas tetap string
         const result = await prisma.ruangRapat.update({
             where: { id },
@@ -215,7 +229,7 @@ const ruangRapatService = {
                 foto_ruangan: file ? `/images/${file.filename}` : ruangRapat.foto_ruangan
             }
         });
-    
+
         return result;
     },
 
@@ -259,50 +273,63 @@ const ruangRapatService = {
             message: "Room deleted successfully"
         };
     },
-
     async getTodayPeminjaman() {
-        try {
-            const today = new Date().toISOString().split('T')[0];
-            logger.info(today)
+        const today = new Date().toISOString().split('T')[0];
+        logger.info(`Fetching peminjaman for date: ${today}`);
 
-            const ruangRapat = await prisma.ruangRapat.findMany({
-                include: {
-                    peminjaman: {
-                        where: {
-                            tanggal_mulai: today,
-                            status: {
-                                in: ['DISETUJUI']
+        const ruangRapat = await prisma.ruangRapat.findMany({
+            select: {
+                id: true,
+                nama_ruangan: true,
+                peminjaman: {
+                    where: {
+                        tanggal_mulai: today,
+                        status: 'DISETUJUI'
+                    },
+                    select: {
+                        nama_kegiatan: true,
+                        jam_mulai: true,
+                        jam_selesai: true,
+                        Pengguna: {
+                            select: {
+                                DetailPengguna: {
+                                    select: {
+                                        tim_kerja: {
+                                            select: {
+                                                code: true,
+                                                nama_tim_kerja: true
+                                            }
+                                        }
+                                    }
+                                }
                             }
-                        },
-                        select: {
-                            nama_kegiatan: true,
-                            jam_mulai: true,
-                            jam_selesai: true
                         }
+                    },
+                    orderBy: {
+                        jam_mulai: 'asc'
                     }
-                },
-                orderBy: {
-                    nama_ruangan: 'asc'
                 }
-            });
+            }
+        });
 
-            // Filter hanya ruangan yang memiliki peminjaman
-            const formattedData = ruangRapat
-                .filter(room => room.peminjaman.length > 0)
-                .map(room => ({
-                    ruang_rapat: room.nama_ruangan,
-                    jadwal: room.peminjaman.map(booking => ({
-                        nama_kegiatan: booking.nama_kegiatan,
-                        jam_mulai: booking.jam_mulai,
-                        jam_selesai: booking.jam_selesai
-                    }))
-                }));
+        const formattedData = ruangRapat
+            .filter(room => room.peminjaman.length > 0)
+            .map(room => ({
+                ruang_rapat: room.nama_ruangan,
+                jadwal: room.peminjaman.map(booking => ({
+                    nama_kegiatan: booking.nama_kegiatan,
+                    jam_mulai: booking.jam_mulai,
+                    jam_selesai: booking.jam_selesai,
+                    tim_kerja: booking.Pengguna?.DetailPengguna?.tim_kerja ? {
+                        code: booking.Pengguna.DetailPengguna.tim_kerja.code,
+                        nama: booking.Pengguna.DetailPengguna.tim_kerja.nama_tim_kerja
+                    } : null
+                }))
+            }));
 
-            return formattedData;
+        return formattedData;
 
-        } catch (error) {
-            throw new ResponseError(500, error.message);
-        }
+
     }
 };
 

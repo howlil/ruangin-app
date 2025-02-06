@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const BookingCard = ({ booking, onClick }) => {
   const getStatusColor = (status) => {
     switch (status) {
@@ -21,11 +23,23 @@ export const BookingCard = ({ booking, onClick }) => {
         e.stopPropagation();
         onClick(booking);
       }}
-      className={`w-full text-left text-xs p-2 mb-1 rounded cursor-pointer 
-        transition-colors hover:opacity-80 ${statusColor} text-black`}
+      className={`w-full text-left text-xs py-1.5 px-2.5 mb-1 rounded-md cursor-pointer
+        transition-all duration-150 hover:brightness-95 active:brightness-90 
+        ${statusColor} text-black`}
     >
-      <div className="font-medium truncate">{booking.nama_kegiatan}</div>
-      <div className="truncate">{booking.jam_mulai} - {booking.jam_selesai}</div>
+      <div className="space-y-0.5">
+        <div className="font-medium leading-tight">
+          {booking.room.nama_ruangan}
+        </div>
+        <div className="leading-3 line-clamp-2">
+          {booking.nama_kegiatan}
+        </div>
+        <div className="text-[11px] opacity-90">
+          {booking.jam_mulai} - {booking.jam_selesai}
+        </div>
+      </div>
     </button>
   );
 };
+
+export default BookingCard; 

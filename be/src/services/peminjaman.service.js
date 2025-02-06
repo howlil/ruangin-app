@@ -474,11 +474,10 @@ const peminjamanService = {
                     RuangRapat: true
                 },
                 orderBy: {
-                    createdAt: 'desc'
+                    updatedAt: 'desc'
                 }
             });
 
-            console.log(sizeNum)
 
             return {
                 data,
@@ -704,11 +703,13 @@ const peminjamanService = {
                         in: ['DIPROSES', 'DISETUJUI']
                     }
                 },
+
                 select: {
                     ruang_rapat_id: true,
                     jam_mulai: true,
                     jam_selesai: true
-                }
+                },
+
             });
 
 
@@ -746,7 +747,8 @@ const peminjamanService = {
                 lokasi: room.lokasi_ruangan,
                 deskripsi: room.deskripsi,
                 foto_ruangan: room.foto_ruangan
-            }));
+            })).sort((a, b) => a.nama_ruangan.localeCompare(b.nama_ruangan));
+
 
             return {
                 tanggal: data.tanggal,

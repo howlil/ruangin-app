@@ -131,7 +131,7 @@ const Dashboard = () => {
           </div>
         ) : (
           <div className="p-6">
-            <div className="flex items-center justify-between pb-6">
+            <div className="md:flex items-center justify-between pb-6">
               <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
               <div className="flex flex-col sm:flex-row justify-end items-start sm:items-center gap-4">
                 <DateRangePicker

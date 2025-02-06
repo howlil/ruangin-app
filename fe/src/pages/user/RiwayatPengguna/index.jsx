@@ -17,15 +17,21 @@ export default function RiwayatUser() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [exportLoading, setExportLoading] = useState(false);
+
+  // Get values from URL params
+  const currentStatus = searchParams.get('status') || 'DIPROSES';
+  const currentPage = parseInt(searchParams.get('page') || '1', 10);
+  const pageSize = parseInt(searchParams.get('size') || '10', 10);
+
+  // Initialize pagination state from URL params
   const [pagination, setPagination] = useState({
-    page: 1,
-    size: 10,
+    page: currentPage,
+    size: pageSize,
     total_rows: 0,
     total_pages: 1
   });
-  const [exportLoading, setExportLoading] = useState(false);
-
-  const currentStatus = searchParams.get('status') || 'DIPROSES';
 
   useEffect(() => {
     const fetchBookings = async () => {
@@ -34,12 +40,17 @@ export default function RiwayatUser() {
         const response = await api.get('/v1/peminjaman', {
           params: {
             status: currentStatus,
-            page: pagination.page,
-            size: pagination.size
+            page: currentPage,
+            size: pageSize
           }
         });
         setBookings(response.data.data);
-        setPagination(response.data.pagination);
+        setPagination(prev => ({
+          ...prev,
+          ...response.data.pagination,
+          page: currentPage,
+          size: pageSize
+        }));
       } catch (error) {
         HandleResponse({ error });
       } finally {
@@ -48,7 +59,7 @@ export default function RiwayatUser() {
     };
 
     fetchBookings();
-  }, [currentStatus, pagination.page, pagination.size]);
+  }, [currentStatus, currentPage, pageSize]);
 
   const handleExportAbsensiPdf = async (kode) => {
     const url = new URL(kode);
@@ -119,21 +130,29 @@ export default function RiwayatUser() {
   };
 
   const handleStatusChange = (status) => {
-    setSearchParams({ status, page: '1' });
+    setSearchParams({ 
+      status, 
+      page: '1',
+      size: pageSize.toString() 
+    });
   };
 
-  const handlePageChange = (page) => {
-    setSearchParams({ status: currentStatus, page: page.toString() });
+  const handlePageChange = (newPage) => {
+    setSearchParams({ 
+      status: currentStatus, 
+      page: newPage.toString(),
+      size: pageSize.toString()
+    });
   };
 
   const handlePageSizeChange = (newSize) => {
-    setPagination(prev => ({
-      ...prev,
-      size: newSize,
-      page: 1
-    }));
-    setSearchParams({ status: currentStatus, page: '1' });
+    setSearchParams({ 
+      status: currentStatus, 
+      page: '1',
+      size: newSize.toString() 
+    });
   };
+
 
   return (
     <MainLayout>
@@ -184,7 +203,11 @@ export default function RiwayatUser() {
 
             <Pagination
               data={bookings}
-              pagination={pagination}
+              pagination={{
+                ...pagination,
+                page: currentPage,
+                size: pageSize
+              }}
               onPageChange={handlePageChange}
               onPageSizeChange={handlePageSizeChange}
             />
