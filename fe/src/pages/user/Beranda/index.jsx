@@ -8,6 +8,7 @@ import { HandleResponse } from "@/components/ui/HandleResponse"
 import RoomScheduleList from "./RoomScheduleList"
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
 import { cn } from "@/utils/utils"
+import CustomAccordion from "@/components/ui/CustomAccordion"
 
 export default function Beranda() {
   const [rooms, setRooms] = React.useState([]);
@@ -107,6 +108,7 @@ export default function Beranda() {
             </div>
           )}
         </section>
+        <CustomAccordion/>
       </div>
     </MainLayout>
 

@@ -7,7 +7,7 @@ const RoomCard = ({ room }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 h-[500px] flex flex-col">
+    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 h-[510px] flex flex-col">
       <div className="relative h-64 overflow-hidden shrink-0">
         <img
           src={`${import.meta.env.VITE_API_URL}${room.foto_ruangan}`}

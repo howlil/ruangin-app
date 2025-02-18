@@ -7,7 +7,7 @@ const KKPFooter = () => {
             <div className=" px-4 md:px-20">
                 {/* Header Section */}
                 <div className="flex items-center gap-4 mb-6">
-                    <img
+                    <imgj
                         src="https://kkp.go.id/assets/brand/logo.png"
                         alt="Logo KKP"
                         className="w-12 "
@@ -33,11 +33,10 @@ const KKPFooter = () => {
                     </p>
                     <p className="text-sm flex items-center gap-2">
                         <Mail size={16} /> Email:
-                        <a href="mailto:humas.kkp@kkp.go.id" className="text-blue-400 hover:text-blue-300">
-                            humas.kkp@kkp.go.id
+                        <a href="mailto:pusdatin@kkp.go.id" className="text-blue-400 hover:text-blue-300">
+                            pusdatin@kkp.go.id
                         </a>
                     </p>
-                    <p className="text-sm">Call Center KKP: 141</p>
                 </div>
 
 

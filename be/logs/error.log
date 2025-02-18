@@ -3060,3 +3060,543 @@
   userId: '675b1dad-bbb1-4a19-b4c5-a2d0d9bfa163',
   level: 'error'
 }
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)',
+  path: '/api/v1/peminjaman',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '10-02-2025 09:43:21'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)',
+  path: '/api/v1/peminjaman',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '10-02-2025 09:43:21'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '11-02-2025 08:50:27',
+  requestBody: { email: 'superadmin@pusdatin.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '11-02-2025 08:50:34',
+  requestBody: { email: '', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at updateUser (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:50:30)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/users/7c54580e-28de-436b-9b6e-31f60fb35745',
+  method: 'PATCH',
+  timestamp: '11-02-2025 08:59:57',
+  requestBody: {
+    email: 'hsdmaok@pusdatin.id',
+    nama_lengkap: 'HSDMAOK',
+    role: 'PEMINJAM',
+    kontak: '',
+    tim_kerja_id: '8570cc47-01ab-4e14-b158-485d8fbe3df5'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'User not found',
+  stack: 'ResponseError: User not found\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:21:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '11-02-2025 10:47:24',
+  requestBody: { email: 'userpkm@pusdatin.id', kata_sandi: '@Test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'Error',
+  message: 'getaddrinfo ENOTFOUND dayoffapi.vercel.app',
+  stack: 'Error: getaddrinfo ENOTFOUND dayoffapi.vercel.app\n' +
+    '    at AxiosError.from (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\axios\\dist\\node\\axios.cjs:877:14)\n' +
+    '    at RedirectableRequest.handleRequestError (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\axios\\dist\\node\\axios.cjs:3163:25)\n' +
+    '    at RedirectableRequest.emit (node:events:519:28)\n' +
+    '    at eventHandlers.<computed> (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\follow-redirects\\index.js:49:24)\n' +
+    '    at ClientRequest.emit (node:events:519:28)\n' +
+    '    at TLSSocket.socketErrorListener (node:_http_client:500:9)\n' +
+    '    at TLSSocket.emit (node:events:519:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:169:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n' +
+    '    at Axios.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\axios\\dist\\node\\axios.cjs:4252:41)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Object.checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\peminjaman.service.js:650:34)\n' +
+    '    at async checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:167:28)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '11-02-2025 10:49:38',
+  requestBody: { tanggal: '2025-02-13', jam: '09:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at createPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:8:26)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:146:5\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:105:5)',
+  path: '/api/v1/peminjaman',
+  method: 'POST',
+  timestamp: '11-02-2025 11:47:56',
+  requestBody: {
+    ruang_rapat_id: '1d195e4e-3432-4c10-8d6c-1ca24337dc20',
+    nama_kegiatan: 'DW Weekly Meeting',
+    tanggal_mulai: '2025-02-15',
+    tanggal_selesai: null,
+    jam_mulai: '13:00',
+    jam_selesai: '16:00',
+    no_surat_peminjaman: 'surat 1'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '54f8c2a5-2de9-4199-9294-77c93d3b72e2',
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '12-02-2025 09:50:20',
+  requestBody: { tanggal: '2025-02-15', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)',
+  path: '/api/v1/logout',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '17-02-2025 15:18:44'
+}
+{
+  name: 'Error',
+  message: 'unsupported number: undefined',
+  stack: 'Error: unsupported number: undefined\n' +
+    '    at number (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:193:11)\n' +
+    '    at PDFDocument.rect (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:2071:61)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:273:17)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/685a48bbf6ab/export',
+  method: 'GET',
+  timestamp: '17-02-2025 15:21:30',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'Error',
+  message: 'unsupported number: undefined',
+  stack: 'Error: unsupported number: undefined\n' +
+    '    at number (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:193:11)\n' +
+    '    at PDFDocument.rect (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:2071:61)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:273:17)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/685a48bbf6ab/export',
+  method: 'GET',
+  timestamp: '17-02-2025 15:21:31',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'Error',
+  message: 'unsupported number: undefined',
+  stack: 'Error: unsupported number: undefined\n' +
+    '    at number (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:193:11)\n' +
+    '    at PDFDocument.rect (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\pdfkit\\js\\pdfkit.js:2071:61)\n' +
+    '    at Object.exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\absensi.service.js:273:17)\n' +
+    '    at async exportAbsensiToPdf (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\absensi.controller.js:59:25)',
+  path: '/api/v1/absensi/685a48bbf6ab/export',
+  method: 'GET',
+  timestamp: '17-02-2025 15:22:16',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:42:53',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:42:53',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:42:57',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:42:57',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '18-02-2025 07:43:04'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:04',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:04',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:08',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:08',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:29',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:29',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '18-02-2025 07:43:34',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '18-02-2025 07:44:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '18-02-2025 07:45:05'
+}

@@ -4,6 +4,7 @@ const moment = require('moment')
 const PDFDocument = require('pdfkit');
 const ExcelJS = require('ExcelJS')
 
+
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = {
@@ -78,13 +79,13 @@ const absensiService = {
         const meetingStart = moment(`${peminjaman.tanggal_mulai} ${peminjaman.jam_mulai}`);
         const meetingEnd = moment(`${peminjaman.tanggal_mulai} ${peminjaman.jam_selesai}`);
 
-        // if (currentTime.isBefore(meetingStart)) {
-        //     throw new ResponseError(400, "Meeting hasn't started yet");
-        // }
+        if (currentTime.isBefore(meetingStart)) {
+            throw new ResponseError(400, "Meeting Belum Dimulai");
+        }
 
-        // if (currentTime.isAfter(meetingEnd)) {
-        //     throw new ResponseError(400, "Meeting has ended");
-        // }
+        if (currentTime.isAfter(meetingEnd)) {
+            throw new ResponseError(400, "Meeting Sudah selesai`");
+        }
 
         const listAbsensi = await prisma.listAbsensi.create({
             data: {
@@ -146,41 +147,41 @@ const absensiService = {
                 }
             }
         });
-
+    
         if (!absensi) {
             throw new ResponseError(404, "Absensi not found");
         }
-
+    
         // Create PDF document
         const doc = new PDFDocument({
             size: 'A4',
             margin: 40,
             bufferPages: true
         });
-
+    
         // Helper function to add page numbers
         let pageNumber = 1;
         doc.on('pageAdded', () => {
             pageNumber++;
         });
-
+    
         // Set font
         doc.font('Helvetica-Bold');
-
+    
         // Add header
         doc.fontSize(16).text('DAFTAR HADIR RAPAT', { align: 'center' });
         doc.moveDown(1.5);
-
+    
         // Add meeting details with proper spacing
         doc.fontSize(11);
-
+    
         // Define consistent spacing
         const startX = 40;
         const labelWidth = 120;
         const colonX = startX + labelWidth;
         const contentX = colonX + 20;
         let currentY = 120;
-
+    
         // Helper function for aligned detail lines
         const addDetailLine = (label, value) => {
             doc.font('Helvetica-Bold')
@@ -190,28 +191,29 @@ const absensiService = {
                 .text(value, contentX, currentY);
             return currentY += 25;
         };
-
+    
         // Add details with consistent spacing and alignment
         currentY = addDetailLine('Hari / Tanggal', formatDate(absensi.Peminjaman.tanggal_mulai));
         currentY = addDetailLine('Nama Acara', absensi.Peminjaman.nama_kegiatan);
         currentY = addDetailLine('Tempat', absensi.Peminjaman.RuangRapat.nama_ruangan);
         currentY = addDetailLine('Waktu', `${absensi.Peminjaman.jam_mulai} - ${absensi.Peminjaman.jam_selesai}`);
-
+    
         doc.moveDown(1);
-
+    
         // Table configuration dengan penyesuaian ukuran yang lebih presisi
         const tableTop = currentY + 20;
-        const tableHeaders = ['No', 'Nama', 'No HP', 'Unit Kerja', 'Golongan', 'Jabatan', 'L/P', 'Tanda Tangan'];
-        const colWidths = [30, 100, 60, 80, 60, 70, 30, 90]; // Total width: 520px (A4 width - margins)
-        const rowHeight = 40; // Mengurangi tinggi baris
-
+        const tableHeaders = ['No', 'Nama', 'Unit Kerja', 'Golongan', 'Jabatan', 'L/P', 'Tanda Tangan'];
+        // Perbaikan: Sesuaikan colWidths dengan jumlah kolom yang benar
+        const colWidths = [30, 100, 80, 60, 70, 30, 90]; // Total 7 kolom
+        const rowHeight = 40;
+    
         // Set lighter line width for table
         doc.lineWidth(0.5);
-
+    
         // Draw header row
         doc.font('Helvetica-Bold');
         let xPos = 40;
-
+    
         // Draw header cells
         tableHeaders.forEach((header, i) => {
             doc.rect(xPos, tableTop, colWidths[i], 30).stroke();
@@ -221,18 +223,18 @@ const absensiService = {
             });
             xPos += colWidths[i];
         });
-
+    
         // Draw table content
         doc.font('Helvetica');
         currentY = tableTop + 30;
-
+    
         for (let i = 0; i < absensi.ListAbsensi.length; i++) {
             const peserta = absensi.ListAbsensi[i];
-
+    
             if (currentY > 700) {
                 doc.addPage();
                 currentY = 50;
-
+    
                 xPos = 40;
                 doc.font('Helvetica-Bold');
                 tableHeaders.forEach((header, j) => {
@@ -246,9 +248,9 @@ const absensiService = {
                 doc.font('Helvetica');
                 currentY += 30;
             }
-
+    
             xPos = 40;
-
+    
             // Draw row cells
             const drawCell = (content, width, align = 'left') => {
                 doc.rect(xPos, currentY, width, rowHeight).stroke();
@@ -258,31 +260,28 @@ const absensiService = {
                 });
                 xPos += width;
             };
-
-            // Draw each cell dengan indeks colWidths yang benar
+    
+            // Draw each cell dengan indeks yang benar
             drawCell(i + 1, colWidths[0], 'center');
             drawCell(peserta.nama, colWidths[1]);
-            drawCell(peserta.kontak || '-', colWidths[2]);
-            drawCell(peserta.unit_kerja, colWidths[3]);
-            drawCell(peserta.golongan, colWidths[4]);
-            drawCell(peserta.jabatan, colWidths[5]);
-            drawCell(peserta.jenis_kelamin === 'LAKI_LAKI' ? 'L' : 'P', colWidths[6], 'center');
-
-            // Handle signature dengan ukuran yang lebih kecil
-            // Handle signature dengan posisi center
-            doc.rect(xPos, currentY, colWidths[7], rowHeight).stroke();
+            drawCell(peserta.unit_kerja, colWidths[2]);
+            drawCell(peserta.golongan, colWidths[3]);
+            drawCell(peserta.jabatan, colWidths[4]);
+            drawCell(peserta.jenis_kelamin === 'LAKI_LAKI' ? 'L' : 'P', colWidths[5], 'center');
+    
+            // Handle signature
+            doc.rect(xPos, currentY, colWidths[6], rowHeight).stroke();
             if (peserta.tanda_tangan && peserta.tanda_tangan.startsWith('data:image/')) {
                 try {
                     const base64Data = peserta.tanda_tangan.split(',')[1];
                     if (base64Data) {
                         const buffer = Buffer.from(base64Data, 'base64');
                         try {
-                            // Hitung posisi tengah
-                            const signatureWidth = colWidths[7] - 20; // Lebar tanda tangan
-                            const signatureHeight = rowHeight - 10;   // Tinggi tanda tangan
-                            const centerX = xPos + (colWidths[7] - signatureWidth) / 2;
+                            const signatureWidth = colWidths[6] - 20;
+                            const signatureHeight = rowHeight - 10;
+                            const centerX = xPos + (colWidths[6] - signatureWidth) / 2;
                             const centerY = currentY + (rowHeight - signatureHeight) / 2;
-
+    
                             doc.image(buffer, centerX, centerY, {
                                 width: signatureWidth,
                                 height: signatureHeight,
@@ -292,22 +291,22 @@ const absensiService = {
                             });
                         } catch (err) {
                             doc.text('[Tanda Tangan]', xPos, currentY + (rowHeight / 2 - 5), {
-                                width: colWidths[7],
+                                width: colWidths[6],
                                 align: 'center'
                             });
                         }
                     }
                 } catch (error) {
                     doc.text('[Tanda Tangan]', xPos, currentY + (rowHeight / 2 - 5), {
-                        width: colWidths[7],
+                        width: colWidths[6],
                         align: 'center'
                     });
                 }
             }
-
+    
             currentY += rowHeight;
         }
-
+    
         // Add page numbers
         let pages = doc.bufferedPageRange();
         for (let i = 0; i < pages.count; i++) {
@@ -320,7 +319,7 @@ const absensiService = {
                 { align: 'center' }
             );
         }
-
+    
         return doc;
     },
     async exportAbsensiToXlsx(kode) {
