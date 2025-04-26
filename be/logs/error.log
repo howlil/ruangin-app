@@ -4111,3 +4111,81 @@
   userId: undefined,
   level: 'error'
 }
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '27-04-2025 05:36:04'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '27-04-2025 05:36:14',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '27-04-2025 05:36:14',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getAllRuangRapat (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\ruangRapat.service.js:87:27)\n' +
+    '    at async getAllRuangRapat (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:30:28)',
+  path: '/api/v1/ruang-rapat',
+  method: 'GET',
+  timestamp: '27-04-2025 05:36:18',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'TypeError',
+  message: 'this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async Object.getTodayPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\ruangRapat.service.js:280:28)\n' +
+    '    at async getTodayPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\ruangRapat.controller.js:88:28)',
+  path: '/api/v1/display',
+  method: 'GET',
+  timestamp: '27-04-2025 05:36:18',
+  requestBody: {},
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}

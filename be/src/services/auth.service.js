@@ -337,7 +337,8 @@ const authService = {
                 role: user.role,
                 detail: user.DetailPengguna ? {
                     kontak: user.DetailPengguna.kontak,
-                    tim_kerja: user.DetailPengguna.tim_kerja.nama_tim_kerja
+                    tim_kerja: user.DetailPengguna.tim_kerja.nama_tim_kerja,
+                    tim_kerja_id : user.DetailPengguna.tim_kerja.id
                 } : null
             }));
 

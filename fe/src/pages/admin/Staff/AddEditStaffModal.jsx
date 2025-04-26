@@ -18,9 +18,11 @@ export default function AddEditStaffModal({
     email: staff?.email || '',
     nama_lengkap: staff?.nama_lengkap || '',
     role: staff?.role || 'PEMINJAM',
-    kontak: staff?.kontak || '',
-    tim_kerja_id: staff?.tim_kerja_id || ''
+    kontak: staff?.detail?.kontak || '',
+    tim_kerja_id: staff?.detail?.tim_kerja_id || ''
   });
+
+  console.log(staff)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
