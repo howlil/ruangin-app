@@ -20,8 +20,9 @@ export default function RoomDetailsModal({ room, onClose }) {
     new Date(a.tanggal) - new Date(b.tanggal)
   );
 
+
   const groupedBookings = sortedBookings.reduce((acc, booking) => {
-    const date = new Date(booking.tanggal);
+    const date = new Date(booking.tanggal_mulai);
     const monthYear = date.toLocaleString('id-ID', {
       month: 'long',
       year: 'numeric'
@@ -98,7 +99,7 @@ export default function RoomDetailsModal({ room, onClose }) {
                     </div>
                     <div className="text-sm text-gray-600">
                       <p className="mb-1">
-                        Tanggal: {formatDate(booking.tanggal)}
+                        Tanggal: {formatDate(booking.tanggal_mulai)} 
                       </p>
                       <p>
                         Waktu: {booking.jam_mulai} - {booking.jam_selesai}

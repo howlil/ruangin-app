@@ -131,46 +131,52 @@ const BookingCard = ({
 
           {/* Actions Section */}
           <div className="w-full md:w-1/4 p-4 flex flex-col justify-center items-center bg-gray-50">
-            {booking.status === 'DISETUJUI' && booking.Absensi?.link_absensi ? (
+            {booking.status === 'DISETUJUI' || booking.status === 'SELESAI' && booking.Absensi?.link_absensi ? (
               <div className="w-full space-y-3">
-                <div className="text-center">
-                  <span className="text-sm text-gray-600 font-medium">
-                    Link Absensi
-                  </span>
-                  <button
-                    onClick={() => copyToClipboard(booking.Absensi.link_absensi, booking.id)}
-                    className={`
-                      mt-2 w-full inline-flex items-center justify-center gap-2 px-4 py-2 
-                      rounded-lg text-sm font-medium transition-colors
-                      ${copiedId === booking.id
-                        ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
-                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}
-                    `}
-                  >
-                    {copiedId === booking.id ? (
-                      <>
-                        <CheckCheck className="w-4 h-4" />
-                        <span>Tersalin!</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-4 h-4" />
-                        <span>Salin Link</span>
-                      </>
-                    )}
-                  </button>
-                </div>
+                {booking.status === 'DISETUJUI' && (
+                  <>
+                    <div className="text-center">
+                      <span className="text-sm text-gray-600 font-medium">
+                        Link Absensi
+                      </span>
+                      <button
+                        onClick={() => copyToClipboard(booking.Absensi.link_absensi, booking.id)}
+                        className={`
+      mt-2 w-full inline-flex items-center justify-center gap-2 px-4 py-2 
+      rounded-lg text-sm font-medium transition-colors
+      ${copiedId === booking.id
+                            ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                            : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}
+    `}
+                      >
+                        {copiedId === booking.id ? (
+                          <>
+                            <CheckCheck className="w-4 h-4" />
+                            <span>Tersalin!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-4 h-4" />
+                            <span>Salin Link</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
+                    <Button
+                      onClick={handleShowAbsensi}
+                      icon={List}
+                      disabled={loading}
+                      className="w-full justify-center bg-blue-600 hover:bg-blue-700 text-white"
+                    >
+                      {loading ? 'Memuat...' : 'Lihat Daftar Hadir'}
+                    </Button>
+                  </>
+                )}
 
-                <Button
-                  onClick={handleShowAbsensi}
-                  icon={List}
-                  disabled={loading}
-                  className="w-full justify-center bg-blue-600 hover:bg-blue-700 text-white"
-                >
-                  {loading ? 'Memuat...' : 'Lihat Daftar Hadir'}
-                </Button>
 
-                <div className='flex gap-2'>
+
+
+                <div className={booking.status === 'SELESAI' ? "space-y-2": `flex gap-2`}>
                   <Button
                     onClick={() => onExportAbsensiPdf(booking.Absensi?.link_absensi)}
                     icon={Upload}

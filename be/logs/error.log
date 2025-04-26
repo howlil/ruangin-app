@@ -3600,3 +3600,514 @@
     '    at async Task._execution (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\index.js:9:9)',
   timestamp: '18-02-2025 07:45:05'
 }
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '27-03-2025 00:25:08',
+  requestBody: { tanggal: '', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '27-03-2025 00:25:47',
+  requestBody: { email: 'admin@pusdatin.id', kata_sandi: '@Test1231' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '27-03-2025 00:27:52',
+  requestBody: { email: 'admin@pusdatin.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '27-03-2025 01:26:50',
+  requestBody: { tanggal: '', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '27-03-2025 01:26:53',
+  requestBody: { tanggal: '', jam: '10:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\NGODING\\MAGANG\\KKP\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '28-03-2025 03:04:10',
+  requestBody: { tanggal: '2025-04-05', jam: '12:00' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '15-04-2025 00:27:45',
+  requestBody: { email: 'admin@pusdatin.id', kata_sandi: '@Test123:)' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '15-04-2025 00:27:57',
+  requestBody: { email: 'admin@pusdatin.id', kata_sandi: '@Test123' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: admin@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: admin@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '15-04-2025 01:57:43',
+  requestBody: {
+    email: 'Mhdulilabshar27@gmail.com',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'd1310d99-f45e-41d4-beb0-459b9d65f5fb'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: example@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: example@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '15-04-2025 01:57:46',
+  requestBody: {
+    email: 'Mhdulilabshar27@gmail.com',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'b9d4dcac-2cdd-4562-ba17-90dd54dc8b56'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: akundatis@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: akundatis@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '15-04-2025 01:57:47',
+  requestBody: {
+    email: 'Mhdulilabshar27@gmail.com',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: 'b00df21b-344a-4a9e-b26d-896b65bb3dde'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  name: 'ResponseError',
+  message: 'Tim kerja ini sudah memiliki akun terdaftar dengan email: hsdmaok@pusdatin.id',
+  stack: 'ResponseError: Tim kerja ini sudah memiliki akun terdaftar dengan email: hsdmaok@pusdatin.id\n' +
+    '    at Object.register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:84:23)\n' +
+    '    at async register (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:27:28)',
+  path: '/api/v1/register',
+  method: 'POST',
+  timestamp: '15-04-2025 01:57:49',
+  requestBody: {
+    email: 'Mhdulilabshar27@gmail.com',
+    nama_lengkap: 'roberto',
+    role: 'PEMINJAM',
+    kontak: '+6285264687390',
+    tim_kerja_id: '8570cc47-01ab-4e14-b158-485d8fbe3df5'
+  },
+  requestParams: {},
+  requestQuery: {},
+  userId: '3d1ebd0e-3f04-44b5-a6db-ae02067cf7df',
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '21-04-2025 17:52:00'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)',
+  path: '/api/v1/logout',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '21-04-2025 17:53:12'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:10:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '21-04-2025 17:57:39',
+  requestBody: { email: 'superadmin@pusdatin.id', kata_sandi: '@test123!' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  name: 'ValidationError',
+  message: 'Validation failed',
+  stack: 'ValidationError: Validation failed\n' +
+    '    at validate (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\validation.js:16:15)\n' +
+    '    at checkAvailability (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\peminjaman.controller.js:165:31)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  path: '/api/v1/check',
+  method: 'POST',
+  timestamp: '21-04-2025 17:59:46',
+  requestBody: { tanggal: '2025-04-22', jam: '' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:49:02'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:50:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:51:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:52:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:53:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:54:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:55:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:56:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:57:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:58:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 22:59:04'
+}
+{
+  level: 'error',
+  message: 'Error updating booking status: this.yhandleAndLogRequestError is not a function',
+  stack: 'TypeError: this.yhandleAndLogRequestError is not a function\n' +
+    '    at qn.request (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:121:6347)\n' +
+    '    at async l (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\@prisma\\client\\runtime\\library.js:130:9616)\n' +
+    '    at async updateStatusPeminjaman (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\cronjob.js:9:48)\n' +
+    '    at async Task._execution (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\index.js:9:9)',
+  timestamp: '26-04-2025 23:00:04'
+}
+{
+  error: 'jwt expired',
+  stack: 'TokenExpiredError: jwt expired\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:190:21\n' +
+    '    at getSecret (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:97:14)\n' +
+    '    at module.exports [as verify] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\jsonwebtoken\\verify.js:101:10)\n' +
+    '    at decodeToken (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\utils\\jwt.js:18:14)\n' +
+    '    at authenticate (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\middlewares\\auth.middleware.js:38:16)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\node_modules\\express\\lib\\router\\index.js:335:12)',
+  path: '/api/v1/logout',
+  level: 'error',
+  message: 'Token decode error',
+  timestamp: '26-04-2025 23:02:10'
+}
+{
+  name: 'ResponseError',
+  message: 'Wrong password',
+  stack: 'ResponseError: Wrong password\n' +
+    '    at Object.login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\services\\auth.service.js:26:19)\n' +
+    '    at async login (C:\\Users\\USER\\Documents\\code\\kerja\\kkp\\RuangIn\\be\\src\\controllers\\auth.controller.js:12:28)',
+  path: '/api/v1/login',
+  method: 'POST',
+  timestamp: '26-04-2025 23:02:24',
+  requestBody: { email: 'admin@pusdatin.id', kata_sandi: '@Test123!\\' },
+  requestParams: {},
+  requestQuery: {},
+  userId: undefined,
+  level: 'error'
+}
